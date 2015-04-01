@@ -1,0 +1,15 @@
+{
+  "name": "cieslix/allegro",
+  "description": "Allegro PHP Library",
+  "license": "http://www.gnu.org/licenses/lgpl.html",
+  "authors": [
+    {
+      "name": "Paweł Cieślik",
+      "email": "cieslix@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {"Allegro": "src/"}
+  },
+  "minimum-stability": "dev"
+}
