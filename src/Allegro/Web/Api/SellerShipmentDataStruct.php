@@ -29,17 +29,17 @@ class Allegro_Web_Api_SellerShipmentDataStruct extends Allegro_Web_Api_Abstract
     protected $generalDeliveryPaymentInfo = null;
 
     /**
-     * @param int $sellerId
-     * @param Allegro_Web_Api_SellerPaymentInfoStruct $sellerPaymentInfo
-     * @param int $sellerOtherShipmentIsActive
+     * @param int                                              $sellerId
+     * @param Allegro_Web_Api_SellerPaymentInfoStruct          $sellerPaymentInfo
+     * @param int                                              $sellerOtherShipmentIsActive
      * @param Allegro_Web_Api_ArrayOfShipmentpaymentinfostruct $generalDeliveryPaymentInfo
      */
     public function __construct($sellerId, $sellerPaymentInfo, $sellerOtherShipmentIsActive, $generalDeliveryPaymentInfo)
     {
-        $this->sellerId = $sellerId;
-        $this->sellerPaymentInfo = $sellerPaymentInfo;
+        $this->sellerId                    = $sellerId;
+        $this->sellerPaymentInfo           = $sellerPaymentInfo;
         $this->sellerOtherShipmentIsActive = $sellerOtherShipmentIsActive;
-        $this->generalDeliveryPaymentInfo = $generalDeliveryPaymentInfo;
+        $this->generalDeliveryPaymentInfo  = $generalDeliveryPaymentInfo;
     }
 
     /**

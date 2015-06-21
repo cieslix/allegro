@@ -20,11 +20,11 @@ class Allegro_Web_Api_DoGetUserItemsResponse extends Allegro_Web_Api_Abstract
 
     /**
      * @param Allegro_Web_Api_ArrayOfUseritemlist $userItemList
-     * @param int $userItemCount
+     * @param int                                 $userItemCount
      */
     public function __construct($userItemList, $userItemCount)
     {
-        $this->userItemList = $userItemList;
+        $this->userItemList  = $userItemList;
         $this->userItemCount = $userItemCount;
     }
 

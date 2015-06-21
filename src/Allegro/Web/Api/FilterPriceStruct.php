@@ -25,7 +25,7 @@ class Allegro_Web_Api_FilterPriceStruct extends Allegro_Web_Api_Abstract
     public function __construct($filterPriceFrom, $filterPriceTo)
     {
         $this->filterPriceFrom = $filterPriceFrom;
-        $this->filterPriceTo = $filterPriceTo;
+        $this->filterPriceTo   = $filterPriceTo;
     }
 
     /**

@@ -8,7 +8,7 @@
  */
 class Allegro_Web_Api_DoGetRefundsDealsRequest extends Allegro_Web_Api_Abstract
 {
-    const SORT_ORDER_ASC = 'asc';
+    const SORT_ORDER_ASC  = 'asc';
     const SORT_ORDER_DESC = 'desc';
 
     /**
@@ -37,19 +37,19 @@ class Allegro_Web_Api_DoGetRefundsDealsRequest extends Allegro_Web_Api_Abstract
     protected $resultOffset = null;
 
     /**
-     * @param string $sessionId
+     * @param string                                   $sessionId
      * @param Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions
-     * @param string $sortOrder
-     * @param int $resultSize
-     * @param int $resultOffset
+     * @param string                                   $sortOrder
+     * @param int                                      $resultSize
+     * @param int                                      $resultOffset
      */
     public function __construct($sessionId, $filterOptions, $sortOrder, $resultSize, $resultOffset)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId     = $sessionId;
         $this->filterOptions = $filterOptions;
-        $this->sortOrder = $sortOrder;
-        $this->resultSize = $resultSize;
-        $this->resultOffset = $resultOffset;
+        $this->sortOrder     = $sortOrder;
+        $this->resultSize    = $resultSize;
+        $this->resultOffset  = $resultOffset;
     }
 
     /**

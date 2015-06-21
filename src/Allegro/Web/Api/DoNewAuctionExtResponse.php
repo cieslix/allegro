@@ -24,14 +24,14 @@ class Allegro_Web_Api_DoNewAuctionExtResponse extends Allegro_Web_Api_Abstract
     protected $itemIsAllegroStandard = null;
 
     /**
-     * @param int $itemId
+     * @param int    $itemId
      * @param string $itemInfo
-     * @param int $itemIsAllegroStandard
+     * @param int    $itemIsAllegroStandard
      */
     public function __construct($itemId, $itemInfo, $itemIsAllegroStandard)
     {
-        $this->itemId = $itemId;
-        $this->itemInfo = $itemInfo;
+        $this->itemId                = $itemId;
+        $this->itemInfo              = $itemInfo;
         $this->itemIsAllegroStandard = $itemIsAllegroStandard;
     }
 

@@ -25,13 +25,13 @@ class Allegro_Web_Api_SellFormFieldsForCategoryStruct extends Allegro_Web_Api_Ab
 
     /**
      * @param Allegro_Web_Api_ArrayOfSellformtype $sellFormFieldsList
-     * @param int $sellFormFieldsVersionKey
-     * @param string $sellFormFieldsComponentValue
+     * @param int                                 $sellFormFieldsVersionKey
+     * @param string                              $sellFormFieldsComponentValue
      */
     public function __construct($sellFormFieldsList, $sellFormFieldsVersionKey, $sellFormFieldsComponentValue)
     {
-        $this->sellFormFieldsList = $sellFormFieldsList;
-        $this->sellFormFieldsVersionKey = $sellFormFieldsVersionKey;
+        $this->sellFormFieldsList           = $sellFormFieldsList;
+        $this->sellFormFieldsVersionKey     = $sellFormFieldsVersionKey;
         $this->sellFormFieldsComponentValue = $sellFormFieldsComponentValue;
     }
 

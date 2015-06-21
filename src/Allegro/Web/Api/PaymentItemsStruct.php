@@ -29,15 +29,15 @@ class Allegro_Web_Api_PaymentItemsStruct extends Allegro_Web_Api_Abstract
     protected $payTransItPrice = null;
 
     /**
-     * @param int $payTransItId
+     * @param int    $payTransItId
      * @param string $payTransItName
-     * @param int $payTransItCount
-     * @param float $payTransItPrice
+     * @param int    $payTransItCount
+     * @param float  $payTransItPrice
      */
     public function __construct($payTransItId, $payTransItName, $payTransItCount, $payTransItPrice)
     {
-        $this->payTransItId = $payTransItId;
-        $this->payTransItName = $payTransItName;
+        $this->payTransItId    = $payTransItId;
+        $this->payTransItName  = $payTransItName;
         $this->payTransItCount = $payTransItCount;
         $this->payTransItPrice = $payTransItPrice;
     }

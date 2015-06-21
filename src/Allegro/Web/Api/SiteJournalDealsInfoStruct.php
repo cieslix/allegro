@@ -24,7 +24,7 @@ class Allegro_Web_Api_SiteJournalDealsInfoStruct extends Allegro_Web_Api_Abstrac
      */
     public function __construct($dealEventsCount, $dealLastEventTime)
     {
-        $this->dealEventsCount = $dealEventsCount;
+        $this->dealEventsCount   = $dealEventsCount;
         $this->dealLastEventTime = $dealLastEventTime;
     }
 

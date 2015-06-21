@@ -25,14 +25,14 @@ class Allegro_Web_Api_DoLoginResponse extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandlePart
-     * @param int $userId
-     * @param int $serverTime
+     * @param int    $userId
+     * @param int    $serverTime
      */
     public function __construct($sessionHandlePart, $userId, $serverTime)
     {
         $this->sessionHandlePart = $sessionHandlePart;
-        $this->userId = $userId;
-        $this->serverTime = $serverTime;
+        $this->userId            = $userId;
+        $this->serverTime        = $serverTime;
     }
 
     /**

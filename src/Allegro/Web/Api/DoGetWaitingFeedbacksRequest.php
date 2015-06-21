@@ -25,14 +25,14 @@ class Allegro_Web_Api_DoGetWaitingFeedbacksRequest extends Allegro_Web_Api_Abstr
 
     /**
      * @param string $sessionHandle
-     * @param int $offset
-     * @param int $packageSize
+     * @param int    $offset
+     * @param int    $packageSize
      */
     public function __construct($sessionHandle, $offset, $packageSize)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->offset = $offset;
-        $this->packageSize = $packageSize;
+        $this->offset        = $offset;
+        $this->packageSize   = $packageSize;
     }
 
     /**

@@ -94,43 +94,43 @@ class Allegro_Web_Api_ItemsListType extends Allegro_Web_Api_Abstract
     protected $advertInfo = null;
 
     /**
-     * @param int $itemId
-     * @param string $itemTitle
-     * @param int $leftCount
-     * @param int $bidsCount
-     * @param int $biddersCount
-     * @param string $quantityType
-     * @param \DateTime $endingTime
-     * @param string $timeToEnd
-     * @param int $categoryId
-     * @param string $conditionInfo
-     * @param int $promotionInfo
-     * @param int $additionalInfo
-     * @param Allegro_Web_Api_UserInfoType $sellerInfo
-     * @param Allegro_Web_Api_ArrayOfPriceinfotype $priceInfo
-     * @param Allegro_Web_Api_ArrayOfPhotoinfotype $photosInfo
+     * @param int                                      $itemId
+     * @param string                                   $itemTitle
+     * @param int                                      $leftCount
+     * @param int                                      $bidsCount
+     * @param int                                      $biddersCount
+     * @param string                                   $quantityType
+     * @param \DateTime                                $endingTime
+     * @param string                                   $timeToEnd
+     * @param int                                      $categoryId
+     * @param string                                   $conditionInfo
+     * @param int                                      $promotionInfo
+     * @param int                                      $additionalInfo
+     * @param Allegro_Web_Api_UserInfoType             $sellerInfo
+     * @param Allegro_Web_Api_ArrayOfPriceinfotype     $priceInfo
+     * @param Allegro_Web_Api_ArrayOfPhotoinfotype     $photosInfo
      * @param Allegro_Web_Api_ArrayOfParameterinfotype $parametersInfo
-     * @param AdvertInfoType $advertInfo
+     * @param AdvertInfoType                           $advertInfo
      */
     public function __construct($itemId, $itemTitle, $leftCount, $bidsCount, $biddersCount, $quantityType, \DateTime $endingTime, $timeToEnd, $categoryId, $conditionInfo, $promotionInfo, $additionalInfo, $sellerInfo, $priceInfo, $photosInfo, $parametersInfo, $advertInfo)
     {
-        $this->itemId = $itemId;
-        $this->itemTitle = $itemTitle;
-        $this->leftCount = $leftCount;
-        $this->bidsCount = $bidsCount;
-        $this->biddersCount = $biddersCount;
-        $this->quantityType = $quantityType;
-        $this->endingTime = $endingTime->format(\DateTime::ATOM);
-        $this->timeToEnd = $timeToEnd;
-        $this->categoryId = $categoryId;
-        $this->conditionInfo = $conditionInfo;
-        $this->promotionInfo = $promotionInfo;
+        $this->itemId         = $itemId;
+        $this->itemTitle      = $itemTitle;
+        $this->leftCount      = $leftCount;
+        $this->bidsCount      = $bidsCount;
+        $this->biddersCount   = $biddersCount;
+        $this->quantityType   = $quantityType;
+        $this->endingTime     = $endingTime->format(\DateTime::ATOM);
+        $this->timeToEnd      = $timeToEnd;
+        $this->categoryId     = $categoryId;
+        $this->conditionInfo  = $conditionInfo;
+        $this->promotionInfo  = $promotionInfo;
         $this->additionalInfo = $additionalInfo;
-        $this->sellerInfo = $sellerInfo;
-        $this->priceInfo = $priceInfo;
-        $this->photosInfo = $photosInfo;
+        $this->sellerInfo     = $sellerInfo;
+        $this->priceInfo      = $priceInfo;
+        $this->photosInfo     = $photosInfo;
         $this->parametersInfo = $parametersInfo;
-        $this->advertInfo = $advertInfo;
+        $this->advertInfo     = $advertInfo;
     }
 
     /**

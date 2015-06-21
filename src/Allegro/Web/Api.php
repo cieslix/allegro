@@ -13,9 +13,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http://allegro.pl/webapi/documentation.php/show/id,1076?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers to which a common text is to be added (max. 25).
-     * @param string $itDescription Content of a text to be added.
+     * @param string                            $itDescription Content of a text to be added.
      * @return Allegro_Web_Api_DoAddDescToItemsResponse
      */
     public function addDescToItems($sessionId, $itemIds, $itDescription)
@@ -29,8 +29,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1188?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $transactionId Transaction (after-sale form) identifier received by using the doGetTransactionsIDs method.
+     * @param string                                   $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param int                                      $transactionId Transaction (after-sale form) identifier received by using the doGetTransactionsIDs method.
      * @param Allegro_Web_Api_ArrayOfPackageinfostruct $packageInfo Array of structures containing information on parcel (max. 20 for each transaction).
      * @return Allegro_Web_Api_DoAddPackageInfoToPostBuyFormResponse Structure containing information on operation results
      */
@@ -45,7 +45,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1077?lang=en
      *
-     * @param string $sessionId
+     * @param string                                     $sessionId
      * @param Allegro_Web_Api_ArrayOfUserblackliststruct $usersBlackListArray
      * @return Allegro_Web_Api_DoAddToBlackListResponse
      */
@@ -60,7 +60,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1186?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers to be added to watch-list (max. 25).
      * @return Allegro_Web_Api_DoAddToWatchListResponse
      */
@@ -75,13 +75,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1138?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $bidItId Identifier of an offer in which you wish to make a bid.
-     * @param float $bidUserPrice Bid price (for offers of a bidding type). For offers of the Buy it Now! type the field must pass a price that equals the Buy it Now! price set by a seller, displayed in the ongoing offer.
-     * @param int $bidQuantity Number of items related to the made bid (also in multi-variant offers).
-     * @param int $bidBuyNow Information whether the purchase has to be made through But it Now! (the offer has to have such purchase method available). (1 - yes, 0 - no; default value is 0).
+     * @param string                                      $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param int                                         $bidItId Identifier of an offer in which you wish to make a bid.
+     * @param float                                       $bidUserPrice Bid price (for offers of a bidding type). For offers of the Buy it Now! type the field must pass a price that equals the Buy it Now! price set by a seller, displayed in the ongoing offer.
+     * @param int                                         $bidQuantity Number of items related to the made bid (also in multi-variant offers).
+     * @param int                                         $bidBuyNow Information whether the purchase has to be made through But it Now! (the offer has to have such purchase method available). (1 - yes, 0 - no; default value is 0).
      * @param Allegro_Web_Api_PharmacyRecipientDataStruct $pharmacyRecipientData Structure containing address data of a buyer (relates to the category: Health and Beauty > OTC drugs; Filling out this structure while making purchase in other category results in ignoring the passed data).
-     * @param string $variantId Identifier of a purchased variant that is received after using the doShowItemInfoExt method.
+     * @param string                                      $variantId Identifier of a purchased variant that is received after using the doShowItemInfoExt method.
      * @return Allegro_Web_Api_DoBidItemResponse
      */
     public function bidItem($sessionId, $bidItId, $bidUserPrice, $bidQuantity,
@@ -97,11 +97,11 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1157?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $cancelItemId Offer identifier.
+     * @param string                           $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param int                              $cancelItemId Offer identifier.
      * @param Allegro_Web_Api_ArrayOfInt|int[] $cancelBidsArray Array of identifiers of buyers whose offers are to be cancelled.
-     * @param string $cancelBidsReason Bid cancellation reason.
-     * @param int $cancelAddToBlackList Information whether bids cancellation should result in adding buyers to blacklist of a logged-in user (1 - yes, 0 - no; default value is 0).
+     * @param string                           $cancelBidsReason Bid cancellation reason.
+     * @param int                              $cancelAddToBlackList Information whether bids cancellation should result in adding buyers to blacklist of a logged-in user (1 - yes, 0 - no; default value is 0).
      * @return Allegro_Web_Api_DoCancelBidItemResponse
      */
     public function cancelBidItem($sessionId, $cancelItemId, $cancelBidsArray,
@@ -118,7 +118,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1482?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $refundId Commission refund form ID.
+     * @param int    $refundId Commission refund form ID.
      * @return Allegro_Web_Api_DoCancelRefundFormResponse.
      */
     public function cancelRefundForm($sessionId, $refundId)
@@ -133,7 +133,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1463?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $refundId Commission refund form ID.
+     * @param int    $refundId Commission refund form ID.
      * @return Allegro_Web_Api_DoCancelRefundWarningResponse Confirming commission refund form cancellation (1).
      */
     public function cancelRefundWarning($sessionId, $refundId)
@@ -148,7 +148,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1302?lang=en
      *
      * @param string $sessionId User’s session identifier received using the doLogin(Enc) method.
-     * @param int $transactionId Transaction identifier.
+     * @param int    $transactionId Transaction identifier.
      * @return Allegro_Web_Api_DoCancelTransactionResponse Confirming commission refund form cancellation (1).
      */
     public function cancelTransaction($sessionId, $transactionId)
@@ -162,11 +162,11 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1190?lang=en
      *
-     * @param string $sessionId
-     * @param int $itemId
-     * @param Allegro_Web_Api_ArrayOfFieldsvalue $fieldsToModify
-     * @param Allegro_Web_Api_ArrayOfInt|int[] $fieldsToRemove
-     * @param int $previewOnly
+     * @param string                               $sessionId
+     * @param int                                  $itemId
+     * @param Allegro_Web_Api_ArrayOfFieldsvalue   $fieldsToModify
+     * @param Allegro_Web_Api_ArrayOfInt|int[]     $fieldsToRemove
+     * @param int                                  $previewOnly
      * @param Allegro_Web_Api_ArrayOfVariantstruct $variants
      * @return Allegro_Web_Api_DoChangeItemFieldsResponse
      */
@@ -184,10 +184,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1151?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemId Offer identifier
-     * @param float $newStartingPrice New value of the starting price.
-     * @param float $newReservePrice New value of the reserve price.
-     * @param float $newBuyNowPrice New value of the Buy it Now! price.
+     * @param int    $itemId Offer identifier
+     * @param float  $newStartingPrice New value of the starting price.
+     * @param float  $newReservePrice New value of the reserve price.
+     * @param float  $newBuyNowPrice New value of the Buy it Now! price.
      * @return Allegro_Web_Api_DoChangePriceItemResponse
      */
     public function changePriceItem($sessionId, $itemId, $newStartingPrice = null, $newReservePrice = null, $newBuyNowPrice = null)
@@ -203,8 +203,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1150?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemId Offer identifier.
-     * @param int $newItemQuantity New value for initial number of items in the offer.
+     * @param int    $itemId Offer identifier.
+     * @param int    $newItemQuantity New value for initial number of items in the offer.
      * @return Allegro_Web_Api_DoChangeQuantityItemResponse
      */
     public function changeQuantityItem($sessionId, $itemId, $newItemQuantity)
@@ -233,8 +233,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1081?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param Allegro_Web_Api_ArrayOfFieldsvalue $fields Array of structures containing information on sale form fields (their list can be loaded by using the doGetSellFormFieldsExt(Limit) method. When an identifier of a particular field is passed in the fid field, you need to send its value in an appropriate for its type fvalue field and pass empty string of characters [string] - sending 0 (numeric types) or logical value 'false' [boolean] in other fvalue fields. Pass only required or desired fields.
+     * @param string                               $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param Allegro_Web_Api_ArrayOfFieldsvalue   $fields Array of structures containing information on sale form fields (their list can be loaded by using the doGetSellFormFieldsExt(Limit) method. When an identifier of a particular field is passed in the fid field, you need to send its value in an appropriate for its type fvalue field and pass empty string of characters [string] - sending 0 (numeric types) or logical value 'false' [boolean] in other fvalue fields. Pass only required or desired fields.
      * @param Allegro_Web_Api_ArrayOfVariantstruct $variants (missing in documentation)
      * @return Allegro_Web_Api_DoCheckNewAuctionExtResponse
      */
@@ -250,8 +250,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1133?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param string $itemTemplateName Name of an offer template (max. 50 characters).
+     * @param string                             $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                             $itemTemplateName Name of an offer template (max. 50 characters).
      * @param Allegro_Web_Api_ArrayOfFieldsvalue $itemTemplateFields Array of structures containing information on settings of sale form fields forming the offer template.
      * @return Allegro_Web_Api_DoCreateItemTemplateResponse Identifier of an offer template.
      */
@@ -266,13 +266,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1082?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $feItemId Identifier of an offer which will receive feedback.
-     * @param int $feUseCommentTemplate Information on whether the space for typing in a positive comment (only for feCommentType=POS) should be filled with a standard feedback template prepared by Allegro: Transaction successful. I recommend. (1 - use template, 0 - type in positive comment).
-     * @param int $feToUserId Identifier of a user who will receive feedback.
-     * @param string $feComment Feedback content (about 250 characters).
-     * @param string $feCommentType Type of feedback (POS - positive, NEG - negative, NEU - neutral).
-     * @param int $feOp Side which will receive feedback (1 - feedback for seller, 2 - feedback for buyer).
+     * @param string                                            $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param int                                               $feItemId Identifier of an offer which will receive feedback.
+     * @param int                                               $feUseCommentTemplate Information on whether the space for typing in a positive comment (only for feCommentType=POS) should be filled with a standard feedback template prepared by Allegro: Transaction successful. I recommend. (1 - use template, 0 - type in positive comment).
+     * @param int                                               $feToUserId Identifier of a user who will receive feedback.
+     * @param string                                            $feComment Feedback content (about 250 characters).
+     * @param string                                            $feCommentType Type of feedback (POS - positive, NEG - negative, NEU - neutral).
+     * @param int                                               $feOp Side which will receive feedback (1 - feedback for seller, 2 - feedback for buyer).
      * @param Allegro_Web_Api_ArrayOfSellratingestimationstruct $feRating Array of structures containing information on evaluation of selected sale areas.
      * @return Allegro_Web_Api_DoFeedbackResponse Left feedback identifier.
      */
@@ -291,7 +291,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1095?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                                    $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfFeedbackmanystruct $feedbacksList Array of structures containing information required to leave feedback (max. 25).
      * @return Allegro_Web_Api_DoFeedbackManyResponse Array of structures containing information on operation results.
      */
@@ -307,8 +307,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1122?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $finishItemId Offer identifier.
-     * @param int $finishCancelAllBids Information on whether bids are to be cancelled together with closing the offer (1 - yes, 0 - no; default value is 0; only bids placed in the bidding process are cancelled).
+     * @param int    $finishItemId Offer identifier.
+     * @param int    $finishCancelAllBids Information on whether bids are to be cancelled together with closing the offer (1 - yes, 0 - no; default value is 0; only bids placed in the bidding process are cancelled).
      * @param string $finishCancelReason Reason for cancellation of bids.
      * @return Allegro_Web_Api_DoFinishItemResponse Operation result (1 - offer has been ended, 0 - offer has not been ended).
      */
@@ -323,7 +323,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1069?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                                   $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfFinishitemsstruct $finishItemsList Arrays with structures containing information of offers to be closed (max. 25).
      * @return Allegro_Web_Api_DoFinishItemsResponse
      */
@@ -354,7 +354,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1486?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemId Offer ID.
+     * @param int    $itemId Offer ID.
      * @return Allegro_Web_Api_DoGetArchiveRefundsListResponse
      */
     public function getArchiveRefundsList($sessionId, $itemId)
@@ -369,7 +369,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1097?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemId Offer identifier.
+     * @param int    $itemId Offer identifier.
      * @return Allegro_Web_Api_DoGetBidItem2Response Array of structures containing information on all buyers in an offer.
      */
     public function getBidItem($sessionId, $itemId)
@@ -398,7 +398,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1121?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $categoryId Category identifier.
+     * @param int    $categoryId Category identifier.
      * @return Allegro_Web_Api_DoGetCategoryPathResponse
      */
     public function getCategoryPath($sessionId, $categoryId)
@@ -413,7 +413,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1101?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetCatsDataResponse
      */
     public function getCatsData($webapiKey, $countryId)
@@ -428,7 +428,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1102?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetCatsDataCountResponse
      */
     public function getCatsDataCount($webapiKey, $countryId)
@@ -443,9 +443,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1086?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $limit Parameter which allows for defining a size of data portion (scope 1-5000; 5000 by default).
-     * @param int $offset Parameter which allows for controlling loading of new data portions (portion numbers are indexed from 0).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $limit Parameter which allows for defining a size of data portion (scope 1-5000; 5000 by default).
+     * @param int    $offset Parameter which allows for controlling loading of new data portions (portion numbers are indexed from 0).
      * @return Allegro_Web_Api_DoGetCatsDataLimitResponse
      */
     public function getCatsDataLimit($webapiKey, $countryId, $limit = 5000, $offset = 0)
@@ -461,7 +461,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1085?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier.
+     * @param int    $countryId Country identifier.
      * @return Allegro_Web_Api_DoGetCountriesResponse Array of structures containing information on available countries.
      */
     public function getCountries($webapiKey, $countryId)
@@ -476,8 +476,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1163?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemId Offer identifier.
-     * @param int $buyerId Buyer's identifier.
+     * @param int    $itemId Offer identifier.
+     * @param int    $buyerId Buyer's identifier.
      * @return Allegro_Web_Api_DoGetDealsResponse Array of structures containing information on purchase events.
      */
     public function getDeals($sessionId, $itemId, $buyerId)
@@ -520,9 +520,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1092?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $feedbackFrom User's identifier - in case when information on feedback left by the given user is to be loaded.
-     * @param int $feedbackTo User's identifier - in case when information on feedback received by the given user is to be loaded.
-     * @param int $feedbackOffset Parameter which allows for setting the initial position to start loading the feedback list. The parameter's value indicates feedback (taking into account the method of sorting the list - descending sort by the date of posting) to start loading the list with (feedback is indexed from 0).
+     * @param int    $feedbackFrom User's identifier - in case when information on feedback left by the given user is to be loaded.
+     * @param int    $feedbackTo User's identifier - in case when information on feedback received by the given user is to be loaded.
+     * @param int    $feedbackOffset Parameter which allows for setting the initial position to start loading the feedback list. The parameter's value indicates feedback (taking into account the method of sorting the list - descending sort by the date of posting) to start loading the list with (feedback is indexed from 0).
      * @param string $feedbackKindList Type of returned feedback list (POS - positive, NEG - negative, NEU - neutral, ALL - all; ALL is set by default).
      * @return Allegro_Web_Api_DoGetFeedbackResponse
      */
@@ -539,10 +539,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1118?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $paymentType Payment method for which all delivery and payment option forms are to be returned (mask: 1 - PayU, 2 -standard transfer, 4 - COD).
-     * @param int $userRole Role of a logged-in user in a context of loaded forms (1 - seller, 2 - buyer).
-     * @param int $dateFrom Start date of time range (in the Unix time format) to load a list of filled-out after-sale forms.
-     * @param int $dateTo End date of time range (in the Unix time format) to stop loading a list of filled-out after-sale forms.
+     * @param int    $paymentType Payment method for which all delivery and payment option forms are to be returned (mask: 1 - PayU, 2 -standard transfer, 4 - COD).
+     * @param int    $userRole Role of a logged-in user in a context of loaded forms (1 - seller, 2 - buyer).
+     * @param int    $dateFrom Start date of time range (in the Unix time format) to load a list of filled-out after-sale forms.
+     * @param int    $dateTo End date of time range (in the Unix time format) to stop loading a list of filled-out after-sale forms.
      * @return Allegro_Web_Api_DoGetFilledPostBuyFormsResponse Transaction ID array. Details of each transaction can be obtained using doGetPostBuyFormsDataForBuyers/doGetPostBuyFormsDataForSellers methods.
      */
     public function getFilledPostBuyForms($sessionId, $paymentType,
@@ -559,8 +559,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,101562?lang=en
      *
      * @param string $webapiKey User’s WebAPI key.
-     * @param int $countryId ID of a country you wish to load the offers from (you can get a list of country IDs by using the doGetCountries method).
-     * @param int $userId Identifier of a user whose free shipping limit you want to check.
+     * @param int    $countryId ID of a country you wish to load the offers from (you can get a list of country IDs by using the doGetCountries method).
+     * @param int    $userId Identifier of a user whose free shipping limit you want to check.
      * @return Allegro_Web_Api_DoGetFreeDeliveryAmountResponse
      */
     public function getFreeDeliveryAmount($webapiKey, $countryId, $userId)
@@ -575,7 +575,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1134?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemId Offer identifier for which data should be returned.
+     * @param int    $itemId Offer identifier for which data should be returned.
      * @return Allegro_Web_Api_DoGetItemFieldsResponse
      */
     public function getItemFields($sessionId, $itemId)
@@ -589,7 +589,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1160?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                           $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfInt|int[] $itemTemplateIds Array of identifiers of offer templates (if it is empty, all templates of a logged-in user are returned).
      * @return Allegro_Web_Api_DoGetItemTemplatesResponse Structure containing information on offer templates.
      */
@@ -603,9 +603,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * doesn't exist in documentation
      * @todo test
      *
-     * @param string $sessionId
+     * @param string                            $sessionId
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemsArray
-     * @param mixed $imageType
+     * @param mixed                             $imageType
      * @return Allegro_Web_Api_DoGetItemsImagesResponse
      */
     public function getItemsImages($sessionId, $itemsArray, $imageType)
@@ -619,13 +619,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1093?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers to load information about (max. 25).
-     * @param int $getDesc Parameter indicating whether an offer description is to be loaded (1 - yes, 0 - no; default value: 0).
-     * @param int $getImageUrl Parameter indicating whether links to photos are to be loaded (1 - yes, 0 - no; default value: 0).
-     * @param int $getAttribs Parameter indicating whether a list of parameters assigned to an offer is to be loaded (1 - yes, 0 - no; default value: 0).
-     * @param int $getPostageOptions Parameter indicating whether shipment options for an offer are to be loaded (1 - yes, 0 - no; default value: 0).
-     * @param int $getCompanyInfo Parameter indicating whether data of a user listing the offer is to be loaded (it refers only to offers listed from Company accounts) (1 - yes, 0 - no; default value: 0).
+     * @param int                               $getDesc Parameter indicating whether an offer description is to be loaded (1 - yes, 0 - no; default value: 0).
+     * @param int                               $getImageUrl Parameter indicating whether links to photos are to be loaded (1 - yes, 0 - no; default value: 0).
+     * @param int                               $getAttribs Parameter indicating whether a list of parameters assigned to an offer is to be loaded (1 - yes, 0 - no; default value: 0).
+     * @param int                               $getPostageOptions Parameter indicating whether shipment options for an offer are to be loaded (1 - yes, 0 - no; default value: 0).
+     * @param int                               $getCompanyInfo Parameter indicating whether data of a user listing the offer is to be loaded (it refers only to offers listed from Company accounts) (1 - yes, 0 - no; default value: 0).
      * @return Allegro_Web_Api_DoGetItemsInfoResponse
      */
     public function getItemsInfo($sessionId, $itemIds, $getDesc = 0, $getImageUrl = 0, $getAttribs = 0,
@@ -641,13 +641,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1382?lang=en
      *
-     * @param string $webapiKey User’s WebAPI key.
-     * @param int $countryId ID of a country you wish to load the offers from (you can get a list of country IDs by using the doGetCountries method).
+     * @param string                                   $webapiKey User’s WebAPI key.
+     * @param int                                      $countryId ID of a country you wish to load the offers from (you can get a list of country IDs by using the doGetCountries method).
      * @param Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions Criteria of filtering the results (a list of available in that certain context filters is returned as the output of the method within the  filtersList structure).
-     * @param Allegro_Web_Api_SortOptionsType $sortOptions Option of offer sorting.
-     * @param int $limit Size of data portion (min. 1, max. 1,000). Default value: 100.
-     * @param int $offset Controlling the process of getting another portion of data. Default value: 0.
-     * @param int $resultScope Controlling the range of returned data (mask, values can be added): 1 - do not return the structure with filters, 2 - do not return a structure with categories, 4 - do not return a structure with offers). All data are returned by default.
+     * @param Allegro_Web_Api_SortOptionsType          $sortOptions Option of offer sorting.
+     * @param int                                      $limit Size of data portion (min. 1, max. 1,000). Default value: 100.
+     * @param int                                      $offset Controlling the process of getting another portion of data. Default value: 0.
+     * @param int                                      $resultScope Controlling the range of returned data (mask, values can be added): 1 - do not return the structure with filters, 2 - do not return a structure with categories, 4 - do not return a structure with offers). All data are returned by default.
      * @return Allegro_Web_Api_DoGetItemsListResponse
      */
     public function getItemsList($webapiKey, $countryId, Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions = null,
@@ -665,7 +665,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1141?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemId Offer identifier in which a logged-in user acted as the buyer.
+     * @param int    $itemId Offer identifier in which a logged-in user acted as the buyer.
      * @return Allegro_Web_Api_DoGetMessageToBuyerResponse Structure containing information on messages to the buyer.
      */
     public function getMessageToBuyer($sessionId, $itemId)
@@ -693,13 +693,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1262?lang=en
      *
-     * @param string $sessionId A user’s session identifier received using the method doLogin(Enc).
+     * @param string                            $sessionId A user’s session identifier received using the method doLogin(Enc).
      * @param Allegro_Web_Api_SortOptionsStruct $sortOptions A structure containing information about the method of sorting offers.
-     * @param string $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
-     * @param int $categoryId A parameter which allows for indicating a category of displayed offers.
+     * @param string                            $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
+     * @param int                               $categoryId A parameter which allows for indicating a category of displayed offers.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max.: 100).
-     * @param int $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
-     * @param int $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
+     * @param int                               $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
+     * @param int                               $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
      * @return Allegro_Web_Api_DoGetMyBidItemsResponse
      */
     public function getMyBidItems($sessionId, Allegro_Web_Api_SortOptionsStruct $sortOptions = null, $searchValue = '',
@@ -743,13 +743,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1263?lang=en
      *
-     * @param string $sessionId A user’s session identifier received using the method doLogin(Enc).
-     * @param Allegro_Web_Api_SortOptionsStruct $sortOptions A structure containing information about the method of sorting offers.
+     * @param string                                    $sessionId A user’s session identifier received using the method doLogin(Enc).
+     * @param Allegro_Web_Api_SortOptionsStruct         $sortOptions A structure containing information about the method of sorting offers.
      * @param Allegro_Web_Api_FutureFilterOptionsStruct $filterOptions A structure containing information about the method of filtering offers.
-     * @param int $categoryId A parameter which allows for indicating a category of displayed offers.
-     * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max.: 100).
-     * @param int $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
-     * @param int $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
+     * @param int                                       $categoryId A parameter which allows for indicating a category of displayed offers.
+     * @param Allegro_Web_Api_ArrayOfLong|int[]         $itemIds Array of offer identifiers (max.: 100).
+     * @param int                                       $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
+     * @param int                                       $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
      * @return Allegro_Web_Api_DoGetMyFutureItemsResponse
      */
     public function getMyFutureItems($sessionId, Allegro_Web_Api_SortOptionsStruct $sortOptions = null,
@@ -767,12 +767,12 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1103?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $buyerId Identifier of a buyer whose payments are to be loaded..
-     * @param int $itemId Identifier of an offer related to the payment (also when an offer is a part of a combined payment).
-     * @param int $dateFrom Start date of time range (in the Unix time format) to load a list of payments.
-     * @param int $dateTo End date of time range (in the Unix time format) to load a list of payments.
-     * @param int $limit Size of data portion (range 1-25; default value: 25).
-     * @param int $offset Controlling (through the incrementation of provided value) the process of loading new data portions (portion numbers are indexed from 0).
+     * @param int    $buyerId Identifier of a buyer whose payments are to be loaded..
+     * @param int    $itemId Identifier of an offer related to the payment (also when an offer is a part of a combined payment).
+     * @param int    $dateFrom Start date of time range (in the Unix time format) to load a list of payments.
+     * @param int    $dateTo End date of time range (in the Unix time format) to load a list of payments.
+     * @param int    $limit Size of data portion (range 1-25; default value: 25).
+     * @param int    $offset Controlling (through the incrementation of provided value) the process of loading new data portions (portion numbers are indexed from 0).
      * @return Allegro_Web_Api_DoGetMyIncomingPaymentsResponse Array of structures containing information on payments of users.
      */
     public function getMyIncomingPayments($sessionId, $buyerId = 0, $itemId = 0, $dateFrom = 0,
@@ -789,10 +789,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1185?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $buyerId Identifier of a buyer who made the refunded payment.
-     * @param int $itemId Identifier of an offer related to the refund.
-     * @param int $limit Size of data portion (min. 1, max. 25; passing 0 or a value higher than the maximum sets the size portion to default value: 25).
-     * @param int $offset Controlling (through the incrementation of passed value) the process of loading new data portions (portion numbers are indexed from 0).
+     * @param int    $buyerId Identifier of a buyer who made the refunded payment.
+     * @param int    $itemId Identifier of an offer related to the refund.
+     * @param int    $limit Size of data portion (min. 1, max. 25; passing 0 or a value higher than the maximum sets the size portion to default value: 25).
+     * @param int    $offset Controlling (through the incrementation of passed value) the process of loading new data portions (portion numbers are indexed from 0).
      * @return Allegro_Web_Api_DoGetMyIncomingPaymentsRefundsResponse Array of structures containing information on refunds within offers of a logged-in user.
      */
     public function getMyIncomingPaymentsRefunds($sessionId, $buyerId = 0, $itemId = 0, $limit = 25, $offset = 0)
@@ -806,14 +806,14 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1264?lang=en
      *
-     * @param string $sessionId A user’s session identifier received using the method doLogin(Enc).
-     * @param Allegro_Web_Api_SortOptionsStruct $sortOptions A structure containing information about the method of sorting offers.
+     * @param string                                     $sessionId A user’s session identifier received using the method doLogin(Enc).
+     * @param Allegro_Web_Api_SortOptionsStruct          $sortOptions A structure containing information about the method of sorting offers.
      * @param Allegro_Web_Api_NotSoldFilterOptionsStruct $filterOptions A structure containing information about the method of filtering offers.
-     * @param string $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
-     * @param int $categoryId A parameter which allows for indicating a category of displayed offers.
-     * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max.: 100).
-     * @param int $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100)
-     * @param int $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
+     * @param string                                     $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
+     * @param int                                        $categoryId A parameter which allows for indicating a category of displayed offers.
+     * @param Allegro_Web_Api_ArrayOfLong|int[]          $itemIds Array of offer identifiers (max.: 100).
+     * @param int                                        $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100)
+     * @param int                                        $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
      * @return Allegro_Web_Api_DoGetMyNotSoldItemsResponse
      */
     public function getMyNotSoldItems($sessionId, Allegro_Web_Api_SortOptionsStruct $sortOptions = null,
@@ -831,13 +831,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1265?lang=en
      *
-     * @param string $sessionId A user’s session identifier received using the method doLogin(Enc).
+     * @param string                            $sessionId A user’s session identifier received using the method doLogin(Enc).
      * @param Allegro_Web_Api_SortOptionsStruct $sortOptions A structure containing information about the method of sorting offers.
-     * @param string $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
-     * @param int $categoryId A parameter which allows for indicating a category of displayed offers.
+     * @param string                            $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
+     * @param int                               $categoryId A parameter which allows for indicating a category of displayed offers.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max.: 100).
-     * @param int $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100)
-     * @param int $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
+     * @param int                               $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100)
+     * @param int                               $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
      * @return Allegro_Web_Api_DoGetMyNotWonItemsResponse
      */
     public function getMyNotWonItems($sessionId, Allegro_Web_Api_SortOptionsStruct $sortOptions = null,
@@ -855,12 +855,12 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1105?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $sellerId Seller's identifier for whom payments are to be loaded.
-     * @param int $itemId Identifier of an offer related to the payment (also when an offer is a part of a combined payment).
-     * @param int $dateFrom Start date of time range (in the Unix time format) to load a list of payments.
-     * @param int $dateTo End date of time range (in the Unix time format) to load a list of payments.
-     * @param int $limit Size of data portion (min. 1, max. 24; by entering 0 or a value outside the range sets the size portion to default value: 25).
-     * @param int $offset Controlling  (through the incrementation of provided value)  the process of loading new data portions (portion numbers are indexed from 0).
+     * @param int    $sellerId Seller's identifier for whom payments are to be loaded.
+     * @param int    $itemId Identifier of an offer related to the payment (also when an offer is a part of a combined payment).
+     * @param int    $dateFrom Start date of time range (in the Unix time format) to load a list of payments.
+     * @param int    $dateTo End date of time range (in the Unix time format) to load a list of payments.
+     * @param int    $limit Size of data portion (min. 1, max. 24; by entering 0 or a value outside the range sets the size portion to default value: 25).
+     * @param int    $offset Controlling  (through the incrementation of provided value)  the process of loading new data portions (portion numbers are indexed from 0).
      * @return Allegro_Web_Api_DoGetMyPaymentsResponse Array of structures containing information on payments of a logged user.
      */
     public function getMyPayments($sessionId, $sellerId = 0, $itemId = 0, $dateFrom = 0,
@@ -891,10 +891,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1135?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $sellerId Identifier of a seller who has received the refunded later payment.
-     * @param int $itemId Identifier of an offer related to the refund.
-     * @param int $limit Size of data portion (min. 1, max. 25; passing 0 or a value higher than the maximum sets the size portion to default value: 25).
-     * @param int $offset Controlling (through the incrementation of passed value) the process of loading new data portions (portion numbers are indexed from 0).
+     * @param int    $sellerId Identifier of a seller who has received the refunded later payment.
+     * @param int    $itemId Identifier of an offer related to the refund.
+     * @param int    $limit Size of data portion (min. 1, max. 25; passing 0 or a value higher than the maximum sets the size portion to default value: 25).
+     * @param int    $offset Controlling (through the incrementation of passed value) the process of loading new data portions (portion numbers are indexed from 0).
      * @return Allegro_Web_Api_DoGetMyPaymentsRefundsResponse Array of structures containing information on refunds of a logged-in user.
      */
     public function getMyPaymentsRefunds($sessionId, $sellerId = 0, $itemId = 0, $limit = 25, $offset = 0)
@@ -909,10 +909,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1106?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $dateFrom Start date of time range (in the Unix time format) to load a list of withdrawals.
-     * @param int $dateTo End date of time range (in the Unix time format) to load a list of withdrawals.
-     * @param int $limit Size of data portion (min. 1, max. 49; by entering 0 or a value outside the range sets the size portion to default value: 50).
-     * @param int $offset Controlling (through the incrementation of provided value) the process of loading new data portions (portion numbers are indexed from 0).
+     * @param int    $dateFrom Start date of time range (in the Unix time format) to load a list of withdrawals.
+     * @param int    $dateTo End date of time range (in the Unix time format) to load a list of withdrawals.
+     * @param int    $limit Size of data portion (min. 1, max. 49; by entering 0 or a value outside the range sets the size portion to default value: 50).
+     * @param int    $offset Controlling (through the incrementation of provided value) the process of loading new data portions (portion numbers are indexed from 0).
      * @return Allegro_Web_Api_DoGetMyPayoutsResponse Array of structures containing information on withdrawals of a logged user.
      */
     public function getMyPayouts($sessionId, $dateFrom = 0, $dateTo = 0, $limit = 50, $offset = 0)
@@ -926,14 +926,14 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1266?lang=en
      *
-     * @param string $sessionId A user’s session identifier received using the method doLogin(Enc).
-     * @param Allegro_Web_Api_SortOptionsStruct $sortOptions A structure containing information about the method of sorting offers.
+     * @param string                                  $sessionId A user’s session identifier received using the method doLogin(Enc).
+     * @param Allegro_Web_Api_SortOptionsStruct       $sortOptions A structure containing information about the method of sorting offers.
      * @param Allegro_Web_Api_SellFilterOptionsStruct $filterOptions A structure containing information about the method of filtering offers.
-     * @param string $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
-     * @param int $categoryId A parameter which allows for indicating a category of displayed offers.
-     * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max.: 100).
-     * @param int $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
-     * @param int $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
+     * @param string                                  $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
+     * @param int                                     $categoryId A parameter which allows for indicating a category of displayed offers.
+     * @param Allegro_Web_Api_ArrayOfLong|int[]       $itemIds Array of offer identifiers (max.: 100).
+     * @param int                                     $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
+     * @param int                                     $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
      * @return Allegro_Web_Api_DoGetMySellItemsResponse
      */
     public function getMySellItems($sessionId, Allegro_Web_Api_SortOptionsStruct $sortOptions = null,
@@ -964,14 +964,14 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1267?lang=en
      *
-     * @param string $sessionId A user’s session identifier received using the method doLogin(Enc).
-     * @param Allegro_Web_Api_SortOptionsStruct $sortOptions A structure containing information about the method of sorting offers.
+     * @param string                                  $sessionId A user’s session identifier received using the method doLogin(Enc).
+     * @param Allegro_Web_Api_SortOptionsStruct       $sortOptions A structure containing information about the method of sorting offers.
      * @param Allegro_Web_Api_SoldFilterOptionsStruct $filterOptions A structure containing information about the method of filtering offers.
-     * @param string $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
-     * @param int $categoryId A parameter which allows for indicating a category of displayed offers.
-     * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max.: 100).
-     * @param int $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
-     * @param int $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
+     * @param string                                  $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
+     * @param int                                     $categoryId A parameter which allows for indicating a category of displayed offers.
+     * @param Allegro_Web_Api_ArrayOfLong|int[]       $itemIds Array of offer identifiers (max.: 100).
+     * @param int                                     $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
+     * @param int                                     $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
      * @return Allegro_Web_Api_DoGetMySoldItemsResponse
      */
     public function getMySoldItems($sessionId, Allegro_Web_Api_SortOptionsStruct $sortOptions = null,
@@ -988,13 +988,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1269?lang=en
      *
-     * @param string $sessionId A user’s session identifier received using the method doLogin(Enc).
+     * @param string                            $sessionId A user’s session identifier received using the method doLogin(Enc).
      * @param Allegro_Web_Api_SortOptionsStruct $sortOptions A structure containing information about the method of sorting offers.
-     * @param string $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
-     * @param int $categoryId A parameter which allows for indicating a category of displayed offers.
+     * @param string                            $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
+     * @param int                               $categoryId A parameter which allows for indicating a category of displayed offers.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max.: 100).
-     * @param int $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
-     * @param int $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
+     * @param int                               $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
+     * @param int                               $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
      * @return Allegro_Web_Api_DoGetMyWatchItemsResponse
      */
     public function getMyWatchItems($sessionId, Allegro_Web_Api_SortOptionsStruct $sortOptions = null, $searchValue = '',
@@ -1010,13 +1010,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1268?lang=en
      *
-     * @param string $sessionId A user’s session identifier received using the method doLogin(Enc).
+     * @param string                            $sessionId A user’s session identifier received using the method doLogin(Enc).
      * @param Allegro_Web_Api_SortOptionsStruct $sortOptions A structure containing information about the method of sorting offers.
-     * @param string $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
-     * @param int $categoryId A parameter which allows for indicating a category of displayed offers.
+     * @param string                            $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
+     * @param int                               $categoryId A parameter which allows for indicating a category of displayed offers.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max.: 100).
-     * @param int $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
-     * @param int $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
+     * @param int                               $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
+     * @param int                               $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
      * @return Allegro_Web_Api_DoGetMyWatchedItemsResponse
      */
     public function getMyWatchedItems($sessionId, Allegro_Web_Api_SortOptionsStruct $sortOptions = null,
@@ -1032,13 +1032,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1270?lang=en
      *
-     * @param string $sessionId A user’s session identifier received using the method doLogin(Enc).
+     * @param string                            $sessionId A user’s session identifier received using the method doLogin(Enc).
      * @param Allegro_Web_Api_SortOptionsStruct $sortOptions A structure containing information about the method of sorting offers.
-     * @param string $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
-     * @param int $categoryId A parameter which allows for indicating a category of displayed offers.
+     * @param string                            $searchValue A phrase searched in offers (relates to searching by the offer title). It allows for searching using characters such as *, -, () and “".
+     * @param int                               $categoryId A parameter which allows for indicating a category of displayed offers.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max.: 100).
-     * @param int $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
-     * @param int $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
+     * @param int                               $limit A parameter which allows for indicating the number of displayed offers (min.: 1, max.: 1,000, default value: 100).
+     * @param int                               $offset A parameter which allows for indicating data portions to be displayed (default value: 0).
      * @return Allegro_Web_Api_DoGetMyWonItemsResponse
      */
     public function getMyWonItems($sessionId, Allegro_Web_Api_SortOptionsStruct $sortOptions = null, $searchValue = '',
@@ -1054,7 +1054,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1107?lang=en
      *
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @param string $webapiKey User's WebAPI key.
      * @return Allegro_Web_Api_DoGetPaymentDataResponse Array of structures containing information on particular fees.
      */
@@ -1069,7 +1069,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1144?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds An array of offer identifiers for which a list of payment methods is to be returned (minimum: 1, maximum: 25).
      * @return Allegro_Web_Api_DoGetPaymentMethodsResponse Array of structures containing information on available payment methods.
      */
@@ -1084,7 +1084,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1108?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemsArray Array of offer identifiers (max. 25).
      * @return Allegro_Web_Api_DoGetPostBuyDataResponse Array of structures containing information on offers and trading partners data.
      */
@@ -1099,7 +1099,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1148?lang=en
      *
-     * @param string $sessionId User’s session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User’s session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $transactionsIdsArray Array of transaction and related additional payment identifiers (max. 25). Information on relation between an offer identifier and a transaction identifier can be obtained by the doGetTransactionsIDs method.
      * @return Allegro_Web_Api_DoGetPostBuyFormsDataForBuyersResponse
      */
@@ -1114,7 +1114,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1128?lang=en
      *
-     * @param string $sessionId User’s session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User’s session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $transactionsIdsArray Array of transaction and related additional payment identifiers (max. 25). Information on relation between an offer identifier and a transaction identifier can be obtained by the doGetTransactionsIDs method.
      * @return Allegro_Web_Api_DoGetPostBuyFormsDataForSellersResponse
      */
@@ -1129,10 +1129,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1383?lang=en
      *
-     * @param string $sessionId User’s session identifier received using the doLogin(Enc) method.
+     * @param string                                   $sessionId User’s session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions Criteria of filtering the results (a list of available in that certain context filters is returned as the output of the method within the  filtersList structure).
-     * @param int $limit Size of data portion (min. 1, max. 1,000). Default value: 100.
-     * @param int $offset Controlling the process of getting another portion of data. Default value: 0.
+     * @param int                                      $limit Size of data portion (min. 1, max. 1,000). Default value: 100.
+     * @param int                                      $offset Controlling the process of getting another portion of data. Default value: 0.
      * @return Allegro_Web_Api_DoGetPostBuyFormsIdsResponse
      */
     public function getPostBuyFormsIds($sessionId, Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions = null,
@@ -1147,7 +1147,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1303?lang=en
      *
-     * @param string $sessionId User’s session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User’s session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (min. 1, max. 200).
      * @return Allegro_Web_Api_DoGetPostBuyItemInfoResponse
      */
@@ -1162,11 +1162,11 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1485?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                                   $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions Criteria of filtering the results (a list of available in that certain context filters is returned as the output of the method within the  filtersList structure).
-     * @param string $sortOrder Sorting order: asc - ascending (default value for most of the listings), desc - descending.
-     * @param int $limit Size of data portion (min. 1, max. 1,000). Default value: 100.
-     * @param int $offset Controlling the process of getting another portion of data. Default value: 0.
+     * @param string                                   $sortOrder Sorting order: asc - ascending (default value for most of the listings), desc - descending.
+     * @param int                                      $limit Size of data portion (min. 1, max. 1,000). Default value: 100.
+     * @param int                                      $offset Controlling the process of getting another portion of data. Default value: 0.
      * @return Allegro_Web_Api_DoGetRefundsDealsResponse
      */
     public function getRefundsDeals($sessionId, Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions = null,
@@ -1182,10 +1182,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1484?lang=en
      *
-     * @param string $sessionId User’s session identifier received using the doLogin(Enc) method.
+     * @param string                                   $sessionId User’s session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions Criteria of filtering the results (a list of available in that certain context filters is returned as the output of the method within the  filtersList structure).
-     * @param int $limit Size of data portion (min. 1, max. 1,000). Default value: 100.
-     * @param int $offset Controlling the process of getting another portion of data. Default value: 0.
+     * @param int                                      $limit Size of data portion (min. 1, max. 1,000). Default value: 100.
+     * @param int                                      $offset Controlling the process of getting another portion of data. Default value: 0.
      * @return Allegro_Web_Api_DoGetRefundsListResponse
      */
     public function getRefundsList($sessionId, Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions = null,
@@ -1201,7 +1201,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1483?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $dealId Identifier of a purchase transaction (received using doGetRefundsDeals).
+     * @param int    $dealId Identifier of a purchase transaction (received using doGetRefundsDeals).
      * @return Allegro_Web_Api_DoGetRefundsReasonsResponse
      */
     public function getRefundsReasons($sessionId, $dealId)
@@ -1215,7 +1215,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1145?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers where items were bought by a logged-in user (max. 25).
      * @return Allegro_Web_Api_DoGetRelatedItemsResponse
      */
@@ -1230,9 +1230,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1109?lang=en
      *
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @param string $webapiKey User's WebAPI key.
-     * @param int $categoryId Category identifier.
+     * @param int    $categoryId Category identifier.
      * @return Allegro_Web_Api_DoGetSellFormAttribsResponse
      */
     public function getSellFormAttribs($webapiKey, $countryId, $categoryId)
@@ -1245,7 +1245,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @warning this method doesn't exist in documentation
      * @todo test
      *
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @param string $webapiKey User's WebAPI key.
      * @return Allegro_Web_Api_DoGetSellFormFieldsResponse
      */
@@ -1261,7 +1261,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1110?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetSellFormFieldsExtResponse
      */
     public function getSellFormFieldsExt($webapiKey, $countryId)
@@ -1276,9 +1276,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1111?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $limit Parameter which allows for defining a size of data bits (min. 1, default: 50).
-     * @param int $offset Parameter which allows for controlling loading of new data bits (bid numbers are indexed from 0).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $limit Parameter which allows for defining a size of data bits (min. 1, default: 50).
+     * @param int    $offset Parameter which allows for controlling loading of new data bits (bid numbers are indexed from 0).
      * @return Allegro_Web_Api_DoGetSellFormFieldsExtLimitResponse
      */
     public function getSellFormFieldsExtLimit($webapiKey, $countryId, $limit = 50, $offset = 0)
@@ -1293,8 +1293,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1147?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $categoryId Category identifier (a list of category identifiers can be loaded using the doGetCatsData(Limit) method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $categoryId Category identifier (a list of category identifiers can be loaded using the doGetCatsData(Limit) method).
      * @return Allegro_Web_Api_DoGetSellFormFieldsForCategoryResponse
      */
     public function getSellFormFieldsForCategory($webapiKey, $countryId, $categoryId)
@@ -1308,9 +1308,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $limit Parameter which allows for defining a size of data bits (min. 1, default: 50).
-     * @param int $offset Parameter which allows for controlling loading of new data bits (bid numbers are indexed from 0).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $limit Parameter which allows for defining a size of data bits (min. 1, default: 50).
+     * @param int    $offset Parameter which allows for controlling loading of new data bits (bid numbers are indexed from 0).
      * @return Allegro_Web_Api_DoGetSellFormFieldsLimitResponse
      */
     public function getSellFormFieldsLimit($webapiKey, $countryId, $limit = 50, $offset = 0)
@@ -1325,7 +1325,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1132?lang=en
      *
      * @param string $webapiKey
-     * @param int $countryId
+     * @param int    $countryId
      * @return Allegro_Web_Api_DoGetSellRatingReasonsResponse
      */
     public function getSellRatingReasons($webapiKey, $countryId)
@@ -1340,10 +1340,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1112?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $anCatId Identifier of message category (their list can be obtained by using the doGetServiceInfoCategories method).
-     * @param int $anItDate Date (in the Unix time format) by which a list of messages is to be returned.
-     * @param int $anItId Message identifier by which a list of messages is to be returned.
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $anCatId Identifier of message category (their list can be obtained by using the doGetServiceInfoCategories method).
+     * @param int    $anItDate Date (in the Unix time format) by which a list of messages is to be returned.
+     * @param int    $anItId Message identifier by which a list of messages is to be returned.
      * @return Allegro_Web_Api_DoGetServiceInfoResponse
      */
     public function getServiceInfo($webapiKey, $countryId, $anCatId, $anItDate = 0, $anItId = 0)
@@ -1358,7 +1358,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1113?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetServiceInfoCategoriesResponse Array of structures containing information on category of messages.
      */
     public function getServiceInfoCategories($webapiKey, $countryId)
@@ -1373,7 +1373,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1114?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetServiceTemplatesResponse Array of structures containing information on offer templates.
      */
     public function getServiceTemplates($webapiKey, $countryId)
@@ -1387,7 +1387,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      *
      * @param string $webapiKey
-     * @param int $countryId
+     * @param int    $countryId
      * @return Allegro_Web_Api_DoGetSessionHandleForWidgetResponse
      */
     public function getSessionHandleForWidget($webapiKey, $countryId)
@@ -1402,7 +1402,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1070?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetShipmentDataResponse
      */
     public function getShipmentData($webapiKey, $countryId)
@@ -1416,7 +1416,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1146?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers where items were bought by a logged-in user (max. 25).
      * @return Allegro_Web_Api_DoGetShipmentDataForRelatedItemsResponse
      */
@@ -1432,7 +1432,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1323?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetShipmentPriceTypesResponse Array of structures containing information on available schemes used to calculate shipping costs.
      */
     public function getShipmentPriceTypes($webapiKey, $countryId)
@@ -1461,8 +1461,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1091?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $startingPoint Staring point which allows to control loading next data portions of information on the number of offer-related events (its value is provided in the rowId field of the siteJournalArray structure).
-     * @param int $infoType Scope of information returned (0 - only data on events in offers of a logged-in user, 1 - data on events in all offers on the site; 0 is set by default).
+     * @param int    $startingPoint Staring point which allows to control loading next data portions of information on the number of offer-related events (its value is provided in the rowId field of the siteJournalArray structure).
+     * @param int    $infoType Scope of information returned (0 - only data on events in offers of a logged-in user, 1 - data on events in all offers on the site; 0 is set by default).
      * @return Allegro_Web_Api_DoGetSiteJournalResponse
      */
     public function getSiteJournal($sessionId, $startingPoint = 0,
@@ -1478,7 +1478,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1189?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $journalStart Staring point which allows to control loading next data portions of information on events related to after-sale forms (its value is returned in the dealEventId field of the siteJournalDeals structure).
+     * @param int    $journalStart Staring point which allows to control loading next data portions of information on events related to after-sale forms (its value is returned in the dealEventId field of the siteJournalDeals structure).
      * @return Allegro_Web_Api_DoGetSiteJournalDealsResponse Array of structures containing information on events related to sale forms.
      */
     public function getSiteJournalDeals($sessionId, $journalStart = 0)
@@ -1493,7 +1493,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1191?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $journalStart Staring point which allows to control loading next data portions of information on events related to after-sale forms (its value is returned in the dealEventId field of the siteJournalDeals structure).
+     * @param int    $journalStart Staring point which allows to control loading next data portions of information on events related to after-sale forms (its value is returned in the dealEventId field of the siteJournalDeals structure).
      * @return Allegro_Web_Api_DoGetSiteJournalDealsInfoResponse
      */
     public function getSiteJournalDealsInfo($sessionId, $journalStart = 0)
@@ -1508,8 +1508,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1094?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $startingPoint Staring point which allows to control loading next data portions of information on the number of offer-related events (its value is provided in the rowId field of the siteJournalArray structure).
-     * @param int $infoType Scope of information returned (0 - only data on events in offers of a logged-in user, 1 - data on events in all offers on the site; 0 is set by default).
+     * @param int    $startingPoint Staring point which allows to control loading next data portions of information on the number of offer-related events (its value is provided in the rowId field of the siteJournalArray structure).
+     * @param int    $infoType Scope of information returned (0 - only data on events in offers of a logged-in user, 1 - data on events in all offers on the site; 0 is set by default).
      * @return Allegro_Web_Api_DoGetSiteJournalInfoResponse
      */
     public function getSiteJournalInfo($sessionId, $startingPoint = 0,
@@ -1524,7 +1524,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1165?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetSitesFlagInfoResponse
      */
     public function getSitesFlagInfo($webapiKey, $countryId)
@@ -1538,7 +1538,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1166?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetSitesInfoResponse
      */
     public function getSitesInfo($webapiKey, $countryId)
@@ -1553,10 +1553,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1167?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $specialType Type of special category (0 - newest 1000, 1 - coming to end, 2 - featured on a main page, 3 - featured on sites of particular categories).
-     * @param int $specialGroup Category identifier (for specialType = 3).
-     * @param int $offset Parameter which allows for controlling loading of new data portions (portion numbers are indexed from 0; 19 is the max. value data are returned for).
-     * @param int $orderFulfillmentTime Time of realization (in hours: 24/48/72/96/120/168/240/336/504/999; 999 = 'more'). In UA/KZ it works as 'Sent within' with an additional value 1 ('immediately').
+     * @param int    $specialType Type of special category (0 - newest 1000, 1 - coming to end, 2 - featured on a main page, 3 - featured on sites of particular categories).
+     * @param int    $specialGroup Category identifier (for specialType = 3).
+     * @param int    $offset Parameter which allows for controlling loading of new data portions (portion numbers are indexed from 0; 19 is the max. value data are returned for).
+     * @param int    $orderFulfillmentTime Time of realization (in hours: 24/48/72/96/120/168/240/336/504/999; 999 = 'more'). In UA/KZ it works as 'Sent within' with an additional value 1 ('immediately').
      * @return Allegro_Web_Api_DoGetSpecialItemsResponse
      */
     public function getSpecialItems($sessionId, $specialType = Allegro_Web_Api_DoGetSpecialItemsRequest::SPECIAL_TYPE_NEWEST_1000,
@@ -1574,7 +1574,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1168?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetStatesInfoResponse Array of structures containing information on regions.
      */
     public function getStatesInfo($webapiKey, $countryId)
@@ -1589,7 +1589,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1088?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @return Allegro_Web_Api_DoGetSystemTimeResponse Current server time (in the Unix time format).
      */
     public function getSystemTime($webapiKey, $countryId)
@@ -1603,9 +1603,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1120?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max. 25).
-     * @param string $userRole Role of a user in a transaction (appropriate for provided offer identifiers). Parameter can have one of two values ('seller' or 'buyer').
+     * @param string                            $userRole Role of a user in a transaction (appropriate for provided offer identifiers). Parameter can have one of two values ('seller' or 'buyer').
      * @param Allegro_Web_Api_ArrayOfLong|int[] $shipmentIdArray Array of shipping method identifiers (it can be loaded by using the doGetShipmentData). If no transaction are found for the given identifier, an empty structure is returned.
      * @return Allegro_Web_Api_DoGetTransactionsIDsResponse Array of transaction IDs and related additional payments.
      */
@@ -1623,7 +1623,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1169?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @param string $userLogin Username.
      * @return Allegro_Web_Api_DoGetUserIDResponse User identifier.
      */
@@ -1639,10 +1639,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1170?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $userId User identifier.
-     * @param int $limit Parameter which allows for defining a size of data portion (scope: 1-100; 25 by default).
-     * @param int $offset Parameter that allows for controlling (through the incrementation of passed value) the process of loading new data portions. Portion numbers are indexed from 0.
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $userId User identifier.
+     * @param int    $limit Parameter which allows for defining a size of data portion (scope: 1-100; 25 by default).
+     * @param int    $offset Parameter that allows for controlling (through the incrementation of passed value) the process of loading new data portions. Portion numbers are indexed from 0.
      * @return Allegro_Web_Api_DoGetUserItemsResponse
      */
     public function getUserItems($webapiKey, $countryId, $userId, $limit = 25, $offset = 0)
@@ -1671,8 +1671,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1171?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $userId User identifier.
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $userId User identifier.
      * @return Allegro_Web_Api_DoGetUserLoginResponse Username (for not registered users: Unregistered).
      */
     public function getUserLogin($webapiKey, $countryId, $userId)
@@ -1687,8 +1687,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1172?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $limit Parameter which allows for defining a size of data portion (min. 1, max. 200; 0 is set by default).
-     * @param int $offset Parameter which allows for controlling loading of new data portions (portion numbers are indexed from 0).
+     * @param int    $limit Parameter which allows for defining a size of data portion (min. 1, max. 200; 0 is set by default).
+     * @param int    $offset Parameter which allows for controlling loading of new data portions (portion numbers are indexed from 0).
      * @return Allegro_Web_Api_DoGetWaitingFeedbacksResponse Array of structures containing information on feedback to be left.
      */
     public function getWaitingFeedbacks($sessionId, $limit = 0, $offset = 0)
@@ -1737,9 +1737,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @param string $userLogin Username (1-16 characters) or e-mail address.
      * @param string $userPassword User's password (6-16 characters).
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @param string $webapiKey User's WebAPI key.
-     * @param int $localVersion Version key relevant for a selected country and WebAPI key provided.
+     * @param int    $localVersion Version key relevant for a selected country and WebAPI key provided.
      * @return Allegro_Web_Api_DoLoginResponse
      */
     public function login($userLogin, $userPassword, $countryId, $webapiKey, $localVersion)
@@ -1755,9 +1755,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @param string $userLogin Username (1-16 characters) or e-mail address.
      * @param string $userHashPassword Encrypted user's password (first encrypted with sha-256, then with base64).
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @param string $webapiKey User's WebAPI key.
-     * @param int $localVersion Version key relevant for a selected country and WebAPI key provided.
+     * @param int    $localVersion Version key relevant for a selected country and WebAPI key provided.
      * @return Allegro_Web_Api_DoLoginEncResponse
      */
     public function loginEnc($userLogin, $userHashPassword, $countryId, $webapiKey, $localVersion)
@@ -1771,8 +1771,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      *
      * @param string $webapiKey
-     * @param int $countryId
-     * @param mixed $accessToken
+     * @param int    $countryId
+     * @param mixed  $accessToken
      * @return Allegro_Web_Api_DoLoginWithAccessTokenResponse
      */
     public function loginWithAccessToken($webapiKey, $countryId, $accessToken)
@@ -1786,11 +1786,11 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1174?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param string $accountType Selected type of My Allegro tab (bid - offers from the Bidding tab, won - offers from the Bought tab, not_won - offers from the Not bought tab, watch - offers from the Watched: Ongoing tab, watch_cl - offers from the Watched: Ended tab, sell - offers from the Selling tab, sold - offers from the Sold tab, not_sold - offers from the Not sold tab, future - offers from the Scheduled for listing tab).
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $accountType Selected type of My Allegro tab (bid - offers from the Bidding tab, won - offers from the Bought tab, not_won - offers from the Not bought tab, watch - offers from the Watched: Ongoing tab, watch_cl - offers from the Watched: Ended tab, sell - offers from the Selling tab, sold - offers from the Sold tab, not_sold - offers from the Not sold tab, future - offers from the Scheduled for listing tab).
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemsArray Array of offer identifiers.
-     * @param int $limit Parameter which allows for defining a size of data portions (min. 1, max. 100; 25 by default).
-     * @param int $offset Parameter which allows to control the process of loading new data portions (portion numbers are indexed from 0).
+     * @param int                               $limit Parameter which allows for defining a size of data portions (min. 1, max. 100; 25 by default).
+     * @param int                               $offset Parameter which allows to control the process of loading new data portions (portion numbers are indexed from 0).
      * @return Allegro_Web_Api_DoMyAccount2Response
      */
     public function myAccount($sessionId, $accountType, $itemsArray = array(), $limit = 25, $offset = 0)
@@ -1804,8 +1804,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1175?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param string $accountType Selected type of My Allegro tab (bid - offers from the Bidding tab, won - offers from the Bought tab, not_won - offers from the Not bought tab, watch - offers from the Watched: Ongoing tab, watch_cl - offers from the Watched: Ended tab, sell - offers from the Selling tab, sold - offers from the Sold tab, not_sold - offers from the Not sold tab, future - offers from the Scheduled for listing tab).
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $accountType Selected type of My Allegro tab (bid - offers from the Bidding tab, won - offers from the Bought tab, not_won - offers from the Not bought tab, watch - offers from the Watched: Ongoing tab, watch_cl - offers from the Watched: Ended tab, sell - offers from the Selling tab, sold - offers from the Sold tab, not_sold - offers from the Not sold tab, future - offers from the Scheduled for listing tab).
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemsArray Array of offer identifiers.
      * @return Allegro_Web_Api_DoMyAccountItemsCountResponse
      */
@@ -1836,7 +1836,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1161?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemId Offer identifier.
+     * @param int    $itemId Offer identifier.
      * @param string $option Information on a form in which data are to be returned (S - only summary of costs, F - summary of costs divided into components with description; default value is S).
      * @return Allegro_Web_Api_DoMyBillingItemResponse
      */
@@ -1851,9 +1851,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1177?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $auctionIdList Array of offer identifiers.
-     * @param int $offset Parameter that controls the process of getting information about single offers from a transferred array of offer IDs (the offset is indexed from 0 and acts as an iterator for next elements of the mentioned array). Up to 25 results can be returned.
+     * @param int                               $offset Parameter that controls the process of getting information about single offers from a transferred array of offer IDs (the offset is indexed from 0 and acts as an iterator for next elements of the mentioned array). Up to 25 results can be returned.
      * @return Allegro_Web_Api_DoMyContactResponse Array of structures containing information on buyers.
      */
     public function myContact($sessionId, $auctionIdList, $offset = 0)
@@ -1867,10 +1867,10 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1178?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param string $feedbackType Type of returned feedback (fb_recvd - received feedback is returned, fb_gave - posted feedback is returned).
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $feedbackType Type of returned feedback (fb_recvd - received feedback is returned, fb_gave - posted feedback is returned).
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemArray Array of offer identifiers (max. 100).
-     * @param int $offset Parameter which allows for setting the initial position to start loading the list of feedback. The parameter's value indicates feedback (taking into account the method of sorting the list - descending sort by the date of posting) to start loading the package of 25 feedbacks with (feedback is indexed from 0).
+     * @param int                               $offset Parameter which allows for setting the initial position to start loading the list of feedback. The parameter's value indicates feedback (taking into account the method of sorting the list - descending sort by the date of posting) to start loading the package of 25 feedbacks with (feedback is indexed from 0).
      * @return Allegro_Web_Api_DoMyFeedback2Response
      */
     public function myFeedback($sessionId, $feedbackType = Allegro_Web_Api_DoMyFeedback2Request::FEEDBACK_TYPE_RECEIVED,
@@ -1885,11 +1885,11 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1179?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param string $feedbackType Type of returned feedback (fb_recvd - received feedback is returned, fb_gave - posted feedback is returned).
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $feedbackType Type of returned feedback (fb_recvd - received feedback is returned, fb_gave - posted feedback is returned).
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemArray Array of offer identifiers (max. 100).
-     * @param int $offset Parameter which allows for setting the initial position to start loading the list of feedback. The parameter's value indicates feedback (taking into account the method of sorting the list - descending sort by the date of posting) to start loading the package of 25 feedbacks with (feedback is indexed from 0).
-     * @param int $limit Parameter which allows for defining a size of data bits (min. 1; by default 0 - the whole feedback list is loaded).
+     * @param int                               $offset Parameter which allows for setting the initial position to start loading the list of feedback. The parameter's value indicates feedback (taking into account the method of sorting the list - descending sort by the date of posting) to start loading the package of 25 feedbacks with (feedback is indexed from 0).
+     * @param int                               $limit Parameter which allows for defining a size of data bits (min. 1; by default 0 - the whole feedback list is loaded).
      * @return Allegro_Web_Api_DoMyFeedback2LimitResponse
      */
     public function myFeedbackLimit($sessionId, $feedbackType = Allegro_Web_Api_DoMyFeedback2LimitRequest::FEEDBACK_TYPE_RECEIVED,
@@ -1904,13 +1904,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1180?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param Allegro_Web_Api_ArrayOfFieldsvalue $fields Array of structures containing information on sale form fields (their list can be loaded by using the doGetSellFormFieldsExt(Limit) method. When an identifier of a particular field is passed in the fid field, you need to send its value in an appropriate for its type fvalue field and pass empty string of characters [string] - sending 0 (numeric types) or logical value 'false' [boolean] in other fvalue fields. Pass only required or desirable fieds. http:/www.allegro.pl/webapi/documentation.php/show/id,1110 http://www.allegro.pl/webapi/documentation.php/show/id,1111
-     * @param int $itemTemplateId Offer template identifier (when correct identifier is provided, filling out the fields structure is not required; in such case passing single values in the fields structure will overwrite values from the template but without changing the template; if itemTemplateOption is set to 1 it is possible to create new template on a basis of already existing one and fields passed in the fields structure).
-     * @param int $localId Value of a local identifier that can be additionally assigned to an offer (scope: 1-9999999999999). Local identifiers are valid until transferring related offers to archive.
+     * @param string                                   $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param Allegro_Web_Api_ArrayOfFieldsvalue       $fields Array of structures containing information on sale form fields (their list can be loaded by using the doGetSellFormFieldsExt(Limit) method. When an identifier of a particular field is passed in the fid field, you need to send its value in an appropriate for its type fvalue field and pass empty string of characters [string] - sending 0 (numeric types) or logical value 'false' [boolean] in other fvalue fields. Pass only required or desirable fieds. http:/www.allegro.pl/webapi/documentation.php/show/id,1110 http://www.allegro.pl/webapi/documentation.php/show/id,1111
+     * @param int                                      $itemTemplateId Offer template identifier (when correct identifier is provided, filling out the fields structure is not required; in such case passing single values in the fields structure will overwrite values from the template but without changing the template; if itemTemplateOption is set to 1 it is possible to create new template on a basis of already existing one and fields passed in the fields structure).
+     * @param int                                      $localId Value of a local identifier that can be additionally assigned to an offer (scope: 1-9999999999999). Local identifiers are valid until transferring related offers to archive.
      * @param Allegro_Web_Api_ItemTemplateCreateStruct $itemTemplateCreate Structure containing information on an offer saved as a template.
-     * @param Allegro_Web_Api_ArrayOfVariantstruct $variants This structure includes information on item variants available within the listed offer.
-     * @param Allegro_Web_Api_ArrayOfTagnamestruct $tags (doesn't exist in documentation)
+     * @param Allegro_Web_Api_ArrayOfVariantstruct     $variants This structure includes information on item variants available within the listed offer.
+     * @param Allegro_Web_Api_ArrayOfTagnamestruct     $tags (doesn't exist in documentation)
      * @return Allegro_Web_Api_DoNewAuctionExtResponse
      */
     public function newAuctionExt($sessionId, $fields, $itemTemplateId = 0, $localId = 0,
@@ -1928,7 +1928,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1083?lang=en
      *
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
      * @param string $webapiKey User's WebAPI key.
      * @return Allegro_Web_Api_DoQueryAllSysStatusResponse Array of structures containing information on components and version keys.
      */
@@ -1944,8 +1944,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1079?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $sysvar Component whose value is to be loaded (3 - category's tree structure, 4 - fields of a sale form).
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $sysvar Component whose value is to be loaded (3 - category's tree structure, 4 - fields of a sale form).
      * @return Allegro_Web_Api_DoQuerySysStatusResponse
      */
     public function querySysStatus($webapiKey, $countryId, $sysvar = Allegro_Web_Api_DoQuerySysStatusRequest::SYSVAR_CATEGORY_TREE)
@@ -1959,7 +1959,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1181?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $usersIdArray Array of user identifiers (max. 25).
      * @return Allegro_Web_Api_DoRemoveFromBlackListResponse Array of structures containing information on operation results.
      */
@@ -1974,7 +1974,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1117?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $itemIds Array of offer identifiers (max. 25).
      * @return Allegro_Web_Api_DoRemoveFromWatchListResponse Array of structures containing information on operation results.
      */
@@ -1989,7 +1989,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1193?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                           $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfInt|int[] $itemTemplateIds Array of identifiers of offer templates.
      * @return Allegro_Web_Api_DoRemoveItemTemplatesResponse
      */
@@ -2005,7 +2005,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1126?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemId Offer identifier.
+     * @param int    $itemId Offer identifier.
      * @param string $requestCancelReason Bid cancellation reason.
      * @return Allegro_Web_Api_DoRequestCancelBidResponse Information on whether the request for bid cancellation has been sent successfully (1 - yes, 0 - no).
      */
@@ -2035,8 +2035,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1071?lang=en
      *
      * @param string $sessionId
-     * @param int $surchargeTransId
-     * @param float $surchargeValue
+     * @param int    $surchargeTransId
+     * @param float  $surchargeValue
      * @param string $surchargeMessage
      * @return Allegro_Web_Api_DoRequestSurchargeResponse Operation result (1 - request has been sent, 0 - request has not been sent).
      */
@@ -2051,7 +2051,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1100?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                        $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_SearchOptType $searchQuery Structure containing information defining search queries.
      * @return Allegro_Web_Api_DoSearchResponse
      */
@@ -2066,13 +2066,13 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1130?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $sellItemsArray Array of identifiers of offers to be relisted (max. 25).
-     * @param int $sellStartingTime Offer listing date (in the Unix time format). When offers are to be listed right away, pass 0.
-     * @param int $sellAuctionDuration Offer duration time expressed in days (acceptable values: 3, 5, 7, 10, 14 and 21 - last for: Russia, Ukraine, Romania and Serbia).
-     * @param int $sellOptions Parameter allowing to indicate additional actions to be taken after relisting offer (1 - remove source offers from the proper tab of My Allegro, 2 - send e-mail confirming listing offer, 3 - both).
-     * @param Allegro_Web_Api_ArrayOfInt|int[] $localIds Array of local identifiers to be additionally assigned to offers (range: 1-9999999999999).
-     * @param int $sellProlongOptions (doesn't exist in documentation)
+     * @param int                               $sellStartingTime Offer listing date (in the Unix time format). When offers are to be listed right away, pass 0.
+     * @param int                               $sellAuctionDuration Offer duration time expressed in days (acceptable values: 3, 5, 7, 10, 14 and 21 - last for: Russia, Ukraine, Romania and Serbia).
+     * @param int                               $sellOptions Parameter allowing to indicate additional actions to be taken after relisting offer (1 - remove source offers from the proper tab of My Allegro, 2 - send e-mail confirming listing offer, 3 - both).
+     * @param Allegro_Web_Api_ArrayOfInt|int[]  $localIds Array of local identifiers to be additionally assigned to offers (range: 1-9999999999999).
+     * @param int                               $sellProlongOptions (doesn't exist in documentation)
      * @return Allegro_Web_Api_DoSellSomeAgainResponse
      */
     public function sellSomeAgain($sessionId, $sellItemsArray,
@@ -2090,14 +2090,14 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1124?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfLong|int[] $sellItemsArray Array of identifiers of offers to be relisted (max. 25).
-     * @param int $sellStartingTime Offer listing date (in the Unix time format). When offers are to be listed right away, pass 0.
-     * @param int $sellShopDuration Offer duration time expressed in days (the only acceptable value for Allegro Shop is 30).
-     * @param int $sellShopOptions Parameter allowing to indicate additional actions to be taken after relisting offer (1 - remove source offers from the proper tab of My Allegro, 2 - send e-mail confirming listing offer, 3 - both).
-     * @param int $sellProlongOptions Parameter allowing to set offer relisting (0 - disable relisting offers, 1 - relisting offers with full set of items, 2 - relisting offers only with not sold items; default value is 0).
-     * @param int $sellShopCategory Identifier of a user categories from Allegro Shop (the list of shop categories of a logged-in user can be obtained by using the doGetShopCatsData method). When default value (0) is provided, offers will be listed in shop categories of source offers (if the shop category in the given source offer has not been selected, related offer will be listed in Other category).
-     * @param Allegro_Web_Api_ArrayOfInt|int[] $localIds Array of local identifiers to be additionally assigned to offers (range: 1-9999999999999).
+     * @param int                               $sellStartingTime Offer listing date (in the Unix time format). When offers are to be listed right away, pass 0.
+     * @param int                               $sellShopDuration Offer duration time expressed in days (the only acceptable value for Allegro Shop is 30).
+     * @param int                               $sellShopOptions Parameter allowing to indicate additional actions to be taken after relisting offer (1 - remove source offers from the proper tab of My Allegro, 2 - send e-mail confirming listing offer, 3 - both).
+     * @param int                               $sellProlongOptions Parameter allowing to set offer relisting (0 - disable relisting offers, 1 - relisting offers with full set of items, 2 - relisting offers only with not sold items; default value is 0).
+     * @param int                               $sellShopCategory Identifier of a user categories from Allegro Shop (the list of shop categories of a logged-in user can be obtained by using the doGetShopCatsData method). When default value (0) is provided, offers will be listed in shop categories of source offers (if the shop category in the given source offer has not been selected, related offer will be listed in Other category).
+     * @param Allegro_Web_Api_ArrayOfInt|int[]  $localIds Array of local identifiers to be additionally assigned to offers (range: 1-9999999999999).
      * @return Allegro_Web_Api_DoSellSomeAgainInShopResponse
      */
     public function sellSomeAgainInShop($sessionId, $sellItemsArray,
@@ -2119,11 +2119,11 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1156?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $mailToUserItemId (non-required if mailToUserReceiverId and mailToUserSubjectId have been provided) Offer identifier (for query: Ask a seller).
-     * @param int $mailToUserReceiverId (non-required if mailToUserItemId has been provided) User identifier (for query: Send an e-mail to a user).
-     * @param int $mailToUserSubjectId (required if mailToUserReceiverId has been provided) Option for a message subject (1 - Message to Allegro user, 2 - Item query, 3 - Message about delivery, 4 - Message about payment, 5 - Acknowledgment for transaction).
+     * @param int    $mailToUserItemId (non-required if mailToUserReceiverId and mailToUserSubjectId have been provided) Offer identifier (for query: Ask a seller).
+     * @param int    $mailToUserReceiverId (non-required if mailToUserItemId has been provided) User identifier (for query: Send an e-mail to a user).
+     * @param int    $mailToUserSubjectId (required if mailToUserReceiverId has been provided) Option for a message subject (1 - Message to Allegro user, 2 - Item query, 3 - Message about delivery, 4 - Message about payment, 5 - Acknowledgment for transaction).
      * @param string $mailToUserMessage Content of a message.
-     * @param int $mailToUserOption Option allowing to indicate whether a copy of the message is to be sent to a logged-in user (1 - yes, 0 - no). Default value is 0.
+     * @param int    $mailToUserOption Option allowing to indicate whether a copy of the message is to be sent to a logged-in user (1 - yes, 0 - no). Default value is 0.
      * @return Allegro_Web_Api_DoSendEmailToUserResponse
      */
     public function sendEmailToUser($sessionId, $mailToUserItemId, $mailToUserReceiverId,
@@ -2139,9 +2139,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1140?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param string                                            $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param Allegro_Web_Api_ArrayOfNewpostbuyformsellerstruct $newPostBuyFormSeller Array of structures containing information on sellers and offers that the form is to be filled out for.
-     * @param Allegro_Web_Api_NewPostBuyFormCommonStruct $newPostBuyFormCommon Structure with data from sale form fields.
+     * @param Allegro_Web_Api_NewPostBuyFormCommonStruct        $newPostBuyFormCommon Structure with data from sale form fields.
      * @return Allegro_Web_Api_DoSendPostBuyFormResponse
      */
     public function sendPostBuyForm($sessionId, Allegro_Web_Api_ArrayOfNewpostbuyformsellerstruct $newPostBuyFormSeller,
@@ -2157,9 +2157,9 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1462?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $dealId Identifier of a purchase transaction (received using doGetRefundsDeals).
-     * @param int $reasonId ID of a reason for commission refund (their list can be obtained using the doGetRefundsReasons method).
-     * @param int $refundQuantity Quantity for which the commission refund form is filled in.
+     * @param int    $dealId Identifier of a purchase transaction (received using doGetRefundsDeals).
+     * @param int    $reasonId ID of a reason for commission refund (their list can be obtained using the doGetRefundsReasons method).
+     * @param int    $refundQuantity Quantity for which the commission refund form is filled in.
      * @return Allegro_Web_Api_DoSendRefundFormResponse Commission refund form ID.
      */
     public function sendRefundForm($sessionId, $dealId, $reasonId, $refundQuantity)
@@ -2174,8 +2174,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,101542?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $activeFlag Status of free shipping limit (1 - deactivated, 2 - activated).
-     * @param float $freeDeliveryAmount Free shipping limit.
+     * @param int    $activeFlag Status of free shipping limit (1 - deactivated, 2 - activated).
+     * @param float  $freeDeliveryAmount Free shipping limit.
      * @return Allegro_Web_Api_DoSetFreeDeliveryAmountResponse Confirming successful operation (true).
      */
     public function setFreeDeliveryAmount($sessionId,
@@ -2192,7 +2192,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1322?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $shipmentPriceTypeId Identifier of the shipping costs calculation scheme (1 – the most expensive shipment, 2 – the cheapest shipment, 3 – consignments will be sent separately; the shipping cost is the sum of costs of shipping each consignment).
+     * @param int    $shipmentPriceTypeId Identifier of the shipping costs calculation scheme (1 – the most expensive shipment, 2 – the cheapest shipment, 3 – consignments will be sent separately; the shipping cost is the sum of costs of shipping each consignment).
      * @return Allegro_Web_Api_DoSetShipmentPriceTypeResponse Confirmation of transaction cancellation (1).
      */
     public function setShipmentPriceType($sessionId,
@@ -2209,8 +2209,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
      * @param string $userLogin Username.
-     * @param int $userCountryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param float $expireDate User's license expiration date.
+     * @param int    $userCountryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param float  $expireDate User's license expiration date.
      * @return Allegro_Web_Api_DoSetUserLicenceDateResponse Operation result (1 - success, 0 - fail).
      */
     public function setUserLicenceDate($sessionId, $userLogin, $userCountryId, $expireDate)
@@ -2224,17 +2224,17 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @todo test
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1129?lang=en
      *
-     * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $categoryId Category identifier (for 0 list of platform's main category will be returned - without ongoing offers; when main category identifiers are passed a list of first-tier subcategories of the given categories will be returned - also without ongoing offers).
-     * @param int $catItemState Region/province identifier appropriate for a country of a logged user (list of region identifiers can be loaded using the doGetStatesInfo method).
-     * @param int $catItemOption One value or sum of selected values should be selected (1 - only offers of Buy it Now! type [no bidding] will be returned, 2 - only offers of classified ads type will be returned, 4 - only bidding type offers will be returned, 8 - only offers with personal pickup will be returned, 16 - only offers with option of VAT invoice issuance will be returned, 32 - only offers supporting All for Planet foundation will be returned, 64 - only offers allowing unregistered users to make a purchase will be returned, 128 - only offers allowing for general delivery will be returned, 256 - only offers marked as Standard Allegro [PL]/Aukro Plus [CZ]/Super Offer [UA/KZ] will be returned, 512 - only offers with free shipping will be returned, 1024 - search among offers with option of delivery via NovayaPochta [UA], 2048 - search only among offers with 'New' value in the 'Status' parameter, 4096 - search only among offers with 'Used' value in the 'Status' parameter).
-     * @param Allegro_Web_Api_DurationTimeInfo $catItemDurationOption Structure containing information on offer's time of duration.
+     * @param string                             $sessionId User's session identifier received using the doLogin(Enc) method.
+     * @param int                                $categoryId Category identifier (for 0 list of platform's main category will be returned - without ongoing offers; when main category identifiers are passed a list of first-tier subcategories of the given categories will be returned - also without ongoing offers).
+     * @param int                                $catItemState Region/province identifier appropriate for a country of a logged user (list of region identifiers can be loaded using the doGetStatesInfo method).
+     * @param int                                $catItemOption One value or sum of selected values should be selected (1 - only offers of Buy it Now! type [no bidding] will be returned, 2 - only offers of classified ads type will be returned, 4 - only bidding type offers will be returned, 8 - only offers with personal pickup will be returned, 16 - only offers with option of VAT invoice issuance will be returned, 32 - only offers supporting All for Planet foundation will be returned, 64 - only offers allowing unregistered users to make a purchase will be returned, 128 - only offers allowing for general delivery will be returned, 256 - only offers marked as Standard Allegro [PL]/Aukro Plus [CZ]/Super Offer [UA/KZ] will be returned, 512 - only offers with free shipping will be returned, 1024 - search among offers with option of delivery via NovayaPochta [UA], 2048 - search only among offers with 'New' value in the 'Status' parameter, 4096 - search only among offers with 'Used' value in the 'Status' parameter).
+     * @param Allegro_Web_Api_DurationTimeInfo   $catItemDurationOption Structure containing information on offer's time of duration.
      * @param Allegro_Web_Api_ArrayOfFieldsvalue $catAttribFields Array of structures containing information on parameters in the given category (their list can be loaded using the doGetSellFormAttribs method. When an identifier of a particular parameter is passed in the fid field, you need to send its value in an appropriate for its type fvalue field and pass empty string of characters [string] - sending 0 (numeric types) or logical value 'false' [boolean] in other fvalue fields).
-     * @param int $catSortOptions Sorting the search result of offers (one value to be selected: 1 - sorting the result by offer ending time: ascending, 2 - sorting the result by offer ending time: descending, 3 - sorting the result alphabetically by offer title: ascending, 4 - sorting the result alphabetically by offer title: descending, 5 - sorting the result by item price: ascending, 6 - sorting the result by item price: descending, 7 - sorting the result by the number of offers: ascending, 8 - sorting the result by the number of offers, 16 - sorting the result by relevance: descending; default value is 1).
-     * @param Allegro_Web_Api_PriceCatInfo $catItemsPrice Structure containing information on offer's price scope.
-     * @param int $fulfillmentTime Time of realization (in hours: 24/48/72/96/120/168/240/336/504/999; 999 = 'more'). in UA/KZ it works as 'Sent within' with an additional value 1 ('immediately').
-     * @param int $limit Parameter which allows for defining a size of data portion (scope 1-100; 50 by default).
-     * @param int $offset Parameter which allows for controlling the process of loading new data portions (portion numbers are indexed from 0).
+     * @param int                                $catSortOptions Sorting the search result of offers (one value to be selected: 1 - sorting the result by offer ending time: ascending, 2 - sorting the result by offer ending time: descending, 3 - sorting the result alphabetically by offer title: ascending, 4 - sorting the result alphabetically by offer title: descending, 5 - sorting the result by item price: ascending, 6 - sorting the result by item price: descending, 7 - sorting the result by the number of offers: ascending, 8 - sorting the result by the number of offers, 16 - sorting the result by relevance: descending; default value is 1).
+     * @param Allegro_Web_Api_PriceCatInfo       $catItemsPrice Structure containing information on offer's price scope.
+     * @param int                                $fulfillmentTime Time of realization (in hours: 24/48/72/96/120/168/240/336/504/999; 999 = 'more'). in UA/KZ it works as 'Sent within' with an additional value 1 ('immediately').
+     * @param int                                $limit Parameter which allows for defining a size of data portion (scope 1-100; 50 by default).
+     * @param int                                $offset Parameter which allows for controlling the process of loading new data portions (portion numbers are indexed from 0).
      * @return Allegro_Web_Api_DoShowCatResponse
      */
     public function showCat($sessionId, $categoryId, $catItemState = 0, $catItemOption = 0,
@@ -2256,12 +2256,12 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1127?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $itemsId Offer identifier.
-     * @param int $getDesc Parameter indicating whether an offer description is to be loaded (1 - yes, 0 - no; default value: 0).
-     * @param int $getImageUrl Parameter indicating whether links to photos are to be loaded (1 - yes, 0 - no; default value: 0).
-     * @param int $getAttribs Parameter indicating whether a list of parameters assigned to an offer is to be loaded (1 - yes, 0 - no; default value: 0).
-     * @param int $getPostageOptions Parameter indicating whether shipment options for an offer are to be loaded (1 - yes, 0 - no; default value: 0).
-     * @param int $getCompanyInfo Parameter indicating whether data of a user listing the offer is to be loaded (it refers only to offers listed from company accounts; 1 - yes, 0 - no; default value: 0).
+     * @param int    $itemsId Offer identifier.
+     * @param int    $getDesc Parameter indicating whether an offer description is to be loaded (1 - yes, 0 - no; default value: 0).
+     * @param int    $getImageUrl Parameter indicating whether links to photos are to be loaded (1 - yes, 0 - no; default value: 0).
+     * @param int    $getAttribs Parameter indicating whether a list of parameters assigned to an offer is to be loaded (1 - yes, 0 - no; default value: 0).
+     * @param int    $getPostageOptions Parameter indicating whether shipment options for an offer are to be loaded (1 - yes, 0 - no; default value: 0).
+     * @param int    $getCompanyInfo Parameter indicating whether data of a user listing the offer is to be loaded (it refers only to offers listed from company accounts; 1 - yes, 0 - no; default value: 0).
      * @return Allegro_Web_Api_DoShowItemInfoExtResponse
      */
     public function showItemInfoExt($sessionId, $itemsId, $getDesc = 0, $getImageUrl = 0,
@@ -2277,8 +2277,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1125?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $userId User identifier.
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $userId User identifier.
      * @param string $userLogin can be used instead of $userId
      * @return Allegro_Web_Api_DoShowUserResponse
      */
@@ -2294,8 +2294,8 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1162?lang=en
      *
      * @param string $webapiKey User's WebAPI key.
-     * @param int $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
-     * @param int $userId User identifier.
+     * @param int    $countryId Country identifier (a list of country identifiers can be loaded using the doGetCountries method).
+     * @param int    $userId User identifier.
      * @return Allegro_Web_Api_DoShowUserPageResponse
      */
     public function showUserPage($webapiKey, $countryId, $userId)
@@ -2310,7 +2310,7 @@ class Allegro_Web_Api extends Allegro_Web_Api_ServiceService
      * @link http:/allegro.pl/webapi/documentation.php/show/id,1075?lang=en
      *
      * @param string $sessionId User's session identifier received using the doLogin(Enc) method.
-     * @param int $localId Value of a local identifier that has been passed while listing an offer using the doNewAuctionExt/doSellSomeAgain/doSellSomeAgainShop method.
+     * @param int    $localId Value of a local identifier that has been passed while listing an offer using the doNewAuctionExt/doSellSomeAgain/doSellSomeAgainShop method.
      * @return Allegro_Web_Api_DoVerifyItemResponse
      */
     public function verifyItem($sessionId, $localId)

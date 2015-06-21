@@ -30,15 +30,15 @@ class Allegro_Web_Api_DoRequestSurchargeRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $transactionId
-     * @param float $surchargeValue
+     * @param int    $transactionId
+     * @param float  $surchargeValue
      * @param string $surchargeMessageToBuyer
      */
     public function __construct($sessionHandle, $transactionId, $surchargeValue, $surchargeMessageToBuyer)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->transactionId = $transactionId;
-        $this->surchargeValue = $surchargeValue;
+        $this->sessionHandle           = $sessionHandle;
+        $this->transactionId           = $transactionId;
+        $this->surchargeValue          = $surchargeValue;
         $this->surchargeMessageToBuyer = $surchargeMessageToBuyer;
     }
 

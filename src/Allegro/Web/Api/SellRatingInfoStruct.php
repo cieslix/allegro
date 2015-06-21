@@ -24,15 +24,15 @@ class Allegro_Web_Api_SellRatingInfoStruct extends Allegro_Web_Api_Abstract
     protected $sellRatingReasons = null;
 
     /**
-     * @param int $sellRatingGroupId
-     * @param string $sellRatingGroupTitle
+     * @param int                                           $sellRatingGroupId
+     * @param string                                        $sellRatingGroupTitle
      * @param Allegro_Web_Api_ArrayOfSellratingreasonstruct $sellRatingReasons
      */
     public function __construct($sellRatingGroupId, $sellRatingGroupTitle, $sellRatingReasons)
     {
-        $this->sellRatingGroupId = $sellRatingGroupId;
+        $this->sellRatingGroupId    = $sellRatingGroupId;
         $this->sellRatingGroupTitle = $sellRatingGroupTitle;
-        $this->sellRatingReasons = $sellRatingReasons;
+        $this->sellRatingReasons    = $sellRatingReasons;
     }
 
     /**

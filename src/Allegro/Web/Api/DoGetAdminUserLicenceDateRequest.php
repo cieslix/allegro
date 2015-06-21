@@ -25,7 +25,7 @@ class Allegro_Web_Api_DoGetAdminUserLicenceDateRequest extends Allegro_Web_Api_A
     public function __construct($adminSessionHandle, $userLicLogin)
     {
         $this->adminSessionHandle = $adminSessionHandle;
-        $this->userLicLogin = $userLicLogin;
+        $this->userLicLogin       = $userLicLogin;
     }
 
     /**

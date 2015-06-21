@@ -25,7 +25,7 @@ class Allegro_Web_Api_InvoiceDataStruct extends Allegro_Web_Api_Abstract
     public function __construct($companyName, $companyNip)
     {
         $this->companyName = $companyName;
-        $this->companyNip = $companyNip;
+        $this->companyNip  = $companyNip;
     }
 
     /**

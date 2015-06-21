@@ -24,15 +24,15 @@ class Allegro_Web_Api_DoCheckNewAuctionExtRequest extends Allegro_Web_Api_Abstra
     protected $variants = null;
 
     /**
-     * @param string $sessionHandle
-     * @param Allegro_Web_Api_ArrayOfFieldsvalue $fields
+     * @param string                               $sessionHandle
+     * @param Allegro_Web_Api_ArrayOfFieldsvalue   $fields
      * @param Allegro_Web_Api_ArrayOfVariantstruct $variants
      */
     public function __construct($sessionHandle, $fields, $variants)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->fields = $fields;
-        $this->variants = $variants;
+        $this->fields        = $fields;
+        $this->variants      = $variants;
     }
 
     /**

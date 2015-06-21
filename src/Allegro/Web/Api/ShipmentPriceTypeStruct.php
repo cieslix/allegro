@@ -19,12 +19,12 @@ class Allegro_Web_Api_ShipmentPriceTypeStruct extends Allegro_Web_Api_Abstract
     protected $shipmentPriceTypeName = null;
 
     /**
-     * @param int $shipmentPriceTypeId
+     * @param int    $shipmentPriceTypeId
      * @param string $shipmentPriceTypeName
      */
     public function __construct($shipmentPriceTypeId, $shipmentPriceTypeName)
     {
-        $this->shipmentPriceTypeId = $shipmentPriceTypeId;
+        $this->shipmentPriceTypeId   = $shipmentPriceTypeId;
         $this->shipmentPriceTypeName = $shipmentPriceTypeName;
     }
 

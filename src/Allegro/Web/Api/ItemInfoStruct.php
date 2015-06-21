@@ -49,25 +49,25 @@ class Allegro_Web_Api_ItemInfoStruct extends Allegro_Web_Api_Abstract
     protected $itemProductInfo = null;
 
     /**
-     * @param Allegro_Web_Api_ItemInfo $itemInfo
-     * @param Allegro_Web_Api_ArrayOfItemcatlist $itemCats
+     * @param Allegro_Web_Api_ItemInfo             $itemInfo
+     * @param Allegro_Web_Api_ArrayOfItemcatlist   $itemCats
      * @param Allegro_Web_Api_ArrayOfItemimagelist $itemImages
-     * @param Allegro_Web_Api_ArrayOfAttribstruct $itemAttribs
+     * @param Allegro_Web_Api_ArrayOfAttribstruct  $itemAttribs
      * @param Allegro_Web_Api_ArrayOfPostagestruct $itemPostageOptions
-     * @param Allegro_Web_Api_ItemPaymentOptions $itemPaymentOptions
-     * @param Allegro_Web_Api_CompanyInfoStruct $itemCompanyInfo
-     * @param Allegro_Web_Api_ProductStruct $itemProductInfo
+     * @param Allegro_Web_Api_ItemPaymentOptions   $itemPaymentOptions
+     * @param Allegro_Web_Api_CompanyInfoStruct    $itemCompanyInfo
+     * @param Allegro_Web_Api_ProductStruct        $itemProductInfo
      */
     public function __construct($itemInfo, $itemCats, $itemImages, $itemAttribs, $itemPostageOptions, $itemPaymentOptions, $itemCompanyInfo, $itemProductInfo)
     {
-        $this->itemInfo = $itemInfo;
-        $this->itemCats = $itemCats;
-        $this->itemImages = $itemImages;
-        $this->itemAttribs = $itemAttribs;
+        $this->itemInfo           = $itemInfo;
+        $this->itemCats           = $itemCats;
+        $this->itemImages         = $itemImages;
+        $this->itemAttribs        = $itemAttribs;
         $this->itemPostageOptions = $itemPostageOptions;
         $this->itemPaymentOptions = $itemPaymentOptions;
-        $this->itemCompanyInfo = $itemCompanyInfo;
-        $this->itemProductInfo = $itemProductInfo;
+        $this->itemCompanyInfo    = $itemCompanyInfo;
+        $this->itemProductInfo    = $itemProductInfo;
     }
 
     /**

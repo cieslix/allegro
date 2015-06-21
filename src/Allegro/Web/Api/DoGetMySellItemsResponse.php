@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetMySellItemsResponse extends Allegro_Web_Api_Abstract
     protected $sellItemsList = null;
 
     /**
-     * @param int $sellItemsCounter
+     * @param int                                   $sellItemsCounter
      * @param Allegro_Web_Api_ArrayOfSellitemstruct $sellItemsList
      */
     public function __construct($sellItemsCounter, $sellItemsList)
     {
         $this->sellItemsCounter = $sellItemsCounter;
-        $this->sellItemsList = $sellItemsList;
+        $this->sellItemsList    = $sellItemsList;
     }
 
     /**

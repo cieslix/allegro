@@ -8,7 +8,7 @@
  */
 class Allegro_Web_Api_DoMyBillingItemRequest extends Allegro_Web_Api_Abstract
 {
-    const OPTION_SUMMARY_COST = 'S';
+    const OPTION_SUMMARY_COST  = 'S';
     const OPTION_DETAILED_COST = 'F';
 
     /**
@@ -28,14 +28,14 @@ class Allegro_Web_Api_DoMyBillingItemRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $itemId
+     * @param int    $itemId
      * @param string $option
      */
     public function __construct($sessionHandle, $itemId, $option)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->itemId = $itemId;
-        $this->option = $option;
+        $this->itemId        = $itemId;
+        $this->option        = $option;
     }
 
     /**

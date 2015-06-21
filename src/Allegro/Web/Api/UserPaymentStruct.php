@@ -54,27 +54,27 @@ class Allegro_Web_Api_UserPaymentStruct extends Allegro_Web_Api_Abstract
     protected $payTransIncomplete = null;
 
     /**
-     * @param int $payTransId
+     * @param int                                         $payTransId
      * @param Allegro_Web_Api_ArrayOfPaymentsellersstruct $payTransSellers
-     * @param string $payTransType
-     * @param string $payTransStatus
-     * @param float $payTransAmount
-     * @param int $payTransCreateDate
-     * @param float $payTransPrice
-     * @param float $payTransPostageAmount
-     * @param int $payTransIncomplete
+     * @param string                                      $payTransType
+     * @param string                                      $payTransStatus
+     * @param float                                       $payTransAmount
+     * @param int                                         $payTransCreateDate
+     * @param float                                       $payTransPrice
+     * @param float                                       $payTransPostageAmount
+     * @param int                                         $payTransIncomplete
      */
     public function __construct($payTransId, $payTransSellers, $payTransType, $payTransStatus, $payTransAmount, $payTransCreateDate, $payTransPrice, $payTransPostageAmount, $payTransIncomplete)
     {
-        $this->payTransId = $payTransId;
-        $this->payTransSellers = $payTransSellers;
-        $this->payTransType = $payTransType;
-        $this->payTransStatus = $payTransStatus;
-        $this->payTransAmount = $payTransAmount;
-        $this->payTransCreateDate = $payTransCreateDate;
-        $this->payTransPrice = $payTransPrice;
+        $this->payTransId            = $payTransId;
+        $this->payTransSellers       = $payTransSellers;
+        $this->payTransType          = $payTransType;
+        $this->payTransStatus        = $payTransStatus;
+        $this->payTransAmount        = $payTransAmount;
+        $this->payTransCreateDate    = $payTransCreateDate;
+        $this->payTransPrice         = $payTransPrice;
         $this->payTransPostageAmount = $payTransPostageAmount;
-        $this->payTransIncomplete = $payTransIncomplete;
+        $this->payTransIncomplete    = $payTransIncomplete;
     }
 
     /**

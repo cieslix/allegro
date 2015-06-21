@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoSearchRequest extends Allegro_Web_Api_Abstract
     protected $searchQuery = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                        $sessionHandle
      * @param Allegro_Web_Api_SearchOptType $searchQuery
      */
     public function __construct($sessionHandle, $searchQuery)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->searchQuery = $searchQuery;
+        $this->searchQuery   = $searchQuery;
     }
 
     /**

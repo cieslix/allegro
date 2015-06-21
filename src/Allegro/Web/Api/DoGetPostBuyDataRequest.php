@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetPostBuyDataRequest extends Allegro_Web_Api_Abstract
     protected $itemsArray = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                      $sessionHandle
      * @param Allegro_Web_Api_ArrayOfLong $itemsArray
      */
     public function __construct($sessionHandle, $itemsArray)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->itemsArray = $itemsArray;
+        $this->itemsArray    = $itemsArray;
     }
 
     /**

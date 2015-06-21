@@ -24,7 +24,7 @@ class Allegro_Web_Api_DoMyBillingItemResponse extends Allegro_Web_Api_Abstract
      */
     public function __construct($entryFees, $endingFees)
     {
-        $this->entryFees = $entryFees;
+        $this->entryFees  = $entryFees;
         $this->endingFees = $endingFees;
     }
 

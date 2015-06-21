@@ -34,18 +34,18 @@ class Allegro_Web_Api_DoGetCatsDataLimitRequest extends Allegro_Web_Api_Abstract
     protected $packageElement = null;
 
     /**
-     * @param int $countryId
-     * @param int $localVersion
+     * @param int    $countryId
+     * @param int    $localVersion
      * @param string $webapiKey
-     * @param int $offset
-     * @param int $packageElement
+     * @param int    $offset
+     * @param int    $packageElement
      */
     public function __construct($countryId, $localVersion, $webapiKey, $offset, $packageElement)
     {
-        $this->countryId = $countryId;
-        $this->localVersion = $localVersion;
-        $this->webapiKey = $webapiKey;
-        $this->offset = $offset;
+        $this->countryId      = $countryId;
+        $this->localVersion   = $localVersion;
+        $this->webapiKey      = $webapiKey;
+        $this->offset         = $offset;
         $this->packageElement = $packageElement;
     }
 

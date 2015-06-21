@@ -24,7 +24,7 @@ class Allegro_Web_Api_RemovedItemTemplatesStruct extends Allegro_Web_Api_Abstrac
      */
     public function __construct($itemTemplateIds, $itemTemplateIncorrectIds)
     {
-        $this->itemTemplateIds = $itemTemplateIds;
+        $this->itemTemplateIds          = $itemTemplateIds;
         $this->itemTemplateIncorrectIds = $itemTemplateIncorrectIds;
     }
 

@@ -30,9 +30,9 @@ class Allegro_Web_Api_DoShowUserPageResponse extends Allegro_Web_Api_Abstract
      */
     public function __construct($userPageContent, $userPagePharmacyPermit, $userPageAlcoholPermit)
     {
-        $this->userPageContent = $userPageContent;
+        $this->userPageContent        = $userPageContent;
         $this->userPagePharmacyPermit = $userPagePharmacyPermit;
-        $this->userPageAlcoholPermit = $userPageAlcoholPermit;
+        $this->userPageAlcoholPermit  = $userPageAlcoholPermit;
     }
 
     /**

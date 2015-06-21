@@ -39,21 +39,21 @@ class Allegro_Web_Api_DoShowCatResponse extends Allegro_Web_Api_Abstract
     protected $catItemsArray = null;
 
     /**
-     * @param Allegro_Web_Api_ArrayOfInfocatlist $catParentArray
-     * @param Allegro_Web_Api_ArrayOfInfocatlist $catChildArray
-     * @param Allegro_Web_Api_ArrayOfInfocatlist $catSisterArray
-     * @param int $catItemsCount
-     * @param int $catItemsCountFeatured
+     * @param Allegro_Web_Api_ArrayOfInfocatlist        $catParentArray
+     * @param Allegro_Web_Api_ArrayOfInfocatlist        $catChildArray
+     * @param Allegro_Web_Api_ArrayOfInfocatlist        $catSisterArray
+     * @param int                                       $catItemsCount
+     * @param int                                       $catItemsCountFeatured
      * @param Allegro_Web_Api_ArrayOfSearchresponsetype $catItemsArray
      */
     public function __construct($catParentArray, $catChildArray, $catSisterArray, $catItemsCount, $catItemsCountFeatured, $catItemsArray)
     {
-        $this->catParentArray = $catParentArray;
-        $this->catChildArray = $catChildArray;
-        $this->catSisterArray = $catSisterArray;
-        $this->catItemsCount = $catItemsCount;
+        $this->catParentArray        = $catParentArray;
+        $this->catChildArray         = $catChildArray;
+        $this->catSisterArray        = $catSisterArray;
+        $this->catItemsCount         = $catItemsCount;
         $this->catItemsCountFeatured = $catItemsCountFeatured;
-        $this->catItemsArray = $catItemsArray;
+        $this->catItemsArray         = $catItemsArray;
     }
 
     /**

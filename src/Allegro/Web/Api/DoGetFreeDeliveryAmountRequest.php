@@ -24,13 +24,13 @@ class Allegro_Web_Api_DoGetFreeDeliveryAmountRequest extends Allegro_Web_Api_Abs
     protected $webapiKey = null;
 
     /**
-     * @param int $userId
-     * @param int $countryId
+     * @param int    $userId
+     * @param int    $countryId
      * @param string $webapiKey
      */
     public function __construct($userId, $countryId, $webapiKey)
     {
-        $this->userId = $userId;
+        $this->userId    = $userId;
         $this->countryId = $countryId;
         $this->webapiKey = $webapiKey;
     }

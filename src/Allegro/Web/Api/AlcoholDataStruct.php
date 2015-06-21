@@ -76,26 +76,26 @@ class Allegro_Web_Api_AlcoholDataStruct extends Allegro_Web_Api_Abstract
      * @param string $alcoholShopPostcode
      * @param string $alcoholShopCity
      * @param string $alcoholShopCommune
-     * @param int $alcoholShopCountryId
-     * @param int $alcoholShopStateId
+     * @param int    $alcoholShopCountryId
+     * @param int    $alcoholShopStateId
      * @param string $alcoholPermitNumber
      * @param string $alcoholPermitAuthority
      * @param string $alcoholPermitInfo
      */
     public function __construct($alcoholOpeningDate, $alcoholExpirationDate, $alcoholShopName, $alcoholShopAddress, $alcoholShopPostcode, $alcoholShopCity, $alcoholShopCommune, $alcoholShopCountryId, $alcoholShopStateId, $alcoholPermitNumber, $alcoholPermitAuthority, $alcoholPermitInfo)
     {
-        $this->alcoholOpeningDate = $alcoholOpeningDate;
-        $this->alcoholExpirationDate = $alcoholExpirationDate;
-        $this->alcoholShopName = $alcoholShopName;
-        $this->alcoholShopAddress = $alcoholShopAddress;
-        $this->alcoholShopPostcode = $alcoholShopPostcode;
-        $this->alcoholShopCity = $alcoholShopCity;
-        $this->alcoholShopCommune = $alcoholShopCommune;
-        $this->alcoholShopCountryId = $alcoholShopCountryId;
-        $this->alcoholShopStateId = $alcoholShopStateId;
-        $this->alcoholPermitNumber = $alcoholPermitNumber;
+        $this->alcoholOpeningDate     = $alcoholOpeningDate;
+        $this->alcoholExpirationDate  = $alcoholExpirationDate;
+        $this->alcoholShopName        = $alcoholShopName;
+        $this->alcoholShopAddress     = $alcoholShopAddress;
+        $this->alcoholShopPostcode    = $alcoholShopPostcode;
+        $this->alcoholShopCity        = $alcoholShopCity;
+        $this->alcoholShopCommune     = $alcoholShopCommune;
+        $this->alcoholShopCountryId   = $alcoholShopCountryId;
+        $this->alcoholShopStateId     = $alcoholShopStateId;
+        $this->alcoholPermitNumber    = $alcoholPermitNumber;
         $this->alcoholPermitAuthority = $alcoholPermitAuthority;
-        $this->alcoholPermitInfo = $alcoholPermitInfo;
+        $this->alcoholPermitInfo      = $alcoholPermitInfo;
     }
 
     /**

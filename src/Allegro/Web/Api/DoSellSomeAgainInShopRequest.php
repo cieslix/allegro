@@ -10,12 +10,12 @@ class Allegro_Web_Api_DoSellSomeAgainInShopRequest extends Allegro_Web_Api_Abstr
 {
     const AUCTION_DURATION_30DAYS = 30;
 
-    const OPTION_REMOVE_SOURCE = 1;
+    const OPTION_REMOVE_SOURCE      = 1;
     const OPTION_SEND_CONFIRM_EMAIL = 2;
-    const OPTION_BOTH = 3;
+    const OPTION_BOTH               = 3;
 
     const PROLONG_OPTION_DISABLED = 0;
-    const PROLONG_OPTION_ALL = 1;
+    const PROLONG_OPTION_ALL      = 1;
     const PROLONG_OPTION_NOT_SOLD = 2;
 
     /**
@@ -59,25 +59,25 @@ class Allegro_Web_Api_DoSellSomeAgainInShopRequest extends Allegro_Web_Api_Abstr
     protected $localIds = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                      $sessionHandle
      * @param Allegro_Web_Api_ArrayOfLong $sellItemsArray
-     * @param int $sellStartingTime
-     * @param int $sellShopDuration
-     * @param int $sellShopOptions
-     * @param int $sellProlongOptions
-     * @param int $sellShopCategory
-     * @param Allegro_Web_Api_ArrayOfInt $localIds
+     * @param int                         $sellStartingTime
+     * @param int                         $sellShopDuration
+     * @param int                         $sellShopOptions
+     * @param int                         $sellProlongOptions
+     * @param int                         $sellShopCategory
+     * @param Allegro_Web_Api_ArrayOfInt  $localIds
      */
     public function __construct($sessionHandle, $sellItemsArray, $sellStartingTime, $sellShopDuration, $sellShopOptions, $sellProlongOptions, $sellShopCategory, $localIds)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->sellItemsArray = $sellItemsArray;
-        $this->sellStartingTime = $sellStartingTime;
-        $this->sellShopDuration = $sellShopDuration;
-        $this->sellShopOptions = $sellShopOptions;
+        $this->sessionHandle      = $sessionHandle;
+        $this->sellItemsArray     = $sellItemsArray;
+        $this->sellStartingTime   = $sellStartingTime;
+        $this->sellShopDuration   = $sellShopDuration;
+        $this->sellShopOptions    = $sellShopOptions;
         $this->sellProlongOptions = $sellProlongOptions;
-        $this->sellShopCategory = $sellShopCategory;
-        $this->localIds = $localIds;
+        $this->sellShopCategory   = $sellShopCategory;
+        $this->localIds           = $localIds;
     }
 
     /**

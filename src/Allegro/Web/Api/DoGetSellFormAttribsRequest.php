@@ -29,17 +29,17 @@ class Allegro_Web_Api_DoGetSellFormAttribsRequest extends Allegro_Web_Api_Abstra
     protected $catId = null;
 
     /**
-     * @param int $countryId
+     * @param int    $countryId
      * @param string $webapiKey
-     * @param int $localVersion
-     * @param int $catId
+     * @param int    $localVersion
+     * @param int    $catId
      */
     public function __construct($countryId, $webapiKey, $localVersion, $catId)
     {
-        $this->countryId = $countryId;
-        $this->webapiKey = $webapiKey;
+        $this->countryId    = $countryId;
+        $this->webapiKey    = $webapiKey;
         $this->localVersion = $localVersion;
-        $this->catId = $catId;
+        $this->catId        = $catId;
     }
 
     /**

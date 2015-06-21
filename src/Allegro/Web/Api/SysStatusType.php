@@ -49,25 +49,25 @@ class Allegro_Web_Api_SysStatusType extends Allegro_Web_Api_Abstract
     protected $verKey = null;
 
     /**
-     * @param int $countryId
+     * @param int    $countryId
      * @param string $programVersion
      * @param string $catsVersion
      * @param string $apiVersion
      * @param string $attribVersion
      * @param string $formSellVersion
      * @param string $siteVersion
-     * @param int $verKey
+     * @param int    $verKey
      */
     public function __construct($countryId, $programVersion, $catsVersion, $apiVersion, $attribVersion, $formSellVersion, $siteVersion, $verKey)
     {
-        $this->countryId = $countryId;
-        $this->programVersion = $programVersion;
-        $this->catsVersion = $catsVersion;
-        $this->apiVersion = $apiVersion;
-        $this->attribVersion = $attribVersion;
+        $this->countryId       = $countryId;
+        $this->programVersion  = $programVersion;
+        $this->catsVersion     = $catsVersion;
+        $this->apiVersion      = $apiVersion;
+        $this->attribVersion   = $attribVersion;
         $this->formSellVersion = $formSellVersion;
-        $this->siteVersion = $siteVersion;
-        $this->verKey = $verKey;
+        $this->siteVersion     = $siteVersion;
+        $this->verKey          = $verKey;
     }
 
     /**

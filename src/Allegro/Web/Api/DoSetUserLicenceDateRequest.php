@@ -31,15 +31,15 @@ class Allegro_Web_Api_DoSetUserLicenceDateRequest extends Allegro_Web_Api_Abstra
     /**
      * @param string $adminSessionHandle
      * @param string $userLicLogin
-     * @param int $userLicCountry
-     * @param float $userLicDate
+     * @param int    $userLicCountry
+     * @param float  $userLicDate
      */
     public function __construct($adminSessionHandle, $userLicLogin, $userLicCountry, $userLicDate)
     {
         $this->adminSessionHandle = $adminSessionHandle;
-        $this->userLicLogin = $userLicLogin;
-        $this->userLicCountry = $userLicCountry;
-        $this->userLicDate = $userLicDate;
+        $this->userLicLogin       = $userLicLogin;
+        $this->userLicCountry     = $userLicCountry;
+        $this->userLicDate        = $userLicDate;
     }
 
     /**

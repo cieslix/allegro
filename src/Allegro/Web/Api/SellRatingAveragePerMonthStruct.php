@@ -19,12 +19,12 @@ class Allegro_Web_Api_SellRatingAveragePerMonthStruct extends Allegro_Web_Api_Ab
     protected $sellRatingAverageValues = null;
 
     /**
-     * @param string $sellRatingMonth
+     * @param string                                       $sellRatingMonth
      * @param Allegro_Web_Api_ArrayOfSellratingstatsstruct $sellRatingAverageValues
      */
     public function __construct($sellRatingMonth, $sellRatingAverageValues)
     {
-        $this->sellRatingMonth = $sellRatingMonth;
+        $this->sellRatingMonth         = $sellRatingMonth;
         $this->sellRatingAverageValues = $sellRatingAverageValues;
     }
 

@@ -54,27 +54,27 @@ class Allegro_Web_Api_DoShowItemInfoExtResponse extends Allegro_Web_Api_Abstract
     protected $itemVariants = null;
 
     /**
-     * @param Allegro_Web_Api_ItemInfoExt $itemListInfoExt
-     * @param Allegro_Web_Api_ArrayOfItemcatlist $itemCatPath
-     * @param Allegro_Web_Api_ArrayOfItemimagelist $itemImgList
-     * @param Allegro_Web_Api_ArrayOfAttribstruct $itemAttribList
-     * @param Allegro_Web_Api_ArrayOfPostagestruct $itemPostageOptions
-     * @param Allegro_Web_Api_ItemPaymentOptions $itemPaymentOptions
-     * @param Allegro_Web_Api_CompanyInfoStruct $itemCompanyInfo
-     * @param Allegro_Web_Api_ProductStruct $itemProductInfo
+     * @param Allegro_Web_Api_ItemInfoExt              $itemListInfoExt
+     * @param Allegro_Web_Api_ArrayOfItemcatlist       $itemCatPath
+     * @param Allegro_Web_Api_ArrayOfItemimagelist     $itemImgList
+     * @param Allegro_Web_Api_ArrayOfAttribstruct      $itemAttribList
+     * @param Allegro_Web_Api_ArrayOfPostagestruct     $itemPostageOptions
+     * @param Allegro_Web_Api_ItemPaymentOptions       $itemPaymentOptions
+     * @param Allegro_Web_Api_CompanyInfoStruct        $itemCompanyInfo
+     * @param Allegro_Web_Api_ProductStruct            $itemProductInfo
      * @param Allegro_Web_Api_ArrayOfItemvariantstruct $itemVariants
      */
     public function __construct($itemListInfoExt, $itemCatPath, $itemImgList, $itemAttribList, $itemPostageOptions, $itemPaymentOptions, $itemCompanyInfo, $itemProductInfo, $itemVariants)
     {
-        $this->itemListInfoExt = $itemListInfoExt;
-        $this->itemCatPath = $itemCatPath;
-        $this->itemImgList = $itemImgList;
-        $this->itemAttribList = $itemAttribList;
+        $this->itemListInfoExt    = $itemListInfoExt;
+        $this->itemCatPath        = $itemCatPath;
+        $this->itemImgList        = $itemImgList;
+        $this->itemAttribList     = $itemAttribList;
         $this->itemPostageOptions = $itemPostageOptions;
         $this->itemPaymentOptions = $itemPaymentOptions;
-        $this->itemCompanyInfo = $itemCompanyInfo;
-        $this->itemProductInfo = $itemProductInfo;
-        $this->itemVariants = $itemVariants;
+        $this->itemCompanyInfo    = $itemCompanyInfo;
+        $this->itemProductInfo    = $itemProductInfo;
+        $this->itemVariants       = $itemVariants;
     }
 
     /**

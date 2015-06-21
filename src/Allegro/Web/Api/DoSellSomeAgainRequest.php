@@ -8,17 +8,17 @@
  */
 class Allegro_Web_Api_DoSellSomeAgainRequest extends Allegro_Web_Api_Abstract
 {
-    const AUCTION_DURATION_3DAYS = 3;
-    const AUCTION_DURATION_5DAYS = 5;
-    const AUCTION_DURATION_7DAYS = 7;
+    const AUCTION_DURATION_3DAYS  = 3;
+    const AUCTION_DURATION_5DAYS  = 5;
+    const AUCTION_DURATION_7DAYS  = 7;
     const AUCTION_DURATION_10DAYS = 10;
     const AUCTION_DURATION_14DAYS = 14;
     const AUCTION_DURATION_21DAYS = 21; //available only in: Russia, Ukraine, Romania and Serbia)
 
-    const OPTION_REMOVE_SOURCE = 1;
+    const OPTION_REMOVE_SOURCE      = 1;
     const OPTION_SEND_CONFIRM_EMAIL = 2;
-    const OPTION_BOTH = 3;
-    
+    const OPTION_BOTH               = 3;
+
     /**
      * @var string $sessionHandle
      */
@@ -55,23 +55,23 @@ class Allegro_Web_Api_DoSellSomeAgainRequest extends Allegro_Web_Api_Abstract
     protected $sellProlongOptions = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                      $sessionHandle
      * @param Allegro_Web_Api_ArrayOfLong $sellItemsArray
-     * @param int $sellStartingTime
-     * @param int $sellAuctionDuration
-     * @param int $sellOptions
-     * @param Allegro_Web_Api_ArrayOfInt $localIds
-     * @param int $sellProlongOptions
+     * @param int                         $sellStartingTime
+     * @param int                         $sellAuctionDuration
+     * @param int                         $sellOptions
+     * @param Allegro_Web_Api_ArrayOfInt  $localIds
+     * @param int                         $sellProlongOptions
      */
     public function __construct($sessionHandle, $sellItemsArray, $sellStartingTime, $sellAuctionDuration, $sellOptions, $localIds, $sellProlongOptions)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->sellItemsArray = $sellItemsArray;
-        $this->sellStartingTime = $sellStartingTime;
+        $this->sessionHandle       = $sessionHandle;
+        $this->sellItemsArray      = $sellItemsArray;
+        $this->sellStartingTime    = $sellStartingTime;
         $this->sellAuctionDuration = $sellAuctionDuration;
-        $this->sellOptions = $sellOptions;
-        $this->localIds = $localIds;
-        $this->sellProlongOptions = $sellProlongOptions;
+        $this->sellOptions         = $sellOptions;
+        $this->localIds            = $localIds;
+        $this->sellProlongOptions  = $sellProlongOptions;
     }
 
     /**

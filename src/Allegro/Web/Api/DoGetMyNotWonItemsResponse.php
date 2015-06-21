@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetMyNotWonItemsResponse extends Allegro_Web_Api_Abstrac
     protected $notWonItemsList = null;
 
     /**
-     * @param int $notWonItemsCounter
+     * @param int                                     $notWonItemsCounter
      * @param Allegro_Web_Api_ArrayOfNotwonitemstruct $notWonItemsList
      */
     public function __construct($notWonItemsCounter, $notWonItemsList)
     {
         $this->notWonItemsCounter = $notWonItemsCounter;
-        $this->notWonItemsList = $notWonItemsList;
+        $this->notWonItemsList    = $notWonItemsList;
     }
 
     /**

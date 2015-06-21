@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoSendEmailToUserResponse extends Allegro_Web_Api_Abstract
     protected $mailToUserResult = null;
 
     /**
-     * @param int $mailToUserReceiverId
+     * @param int    $mailToUserReceiverId
      * @param string $mailToUserResult
      */
     public function __construct($mailToUserReceiverId, $mailToUserResult)
     {
         $this->mailToUserReceiverId = $mailToUserReceiverId;
-        $this->mailToUserResult = $mailToUserResult;
+        $this->mailToUserResult     = $mailToUserResult;
     }
 
     /**

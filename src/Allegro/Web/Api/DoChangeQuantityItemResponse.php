@@ -29,15 +29,15 @@ class Allegro_Web_Api_DoChangeQuantityItemResponse extends Allegro_Web_Api_Abstr
     protected $itemQuantitySold = null;
 
     /**
-     * @param int $itemId
+     * @param int    $itemId
      * @param string $itemInfo
-     * @param int $itemQuantityLeft
-     * @param int $itemQuantitySold
+     * @param int    $itemQuantityLeft
+     * @param int    $itemQuantitySold
      */
     public function __construct($itemId, $itemInfo, $itemQuantityLeft, $itemQuantitySold)
     {
-        $this->itemId = $itemId;
-        $this->itemInfo = $itemInfo;
+        $this->itemId           = $itemId;
+        $this->itemInfo         = $itemInfo;
         $this->itemQuantityLeft = $itemQuantityLeft;
         $this->itemQuantitySold = $itemQuantitySold;
     }

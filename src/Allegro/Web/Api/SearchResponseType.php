@@ -154,67 +154,67 @@ class Allegro_Web_Api_SearchResponseType extends Allegro_Web_Api_Abstract
     protected $sItFulfillmentTime = null;
 
     /**
-     * @param int $sItId
-     * @param string $sItName
-     * @param float $sItPrice
-     * @param float $sItStartingPrice
-     * @param int $sItIsBuyNow
-     * @param float $sItBuyNowPrice
-     * @param int $sItBidCount
-     * @param int $sItFotoCount
-     * @param int $sItStartingTime
-     * @param int $sItEndingTime
-     * @param int $sItTimeLeft
-     * @param string $sItCity
-     * @param int $sItState
-     * @param int $sItCountry
-     * @param int $sItCategoryId
-     * @param int $sItFeatured
-     * @param string $sItThumbUrl
-     * @param int $sItThumb
-     * @param float $sItPostage
-     * @param int $sItIsForGuests
-     * @param int $sItIsTablicaAdvert
-     * @param int $sItIsAllegroStandard
-     * @param int $sItHasFreeShipping
-     * @param int $sItInstallmentsAvailable
-     * @param int $sItOrderFulfillmentTime
-     * @param AdvertInfoStruct $sItAdvertInfo
-     * @param Allegro_Web_Api_SellerInfoStruct $sItSellerInfo
+     * @param int                                 $sItId
+     * @param string                              $sItName
+     * @param float                               $sItPrice
+     * @param float                               $sItStartingPrice
+     * @param int                                 $sItIsBuyNow
+     * @param float                               $sItBuyNowPrice
+     * @param int                                 $sItBidCount
+     * @param int                                 $sItFotoCount
+     * @param int                                 $sItStartingTime
+     * @param int                                 $sItEndingTime
+     * @param int                                 $sItTimeLeft
+     * @param string                              $sItCity
+     * @param int                                 $sItState
+     * @param int                                 $sItCountry
+     * @param int                                 $sItCategoryId
+     * @param int                                 $sItFeatured
+     * @param string                              $sItThumbUrl
+     * @param int                                 $sItThumb
+     * @param float                               $sItPostage
+     * @param int                                 $sItIsForGuests
+     * @param int                                 $sItIsTablicaAdvert
+     * @param int                                 $sItIsAllegroStandard
+     * @param int                                 $sItHasFreeShipping
+     * @param int                                 $sItInstallmentsAvailable
+     * @param int                                 $sItOrderFulfillmentTime
+     * @param AdvertInfoStruct                    $sItAdvertInfo
+     * @param Allegro_Web_Api_SellerInfoStruct    $sItSellerInfo
      * @param Allegro_Web_Api_ArrayOfAttribstruct $sItAttribsList
-     * @param int $sItFulfillmentTime
+     * @param int                                 $sItFulfillmentTime
      */
     public function __construct($sItId, $sItName, $sItPrice, $sItStartingPrice, $sItIsBuyNow, $sItBuyNowPrice, $sItBidCount, $sItFotoCount, $sItStartingTime, $sItEndingTime, $sItTimeLeft, $sItCity, $sItState, $sItCountry, $sItCategoryId, $sItFeatured, $sItThumbUrl, $sItThumb, $sItPostage, $sItIsForGuests, $sItIsTablicaAdvert, $sItIsAllegroStandard, $sItHasFreeShipping, $sItInstallmentsAvailable, $sItOrderFulfillmentTime, $sItAdvertInfo, $sItSellerInfo, $sItAttribsList, $sItFulfillmentTime)
     {
-        $this->sItId = $sItId;
-        $this->sItName = $sItName;
-        $this->sItPrice = $sItPrice;
-        $this->sItStartingPrice = $sItStartingPrice;
-        $this->sItIsBuyNow = $sItIsBuyNow;
-        $this->sItBuyNowPrice = $sItBuyNowPrice;
-        $this->sItBidCount = $sItBidCount;
-        $this->sItFotoCount = $sItFotoCount;
-        $this->sItStartingTime = $sItStartingTime;
-        $this->sItEndingTime = $sItEndingTime;
-        $this->sItTimeLeft = $sItTimeLeft;
-        $this->sItCity = $sItCity;
-        $this->sItState = $sItState;
-        $this->sItCountry = $sItCountry;
-        $this->sItCategoryId = $sItCategoryId;
-        $this->sItFeatured = $sItFeatured;
-        $this->sItThumbUrl = $sItThumbUrl;
-        $this->sItThumb = $sItThumb;
-        $this->sItPostage = $sItPostage;
-        $this->sItIsForGuests = $sItIsForGuests;
-        $this->sItIsTablicaAdvert = $sItIsTablicaAdvert;
-        $this->sItIsAllegroStandard = $sItIsAllegroStandard;
-        $this->sItHasFreeShipping = $sItHasFreeShipping;
+        $this->sItId                    = $sItId;
+        $this->sItName                  = $sItName;
+        $this->sItPrice                 = $sItPrice;
+        $this->sItStartingPrice         = $sItStartingPrice;
+        $this->sItIsBuyNow              = $sItIsBuyNow;
+        $this->sItBuyNowPrice           = $sItBuyNowPrice;
+        $this->sItBidCount              = $sItBidCount;
+        $this->sItFotoCount             = $sItFotoCount;
+        $this->sItStartingTime          = $sItStartingTime;
+        $this->sItEndingTime            = $sItEndingTime;
+        $this->sItTimeLeft              = $sItTimeLeft;
+        $this->sItCity                  = $sItCity;
+        $this->sItState                 = $sItState;
+        $this->sItCountry               = $sItCountry;
+        $this->sItCategoryId            = $sItCategoryId;
+        $this->sItFeatured              = $sItFeatured;
+        $this->sItThumbUrl              = $sItThumbUrl;
+        $this->sItThumb                 = $sItThumb;
+        $this->sItPostage               = $sItPostage;
+        $this->sItIsForGuests           = $sItIsForGuests;
+        $this->sItIsTablicaAdvert       = $sItIsTablicaAdvert;
+        $this->sItIsAllegroStandard     = $sItIsAllegroStandard;
+        $this->sItHasFreeShipping       = $sItHasFreeShipping;
         $this->sItInstallmentsAvailable = $sItInstallmentsAvailable;
-        $this->sItOrderFulfillmentTime = $sItOrderFulfillmentTime;
-        $this->sItAdvertInfo = $sItAdvertInfo;
-        $this->sItSellerInfo = $sItSellerInfo;
-        $this->sItAttribsList = $sItAttribsList;
-        $this->sItFulfillmentTime = $sItFulfillmentTime;
+        $this->sItOrderFulfillmentTime  = $sItOrderFulfillmentTime;
+        $this->sItAdvertInfo            = $sItAdvertInfo;
+        $this->sItSellerInfo            = $sItSellerInfo;
+        $this->sItAttribsList           = $sItAttribsList;
+        $this->sItFulfillmentTime       = $sItFulfillmentTime;
     }
 
     /**

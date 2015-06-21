@@ -24,7 +24,7 @@ class Allegro_Web_Api_PostBuyItemInfoStruct extends Allegro_Web_Api_Abstract
      */
     public function __construct($itemId, $itemPostBuyFormInfo)
     {
-        $this->itemId = $itemId;
+        $this->itemId              = $itemId;
         $this->itemPostBuyFormInfo = $itemPostBuyFormInfo;
     }
 

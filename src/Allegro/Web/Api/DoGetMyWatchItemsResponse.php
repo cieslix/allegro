@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetMyWatchItemsResponse extends Allegro_Web_Api_Abstract
     protected $watchItemsList = null;
 
     /**
-     * @param int $watchItemsCounter
+     * @param int                                    $watchItemsCounter
      * @param Allegro_Web_Api_ArrayOfWatchitemstruct $watchItemsList
      */
     public function __construct($watchItemsCounter, $watchItemsList)
     {
         $this->watchItemsCounter = $watchItemsCounter;
-        $this->watchItemsList = $watchItemsList;
+        $this->watchItemsList    = $watchItemsList;
     }
 
     /**

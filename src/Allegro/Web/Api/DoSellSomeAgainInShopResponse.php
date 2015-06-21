@@ -24,14 +24,14 @@ class Allegro_Web_Api_DoSellSomeAgainInShopResponse extends Allegro_Web_Api_Abst
     protected $itemsSellNotFound = null;
 
     /**
-     * @param Allegro_Web_Api_ArrayOfStructsellagain $itemsSellAgain
+     * @param Allegro_Web_Api_ArrayOfStructsellagain  $itemsSellAgain
      * @param Allegro_Web_Api_ArrayOfStructsellfailed $itemsSellFailed
-     * @param Allegro_Web_Api_ArrayOfLong $itemsSellNotFound
+     * @param Allegro_Web_Api_ArrayOfLong             $itemsSellNotFound
      */
     public function __construct($itemsSellAgain, $itemsSellFailed, $itemsSellNotFound)
     {
-        $this->itemsSellAgain = $itemsSellAgain;
-        $this->itemsSellFailed = $itemsSellFailed;
+        $this->itemsSellAgain    = $itemsSellAgain;
+        $this->itemsSellFailed   = $itemsSellFailed;
         $this->itemsSellNotFound = $itemsSellNotFound;
     }
 

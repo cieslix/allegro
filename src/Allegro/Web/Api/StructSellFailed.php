@@ -24,14 +24,14 @@ class Allegro_Web_Api_StructSellFailed extends Allegro_Web_Api_Abstract
     protected $sellFaultString = null;
 
     /**
-     * @param int $sellItemId
+     * @param int    $sellItemId
      * @param string $sellFaultCode
      * @param string $sellFaultString
      */
     public function __construct($sellItemId, $sellFaultCode, $sellFaultString)
     {
-        $this->sellItemId = $sellItemId;
-        $this->sellFaultCode = $sellFaultCode;
+        $this->sellItemId      = $sellItemId;
+        $this->sellFaultCode   = $sellFaultCode;
         $this->sellFaultString = $sellFaultString;
     }
 

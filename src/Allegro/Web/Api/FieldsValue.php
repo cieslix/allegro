@@ -59,29 +59,29 @@ class Allegro_Web_Api_FieldsValue extends Allegro_Web_Api_Abstract
     protected $fvalueRangeDate = null;
 
     /**
-     * @param int $fid
-     * @param string $fvalueString
-     * @param int $fvalueInt
-     * @param float $fvalueFloat
-     * @param base64Binary $fvalueImage
-     * @param float $fvalueDatetime
-     * @param string $fvalueDate
-     * @param Allegro_Web_Api_RangeIntValueStruct $fvalueRangeInt
+     * @param int                                   $fid
+     * @param string                                $fvalueString
+     * @param int                                   $fvalueInt
+     * @param float                                 $fvalueFloat
+     * @param base64Binary                          $fvalueImage
+     * @param float                                 $fvalueDatetime
+     * @param string                                $fvalueDate
+     * @param Allegro_Web_Api_RangeIntValueStruct   $fvalueRangeInt
      * @param Allegro_Web_Api_RangeFloatValueStruct $fvalueRangeFloat
-     * @param Allegro_Web_Api_RangeDateValueStruct $fvalueRangeDate
+     * @param Allegro_Web_Api_RangeDateValueStruct  $fvalueRangeDate
      */
     public function __construct($fid, $fvalueString, $fvalueInt, $fvalueFloat, $fvalueImage, $fvalueDatetime, $fvalueDate, $fvalueRangeInt, $fvalueRangeFloat, $fvalueRangeDate)
     {
-        $this->fid = $fid;
-        $this->fvalueString = $fvalueString;
-        $this->fvalueInt = $fvalueInt;
-        $this->fvalueFloat = $fvalueFloat;
-        $this->fvalueImage = $fvalueImage;
-        $this->fvalueDatetime = $fvalueDatetime;
-        $this->fvalueDate = $fvalueDate;
-        $this->fvalueRangeInt = $fvalueRangeInt;
+        $this->fid              = $fid;
+        $this->fvalueString     = $fvalueString;
+        $this->fvalueInt        = $fvalueInt;
+        $this->fvalueFloat      = $fvalueFloat;
+        $this->fvalueImage      = $fvalueImage;
+        $this->fvalueDatetime   = $fvalueDatetime;
+        $this->fvalueDate       = $fvalueDate;
+        $this->fvalueRangeInt   = $fvalueRangeInt;
         $this->fvalueRangeFloat = $fvalueRangeFloat;
-        $this->fvalueRangeDate = $fvalueRangeDate;
+        $this->fvalueRangeDate  = $fvalueRangeDate;
     }
 
     /**

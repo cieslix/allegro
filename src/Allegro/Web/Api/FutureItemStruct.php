@@ -79,37 +79,37 @@ class Allegro_Web_Api_FutureItemStruct extends Allegro_Web_Api_Abstract
     protected $itemStatus = null;
 
     /**
-     * @param int $itemId
-     * @param string $itemTitle
-     * @param string $itemThumbnailUrl
+     * @param int                                    $itemId
+     * @param string                                 $itemTitle
+     * @param string                                 $itemThumbnailUrl
      * @param Allegro_Web_Api_ArrayOfItempricestruct $itemPrice
-     * @param int $itemStartQuantity
-     * @param int $itemQuantityType
-     * @param int $itemStartTime
-     * @param int $itemCategoryId
-     * @param string $itemNote
-     * @param int $itemSpecialInfo
-     * @param int $itemShopInfo
-     * @param int $itemProductInfo
-     * @param int $itemPayuInfo
-     * @param int $itemStatus
+     * @param int                                    $itemStartQuantity
+     * @param int                                    $itemQuantityType
+     * @param int                                    $itemStartTime
+     * @param int                                    $itemCategoryId
+     * @param string                                 $itemNote
+     * @param int                                    $itemSpecialInfo
+     * @param int                                    $itemShopInfo
+     * @param int                                    $itemProductInfo
+     * @param int                                    $itemPayuInfo
+     * @param int                                    $itemStatus
      */
     public function __construct($itemId, $itemTitle, $itemThumbnailUrl, $itemPrice, $itemStartQuantity, $itemQuantityType, $itemStartTime, $itemCategoryId, $itemNote, $itemSpecialInfo, $itemShopInfo, $itemProductInfo, $itemPayuInfo, $itemStatus)
     {
-        $this->itemId = $itemId;
-        $this->itemTitle = $itemTitle;
-        $this->itemThumbnailUrl = $itemThumbnailUrl;
-        $this->itemPrice = $itemPrice;
+        $this->itemId            = $itemId;
+        $this->itemTitle         = $itemTitle;
+        $this->itemThumbnailUrl  = $itemThumbnailUrl;
+        $this->itemPrice         = $itemPrice;
         $this->itemStartQuantity = $itemStartQuantity;
-        $this->itemQuantityType = $itemQuantityType;
-        $this->itemStartTime = $itemStartTime;
-        $this->itemCategoryId = $itemCategoryId;
-        $this->itemNote = $itemNote;
-        $this->itemSpecialInfo = $itemSpecialInfo;
-        $this->itemShopInfo = $itemShopInfo;
-        $this->itemProductInfo = $itemProductInfo;
-        $this->itemPayuInfo = $itemPayuInfo;
-        $this->itemStatus = $itemStatus;
+        $this->itemQuantityType  = $itemQuantityType;
+        $this->itemStartTime     = $itemStartTime;
+        $this->itemCategoryId    = $itemCategoryId;
+        $this->itemNote          = $itemNote;
+        $this->itemSpecialInfo   = $itemSpecialInfo;
+        $this->itemShopInfo      = $itemShopInfo;
+        $this->itemProductInfo   = $itemProductInfo;
+        $this->itemPayuInfo      = $itemPayuInfo;
+        $this->itemStatus        = $itemStatus;
     }
 
     /**

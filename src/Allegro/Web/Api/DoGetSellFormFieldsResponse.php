@@ -25,14 +25,14 @@ class Allegro_Web_Api_DoGetSellFormFieldsResponse extends Allegro_Web_Api_Abstra
 
     /**
      * @param Allegro_Web_Api_ArrayOfSellformtype $sellFormFields
-     * @param int $verKey
-     * @param string $verStr
+     * @param int                                 $verKey
+     * @param string                              $verStr
      */
     public function __construct($sellFormFields, $verKey, $verStr)
     {
         $this->sellFormFields = $sellFormFields;
-        $this->verKey = $verKey;
-        $this->verStr = $verStr;
+        $this->verKey         = $verKey;
+        $this->verStr         = $verStr;
     }
 
     /**

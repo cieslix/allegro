@@ -24,14 +24,14 @@ class Allegro_Web_Api_InfoCatList extends Allegro_Web_Api_Abstract
     protected $catItemsCount = null;
 
     /**
-     * @param int $catId
+     * @param int    $catId
      * @param string $catName
-     * @param int $catItemsCount
+     * @param int    $catItemsCount
      */
     public function __construct($catId, $catName, $catItemsCount)
     {
-        $this->catId = $catId;
-        $this->catName = $catName;
+        $this->catId         = $catId;
+        $this->catName       = $catName;
         $this->catItemsCount = $catItemsCount;
     }
 

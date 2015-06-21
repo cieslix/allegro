@@ -29,16 +29,16 @@ class Allegro_Web_Api_PaymentSellersStruct extends Allegro_Web_Api_Abstract
     protected $payTransSellerPostageAmount = null;
 
     /**
-     * @param int $payTransSellerId
-     * @param string $payTransSellerName
+     * @param int                                       $payTransSellerId
+     * @param string                                    $payTransSellerName
      * @param Allegro_Web_Api_ArrayOfPaymentitemsstruct $payTransItems
-     * @param float $payTransSellerPostageAmount
+     * @param float                                     $payTransSellerPostageAmount
      */
     public function __construct($payTransSellerId, $payTransSellerName, $payTransItems, $payTransSellerPostageAmount)
     {
-        $this->payTransSellerId = $payTransSellerId;
-        $this->payTransSellerName = $payTransSellerName;
-        $this->payTransItems = $payTransItems;
+        $this->payTransSellerId            = $payTransSellerId;
+        $this->payTransSellerName          = $payTransSellerName;
+        $this->payTransItems               = $payTransItems;
         $this->payTransSellerPostageAmount = $payTransSellerPostageAmount;
     }
 

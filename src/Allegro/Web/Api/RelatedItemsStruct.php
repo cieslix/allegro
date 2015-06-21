@@ -20,11 +20,11 @@ class Allegro_Web_Api_RelatedItemsStruct extends Allegro_Web_Api_Abstract
 
     /**
      * @param Allegro_Web_Api_ArrayOfRelateditemstruct $relatedItemsInfo
-     * @param float $relatedItemsAmount
+     * @param float                                    $relatedItemsAmount
      */
     public function __construct($relatedItemsInfo, $relatedItemsAmount)
     {
-        $this->relatedItemsInfo = $relatedItemsInfo;
+        $this->relatedItemsInfo   = $relatedItemsInfo;
         $this->relatedItemsAmount = $relatedItemsAmount;
     }
 

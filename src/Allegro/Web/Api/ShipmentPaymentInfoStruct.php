@@ -34,19 +34,19 @@ class Allegro_Web_Api_ShipmentPaymentInfoStruct extends Allegro_Web_Api_Abstract
     protected $shipmentItemIds = null;
 
     /**
-     * @param int $shipmentId
-     * @param string $shipmentName
-     * @param float $shipmentAmount
-     * @param int $shipmentPaymentType
+     * @param int                         $shipmentId
+     * @param string                      $shipmentName
+     * @param float                       $shipmentAmount
+     * @param int                         $shipmentPaymentType
      * @param Allegro_Web_Api_ArrayOfLong $shipmentItemIds
      */
     public function __construct($shipmentId, $shipmentName, $shipmentAmount, $shipmentPaymentType, $shipmentItemIds)
     {
-        $this->shipmentId = $shipmentId;
-        $this->shipmentName = $shipmentName;
-        $this->shipmentAmount = $shipmentAmount;
+        $this->shipmentId          = $shipmentId;
+        $this->shipmentName        = $shipmentName;
+        $this->shipmentAmount      = $shipmentAmount;
         $this->shipmentPaymentType = $shipmentPaymentType;
-        $this->shipmentItemIds = $shipmentItemIds;
+        $this->shipmentItemIds     = $shipmentItemIds;
     }
 
     /**

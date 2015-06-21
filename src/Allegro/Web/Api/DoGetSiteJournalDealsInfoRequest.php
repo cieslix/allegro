@@ -20,11 +20,11 @@ class Allegro_Web_Api_DoGetSiteJournalDealsInfoRequest extends Allegro_Web_Api_A
 
     /**
      * @param string $sessionId
-     * @param int $journalStart
+     * @param int    $journalStart
      */
     public function __construct($sessionId, $journalStart)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId    = $sessionId;
         $this->journalStart = $journalStart;
     }
 

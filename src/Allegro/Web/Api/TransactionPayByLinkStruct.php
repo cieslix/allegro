@@ -24,15 +24,15 @@ class Allegro_Web_Api_TransactionPayByLinkStruct extends Allegro_Web_Api_Abstrac
     protected $actionData = null;
 
     /**
-     * @param string $actionHttpMethod
-     * @param string $actionUrl
+     * @param string                                  $actionHttpMethod
+     * @param string                                  $actionUrl
      * @param Allegro_Web_Api_ArrayOfActiondatastruct $actionData
      */
     public function __construct($actionHttpMethod, $actionUrl, $actionData)
     {
         $this->actionHttpMethod = $actionHttpMethod;
-        $this->actionUrl = $actionUrl;
-        $this->actionData = $actionData;
+        $this->actionUrl        = $actionUrl;
+        $this->actionData       = $actionData;
     }
 
     /**

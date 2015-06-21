@@ -20,11 +20,11 @@ class Allegro_Web_Api_DoGetFeedbackResponse extends Allegro_Web_Api_Abstract
 
     /**
      * @param Allegro_Web_Api_ArrayOfFeedbacklist $feedbackList
-     * @param int $feedbackCount
+     * @param int                                 $feedbackCount
      */
     public function __construct($feedbackList, $feedbackCount)
     {
-        $this->feedbackList = $feedbackList;
+        $this->feedbackList  = $feedbackList;
         $this->feedbackCount = $feedbackCount;
     }
 

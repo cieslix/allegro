@@ -29,14 +29,14 @@ class Allegro_Web_Api_ShipmentDataStruct extends Allegro_Web_Api_Abstract
     protected $shipmentTime = null;
 
     /**
-     * @param int $shipmentId
-     * @param string $shipmentName
-     * @param int $shipmentType
+     * @param int                                $shipmentId
+     * @param string                             $shipmentName
+     * @param int                                $shipmentType
      * @param Allegro_Web_Api_ShipmentTimeStruct $shipmentTime
      */
     public function __construct($shipmentId, $shipmentName, $shipmentType, $shipmentTime)
     {
-        $this->shipmentId = $shipmentId;
+        $this->shipmentId   = $shipmentId;
         $this->shipmentName = $shipmentName;
         $this->shipmentType = $shipmentType;
         $this->shipmentTime = $shipmentTime;

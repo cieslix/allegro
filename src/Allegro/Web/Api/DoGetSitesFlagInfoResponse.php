@@ -25,14 +25,14 @@ class Allegro_Web_Api_DoGetSitesFlagInfoResponse extends Allegro_Web_Api_Abstrac
 
     /**
      * @param Allegro_Web_Api_ArrayOfSiteflaginfotype $sitesInfoList
-     * @param int $verKey
-     * @param string $verStr
+     * @param int                                     $verKey
+     * @param string                                  $verStr
      */
     public function __construct($sitesInfoList, $verKey, $verStr)
     {
         $this->sitesInfoList = $sitesInfoList;
-        $this->verKey = $verKey;
-        $this->verStr = $verStr;
+        $this->verKey        = $verKey;
+        $this->verStr        = $verStr;
     }
 
     /**

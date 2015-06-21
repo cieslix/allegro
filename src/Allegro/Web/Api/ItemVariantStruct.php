@@ -24,14 +24,14 @@ class Allegro_Web_Api_ItemVariantStruct extends Allegro_Web_Api_Abstract
     protected $attributes = null;
 
     /**
-     * @param string $id
-     * @param int $quantity
+     * @param string                                            $id
+     * @param int                                               $quantity
      * @param Allegro_Web_Api_ArrayOfItemvariantattributestruct $attributes
      */
     public function __construct($id, $quantity, $attributes)
     {
-        $this->id = $id;
-        $this->quantity = $quantity;
+        $this->id         = $id;
+        $this->quantity   = $quantity;
         $this->attributes = $attributes;
     }
 

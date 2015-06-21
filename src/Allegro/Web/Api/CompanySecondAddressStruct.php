@@ -49,18 +49,18 @@ class Allegro_Web_Api_CompanySecondAddressStruct extends Allegro_Web_Api_Abstrac
      * @param string $companyAddress
      * @param string $companyPostcode
      * @param string $companyCity
-     * @param int $companyCountryId
-     * @param int $companyStateId
+     * @param int    $companyCountryId
+     * @param int    $companyStateId
      */
     public function __construct($companyWorkerFirstName, $companyWorkerLastName, $companyAddress, $companyPostcode, $companyCity, $companyCountryId, $companyStateId)
     {
         $this->companyWorkerFirstName = $companyWorkerFirstName;
-        $this->companyWorkerLastName = $companyWorkerLastName;
-        $this->companyAddress = $companyAddress;
-        $this->companyPostcode = $companyPostcode;
-        $this->companyCity = $companyCity;
-        $this->companyCountryId = $companyCountryId;
-        $this->companyStateId = $companyStateId;
+        $this->companyWorkerLastName  = $companyWorkerLastName;
+        $this->companyAddress         = $companyAddress;
+        $this->companyPostcode        = $companyPostcode;
+        $this->companyCity            = $companyCity;
+        $this->companyCountryId       = $companyCountryId;
+        $this->companyStateId         = $companyStateId;
     }
 
     /**

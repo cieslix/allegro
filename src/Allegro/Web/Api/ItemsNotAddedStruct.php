@@ -24,14 +24,14 @@ class Allegro_Web_Api_ItemsNotAddedStruct extends Allegro_Web_Api_Abstract
     protected $itemErrorDescription = null;
 
     /**
-     * @param int $itemId
+     * @param int    $itemId
      * @param string $itemErrorCode
      * @param string $itemErrorDescription
      */
     public function __construct($itemId, $itemErrorCode, $itemErrorDescription)
     {
-        $this->itemId = $itemId;
-        $this->itemErrorCode = $itemErrorCode;
+        $this->itemId               = $itemId;
+        $this->itemErrorCode        = $itemErrorCode;
         $this->itemErrorDescription = $itemErrorDescription;
     }
 

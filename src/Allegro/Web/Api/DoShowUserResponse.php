@@ -129,57 +129,57 @@ class Allegro_Web_Api_DoShowUserResponse extends Allegro_Web_Api_Abstract
     protected $userIsB2cSeller = null;
 
     /**
-     * @param int $userId
-     * @param string $userLogin
-     * @param int $userCountry
-     * @param int $userCreateDate
-     * @param int $userLoginDate
-     * @param int $userRating
-     * @param int $userIsNewUser
-     * @param int $userNotActivated
-     * @param int $userClosed
-     * @param int $userBlocked
-     * @param int $userTerminated
-     * @param int $userHasPage
-     * @param int $userIsSseller
-     * @param int $userIsEco
-     * @param Allegro_Web_Api_ShowUserFeedbacks $userPositiveFeedback
-     * @param Allegro_Web_Api_ShowUserFeedbacks $userNegativeFeedback
-     * @param Allegro_Web_Api_ShowUserFeedbacks $userNeutralFeedback
-     * @param int $userJuniorStatus
-     * @param int $userHasShop
-     * @param int $userCompanyIcon
-     * @param int $userSellRatingCount
+     * @param int                                            $userId
+     * @param string                                         $userLogin
+     * @param int                                            $userCountry
+     * @param int                                            $userCreateDate
+     * @param int                                            $userLoginDate
+     * @param int                                            $userRating
+     * @param int                                            $userIsNewUser
+     * @param int                                            $userNotActivated
+     * @param int                                            $userClosed
+     * @param int                                            $userBlocked
+     * @param int                                            $userTerminated
+     * @param int                                            $userHasPage
+     * @param int                                            $userIsSseller
+     * @param int                                            $userIsEco
+     * @param Allegro_Web_Api_ShowUserFeedbacks              $userPositiveFeedback
+     * @param Allegro_Web_Api_ShowUserFeedbacks              $userNegativeFeedback
+     * @param Allegro_Web_Api_ShowUserFeedbacks              $userNeutralFeedback
+     * @param int                                            $userJuniorStatus
+     * @param int                                            $userHasShop
+     * @param int                                            $userCompanyIcon
+     * @param int                                            $userSellRatingCount
      * @param Allegro_Web_Api_ArrayOfSellratingaveragestruct $userSellRatingAverage
-     * @param int $userIsAllegroStandard
-     * @param int $userIsB2cSeller
+     * @param int                                            $userIsAllegroStandard
+     * @param int                                            $userIsB2cSeller
      */
     public function __construct($userId, $userLogin, $userCountry, $userCreateDate, $userLoginDate, $userRating, $userIsNewUser, $userNotActivated, $userClosed, $userBlocked, $userTerminated, $userHasPage, $userIsSseller, $userIsEco, $userPositiveFeedback, $userNegativeFeedback, $userNeutralFeedback, $userJuniorStatus, $userHasShop, $userCompanyIcon, $userSellRatingCount, $userSellRatingAverage, $userIsAllegroStandard, $userIsB2cSeller)
     {
-        $this->userId = $userId;
-        $this->userLogin = $userLogin;
-        $this->userCountry = $userCountry;
-        $this->userCreateDate = $userCreateDate;
-        $this->userLoginDate = $userLoginDate;
-        $this->userRating = $userRating;
-        $this->userIsNewUser = $userIsNewUser;
-        $this->userNotActivated = $userNotActivated;
-        $this->userClosed = $userClosed;
-        $this->userBlocked = $userBlocked;
-        $this->userTerminated = $userTerminated;
-        $this->userHasPage = $userHasPage;
-        $this->userIsSseller = $userIsSseller;
-        $this->userIsEco = $userIsEco;
-        $this->userPositiveFeedback = $userPositiveFeedback;
-        $this->userNegativeFeedback = $userNegativeFeedback;
-        $this->userNeutralFeedback = $userNeutralFeedback;
-        $this->userJuniorStatus = $userJuniorStatus;
-        $this->userHasShop = $userHasShop;
-        $this->userCompanyIcon = $userCompanyIcon;
-        $this->userSellRatingCount = $userSellRatingCount;
+        $this->userId                = $userId;
+        $this->userLogin             = $userLogin;
+        $this->userCountry           = $userCountry;
+        $this->userCreateDate        = $userCreateDate;
+        $this->userLoginDate         = $userLoginDate;
+        $this->userRating            = $userRating;
+        $this->userIsNewUser         = $userIsNewUser;
+        $this->userNotActivated      = $userNotActivated;
+        $this->userClosed            = $userClosed;
+        $this->userBlocked           = $userBlocked;
+        $this->userTerminated        = $userTerminated;
+        $this->userHasPage           = $userHasPage;
+        $this->userIsSseller         = $userIsSseller;
+        $this->userIsEco             = $userIsEco;
+        $this->userPositiveFeedback  = $userPositiveFeedback;
+        $this->userNegativeFeedback  = $userNegativeFeedback;
+        $this->userNeutralFeedback   = $userNeutralFeedback;
+        $this->userJuniorStatus      = $userJuniorStatus;
+        $this->userHasShop           = $userHasShop;
+        $this->userCompanyIcon       = $userCompanyIcon;
+        $this->userSellRatingCount   = $userSellRatingCount;
         $this->userSellRatingAverage = $userSellRatingAverage;
         $this->userIsAllegroStandard = $userIsAllegroStandard;
-        $this->userIsB2cSeller = $userIsB2cSeller;
+        $this->userIsB2cSeller       = $userIsB2cSeller;
     }
 
     /**

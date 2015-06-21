@@ -29,7 +29,7 @@ class Allegro_Web_Api_DoGetUserIDRequest extends Allegro_Web_Api_Abstract
     protected $webapiKey = null;
 
     /**
-     * @param int $countryId
+     * @param int    $countryId
      * @param string $userLogin
      * @param string $userEmail
      * @param string $webapiKey

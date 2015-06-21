@@ -42,11 +42,11 @@ class Allegro_Web_Api_AddressUserDataStruct extends Allegro_Web_Api_Abstract
      */
     public function __construct($userCompany, $userFullName, $userAddress, $userPostcode, $userCity)
     {
-        $this->userCompany = $userCompany;
+        $this->userCompany  = $userCompany;
         $this->userFullName = $userFullName;
-        $this->userAddress = $userAddress;
+        $this->userAddress  = $userAddress;
         $this->userPostcode = $userPostcode;
-        $this->userCity = $userCity;
+        $this->userCity     = $userCity;
     }
 
     /**

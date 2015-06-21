@@ -209,89 +209,89 @@ class Allegro_Web_Api_ItemInfoExt extends Allegro_Web_Api_Abstract
     protected $itIsBrandZone = null;
 
     /**
-     * @param int $itId
-     * @param int $itCountry
+     * @param int    $itId
+     * @param int    $itCountry
      * @param string $itName
-     * @param float $itPrice
-     * @param int $itBidCount
-     * @param int $itEndingTime
-     * @param int $itSellerId
+     * @param float  $itPrice
+     * @param int    $itBidCount
+     * @param int    $itEndingTime
+     * @param int    $itSellerId
      * @param string $itSellerLogin
-     * @param int $itSellerRating
-     * @param int $itStartingTime
-     * @param float $itStartingPrice
-     * @param int $itQuantity
-     * @param int $itFotoCount
-     * @param float $itReservePrice
+     * @param int    $itSellerRating
+     * @param int    $itStartingTime
+     * @param float  $itStartingPrice
+     * @param int    $itQuantity
+     * @param int    $itFotoCount
+     * @param float  $itReservePrice
      * @param string $itLocation
-     * @param float $itBuyNowPrice
-     * @param int $itBuyNowActive
-     * @param int $itHighBidder
+     * @param float  $itBuyNowPrice
+     * @param int    $itBuyNowActive
+     * @param int    $itHighBidder
      * @param string $itHighBidderLogin
      * @param string $itDescription
-     * @param int $itOptions
-     * @param int $itState
-     * @param float $itWireTransfer
-     * @param float $itPostDelivery
+     * @param int    $itOptions
+     * @param int    $itState
+     * @param float  $itWireTransfer
+     * @param float  $itPostDelivery
      * @param string $itPostInfo
-     * @param int $itQuantityType
-     * @param int $itIsEco
-     * @param int $itHitCount
+     * @param int    $itQuantityType
+     * @param int    $itIsEco
+     * @param int    $itHitCount
      * @param string $itPostcode
-     * @param int $itVatInvoice
+     * @param int    $itVatInvoice
      * @param string $itBankAccount1
      * @param string $itBankAccount2
-     * @param int $itStartingQuantity
-     * @param int $itIsForGuests
-     * @param int $itHasProduct
-     * @param int $itOrderFulfillmentTime
-     * @param int $itEndingInfo
-     * @param int $itIsAllegroStandard
-     * @param int $itIsNewUsed
-     * @param int $itIsBrandZone
+     * @param int    $itStartingQuantity
+     * @param int    $itIsForGuests
+     * @param int    $itHasProduct
+     * @param int    $itOrderFulfillmentTime
+     * @param int    $itEndingInfo
+     * @param int    $itIsAllegroStandard
+     * @param int    $itIsNewUsed
+     * @param int    $itIsBrandZone
      */
     public function __construct($itId, $itCountry, $itName, $itPrice, $itBidCount, $itEndingTime, $itSellerId, $itSellerLogin, $itSellerRating, $itStartingTime, $itStartingPrice, $itQuantity, $itFotoCount, $itReservePrice, $itLocation, $itBuyNowPrice, $itBuyNowActive, $itHighBidder, $itHighBidderLogin, $itDescription, $itOptions, $itState, $itWireTransfer, $itPostDelivery, $itPostInfo, $itQuantityType, $itIsEco, $itHitCount, $itPostcode, $itVatInvoice, $itBankAccount1, $itBankAccount2, $itStartingQuantity, $itIsForGuests, $itHasProduct, $itOrderFulfillmentTime, $itEndingInfo, $itIsAllegroStandard, $itIsNewUsed, $itIsBrandZone)
     {
-        $this->itId = $itId;
-        $this->itCountry = $itCountry;
-        $this->itName = $itName;
-        $this->itPrice = $itPrice;
-        $this->itBidCount = $itBidCount;
-        $this->itEndingTime = $itEndingTime;
-        $this->itSellerId = $itSellerId;
-        $this->itSellerLogin = $itSellerLogin;
-        $this->itSellerRating = $itSellerRating;
-        $this->itStartingTime = $itStartingTime;
-        $this->itStartingPrice = $itStartingPrice;
-        $this->itQuantity = $itQuantity;
-        $this->itFotoCount = $itFotoCount;
-        $this->itReservePrice = $itReservePrice;
-        $this->itLocation = $itLocation;
-        $this->itBuyNowPrice = $itBuyNowPrice;
-        $this->itBuyNowActive = $itBuyNowActive;
-        $this->itHighBidder = $itHighBidder;
-        $this->itHighBidderLogin = $itHighBidderLogin;
-        $this->itDescription = $itDescription;
-        $this->itOptions = $itOptions;
-        $this->itState = $itState;
-        $this->itWireTransfer = $itWireTransfer;
-        $this->itPostDelivery = $itPostDelivery;
-        $this->itPostInfo = $itPostInfo;
-        $this->itQuantityType = $itQuantityType;
-        $this->itIsEco = $itIsEco;
-        $this->itHitCount = $itHitCount;
-        $this->itPostcode = $itPostcode;
-        $this->itVatInvoice = $itVatInvoice;
-        $this->itBankAccount1 = $itBankAccount1;
-        $this->itBankAccount2 = $itBankAccount2;
-        $this->itStartingQuantity = $itStartingQuantity;
-        $this->itIsForGuests = $itIsForGuests;
-        $this->itHasProduct = $itHasProduct;
+        $this->itId                   = $itId;
+        $this->itCountry              = $itCountry;
+        $this->itName                 = $itName;
+        $this->itPrice                = $itPrice;
+        $this->itBidCount             = $itBidCount;
+        $this->itEndingTime           = $itEndingTime;
+        $this->itSellerId             = $itSellerId;
+        $this->itSellerLogin          = $itSellerLogin;
+        $this->itSellerRating         = $itSellerRating;
+        $this->itStartingTime         = $itStartingTime;
+        $this->itStartingPrice        = $itStartingPrice;
+        $this->itQuantity             = $itQuantity;
+        $this->itFotoCount            = $itFotoCount;
+        $this->itReservePrice         = $itReservePrice;
+        $this->itLocation             = $itLocation;
+        $this->itBuyNowPrice          = $itBuyNowPrice;
+        $this->itBuyNowActive         = $itBuyNowActive;
+        $this->itHighBidder           = $itHighBidder;
+        $this->itHighBidderLogin      = $itHighBidderLogin;
+        $this->itDescription          = $itDescription;
+        $this->itOptions              = $itOptions;
+        $this->itState                = $itState;
+        $this->itWireTransfer         = $itWireTransfer;
+        $this->itPostDelivery         = $itPostDelivery;
+        $this->itPostInfo             = $itPostInfo;
+        $this->itQuantityType         = $itQuantityType;
+        $this->itIsEco                = $itIsEco;
+        $this->itHitCount             = $itHitCount;
+        $this->itPostcode             = $itPostcode;
+        $this->itVatInvoice           = $itVatInvoice;
+        $this->itBankAccount1         = $itBankAccount1;
+        $this->itBankAccount2         = $itBankAccount2;
+        $this->itStartingQuantity     = $itStartingQuantity;
+        $this->itIsForGuests          = $itIsForGuests;
+        $this->itHasProduct           = $itHasProduct;
         $this->itOrderFulfillmentTime = $itOrderFulfillmentTime;
-        $this->itEndingInfo = $itEndingInfo;
-        $this->itIsAllegroStandard = $itIsAllegroStandard;
-        $this->itIsNewUsed = $itIsNewUsed;
-        $this->itIsBrandZone = $itIsBrandZone;
+        $this->itEndingInfo           = $itEndingInfo;
+        $this->itIsAllegroStandard    = $itIsAllegroStandard;
+        $this->itIsNewUsed            = $itIsNewUsed;
+        $this->itIsBrandZone          = $itIsBrandZone;
     }
 
     /**

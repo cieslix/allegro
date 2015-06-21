@@ -34,19 +34,19 @@ class Allegro_Web_Api_DoGetServiceInfoRequest extends Allegro_Web_Api_Abstract
     protected $webapiKey = null;
 
     /**
-     * @param int $countryCode
-     * @param int $anCatId
-     * @param int $anItDate
-     * @param int $anItId
+     * @param int    $countryCode
+     * @param int    $anCatId
+     * @param int    $anItDate
+     * @param int    $anItId
      * @param string $webapiKey
      */
     public function __construct($countryCode, $anCatId, $anItDate, $anItId, $webapiKey)
     {
         $this->countryCode = $countryCode;
-        $this->anCatId = $anCatId;
-        $this->anItDate = $anItDate;
-        $this->anItId = $anItId;
-        $this->webapiKey = $webapiKey;
+        $this->anCatId     = $anCatId;
+        $this->anItDate    = $anItDate;
+        $this->anItId      = $anItId;
+        $this->webapiKey   = $webapiKey;
     }
 
     /**

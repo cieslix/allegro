@@ -24,7 +24,7 @@ class Allegro_Web_Api_VariantQuantityStruct extends Allegro_Web_Api_Abstract
      */
     public function __construct($mask, $quantity)
     {
-        $this->mask = $mask;
+        $this->mask     = $mask;
         $this->quantity = $quantity;
     }
 

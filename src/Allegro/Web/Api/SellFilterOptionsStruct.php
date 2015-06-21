@@ -44,22 +44,22 @@ class Allegro_Web_Api_SellFilterOptionsStruct extends Allegro_Web_Api_Abstract
     protected $filterDurationType = null;
 
     /**
-     * @param int $filterFormat
-     * @param int $filterBids
-     * @param int $filterToEnd
-     * @param int $filterFromStart
-     * @param int $filterAutoListing
+     * @param int                               $filterFormat
+     * @param int                               $filterBids
+     * @param int                               $filterToEnd
+     * @param int                               $filterFromStart
+     * @param int                               $filterAutoListing
      * @param Allegro_Web_Api_FilterPriceStruct $filterPrice
-     * @param int $filterDurationType
+     * @param int                               $filterDurationType
      */
     public function __construct($filterFormat, $filterBids, $filterToEnd, $filterFromStart, $filterAutoListing, $filterPrice, $filterDurationType)
     {
-        $this->filterFormat = $filterFormat;
-        $this->filterBids = $filterBids;
-        $this->filterToEnd = $filterToEnd;
-        $this->filterFromStart = $filterFromStart;
-        $this->filterAutoListing = $filterAutoListing;
-        $this->filterPrice = $filterPrice;
+        $this->filterFormat       = $filterFormat;
+        $this->filterBids         = $filterBids;
+        $this->filterToEnd        = $filterToEnd;
+        $this->filterFromStart    = $filterFromStart;
+        $this->filterAutoListing  = $filterAutoListing;
+        $this->filterPrice        = $filterPrice;
         $this->filterDurationType = $filterDurationType;
     }
 

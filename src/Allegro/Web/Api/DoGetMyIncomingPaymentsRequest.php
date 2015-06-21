@@ -45,22 +45,22 @@ class Allegro_Web_Api_DoGetMyIncomingPaymentsRequest extends Allegro_Web_Api_Abs
 
     /**
      * @param string $sessionHandle
-     * @param int $buyerId
-     * @param int $itemId
-     * @param int $transRecvDateFrom
-     * @param int $transRecvDateTo
-     * @param int $transPageLimit
-     * @param int $transOffset
+     * @param int    $buyerId
+     * @param int    $itemId
+     * @param int    $transRecvDateFrom
+     * @param int    $transRecvDateTo
+     * @param int    $transPageLimit
+     * @param int    $transOffset
      */
     public function __construct($sessionHandle, $buyerId, $itemId, $transRecvDateFrom, $transRecvDateTo, $transPageLimit, $transOffset)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->buyerId = $buyerId;
-        $this->itemId = $itemId;
+        $this->sessionHandle     = $sessionHandle;
+        $this->buyerId           = $buyerId;
+        $this->itemId            = $itemId;
         $this->transRecvDateFrom = $transRecvDateFrom;
-        $this->transRecvDateTo = $transRecvDateTo;
-        $this->transPageLimit = $transPageLimit;
-        $this->transOffset = $transOffset;
+        $this->transRecvDateTo   = $transRecvDateTo;
+        $this->transPageLimit    = $transPageLimit;
+        $this->transOffset       = $transOffset;
     }
 
     /**

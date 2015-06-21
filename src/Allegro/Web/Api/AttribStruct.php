@@ -19,12 +19,12 @@ class Allegro_Web_Api_AttribStruct extends Allegro_Web_Api_Abstract
     protected $attribValues = null;
 
     /**
-     * @param string $attribName
+     * @param string                        $attribName
      * @param Allegro_Web_Api_ArrayOfString $attribValues
      */
     public function __construct($attribName, $attribValues)
     {
-        $this->attribName = $attribName;
+        $this->attribName   = $attribName;
         $this->attribValues = $attribValues;
     }
 

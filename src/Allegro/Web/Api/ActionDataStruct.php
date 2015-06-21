@@ -24,7 +24,7 @@ class Allegro_Web_Api_ActionDataStruct extends Allegro_Web_Api_Abstract
      */
     public function __construct($actionKey, $actionValue)
     {
-        $this->actionKey = $actionKey;
+        $this->actionKey   = $actionKey;
         $this->actionValue = $actionValue;
     }
 

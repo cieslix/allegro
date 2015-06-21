@@ -39,21 +39,21 @@ class Allegro_Web_Api_DoGetItemsListResponse extends Allegro_Web_Api_Abstract
     protected $filtersRejected = null;
 
     /**
-     * @param int $itemsCount
-     * @param int $itemsFeaturedCount
-     * @param Allegro_Web_Api_ArrayOfItemslisttype $itemsList
-     * @param Allegro_Web_Api_CategoriesListType $categoriesList
+     * @param int                                    $itemsCount
+     * @param int                                    $itemsFeaturedCount
+     * @param Allegro_Web_Api_ArrayOfItemslisttype   $itemsList
+     * @param Allegro_Web_Api_CategoriesListType     $categoriesList
      * @param Allegro_Web_Api_ArrayOfFilterslisttype $filtersList
-     * @param Allegro_Web_Api_ArrayOfString $filtersRejected
+     * @param Allegro_Web_Api_ArrayOfString          $filtersRejected
      */
     public function __construct($itemsCount, $itemsFeaturedCount, $itemsList, $categoriesList, $filtersList, $filtersRejected)
     {
-        $this->itemsCount = $itemsCount;
+        $this->itemsCount         = $itemsCount;
         $this->itemsFeaturedCount = $itemsFeaturedCount;
-        $this->itemsList = $itemsList;
-        $this->categoriesList = $categoriesList;
-        $this->filtersList = $filtersList;
-        $this->filtersRejected = $filtersRejected;
+        $this->itemsList          = $itemsList;
+        $this->categoriesList     = $categoriesList;
+        $this->filtersList        = $filtersList;
+        $this->filtersRejected    = $filtersRejected;
     }
 
     /**

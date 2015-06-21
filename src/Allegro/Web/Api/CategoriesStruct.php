@@ -29,16 +29,16 @@ class Allegro_Web_Api_CategoriesStruct extends Allegro_Web_Api_Abstract
     protected $categoryItemsCount = null;
 
     /**
-     * @param int $categoryId
+     * @param int    $categoryId
      * @param string $categoryName
-     * @param int $categoryParentId
-     * @param int $categoryItemsCount
+     * @param int    $categoryParentId
+     * @param int    $categoryItemsCount
      */
     public function __construct($categoryId, $categoryName, $categoryParentId, $categoryItemsCount)
     {
-        $this->categoryId = $categoryId;
-        $this->categoryName = $categoryName;
-        $this->categoryParentId = $categoryParentId;
+        $this->categoryId         = $categoryId;
+        $this->categoryName       = $categoryName;
+        $this->categoryParentId   = $categoryParentId;
         $this->categoryItemsCount = $categoryItemsCount;
     }
 

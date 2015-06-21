@@ -29,16 +29,16 @@ class Allegro_Web_Api_UserPostBuyDataStruct extends Allegro_Web_Api_Abstract
     protected $companySecondAddress = null;
 
     /**
-     * @param Allegro_Web_Api_UserDataStruct $userData
-     * @param Allegro_Web_Api_UserSentToDataStruct $userSentToData
-     * @param Allegro_Web_Api_ArrayOfString $userBankAccounts
+     * @param Allegro_Web_Api_UserDataStruct             $userData
+     * @param Allegro_Web_Api_UserSentToDataStruct       $userSentToData
+     * @param Allegro_Web_Api_ArrayOfString              $userBankAccounts
      * @param Allegro_Web_Api_CompanySecondAddressStruct $companySecondAddress
      */
     public function __construct($userData, $userSentToData, $userBankAccounts, $companySecondAddress)
     {
-        $this->userData = $userData;
-        $this->userSentToData = $userSentToData;
-        $this->userBankAccounts = $userBankAccounts;
+        $this->userData             = $userData;
+        $this->userSentToData       = $userSentToData;
+        $this->userBankAccounts     = $userBankAccounts;
         $this->companySecondAddress = $companySecondAddress;
     }
 

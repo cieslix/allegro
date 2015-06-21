@@ -24,7 +24,7 @@ class Allegro_Web_Api_SiteJournalInfo extends Allegro_Web_Api_Abstract
      */
     public function __construct($itemsNumber, $lastItemDate)
     {
-        $this->itemsNumber = $itemsNumber;
+        $this->itemsNumber  = $itemsNumber;
         $this->lastItemDate = $lastItemDate;
     }
 

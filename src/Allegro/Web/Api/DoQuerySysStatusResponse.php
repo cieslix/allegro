@@ -20,11 +20,11 @@ class Allegro_Web_Api_DoQuerySysStatusResponse extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $info
-     * @param int $verKey
+     * @param int    $verKey
      */
     public function __construct($info, $verKey)
     {
-        $this->info = $info;
+        $this->info   = $info;
         $this->verKey = $verKey;
     }
 

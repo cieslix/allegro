@@ -34,18 +34,18 @@ class Allegro_Web_Api_CatInfoType extends Allegro_Web_Api_Abstract
     protected $catIsProductCatalogueEnabled = null;
 
     /**
-     * @param int $catId
+     * @param int    $catId
      * @param string $catName
-     * @param int $catParent
-     * @param int $catPosition
-     * @param int $catIsProductCatalogueEnabled
+     * @param int    $catParent
+     * @param int    $catPosition
+     * @param int    $catIsProductCatalogueEnabled
      */
     public function __construct($catId, $catName, $catParent, $catPosition, $catIsProductCatalogueEnabled)
     {
-        $this->catId = $catId;
-        $this->catName = $catName;
-        $this->catParent = $catParent;
-        $this->catPosition = $catPosition;
+        $this->catId                        = $catId;
+        $this->catName                      = $catName;
+        $this->catParent                    = $catParent;
+        $this->catPosition                  = $catPosition;
         $this->catIsProductCatalogueEnabled = $catIsProductCatalogueEnabled;
     }
 

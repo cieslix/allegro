@@ -32,12 +32,12 @@ class Allegro_Web_Api_PaymentMethodStruct extends Allegro_Web_Api_Abstract
      * @param string $paymentMethodId
      * @param string $paymentMethodName
      * @param string $paymentMethodImage
-     * @param int $paymentMethodUsage
+     * @param int    $paymentMethodUsage
      */
     public function __construct($paymentMethodId, $paymentMethodName, $paymentMethodImage, $paymentMethodUsage)
     {
-        $this->paymentMethodId = $paymentMethodId;
-        $this->paymentMethodName = $paymentMethodName;
+        $this->paymentMethodId    = $paymentMethodId;
+        $this->paymentMethodName  = $paymentMethodName;
         $this->paymentMethodImage = $paymentMethodImage;
         $this->paymentMethodUsage = $paymentMethodUsage;
     }

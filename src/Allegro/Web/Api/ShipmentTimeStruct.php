@@ -25,7 +25,7 @@ class Allegro_Web_Api_ShipmentTimeStruct extends Allegro_Web_Api_Abstract
     public function __construct($shipmentTimeFrom, $shipmentTimeTo)
     {
         $this->shipmentTimeFrom = $shipmentTimeFrom;
-        $this->shipmentTimeTo = $shipmentTimeTo;
+        $this->shipmentTimeTo   = $shipmentTimeTo;
     }
 
     /**

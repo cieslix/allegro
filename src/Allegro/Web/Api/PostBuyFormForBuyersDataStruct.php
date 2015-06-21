@@ -79,37 +79,37 @@ class Allegro_Web_Api_PostBuyFormForBuyersDataStruct extends Allegro_Web_Api_Abs
     protected $postBuyFormPaymentAmount = null;
 
     /**
-     * @param int $postBuyFormId
-     * @param int $postBuyFormBuyerId
+     * @param int                                             $postBuyFormId
+     * @param int                                             $postBuyFormBuyerId
      * @param Allegro_Web_Api_ArrayOfPostbuyformsellersstruct $postBuyFormSellers
-     * @param float $postBuyFormTotalAmount
-     * @param int $postBuyFormInvoiceOption
-     * @param Allegro_Web_Api_PostBuyFormAddressStruct $postBuyFormInvoiceData
-     * @param Allegro_Web_Api_PostBuyFormAddressStruct $postBuyFormShipmentAddress
-     * @param string $postBuyFormPayType
-     * @param int $postBuyFormPayId
-     * @param string $postBuyFormPayStatus
-     * @param string $postBuyFormDateInit
-     * @param string $postBuyFormDateRecv
-     * @param string $postBuyFormDateCancel
-     * @param float $postBuyFormPaymentAmount
+     * @param float                                           $postBuyFormTotalAmount
+     * @param int                                             $postBuyFormInvoiceOption
+     * @param Allegro_Web_Api_PostBuyFormAddressStruct        $postBuyFormInvoiceData
+     * @param Allegro_Web_Api_PostBuyFormAddressStruct        $postBuyFormShipmentAddress
+     * @param string                                          $postBuyFormPayType
+     * @param int                                             $postBuyFormPayId
+     * @param string                                          $postBuyFormPayStatus
+     * @param string                                          $postBuyFormDateInit
+     * @param string                                          $postBuyFormDateRecv
+     * @param string                                          $postBuyFormDateCancel
+     * @param float                                           $postBuyFormPaymentAmount
      */
     public function __construct($postBuyFormId, $postBuyFormBuyerId, $postBuyFormSellers, $postBuyFormTotalAmount, $postBuyFormInvoiceOption, $postBuyFormInvoiceData, $postBuyFormShipmentAddress, $postBuyFormPayType, $postBuyFormPayId, $postBuyFormPayStatus, $postBuyFormDateInit, $postBuyFormDateRecv, $postBuyFormDateCancel, $postBuyFormPaymentAmount)
     {
-        $this->postBuyFormId = $postBuyFormId;
-        $this->postBuyFormBuyerId = $postBuyFormBuyerId;
-        $this->postBuyFormSellers = $postBuyFormSellers;
-        $this->postBuyFormTotalAmount = $postBuyFormTotalAmount;
-        $this->postBuyFormInvoiceOption = $postBuyFormInvoiceOption;
-        $this->postBuyFormInvoiceData = $postBuyFormInvoiceData;
+        $this->postBuyFormId              = $postBuyFormId;
+        $this->postBuyFormBuyerId         = $postBuyFormBuyerId;
+        $this->postBuyFormSellers         = $postBuyFormSellers;
+        $this->postBuyFormTotalAmount     = $postBuyFormTotalAmount;
+        $this->postBuyFormInvoiceOption   = $postBuyFormInvoiceOption;
+        $this->postBuyFormInvoiceData     = $postBuyFormInvoiceData;
         $this->postBuyFormShipmentAddress = $postBuyFormShipmentAddress;
-        $this->postBuyFormPayType = $postBuyFormPayType;
-        $this->postBuyFormPayId = $postBuyFormPayId;
-        $this->postBuyFormPayStatus = $postBuyFormPayStatus;
-        $this->postBuyFormDateInit = $postBuyFormDateInit;
-        $this->postBuyFormDateRecv = $postBuyFormDateRecv;
-        $this->postBuyFormDateCancel = $postBuyFormDateCancel;
-        $this->postBuyFormPaymentAmount = $postBuyFormPaymentAmount;
+        $this->postBuyFormPayType         = $postBuyFormPayType;
+        $this->postBuyFormPayId           = $postBuyFormPayId;
+        $this->postBuyFormPayStatus       = $postBuyFormPayStatus;
+        $this->postBuyFormDateInit        = $postBuyFormDateInit;
+        $this->postBuyFormDateRecv        = $postBuyFormDateRecv;
+        $this->postBuyFormDateCancel      = $postBuyFormDateCancel;
+        $this->postBuyFormPaymentAmount   = $postBuyFormPaymentAmount;
     }
 
     /**

@@ -44,22 +44,22 @@ class Allegro_Web_Api_PostageStruct extends Allegro_Web_Api_Abstract
     protected $postageFulfillmentTime = null;
 
     /**
-     * @param float $postageAmount
-     * @param float $postageAmountAdd
-     * @param int $postagePackSize
-     * @param int $postageId
-     * @param int $postageFreeShipping
-     * @param int $postageFreeReturn
+     * @param float                                 $postageAmount
+     * @param float                                 $postageAmountAdd
+     * @param int                                   $postagePackSize
+     * @param int                                   $postageId
+     * @param int                                   $postageFreeShipping
+     * @param int                                   $postageFreeReturn
      * @param Allegro_Web_Api_FulfillmentTimeStruct $postageFulfillmentTime
      */
     public function __construct($postageAmount, $postageAmountAdd, $postagePackSize, $postageId, $postageFreeShipping, $postageFreeReturn, $postageFulfillmentTime)
     {
-        $this->postageAmount = $postageAmount;
-        $this->postageAmountAdd = $postageAmountAdd;
-        $this->postagePackSize = $postagePackSize;
-        $this->postageId = $postageId;
-        $this->postageFreeShipping = $postageFreeShipping;
-        $this->postageFreeReturn = $postageFreeReturn;
+        $this->postageAmount          = $postageAmount;
+        $this->postageAmountAdd       = $postageAmountAdd;
+        $this->postagePackSize        = $postagePackSize;
+        $this->postageId              = $postageId;
+        $this->postageFreeShipping    = $postageFreeShipping;
+        $this->postageFreeReturn      = $postageFreeReturn;
         $this->postageFulfillmentTime = $postageFulfillmentTime;
     }
 

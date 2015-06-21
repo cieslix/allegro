@@ -34,19 +34,19 @@ class Allegro_Web_Api_UserInfoType extends Allegro_Web_Api_Abstract
     protected $countryId = null;
 
     /**
-     * @param int $userId
+     * @param int    $userId
      * @param string $userLogin
-     * @param int $userRating
-     * @param int $userIcons
-     * @param int $countryId
+     * @param int    $userRating
+     * @param int    $userIcons
+     * @param int    $countryId
      */
     public function __construct($userId, $userLogin, $userRating, $userIcons, $countryId)
     {
-        $this->userId = $userId;
-        $this->userLogin = $userLogin;
+        $this->userId     = $userId;
+        $this->userLogin  = $userLogin;
         $this->userRating = $userRating;
-        $this->userIcons = $userIcons;
-        $this->countryId = $countryId;
+        $this->userIcons  = $userIcons;
+        $this->countryId  = $countryId;
     }
 
     /**

@@ -19,13 +19,13 @@ class Allegro_Web_Api_ProductParametersGroupStruct extends Allegro_Web_Api_Abstr
     protected $productParametersList = null;
 
     /**
-     * @param string $productParametersGroupName
+     * @param string                                         $productParametersGroupName
      * @param Allegro_Web_Api_ArrayOfProductparametersstruct $productParametersList
      */
     public function __construct($productParametersGroupName, $productParametersList)
     {
         $this->productParametersGroupName = $productParametersGroupName;
-        $this->productParametersList = $productParametersList;
+        $this->productParametersList      = $productParametersList;
     }
 
     /**

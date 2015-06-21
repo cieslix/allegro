@@ -25,14 +25,14 @@ class Allegro_Web_Api_DoGetDealsRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $itemId
-     * @param int $buyerId
+     * @param int    $itemId
+     * @param int    $buyerId
      */
     public function __construct($sessionHandle, $itemId, $buyerId)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->itemId = $itemId;
-        $this->buyerId = $buyerId;
+        $this->itemId        = $itemId;
+        $this->buyerId       = $buyerId;
     }
 
     /**

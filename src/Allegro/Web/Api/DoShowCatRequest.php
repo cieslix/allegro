@@ -8,40 +8,40 @@
  */
 class Allegro_Web_Api_DoShowCatRequest extends Allegro_Web_Api_Abstract
 {
-    const OPTION_BUY_NOW = 1;
-    const OPTION_ADS_TYPE = 2;
-    const OPTION_ONLY_BIDDING_TYPE = 4;
-    const OPTION_PERSONAL_PICKUP = 8;
-    const OPTION_WITH_INVOICE = 16;
-    const OPTION_SUPPORT_PLANET = 32;
-    const OPTION_AVAILABLE_FOR_GUESTS = 64;
-    const OPTION_IN_GENERAL_AVAILABLE = 128;
-    const OPTION_STANDARD_ALLEGRO = 256;
-    const OPTION_FREE_DELIVERY = 512;
+    const OPTION_BUY_NOW               = 1;
+    const OPTION_ADS_TYPE              = 2;
+    const OPTION_ONLY_BIDDING_TYPE     = 4;
+    const OPTION_PERSONAL_PICKUP       = 8;
+    const OPTION_WITH_INVOICE          = 16;
+    const OPTION_SUPPORT_PLANET        = 32;
+    const OPTION_AVAILABLE_FOR_GUESTS  = 64;
+    const OPTION_IN_GENERAL_AVAILABLE  = 128;
+    const OPTION_STANDARD_ALLEGRO      = 256;
+    const OPTION_FREE_DELIVERY         = 512;
     const OPTION_DELIVERY_NOVAYAPOCHTA = 1024;
-    const OPTION_NEW_CONDITION = 2048;
-    const OPTION_USED_CONDITION = 4096;
+    const OPTION_NEW_CONDITION         = 2048;
+    const OPTION_USED_CONDITION        = 4096;
 
-    const SORT_BY_ENDING_ASC = 1;
-    const SORT_BY_ENDING_DESC = 2;
-    const SORT_BY_NAME_ASC = 3;
-    const SORT_BY_NAME_DESC = 4;
-    const SORT_BY_PRICE_ASC = 5;
-    const SORT_BY_PRICE_DESC = 6;
-    const SORT_BY_OFFERS_NUM_ASC = 7;
+    const SORT_BY_ENDING_ASC      = 1;
+    const SORT_BY_ENDING_DESC     = 2;
+    const SORT_BY_NAME_ASC        = 3;
+    const SORT_BY_NAME_DESC       = 4;
+    const SORT_BY_PRICE_ASC       = 5;
+    const SORT_BY_PRICE_DESC      = 6;
+    const SORT_BY_OFFERS_NUM_ASC  = 7;
     const SORT_BY_OFFERS_NUM_DESC = 8;
-    const SORT_BY_RELEVANCE_DESC = 16;
+    const SORT_BY_RELEVANCE_DESC  = 16;
 
-    const FULFILLMENT_TIME_NOW = 1;
-    const FULFILLMENT_TIME_24 = 24;
-    const FULFILLMENT_TIME_48 = 48;
-    const FULFILLMENT_TIME_72 = 72;
-    const FULFILLMENT_TIME_96 = 96;
-    const FULFILLMENT_TIME_120 = 120;
-    const FULFILLMENT_TIME_168 = 168;
-    const FULFILLMENT_TIME_240 = 240;
-    const FULFILLMENT_TIME_336 = 336;
-    const FULFILLMENT_TIME_504 = 504;
+    const FULFILLMENT_TIME_NOW  = 1;
+    const FULFILLMENT_TIME_24   = 24;
+    const FULFILLMENT_TIME_48   = 48;
+    const FULFILLMENT_TIME_72   = 72;
+    const FULFILLMENT_TIME_96   = 96;
+    const FULFILLMENT_TIME_120  = 120;
+    const FULFILLMENT_TIME_168  = 168;
+    const FULFILLMENT_TIME_240  = 240;
+    const FULFILLMENT_TIME_336  = 336;
+    const FULFILLMENT_TIME_504  = 504;
     const FULFILLMENT_TIME_MORE = 999;
 
     /**
@@ -100,30 +100,30 @@ class Allegro_Web_Api_DoShowCatRequest extends Allegro_Web_Api_Abstract
     protected $catOrderFulfillmentTime = null;
 
     /**
-     * @param string $sessionHandle
-     * @param int $catId
-     * @param int $catItemState
-     * @param int $catItemOption
-     * @param Allegro_Web_Api_DurationTimeInfo $catItemDurationOption
+     * @param string                             $sessionHandle
+     * @param int                                $catId
+     * @param int                                $catItemState
+     * @param int                                $catItemOption
+     * @param Allegro_Web_Api_DurationTimeInfo   $catItemDurationOption
      * @param Allegro_Web_Api_ArrayOfFieldsvalue $catAttribFields
-     * @param int $catSortOptions
-     * @param Allegro_Web_Api_PriceCatInfo $catItemsPrice
-     * @param int $catItemsOffset
-     * @param int $catItemsLimit
-     * @param int $catOrderFulfillmentTime
+     * @param int                                $catSortOptions
+     * @param Allegro_Web_Api_PriceCatInfo       $catItemsPrice
+     * @param int                                $catItemsOffset
+     * @param int                                $catItemsLimit
+     * @param int                                $catOrderFulfillmentTime
      */
     public function __construct($sessionHandle, $catId, $catItemState, $catItemOption, $catItemDurationOption, $catAttribFields, $catSortOptions, $catItemsPrice, $catItemsOffset, $catItemsLimit, $catOrderFulfillmentTime)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->catId = $catId;
-        $this->catItemState = $catItemState;
-        $this->catItemOption = $catItemOption;
-        $this->catItemDurationOption = $catItemDurationOption;
-        $this->catAttribFields = $catAttribFields;
-        $this->catSortOptions = $catSortOptions;
-        $this->catItemsPrice = $catItemsPrice;
-        $this->catItemsOffset = $catItemsOffset;
-        $this->catItemsLimit = $catItemsLimit;
+        $this->sessionHandle           = $sessionHandle;
+        $this->catId                   = $catId;
+        $this->catItemState            = $catItemState;
+        $this->catItemOption           = $catItemOption;
+        $this->catItemDurationOption   = $catItemDurationOption;
+        $this->catAttribFields         = $catAttribFields;
+        $this->catSortOptions          = $catSortOptions;
+        $this->catItemsPrice           = $catItemsPrice;
+        $this->catItemsOffset          = $catItemsOffset;
+        $this->catItemsLimit           = $catItemsLimit;
         $this->catOrderFulfillmentTime = $catOrderFulfillmentTime;
     }
 

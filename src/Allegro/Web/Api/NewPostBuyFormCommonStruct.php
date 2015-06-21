@@ -39,21 +39,21 @@ class Allegro_Web_Api_NewPostBuyFormCommonStruct extends Allegro_Web_Api_Abstrac
     protected $invoiceInfo = null;
 
     /**
-     * @param string $paymentMethodId
-     * @param int $shipmentAddressType
-     * @param AddressUserDataStruct $shipmentAddressData
-     * @param string $contactPhone
-     * @param int $invoiceOption
+     * @param string                            $paymentMethodId
+     * @param int                               $shipmentAddressType
+     * @param AddressUserDataStruct             $shipmentAddressData
+     * @param string                            $contactPhone
+     * @param int                               $invoiceOption
      * @param Allegro_Web_Api_InvoiceInfoStruct $invoiceInfo
      */
     public function __construct($paymentMethodId, $shipmentAddressType, $shipmentAddressData, $contactPhone, $invoiceOption, $invoiceInfo)
     {
-        $this->paymentMethodId = $paymentMethodId;
+        $this->paymentMethodId     = $paymentMethodId;
         $this->shipmentAddressType = $shipmentAddressType;
         $this->shipmentAddressData = $shipmentAddressData;
-        $this->contactPhone = $contactPhone;
-        $this->invoiceOption = $invoiceOption;
-        $this->invoiceInfo = $invoiceInfo;
+        $this->contactPhone        = $contactPhone;
+        $this->invoiceOption       = $invoiceOption;
+        $this->invoiceInfo         = $invoiceInfo;
     }
 
     /**

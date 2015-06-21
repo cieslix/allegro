@@ -9,7 +9,7 @@
 class Allegro_Web_Api_DoGetTransactionsIDsRequest extends Allegro_Web_Api_Abstract
 {
     const USER_ROLE_SELLER = 'seller';
-    const USER_ROLE_BUYER = 'buyer';
+    const USER_ROLE_BUYER  = 'buyer';
 
     /**
      * @var string $sessionHandle
@@ -32,16 +32,16 @@ class Allegro_Web_Api_DoGetTransactionsIDsRequest extends Allegro_Web_Api_Abstra
     protected $shipmentIdArray = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                      $sessionHandle
      * @param Allegro_Web_Api_ArrayOfLong $itemsIdArray
-     * @param string $userRole
+     * @param string                      $userRole
      * @param Allegro_Web_Api_ArrayOfLong $shipmentIdArray
      */
     public function __construct($sessionHandle, $itemsIdArray, $userRole, $shipmentIdArray)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->itemsIdArray = $itemsIdArray;
-        $this->userRole = $userRole;
+        $this->sessionHandle   = $sessionHandle;
+        $this->itemsIdArray    = $itemsIdArray;
+        $this->userRole        = $userRole;
         $this->shipmentIdArray = $shipmentIdArray;
     }
 

@@ -9,7 +9,7 @@
 class Allegro_Web_Api_DoGetSiteJournalRequest extends Allegro_Web_Api_Abstract
 {
     const INFO_TYPE_LOGGED_USER = 1;
-    const INFO_TYPE_ALL_OFFERS = 0;
+    const INFO_TYPE_ALL_OFFERS  = 0;
 
     /**
      * @var string $sessionHandle
@@ -28,14 +28,14 @@ class Allegro_Web_Api_DoGetSiteJournalRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $startingPoint
-     * @param int $infoType
+     * @param int    $startingPoint
+     * @param int    $infoType
      */
     public function __construct($sessionHandle, $startingPoint, $infoType)
     {
         $this->sessionHandle = $sessionHandle;
         $this->startingPoint = $startingPoint;
-        $this->infoType = $infoType;
+        $this->infoType      = $infoType;
     }
 
     /**

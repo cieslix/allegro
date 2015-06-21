@@ -35,18 +35,18 @@ class Allegro_Web_Api_DoGetMyPayoutsRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $transCreateDateFrom
-     * @param int $transCreateDateTo
-     * @param int $transPageLimit
-     * @param int $transOffset
+     * @param int    $transCreateDateFrom
+     * @param int    $transCreateDateTo
+     * @param int    $transPageLimit
+     * @param int    $transOffset
      */
     public function __construct($sessionHandle, $transCreateDateFrom, $transCreateDateTo, $transPageLimit, $transOffset)
     {
-        $this->sessionHandle = $sessionHandle;
+        $this->sessionHandle       = $sessionHandle;
         $this->transCreateDateFrom = $transCreateDateFrom;
-        $this->transCreateDateTo = $transCreateDateTo;
-        $this->transPageLimit = $transPageLimit;
-        $this->transOffset = $transOffset;
+        $this->transCreateDateTo   = $transCreateDateTo;
+        $this->transPageLimit      = $transPageLimit;
+        $this->transOffset         = $transOffset;
     }
 
     /**

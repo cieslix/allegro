@@ -49,25 +49,25 @@ class Allegro_Web_Api_UserSentToDataStruct extends Allegro_Web_Api_Abstract
     protected $userAddress = null;
 
     /**
-     * @param int $userId
+     * @param int    $userId
      * @param string $userFirstName
      * @param string $userLastName
      * @param string $userCompany
-     * @param int $userCountryId
+     * @param int    $userCountryId
      * @param string $userPostcode
      * @param string $userCity
      * @param string $userAddress
      */
     public function __construct($userId, $userFirstName, $userLastName, $userCompany, $userCountryId, $userPostcode, $userCity, $userAddress)
     {
-        $this->userId = $userId;
+        $this->userId        = $userId;
         $this->userFirstName = $userFirstName;
-        $this->userLastName = $userLastName;
-        $this->userCompany = $userCompany;
+        $this->userLastName  = $userLastName;
+        $this->userCompany   = $userCompany;
         $this->userCountryId = $userCountryId;
-        $this->userPostcode = $userPostcode;
-        $this->userCity = $userCity;
-        $this->userAddress = $userAddress;
+        $this->userPostcode  = $userPostcode;
+        $this->userCity      = $userCity;
+        $this->userAddress   = $userAddress;
     }
 
     /**

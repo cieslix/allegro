@@ -19,7 +19,7 @@ class Allegro_Web_Api_AdvertInfoStruct extends Allegro_Web_Api_Abstract
     protected $itemAdvertId = null;
 
     /**
-     * @param int $itemIsAdvert
+     * @param int    $itemIsAdvert
      * @param string $itemAdvertId
      */
     public function __construct($itemIsAdvert, $itemAdvertId)

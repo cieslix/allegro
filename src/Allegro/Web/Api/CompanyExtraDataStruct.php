@@ -42,10 +42,10 @@ class Allegro_Web_Api_CompanyExtraDataStruct extends Allegro_Web_Api_Abstract
      */
     public function __construct($companyType, $companyNip, $companyRegon, $companyKrs, $companyActivitySort)
     {
-        $this->companyType = $companyType;
-        $this->companyNip = $companyNip;
-        $this->companyRegon = $companyRegon;
-        $this->companyKrs = $companyKrs;
+        $this->companyType         = $companyType;
+        $this->companyNip          = $companyNip;
+        $this->companyRegon        = $companyRegon;
+        $this->companyKrs          = $companyKrs;
         $this->companyActivitySort = $companyActivitySort;
     }
 

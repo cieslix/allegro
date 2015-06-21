@@ -19,12 +19,12 @@ class Allegro_Web_Api_AmountStruct extends Allegro_Web_Api_Abstract
     protected $amountCurrencySign = null;
 
     /**
-     * @param float $amountValue
+     * @param float  $amountValue
      * @param string $amountCurrencySign
      */
     public function __construct($amountValue, $amountCurrencySign)
     {
-        $this->amountValue = $amountValue;
+        $this->amountValue        = $amountValue;
         $this->amountCurrencySign = $amountCurrencySign;
     }
 

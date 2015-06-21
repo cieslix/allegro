@@ -24,15 +24,15 @@ class Allegro_Web_Api_DoGetRefundsListResponse extends Allegro_Web_Api_Abstract
     protected $filtersList = null;
 
     /**
-     * @param int $refundsCount
-     * @param Allegro_Web_Api_ArrayOfRefundlisttype $refundsList
+     * @param int                                    $refundsCount
+     * @param Allegro_Web_Api_ArrayOfRefundlisttype  $refundsList
      * @param Allegro_Web_Api_ArrayOfFilterslisttype $filtersList
      */
     public function __construct($refundsCount, $refundsList, $filtersList)
     {
         $this->refundsCount = $refundsCount;
-        $this->refundsList = $refundsList;
-        $this->filtersList = $filtersList;
+        $this->refundsList  = $refundsList;
+        $this->filtersList  = $filtersList;
     }
 
     /**

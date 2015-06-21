@@ -24,14 +24,14 @@ class Allegro_Web_Api_FinishFailureStruct extends Allegro_Web_Api_Abstract
     protected $finishErrorMessage = null;
 
     /**
-     * @param int $finishItemId
+     * @param int    $finishItemId
      * @param string $finishErrorCode
      * @param string $finishErrorMessage
      */
     public function __construct($finishItemId, $finishErrorCode, $finishErrorMessage)
     {
-        $this->finishItemId = $finishItemId;
-        $this->finishErrorCode = $finishErrorCode;
+        $this->finishItemId       = $finishItemId;
+        $this->finishErrorCode    = $finishErrorCode;
         $this->finishErrorMessage = $finishErrorMessage;
     }
 

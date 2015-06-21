@@ -24,15 +24,15 @@ class Allegro_Web_Api_DoGetCatsDataCountRequest extends Allegro_Web_Api_Abstract
     protected $webapiKey = null;
 
     /**
-     * @param int $countryId
-     * @param int $localVersion
+     * @param int    $countryId
+     * @param int    $localVersion
      * @param string $webapiKey
      */
     public function __construct($countryId, $localVersion, $webapiKey)
     {
-        $this->countryId = $countryId;
+        $this->countryId    = $countryId;
         $this->localVersion = $localVersion;
-        $this->webapiKey = $webapiKey;
+        $this->webapiKey    = $webapiKey;
     }
 
     /**

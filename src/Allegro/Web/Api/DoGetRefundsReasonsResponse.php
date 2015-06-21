@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetRefundsReasonsResponse extends Allegro_Web_Api_Abstra
     protected $reasonsList = null;
 
     /**
-     * @param int $reasonsCount
+     * @param int                                   $reasonsCount
      * @param Allegro_Web_Api_ArrayOfReasoninfotype $reasonsList
      */
     public function __construct($reasonsCount, $reasonsList)
     {
         $this->reasonsCount = $reasonsCount;
-        $this->reasonsList = $reasonsList;
+        $this->reasonsList  = $reasonsList;
     }
 
     /**

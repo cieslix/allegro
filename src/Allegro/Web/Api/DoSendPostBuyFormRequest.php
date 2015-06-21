@@ -24,13 +24,13 @@ class Allegro_Web_Api_DoSendPostBuyFormRequest extends Allegro_Web_Api_Abstract
     protected $newPostBuyFormCommon = null;
 
     /**
-     * @param string $sessionId
+     * @param string                                            $sessionId
      * @param Allegro_Web_Api_ArrayOfNewpostbuyformsellerstruct $newPostBuyFormSeller
-     * @param Allegro_Web_Api_NewPostBuyFormCommonStruct $newPostBuyFormCommon
+     * @param Allegro_Web_Api_NewPostBuyFormCommonStruct        $newPostBuyFormCommon
      */
     public function __construct($sessionId, $newPostBuyFormSeller, $newPostBuyFormCommon)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId            = $sessionId;
         $this->newPostBuyFormSeller = $newPostBuyFormSeller;
         $this->newPostBuyFormCommon = $newPostBuyFormCommon;
     }

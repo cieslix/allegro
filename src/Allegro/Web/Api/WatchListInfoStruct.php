@@ -19,12 +19,12 @@ class Allegro_Web_Api_WatchListInfoStruct extends Allegro_Web_Api_Abstract
     protected $itemsNotAdded = null;
 
     /**
-     * @param Allegro_Web_Api_ArrayOfLong $itemsAdded
+     * @param Allegro_Web_Api_ArrayOfLong                $itemsAdded
      * @param Allegro_Web_Api_ArrayOfItemsnotaddedstruct $itemsNotAdded
      */
     public function __construct($itemsAdded, $itemsNotAdded)
     {
-        $this->itemsAdded = $itemsAdded;
+        $this->itemsAdded    = $itemsAdded;
         $this->itemsNotAdded = $itemsNotAdded;
     }
 

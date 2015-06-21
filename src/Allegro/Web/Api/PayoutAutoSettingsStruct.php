@@ -19,12 +19,12 @@ class Allegro_Web_Api_PayoutAutoSettingsStruct extends Allegro_Web_Api_Abstract
     protected $payoutAutoFrequency = null;
 
     /**
-     * @param float $payoutAutoAmount
+     * @param float                                     $payoutAutoAmount
      * @param Allegro_Web_Api_PayoutAutoFrequencyStruct $payoutAutoFrequency
      */
     public function __construct($payoutAutoAmount, $payoutAutoFrequency)
     {
-        $this->payoutAutoAmount = $payoutAutoAmount;
+        $this->payoutAutoAmount    = $payoutAutoAmount;
         $this->payoutAutoFrequency = $payoutAutoFrequency;
     }
 

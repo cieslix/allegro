@@ -9,11 +9,11 @@
 class Allegro_Web_Api_DoGetFilledPostBuyFormsRequest extends Allegro_Web_Api_Abstract
 {
     const USER_ROLE_SELLER = 1;
-    const USER_ROLE_BUYER = 2;
+    const USER_ROLE_BUYER  = 2;
 
-    const PAYMENT_TYPE_PAYU = 1;
+    const PAYMENT_TYPE_PAYU     = 1;
     const PAYMENT_TYPE_STANDARD = 2;
-    const PAYMENT_TYPE_COD = 4;
+    const PAYMENT_TYPE_COD      = 4;
 
     /**
      * @var string $sessionId
@@ -42,18 +42,18 @@ class Allegro_Web_Api_DoGetFilledPostBuyFormsRequest extends Allegro_Web_Api_Abs
 
     /**
      * @param string $sessionId
-     * @param int $paymentType
-     * @param int $userRole
-     * @param int $fillingTimeFrom
-     * @param int $fillingTimeTo
+     * @param int    $paymentType
+     * @param int    $userRole
+     * @param int    $fillingTimeFrom
+     * @param int    $fillingTimeTo
      */
     public function __construct($sessionId, $paymentType, $userRole, $fillingTimeFrom, $fillingTimeTo)
     {
-        $this->sessionId = $sessionId;
-        $this->paymentType = $paymentType;
-        $this->userRole = $userRole;
+        $this->sessionId       = $sessionId;
+        $this->paymentType     = $paymentType;
+        $this->userRole        = $userRole;
         $this->fillingTimeFrom = $fillingTimeFrom;
-        $this->fillingTimeTo = $fillingTimeTo;
+        $this->fillingTimeTo   = $fillingTimeTo;
     }
 
     /**

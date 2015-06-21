@@ -30,15 +30,15 @@ class Allegro_Web_Api_DoGetSellFormFieldsExtLimitResponse extends Allegro_Web_Ap
 
     /**
      * @param Allegro_Web_Api_ArrayOfSellformtype $sellFormFields
-     * @param int $verKey
-     * @param string $verStr
-     * @param int $formFieldsCount
+     * @param int                                 $verKey
+     * @param string                              $verStr
+     * @param int                                 $formFieldsCount
      */
     public function __construct($sellFormFields, $verKey, $verStr, $formFieldsCount)
     {
-        $this->sellFormFields = $sellFormFields;
-        $this->verKey = $verKey;
-        $this->verStr = $verStr;
+        $this->sellFormFields  = $sellFormFields;
+        $this->verKey          = $verKey;
+        $this->verStr          = $verStr;
         $this->formFieldsCount = $formFieldsCount;
     }
 

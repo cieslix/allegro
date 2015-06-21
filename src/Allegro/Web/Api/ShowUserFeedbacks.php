@@ -42,11 +42,11 @@ class Allegro_Web_Api_ShowUserFeedbacks extends Allegro_Web_Api_Abstract
      */
     public function __construct($userFLastWeek, $userFLastMonth, $userFAll, $userFSoldItems, $userFBuyItems)
     {
-        $this->userFLastWeek = $userFLastWeek;
+        $this->userFLastWeek  = $userFLastWeek;
         $this->userFLastMonth = $userFLastMonth;
-        $this->userFAll = $userFAll;
+        $this->userFAll       = $userFAll;
         $this->userFSoldItems = $userFSoldItems;
-        $this->userFBuyItems = $userFBuyItems;
+        $this->userFBuyItems  = $userFBuyItems;
     }
 
     /**

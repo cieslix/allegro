@@ -24,14 +24,14 @@ class Allegro_Web_Api_DoCreateItemTemplateRequest extends Allegro_Web_Api_Abstra
     protected $itemTemplateFields = null;
 
     /**
-     * @param string $sessionId
-     * @param string $itemTemplateName
+     * @param string                             $sessionId
+     * @param string                             $itemTemplateName
      * @param Allegro_Web_Api_ArrayOfFieldsvalue $itemTemplateFields
      */
     public function __construct($sessionId, $itemTemplateName, $itemTemplateFields)
     {
-        $this->sessionId = $sessionId;
-        $this->itemTemplateName = $itemTemplateName;
+        $this->sessionId          = $sessionId;
+        $this->itemTemplateName   = $itemTemplateName;
         $this->itemTemplateFields = $itemTemplateFields;
     }
 

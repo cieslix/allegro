@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetMyFutureItemsResponse extends Allegro_Web_Api_Abstrac
     protected $futureItemsList = null;
 
     /**
-     * @param int $futureItemsCounter
+     * @param int                                     $futureItemsCounter
      * @param Allegro_Web_Api_ArrayOfFutureitemstruct $futureItemsList
      */
     public function __construct($futureItemsCounter, $futureItemsList)
     {
         $this->futureItemsCounter = $futureItemsCounter;
-        $this->futureItemsList = $futureItemsList;
+        $this->futureItemsList    = $futureItemsList;
     }
 
     /**

@@ -24,14 +24,14 @@ class Allegro_Web_Api_ItemTemplateListStruct extends Allegro_Web_Api_Abstract
     protected $itemTemplateFields = null;
 
     /**
-     * @param int $itemTemplateId
-     * @param string $itemTemplateName
+     * @param int                                $itemTemplateId
+     * @param string                             $itemTemplateName
      * @param Allegro_Web_Api_ArrayOfFieldsvalue $itemTemplateFields
      */
     public function __construct($itemTemplateId, $itemTemplateName, $itemTemplateFields)
     {
-        $this->itemTemplateId = $itemTemplateId;
-        $this->itemTemplateName = $itemTemplateName;
+        $this->itemTemplateId     = $itemTemplateId;
+        $this->itemTemplateName   = $itemTemplateName;
         $this->itemTemplateFields = $itemTemplateFields;
     }
 

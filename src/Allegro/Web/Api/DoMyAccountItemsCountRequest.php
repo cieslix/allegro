@@ -8,14 +8,14 @@
  */
 class Allegro_Web_Api_DoMyAccountItemsCountRequest extends Allegro_Web_Api_Abstract
 {
-    const ACCOUNT_TYPE_TAB_BID = 'bid';
-    const ACCOUNT_TYPE_TAB_WON = 'won';
-    const ACCOUNT_TYPE_TAB_NOT_WON = 'not_won';
-    const ACCOUNT_TYPE_TAB_WATCH = 'watch';
-    const ACCOUNT_TYPE_TAB_WATCHED = 'watch_cl';
-    const ACCOUNT_TYPE_TAB_SELL = 'sell';
-    const ACCOUNT_TYPE_TAB_SOLD = 'sold';
-    const ACCOUNT_TYPE_TAB_NOT_SOLD = 'not_sold';
+    const ACCOUNT_TYPE_TAB_BID       = 'bid';
+    const ACCOUNT_TYPE_TAB_WON       = 'won';
+    const ACCOUNT_TYPE_TAB_NOT_WON   = 'not_won';
+    const ACCOUNT_TYPE_TAB_WATCH     = 'watch';
+    const ACCOUNT_TYPE_TAB_WATCHED   = 'watch_cl';
+    const ACCOUNT_TYPE_TAB_SELL      = 'sell';
+    const ACCOUNT_TYPE_TAB_SOLD      = 'sold';
+    const ACCOUNT_TYPE_TAB_NOT_SOLD  = 'not_sold';
     const ACCOUNT_TYPE_TAB_SCHEDULED = 'future';
 
     /**
@@ -34,15 +34,15 @@ class Allegro_Web_Api_DoMyAccountItemsCountRequest extends Allegro_Web_Api_Abstr
     protected $itemsArray = null;
 
     /**
-     * @param string $sessionHandle
-     * @param string $accountType
+     * @param string                      $sessionHandle
+     * @param string                      $accountType
      * @param Allegro_Web_Api_ArrayOfLong $itemsArray
      */
     public function __construct($sessionHandle, $accountType, $itemsArray)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->accountType = $accountType;
-        $this->itemsArray = $itemsArray;
+        $this->accountType   = $accountType;
+        $this->itemsArray    = $itemsArray;
     }
 
     /**

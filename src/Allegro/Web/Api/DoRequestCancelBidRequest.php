@@ -25,13 +25,13 @@ class Allegro_Web_Api_DoRequestCancelBidRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $requestItemId
+     * @param int    $requestItemId
      * @param string $requestCancelReason
      */
     public function __construct($sessionHandle, $requestItemId, $requestCancelReason)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->requestItemId = $requestItemId;
+        $this->sessionHandle       = $sessionHandle;
+        $this->requestItemId       = $requestItemId;
         $this->requestCancelReason = $requestCancelReason;
     }
 

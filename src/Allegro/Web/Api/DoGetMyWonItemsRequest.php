@@ -44,23 +44,23 @@ class Allegro_Web_Api_DoGetMyWonItemsRequest extends Allegro_Web_Api_Abstract
     protected $pageNumber = null;
 
     /**
-     * @param string $sessionId
+     * @param string                            $sessionId
      * @param Allegro_Web_Api_SortOptionsStruct $sortOptions
-     * @param string $searchValue
-     * @param int $categoryId
-     * @param Allegro_Web_Api_ArrayOfLong $itemIds
-     * @param int $pageSize
-     * @param int $pageNumber
+     * @param string                            $searchValue
+     * @param int                               $categoryId
+     * @param Allegro_Web_Api_ArrayOfLong       $itemIds
+     * @param int                               $pageSize
+     * @param int                               $pageNumber
      */
     public function __construct($sessionId, $sortOptions, $searchValue, $categoryId, $itemIds, $pageSize, $pageNumber)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId   = $sessionId;
         $this->sortOptions = $sortOptions;
         $this->searchValue = $searchValue;
-        $this->categoryId = $categoryId;
-        $this->itemIds = $itemIds;
-        $this->pageSize = $pageSize;
-        $this->pageNumber = $pageNumber;
+        $this->categoryId  = $categoryId;
+        $this->itemIds     = $itemIds;
+        $this->pageSize    = $pageSize;
+        $this->pageNumber  = $pageNumber;
     }
 
     /**

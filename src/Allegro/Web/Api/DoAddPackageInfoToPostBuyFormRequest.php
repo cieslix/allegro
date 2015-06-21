@@ -24,15 +24,15 @@ class Allegro_Web_Api_DoAddPackageInfoToPostBuyFormRequest extends Allegro_Web_A
     protected $packageInfo = null;
 
     /**
-     * @param string $sessionId
-     * @param int $transactionId
+     * @param string                                   $sessionId
+     * @param int                                      $transactionId
      * @param Allegro_Web_Api_ArrayOfPackageinfostruct $packageInfo
      */
     public function __construct($sessionId, $transactionId, $packageInfo)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId     = $sessionId;
         $this->transactionId = $transactionId;
-        $this->packageInfo = $packageInfo;
+        $this->packageInfo   = $packageInfo;
     }
 
     /**

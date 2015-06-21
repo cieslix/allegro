@@ -34,18 +34,18 @@ class Allegro_Web_Api_ProductStruct extends Allegro_Web_Api_Abstract
     protected $productParametersGroupList = null;
 
     /**
-     * @param int $productId
-     * @param string $productName
-     * @param string $productDescription
-     * @param Allegro_Web_Api_ArrayOfString $productImagesList
+     * @param int                                                 $productId
+     * @param string                                              $productName
+     * @param string                                              $productDescription
+     * @param Allegro_Web_Api_ArrayOfString                       $productImagesList
      * @param Allegro_Web_Api_ArrayOfProductparametersgroupstruct $productParametersGroupList
      */
     public function __construct($productId, $productName, $productDescription, $productImagesList, $productParametersGroupList)
     {
-        $this->productId = $productId;
-        $this->productName = $productName;
-        $this->productDescription = $productDescription;
-        $this->productImagesList = $productImagesList;
+        $this->productId                  = $productId;
+        $this->productName                = $productName;
+        $this->productDescription         = $productDescription;
+        $this->productImagesList          = $productImagesList;
         $this->productParametersGroupList = $productParametersGroupList;
     }
 

@@ -8,7 +8,7 @@
  */
 class Allegro_Web_Api_DoQuerySysStatusRequest extends Allegro_Web_Api_Abstract
 {
-    const SYSVAR_CATEGORY_TREE = 3;
+    const SYSVAR_CATEGORY_TREE    = 3;
     const SYSVER_FIELDS_SALE_FORM = 4;
 
     /**
@@ -27,13 +27,13 @@ class Allegro_Web_Api_DoQuerySysStatusRequest extends Allegro_Web_Api_Abstract
     protected $webapiKey = null;
 
     /**
-     * @param int $sysvar
-     * @param int $countryId
+     * @param int    $sysvar
+     * @param int    $countryId
      * @param string $webapiKey
      */
     public function __construct($sysvar, $countryId, $webapiKey)
     {
-        $this->sysvar = $sysvar;
+        $this->sysvar    = $sysvar;
         $this->countryId = $countryId;
         $this->webapiKey = $webapiKey;
     }

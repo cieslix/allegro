@@ -40,20 +40,20 @@ class Allegro_Web_Api_DoInternalIStoreChangeRequest extends Allegro_Web_Api_Abst
 
     /**
      * @param string $webapiKey
-     * @param int $userId
-     * @param int $istoreId
+     * @param int    $userId
+     * @param int    $istoreId
      * @param string $actionType
-     * @param int $actionDate
-     * @param int $validDate
+     * @param int    $actionDate
+     * @param int    $validDate
      */
     public function __construct($webapiKey, $userId, $istoreId, $actionType, $actionDate, $validDate)
     {
-        $this->webapiKey = $webapiKey;
-        $this->userId = $userId;
-        $this->istoreId = $istoreId;
+        $this->webapiKey  = $webapiKey;
+        $this->userId     = $userId;
+        $this->istoreId   = $istoreId;
         $this->actionType = $actionType;
         $this->actionDate = $actionDate;
-        $this->validDate = $validDate;
+        $this->validDate  = $validDate;
     }
 
     /**

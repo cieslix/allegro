@@ -24,7 +24,7 @@ class Allegro_Web_Api_SellerPaymentInfoStruct extends Allegro_Web_Api_Abstract
      */
     public function __construct($shipmentPaymentInfoPza, $shipmentPaymentInfoNonPza)
     {
-        $this->shipmentPaymentInfoPza = $shipmentPaymentInfoPza;
+        $this->shipmentPaymentInfoPza    = $shipmentPaymentInfoPza;
         $this->shipmentPaymentInfoNonPza = $shipmentPaymentInfoNonPza;
     }
 

@@ -94,43 +94,43 @@ class Allegro_Web_Api_WatchedItemStruct extends Allegro_Web_Api_Abstract
     protected $itemPayuInfo = null;
 
     /**
-     * @param int $itemId
-     * @param string $itemTitle
-     * @param string $itemThumbnailUrl
+     * @param int                                    $itemId
+     * @param string                                 $itemTitle
+     * @param string                                 $itemThumbnailUrl
      * @param Allegro_Web_Api_ArrayOfItempricestruct $itemPrice
-     * @param int $itemLeftQuantity
-     * @param int $itemQuantityType
-     * @param int $itemEndTime
-     * @param Allegro_Web_Api_UserInfoStruct $itemSeller
-     * @param int $itemBiddersCounter
-     * @param Allegro_Web_Api_UserInfoStruct $itemHighestBidder
-     * @param int $itemCategoryId
-     * @param int $itemViewsCounter
-     * @param string $itemNote
-     * @param int $itemSpecialInfo
-     * @param int $itemShopInfo
-     * @param int $itemProductInfo
-     * @param int $itemPayuInfo
+     * @param int                                    $itemLeftQuantity
+     * @param int                                    $itemQuantityType
+     * @param int                                    $itemEndTime
+     * @param Allegro_Web_Api_UserInfoStruct         $itemSeller
+     * @param int                                    $itemBiddersCounter
+     * @param Allegro_Web_Api_UserInfoStruct         $itemHighestBidder
+     * @param int                                    $itemCategoryId
+     * @param int                                    $itemViewsCounter
+     * @param string                                 $itemNote
+     * @param int                                    $itemSpecialInfo
+     * @param int                                    $itemShopInfo
+     * @param int                                    $itemProductInfo
+     * @param int                                    $itemPayuInfo
      */
     public function __construct($itemId, $itemTitle, $itemThumbnailUrl, $itemPrice, $itemLeftQuantity, $itemQuantityType, $itemEndTime, $itemSeller, $itemBiddersCounter, $itemHighestBidder, $itemCategoryId, $itemViewsCounter, $itemNote, $itemSpecialInfo, $itemShopInfo, $itemProductInfo, $itemPayuInfo)
     {
-        $this->itemId = $itemId;
-        $this->itemTitle = $itemTitle;
-        $this->itemThumbnailUrl = $itemThumbnailUrl;
-        $this->itemPrice = $itemPrice;
-        $this->itemLeftQuantity = $itemLeftQuantity;
-        $this->itemQuantityType = $itemQuantityType;
-        $this->itemEndTime = $itemEndTime;
-        $this->itemSeller = $itemSeller;
+        $this->itemId             = $itemId;
+        $this->itemTitle          = $itemTitle;
+        $this->itemThumbnailUrl   = $itemThumbnailUrl;
+        $this->itemPrice          = $itemPrice;
+        $this->itemLeftQuantity   = $itemLeftQuantity;
+        $this->itemQuantityType   = $itemQuantityType;
+        $this->itemEndTime        = $itemEndTime;
+        $this->itemSeller         = $itemSeller;
         $this->itemBiddersCounter = $itemBiddersCounter;
-        $this->itemHighestBidder = $itemHighestBidder;
-        $this->itemCategoryId = $itemCategoryId;
-        $this->itemViewsCounter = $itemViewsCounter;
-        $this->itemNote = $itemNote;
-        $this->itemSpecialInfo = $itemSpecialInfo;
-        $this->itemShopInfo = $itemShopInfo;
-        $this->itemProductInfo = $itemProductInfo;
-        $this->itemPayuInfo = $itemPayuInfo;
+        $this->itemHighestBidder  = $itemHighestBidder;
+        $this->itemCategoryId     = $itemCategoryId;
+        $this->itemViewsCounter   = $itemViewsCounter;
+        $this->itemNote           = $itemNote;
+        $this->itemSpecialInfo    = $itemSpecialInfo;
+        $this->itemShopInfo       = $itemShopInfo;
+        $this->itemProductInfo    = $itemProductInfo;
+        $this->itemPayuInfo       = $itemPayuInfo;
     }
 
     /**

@@ -26,12 +26,12 @@ class Allegro_Web_Api_FilterValueType extends Allegro_Web_Api_Abstract
     /**
      * @param string $filterValueId
      * @param string $filterValueName
-     * @param int $filterValueCount
+     * @param int    $filterValueCount
      */
     public function __construct($filterValueId, $filterValueName, $filterValueCount)
     {
-        $this->filterValueId = $filterValueId;
-        $this->filterValueName = $filterValueName;
+        $this->filterValueId    = $filterValueId;
+        $this->filterValueName  = $filterValueName;
         $this->filterValueCount = $filterValueCount;
     }
 

@@ -40,17 +40,17 @@ class Allegro_Web_Api_DoGetFeedbackRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $feedbackFrom
-     * @param int $feedbackTo
-     * @param int $feedbackOffset
+     * @param int    $feedbackFrom
+     * @param int    $feedbackTo
+     * @param int    $feedbackOffset
      * @param string $feedbackKindList
      */
     public function __construct($sessionHandle, $feedbackFrom, $feedbackTo, $feedbackOffset, $feedbackKindList)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->feedbackFrom = $feedbackFrom;
-        $this->feedbackTo = $feedbackTo;
-        $this->feedbackOffset = $feedbackOffset;
+        $this->sessionHandle    = $sessionHandle;
+        $this->feedbackFrom     = $feedbackFrom;
+        $this->feedbackTo       = $feedbackTo;
+        $this->feedbackOffset   = $feedbackOffset;
         $this->feedbackKindList = $feedbackKindList;
     }
 

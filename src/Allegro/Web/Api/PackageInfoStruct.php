@@ -19,13 +19,13 @@ class Allegro_Web_Api_PackageInfoStruct extends Allegro_Web_Api_Abstract
     protected $packageId = null;
 
     /**
-     * @param int $operatorId
+     * @param int    $operatorId
      * @param string $packageId
      */
     public function __construct($operatorId, $packageId)
     {
         $this->operatorId = $operatorId;
-        $this->packageId = $packageId;
+        $this->packageId  = $packageId;
     }
 
     /**

@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoRemoveFromWatchListRequest extends Allegro_Web_Api_Abstr
     protected $itemsIdArray = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                      $sessionHandle
      * @param Allegro_Web_Api_ArrayOfLong $itemsIdArray
      */
     public function __construct($sessionHandle, $itemsIdArray)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->itemsIdArray = $itemsIdArray;
+        $this->itemsIdArray  = $itemsIdArray;
     }
 
     /**

@@ -29,17 +29,17 @@ class Allegro_Web_Api_UserBlackListAddResultStruct extends Allegro_Web_Api_Abstr
     protected $addToBlackListErrMsg = null;
 
     /**
-     * @param int $userId
-     * @param int $addToBlackListResult
+     * @param int    $userId
+     * @param int    $addToBlackListResult
      * @param string $addToBlackListErrCode
      * @param string $addToBlackListErrMsg
      */
     public function __construct($userId, $addToBlackListResult, $addToBlackListErrCode, $addToBlackListErrMsg)
     {
-        $this->userId = $userId;
-        $this->addToBlackListResult = $addToBlackListResult;
+        $this->userId                = $userId;
+        $this->addToBlackListResult  = $addToBlackListResult;
         $this->addToBlackListErrCode = $addToBlackListErrCode;
-        $this->addToBlackListErrMsg = $addToBlackListErrMsg;
+        $this->addToBlackListErrMsg  = $addToBlackListErrMsg;
     }
 
     /**

@@ -19,12 +19,12 @@ class Allegro_Web_Api_ServiceInfoCatStruct extends Allegro_Web_Api_Abstract
     protected $anCatName = null;
 
     /**
-     * @param int $anCatId
+     * @param int    $anCatId
      * @param string $anCatName
      */
     public function __construct($anCatId, $anCatName)
     {
-        $this->anCatId = $anCatId;
+        $this->anCatId   = $anCatId;
         $this->anCatName = $anCatName;
     }
 

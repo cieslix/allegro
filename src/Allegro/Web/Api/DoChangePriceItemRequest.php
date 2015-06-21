@@ -35,18 +35,18 @@ class Allegro_Web_Api_DoChangePriceItemRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $itemId
-     * @param float $newStartingPrice
-     * @param float $newReservePrice
-     * @param float $newBuyNowPrice
+     * @param int    $itemId
+     * @param float  $newStartingPrice
+     * @param float  $newReservePrice
+     * @param float  $newBuyNowPrice
      */
     public function __construct($sessionHandle, $itemId, $newStartingPrice, $newReservePrice, $newBuyNowPrice)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->itemId = $itemId;
+        $this->sessionHandle    = $sessionHandle;
+        $this->itemId           = $itemId;
         $this->newStartingPrice = $newStartingPrice;
-        $this->newReservePrice = $newReservePrice;
-        $this->newBuyNowPrice = $newBuyNowPrice;
+        $this->newReservePrice  = $newReservePrice;
+        $this->newBuyNowPrice   = $newBuyNowPrice;
     }
 
     /**

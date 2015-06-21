@@ -13,10 +13,10 @@ class Allegro_Web_Api_DoFeedbackRequest extends Allegro_Web_Api_Abstract
     const FEEDBACK_TYPE_NEU = 'NEU';
 
     const FEEDBACK_FOR_SELLER = 1;
-    const FEEDBACK_FOR_BUYER = 2;
+    const FEEDBACK_FOR_BUYER  = 2;
 
     const USE_TEMPLATE_YES = 1;
-    const USE_TEMPLATE_NO = 0;
+    const USE_TEMPLATE_NO  = 0;
 
     /**
      * @var string $sessionHandle
@@ -59,25 +59,25 @@ class Allegro_Web_Api_DoFeedbackRequest extends Allegro_Web_Api_Abstract
     protected $feRating = null;
 
     /**
-     * @param string $sessionHandle
-     * @param int $feItemId
-     * @param int $feUseCommentTemplate
-     * @param int $feToUserId
-     * @param string $feComment
-     * @param string $feCommentType
-     * @param int $feOp
+     * @param string                                            $sessionHandle
+     * @param int                                               $feItemId
+     * @param int                                               $feUseCommentTemplate
+     * @param int                                               $feToUserId
+     * @param string                                            $feComment
+     * @param string                                            $feCommentType
+     * @param int                                               $feOp
      * @param Allegro_Web_Api_ArrayOfSellratingestimationstruct $feRating
      */
     public function __construct($sessionHandle, $feItemId, $feUseCommentTemplate, $feToUserId, $feComment, $feCommentType, $feOp, $feRating)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->feItemId = $feItemId;
+        $this->sessionHandle        = $sessionHandle;
+        $this->feItemId             = $feItemId;
         $this->feUseCommentTemplate = $feUseCommentTemplate;
-        $this->feToUserId = $feToUserId;
-        $this->feComment = $feComment;
-        $this->feCommentType = $feCommentType;
-        $this->feOp = $feOp;
-        $this->feRating = $feRating;
+        $this->feToUserId           = $feToUserId;
+        $this->feComment            = $feComment;
+        $this->feCommentType        = $feCommentType;
+        $this->feOp                 = $feOp;
+        $this->feRating             = $feRating;
     }
 
     /**

@@ -44,23 +44,23 @@ class Allegro_Web_Api_DoGetMyFutureItemsRequest extends Allegro_Web_Api_Abstract
     protected $pageNumber = null;
 
     /**
-     * @param string $sessionId
-     * @param Allegro_Web_Api_SortOptionsStruct $sortOptions
+     * @param string                                    $sessionId
+     * @param Allegro_Web_Api_SortOptionsStruct         $sortOptions
      * @param Allegro_Web_Api_FutureFilterOptionsStruct $filterOptions
-     * @param int $categoryId
-     * @param Allegro_Web_Api_ArrayOfLong $itemIds
-     * @param int $pageSize
-     * @param int $pageNumber
+     * @param int                                       $categoryId
+     * @param Allegro_Web_Api_ArrayOfLong               $itemIds
+     * @param int                                       $pageSize
+     * @param int                                       $pageNumber
      */
     public function __construct($sessionId, $sortOptions, $filterOptions, $categoryId, $itemIds, $pageSize, $pageNumber)
     {
-        $this->sessionId = $sessionId;
-        $this->sortOptions = $sortOptions;
+        $this->sessionId     = $sessionId;
+        $this->sortOptions   = $sortOptions;
         $this->filterOptions = $filterOptions;
-        $this->categoryId = $categoryId;
-        $this->itemIds = $itemIds;
-        $this->pageSize = $pageSize;
-        $this->pageNumber = $pageNumber;
+        $this->categoryId    = $categoryId;
+        $this->itemIds       = $itemIds;
+        $this->pageSize      = $pageSize;
+        $this->pageNumber    = $pageNumber;
     }
 
     /**

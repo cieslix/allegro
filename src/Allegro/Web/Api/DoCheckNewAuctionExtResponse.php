@@ -26,12 +26,12 @@ class Allegro_Web_Api_DoCheckNewAuctionExtResponse extends Allegro_Web_Api_Abstr
     /**
      * @param string $itemPrice
      * @param string $itemPriceDesc
-     * @param int $itemIsAllegroStandard
+     * @param int    $itemIsAllegroStandard
      */
     public function __construct($itemPrice, $itemPriceDesc, $itemIsAllegroStandard)
     {
-        $this->itemPrice = $itemPrice;
-        $this->itemPriceDesc = $itemPriceDesc;
+        $this->itemPrice             = $itemPrice;
+        $this->itemPriceDesc         = $itemPriceDesc;
         $this->itemIsAllegroStandard = $itemIsAllegroStandard;
     }
 

@@ -89,41 +89,41 @@ class Allegro_Web_Api_FeedbackList extends Allegro_Web_Api_Abstract
     protected $fCancelled = null;
 
     /**
-     * @param int $fId
-     * @param int $fItemId
-     * @param int $fFromId
-     * @param int $fToId
-     * @param int $fDate
+     * @param int    $fId
+     * @param int    $fItemId
+     * @param int    $fFromId
+     * @param int    $fToId
+     * @param int    $fDate
      * @param string $fType
      * @param string $fDesc
-     * @param int $fCorrectDate
+     * @param int    $fCorrectDate
      * @param string $fCorrectText
      * @param string $fReceiverType
      * @param string $fUserLogin
      * @param string $fUserRating
      * @param string $fUserCountry
-     * @param int $fUserBlocked
-     * @param int $fUserSseller
-     * @param int $fCancelled
+     * @param int    $fUserBlocked
+     * @param int    $fUserSseller
+     * @param int    $fCancelled
      */
     public function __construct($fId, $fItemId, $fFromId, $fToId, $fDate, $fType, $fDesc, $fCorrectDate, $fCorrectText, $fReceiverType, $fUserLogin, $fUserRating, $fUserCountry, $fUserBlocked, $fUserSseller, $fCancelled)
     {
-        $this->fId = $fId;
-        $this->fItemId = $fItemId;
-        $this->fFromId = $fFromId;
-        $this->fToId = $fToId;
-        $this->fDate = $fDate;
-        $this->fType = $fType;
-        $this->fDesc = $fDesc;
-        $this->fCorrectDate = $fCorrectDate;
-        $this->fCorrectText = $fCorrectText;
+        $this->fId           = $fId;
+        $this->fItemId       = $fItemId;
+        $this->fFromId       = $fFromId;
+        $this->fToId         = $fToId;
+        $this->fDate         = $fDate;
+        $this->fType         = $fType;
+        $this->fDesc         = $fDesc;
+        $this->fCorrectDate  = $fCorrectDate;
+        $this->fCorrectText  = $fCorrectText;
         $this->fReceiverType = $fReceiverType;
-        $this->fUserLogin = $fUserLogin;
-        $this->fUserRating = $fUserRating;
-        $this->fUserCountry = $fUserCountry;
-        $this->fUserBlocked = $fUserBlocked;
-        $this->fUserSseller = $fUserSseller;
-        $this->fCancelled = $fCancelled;
+        $this->fUserLogin    = $fUserLogin;
+        $this->fUserRating   = $fUserRating;
+        $this->fUserCountry  = $fUserCountry;
+        $this->fUserBlocked  = $fUserBlocked;
+        $this->fUserSseller  = $fUserSseller;
+        $this->fCancelled    = $fCancelled;
     }
 
     /**

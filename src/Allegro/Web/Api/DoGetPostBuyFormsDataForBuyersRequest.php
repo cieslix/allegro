@@ -19,12 +19,12 @@ class Allegro_Web_Api_DoGetPostBuyFormsDataForBuyersRequest extends Allegro_Web_
     protected $transactionsIdsArray = null;
 
     /**
-     * @param string $sessionId
+     * @param string                      $sessionId
      * @param Allegro_Web_Api_ArrayOfLong $transactionsIdsArray
      */
     public function __construct($sessionId, $transactionsIdsArray)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId            = $sessionId;
         $this->transactionsIdsArray = $transactionsIdsArray;
     }
 

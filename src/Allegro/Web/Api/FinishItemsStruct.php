@@ -24,15 +24,15 @@ class Allegro_Web_Api_FinishItemsStruct extends Allegro_Web_Api_Abstract
     protected $finishCancelReason = null;
 
     /**
-     * @param int $finishItemId
-     * @param int $finishCancelAllBids
+     * @param int    $finishItemId
+     * @param int    $finishCancelAllBids
      * @param string $finishCancelReason
      */
     public function __construct($finishItemId, $finishCancelAllBids, $finishCancelReason)
     {
-        $this->finishItemId = $finishItemId;
+        $this->finishItemId        = $finishItemId;
         $this->finishCancelAllBids = $finishCancelAllBids;
-        $this->finishCancelReason = $finishCancelReason;
+        $this->finishCancelReason  = $finishCancelReason;
     }
 
     /**

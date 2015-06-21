@@ -30,16 +30,16 @@ class Allegro_Web_Api_DoFinishItemRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $finishItemId
-     * @param int $finishCancelAllBids
+     * @param int    $finishItemId
+     * @param int    $finishCancelAllBids
      * @param string $finishCancelReason
      */
     public function __construct($sessionHandle, $finishItemId, $finishCancelAllBids, $finishCancelReason)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->finishItemId = $finishItemId;
+        $this->sessionHandle       = $sessionHandle;
+        $this->finishItemId        = $finishItemId;
         $this->finishCancelAllBids = $finishCancelAllBids;
-        $this->finishCancelReason = $finishCancelReason;
+        $this->finishCancelReason  = $finishCancelReason;
     }
 
     /**

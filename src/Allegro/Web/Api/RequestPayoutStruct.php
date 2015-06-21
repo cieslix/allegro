@@ -24,15 +24,15 @@ class Allegro_Web_Api_RequestPayoutStruct extends Allegro_Web_Api_Abstract
     protected $payoutTime = null;
 
     /**
-     * @param int $payoutId
+     * @param int   $payoutId
      * @param float $payoutAmount
-     * @param int $payoutTime
+     * @param int   $payoutTime
      */
     public function __construct($payoutId, $payoutAmount, $payoutTime)
     {
-        $this->payoutId = $payoutId;
+        $this->payoutId     = $payoutId;
         $this->payoutAmount = $payoutAmount;
-        $this->payoutTime = $payoutTime;
+        $this->payoutTime   = $payoutTime;
     }
 
     /**

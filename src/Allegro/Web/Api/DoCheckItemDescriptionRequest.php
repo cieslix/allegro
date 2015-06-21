@@ -24,7 +24,7 @@ class Allegro_Web_Api_DoCheckItemDescriptionRequest extends Allegro_Web_Api_Abst
      */
     public function __construct($sessionId, $descriptionContent)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId          = $sessionId;
         $this->descriptionContent = $descriptionContent;
     }
 

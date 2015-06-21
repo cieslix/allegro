@@ -24,14 +24,14 @@ class Allegro_Web_Api_ProductParametersStruct extends Allegro_Web_Api_Abstract
     protected $productParameterDescription = null;
 
     /**
-     * @param string $productParameterName
+     * @param string                        $productParameterName
      * @param Allegro_Web_Api_ArrayOfString $productParameterValues
-     * @param string $productParameterDescription
+     * @param string                        $productParameterDescription
      */
     public function __construct($productParameterName, $productParameterValues, $productParameterDescription)
     {
-        $this->productParameterName = $productParameterName;
-        $this->productParameterValues = $productParameterValues;
+        $this->productParameterName        = $productParameterName;
+        $this->productParameterValues      = $productParameterValues;
         $this->productParameterDescription = $productParameterDescription;
     }
 

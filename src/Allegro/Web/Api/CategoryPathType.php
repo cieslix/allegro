@@ -24,14 +24,14 @@ class Allegro_Web_Api_CategoryPathType extends Allegro_Web_Api_Abstract
     protected $categoryParentId = null;
 
     /**
-     * @param int $categoryId
+     * @param int    $categoryId
      * @param string $categoryName
-     * @param int $categoryParentId
+     * @param int    $categoryParentId
      */
     public function __construct($categoryId, $categoryName, $categoryParentId)
     {
-        $this->categoryId = $categoryId;
-        $this->categoryName = $categoryName;
+        $this->categoryId       = $categoryId;
+        $this->categoryName     = $categoryName;
         $this->categoryParentId = $categoryParentId;
     }
 

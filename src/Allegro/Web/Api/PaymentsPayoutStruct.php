@@ -19,12 +19,12 @@ class Allegro_Web_Api_PaymentsPayoutStruct extends Allegro_Web_Api_Abstract
     protected $payoutAutoSettings = null;
 
     /**
-     * @param int $payoutType
+     * @param int                                      $payoutType
      * @param Allegro_Web_Api_PayoutAutoSettingsStruct $payoutAutoSettings
      */
     public function __construct($payoutType, $payoutAutoSettings)
     {
-        $this->payoutType = $payoutType;
+        $this->payoutType         = $payoutType;
         $this->payoutAutoSettings = $payoutAutoSettings;
     }
 

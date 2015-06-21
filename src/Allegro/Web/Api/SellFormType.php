@@ -109,49 +109,49 @@ class Allegro_Web_Api_SellFormType extends Allegro_Web_Api_Abstract
     protected $sellFormOptions = null;
 
     /**
-     * @param int $sellFormId
+     * @param int    $sellFormId
      * @param string $sellFormTitle
-     * @param int $sellFormCat
-     * @param int $sellFormType
-     * @param int $sellFormResType
-     * @param int $sellFormDefValue
-     * @param int $sellFormOpt
-     * @param int $sellFormPos
-     * @param int $sellFormLength
+     * @param int    $sellFormCat
+     * @param int    $sellFormType
+     * @param int    $sellFormResType
+     * @param int    $sellFormDefValue
+     * @param int    $sellFormOpt
+     * @param int    $sellFormPos
+     * @param int    $sellFormLength
      * @param string $sellMinValue
      * @param string $sellMaxValue
      * @param string $sellFormDesc
      * @param string $sellFormOptsValues
      * @param string $sellFormFieldDesc
-     * @param int $sellFormParamId
+     * @param int    $sellFormParamId
      * @param string $sellFormParamValues
-     * @param int $sellFormParentId
+     * @param int    $sellFormParentId
      * @param string $sellFormParentValue
      * @param string $sellFormUnit
-     * @param int $sellFormOptions
+     * @param int    $sellFormOptions
      */
     public function __construct($sellFormId, $sellFormTitle, $sellFormCat, $sellFormType, $sellFormResType, $sellFormDefValue, $sellFormOpt, $sellFormPos, $sellFormLength, $sellMinValue, $sellMaxValue, $sellFormDesc, $sellFormOptsValues, $sellFormFieldDesc, $sellFormParamId, $sellFormParamValues, $sellFormParentId, $sellFormParentValue, $sellFormUnit, $sellFormOptions)
     {
-        $this->sellFormId = $sellFormId;
-        $this->sellFormTitle = $sellFormTitle;
-        $this->sellFormCat = $sellFormCat;
-        $this->sellFormType = $sellFormType;
-        $this->sellFormResType = $sellFormResType;
-        $this->sellFormDefValue = $sellFormDefValue;
-        $this->sellFormOpt = $sellFormOpt;
-        $this->sellFormPos = $sellFormPos;
-        $this->sellFormLength = $sellFormLength;
-        $this->sellMinValue = $sellMinValue;
-        $this->sellMaxValue = $sellMaxValue;
-        $this->sellFormDesc = $sellFormDesc;
-        $this->sellFormOptsValues = $sellFormOptsValues;
-        $this->sellFormFieldDesc = $sellFormFieldDesc;
-        $this->sellFormParamId = $sellFormParamId;
+        $this->sellFormId          = $sellFormId;
+        $this->sellFormTitle       = $sellFormTitle;
+        $this->sellFormCat         = $sellFormCat;
+        $this->sellFormType        = $sellFormType;
+        $this->sellFormResType     = $sellFormResType;
+        $this->sellFormDefValue    = $sellFormDefValue;
+        $this->sellFormOpt         = $sellFormOpt;
+        $this->sellFormPos         = $sellFormPos;
+        $this->sellFormLength      = $sellFormLength;
+        $this->sellMinValue        = $sellMinValue;
+        $this->sellMaxValue        = $sellMaxValue;
+        $this->sellFormDesc        = $sellFormDesc;
+        $this->sellFormOptsValues  = $sellFormOptsValues;
+        $this->sellFormFieldDesc   = $sellFormFieldDesc;
+        $this->sellFormParamId     = $sellFormParamId;
         $this->sellFormParamValues = $sellFormParamValues;
-        $this->sellFormParentId = $sellFormParentId;
+        $this->sellFormParentId    = $sellFormParentId;
         $this->sellFormParentValue = $sellFormParentValue;
-        $this->sellFormUnit = $sellFormUnit;
-        $this->sellFormOptions = $sellFormOptions;
+        $this->sellFormUnit        = $sellFormUnit;
+        $this->sellFormOptions     = $sellFormOptions;
     }
 
     /**

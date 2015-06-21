@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetPaymentMethodsRequest extends Allegro_Web_Api_Abstrac
     protected $itemIds = null;
 
     /**
-     * @param string $sessionId
+     * @param string                      $sessionId
      * @param Allegro_Web_Api_ArrayOfLong $itemIds
      */
     public function __construct($sessionId, $itemIds)
     {
         $this->sessionId = $sessionId;
-        $this->itemIds = $itemIds;
+        $this->itemIds   = $itemIds;
     }
 
     /**

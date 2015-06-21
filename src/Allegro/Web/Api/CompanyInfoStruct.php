@@ -55,12 +55,12 @@ class Allegro_Web_Api_CompanyInfoStruct extends Allegro_Web_Api_Abstract
     public function __construct($companyFirstName, $companyLastName, $companyName, $companyAddress, $companyPostcode, $companyCity, $companyNip)
     {
         $this->companyFirstName = $companyFirstName;
-        $this->companyLastName = $companyLastName;
-        $this->companyName = $companyName;
-        $this->companyAddress = $companyAddress;
-        $this->companyPostcode = $companyPostcode;
-        $this->companyCity = $companyCity;
-        $this->companyNip = $companyNip;
+        $this->companyLastName  = $companyLastName;
+        $this->companyName      = $companyName;
+        $this->companyAddress   = $companyAddress;
+        $this->companyPostcode  = $companyPostcode;
+        $this->companyCity      = $companyCity;
+        $this->companyNip       = $companyNip;
     }
 
     /**

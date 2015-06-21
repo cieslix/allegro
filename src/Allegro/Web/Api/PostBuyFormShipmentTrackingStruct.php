@@ -24,14 +24,14 @@ class Allegro_Web_Api_PostBuyFormShipmentTrackingStruct extends Allegro_Web_Api_
     protected $postBuyFormPackageStatus = null;
 
     /**
-     * @param int $postBuyFormOperatorId
+     * @param int    $postBuyFormOperatorId
      * @param string $postBuyFormPackageId
      * @param string $postBuyFormPackageStatus
      */
     public function __construct($postBuyFormOperatorId, $postBuyFormPackageId, $postBuyFormPackageStatus)
     {
-        $this->postBuyFormOperatorId = $postBuyFormOperatorId;
-        $this->postBuyFormPackageId = $postBuyFormPackageId;
+        $this->postBuyFormOperatorId    = $postBuyFormOperatorId;
+        $this->postBuyFormPackageId     = $postBuyFormPackageId;
         $this->postBuyFormPackageStatus = $postBuyFormPackageStatus;
     }
 

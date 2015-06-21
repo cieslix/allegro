@@ -19,7 +19,7 @@ class Allegro_Web_Api_DoGetShipmentPriceTypesRequest extends Allegro_Web_Api_Abs
     protected $webapiKey = null;
 
     /**
-     * @param int $countryId
+     * @param int    $countryId
      * @param string $webapiKey
      */
     public function __construct($countryId, $webapiKey)

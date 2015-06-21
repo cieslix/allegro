@@ -25,13 +25,13 @@ class Allegro_Web_Api_DoChangeQuantityItemRequest extends Allegro_Web_Api_Abstra
 
     /**
      * @param string $sessionHandle
-     * @param int $itemId
-     * @param int $newItemQuantity
+     * @param int    $itemId
+     * @param int    $newItemQuantity
      */
     public function __construct($sessionHandle, $itemId, $newItemQuantity)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->itemId = $itemId;
+        $this->sessionHandle   = $sessionHandle;
+        $this->itemId          = $itemId;
         $this->newItemQuantity = $newItemQuantity;
     }
 

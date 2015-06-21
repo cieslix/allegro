@@ -30,8 +30,8 @@ class Allegro_Web_Api_FilterRelationType extends Allegro_Web_Api_Abstract
      */
     public function __construct($relationAnd, $relationOr, $relationExclude)
     {
-        $this->relationAnd = $relationAnd;
-        $this->relationOr = $relationOr;
+        $this->relationAnd     = $relationAnd;
+        $this->relationOr      = $relationOr;
         $this->relationExclude = $relationExclude;
     }
 

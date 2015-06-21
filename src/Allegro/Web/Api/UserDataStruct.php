@@ -119,52 +119,52 @@ class Allegro_Web_Api_UserDataStruct extends Allegro_Web_Api_Abstract
     protected $userIsAllegroStandard = null;
 
     /**
-     * @param int $userId
+     * @param int    $userId
      * @param string $userLogin
-     * @param int $userRating
+     * @param int    $userRating
      * @param string $userFirstName
      * @param string $userLastName
      * @param string $userMaidenName
      * @param string $userCompany
-     * @param int $userCountryId
-     * @param int $userStateId
+     * @param int    $userCountryId
+     * @param int    $userStateId
      * @param string $userPostcode
      * @param string $userCity
      * @param string $userAddress
      * @param string $userEmail
      * @param string $userPhone
      * @param string $userPhone2
-     * @param int $userSsStatus
-     * @param int $siteCountryId
-     * @param int $userJuniorStatus
-     * @param int $userBirthDate
-     * @param int $userHasShop
-     * @param int $userCompanyIcon
-     * @param int $userIsAllegroStandard
+     * @param int    $userSsStatus
+     * @param int    $siteCountryId
+     * @param int    $userJuniorStatus
+     * @param int    $userBirthDate
+     * @param int    $userHasShop
+     * @param int    $userCompanyIcon
+     * @param int    $userIsAllegroStandard
      */
     public function __construct($userId, $userLogin, $userRating, $userFirstName, $userLastName, $userMaidenName, $userCompany, $userCountryId, $userStateId, $userPostcode, $userCity, $userAddress, $userEmail, $userPhone, $userPhone2, $userSsStatus, $siteCountryId, $userJuniorStatus, $userBirthDate, $userHasShop, $userCompanyIcon, $userIsAllegroStandard)
     {
-        $this->userId = $userId;
-        $this->userLogin = $userLogin;
-        $this->userRating = $userRating;
-        $this->userFirstName = $userFirstName;
-        $this->userLastName = $userLastName;
-        $this->userMaidenName = $userMaidenName;
-        $this->userCompany = $userCompany;
-        $this->userCountryId = $userCountryId;
-        $this->userStateId = $userStateId;
-        $this->userPostcode = $userPostcode;
-        $this->userCity = $userCity;
-        $this->userAddress = $userAddress;
-        $this->userEmail = $userEmail;
-        $this->userPhone = $userPhone;
-        $this->userPhone2 = $userPhone2;
-        $this->userSsStatus = $userSsStatus;
-        $this->siteCountryId = $siteCountryId;
-        $this->userJuniorStatus = $userJuniorStatus;
-        $this->userBirthDate = $userBirthDate;
-        $this->userHasShop = $userHasShop;
-        $this->userCompanyIcon = $userCompanyIcon;
+        $this->userId                = $userId;
+        $this->userLogin             = $userLogin;
+        $this->userRating            = $userRating;
+        $this->userFirstName         = $userFirstName;
+        $this->userLastName          = $userLastName;
+        $this->userMaidenName        = $userMaidenName;
+        $this->userCompany           = $userCompany;
+        $this->userCountryId         = $userCountryId;
+        $this->userStateId           = $userStateId;
+        $this->userPostcode          = $userPostcode;
+        $this->userCity              = $userCity;
+        $this->userAddress           = $userAddress;
+        $this->userEmail             = $userEmail;
+        $this->userPhone             = $userPhone;
+        $this->userPhone2            = $userPhone2;
+        $this->userSsStatus          = $userSsStatus;
+        $this->siteCountryId         = $siteCountryId;
+        $this->userJuniorStatus      = $userJuniorStatus;
+        $this->userBirthDate         = $userBirthDate;
+        $this->userHasShop           = $userHasShop;
+        $this->userCompanyIcon       = $userCompanyIcon;
         $this->userIsAllegroStandard = $userIsAllegroStandard;
     }
 

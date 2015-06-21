@@ -19,13 +19,13 @@ class Allegro_Web_Api_ItemTemplateCreateStruct extends Allegro_Web_Api_Abstract
     protected $itemTemplateName = null;
 
     /**
-     * @param int $itemTemplateOption
+     * @param int    $itemTemplateOption
      * @param string $itemTemplateName
      */
     public function __construct($itemTemplateOption, $itemTemplateName)
     {
         $this->itemTemplateOption = $itemTemplateOption;
-        $this->itemTemplateName = $itemTemplateName;
+        $this->itemTemplateName   = $itemTemplateName;
     }
 
     /**

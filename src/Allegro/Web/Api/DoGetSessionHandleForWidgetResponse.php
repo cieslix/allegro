@@ -20,12 +20,12 @@ class Allegro_Web_Api_DoGetSessionHandleForWidgetResponse extends Allegro_Web_Ap
 
     /**
      * @param string $sessionHandle
-     * @param int $serverTime
+     * @param int    $serverTime
      */
     public function __construct($sessionHandle, $serverTime)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->serverTime = $serverTime;
+        $this->serverTime    = $serverTime;
     }
 
     /**

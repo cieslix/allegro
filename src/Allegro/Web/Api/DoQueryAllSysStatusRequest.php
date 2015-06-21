@@ -19,7 +19,7 @@ class Allegro_Web_Api_DoQueryAllSysStatusRequest extends Allegro_Web_Api_Abstrac
     protected $webapiKey = null;
 
     /**
-     * @param int $countryId
+     * @param int    $countryId
      * @param string $webapiKey
      */
     public function __construct($countryId, $webapiKey)

@@ -24,7 +24,7 @@ class Allegro_Web_Api_ItemVariantAttributeStruct extends Allegro_Web_Api_Abstrac
      */
     public function __construct($name, $value)
     {
-        $this->name = $name;
+        $this->name  = $name;
         $this->value = $value;
     }
 

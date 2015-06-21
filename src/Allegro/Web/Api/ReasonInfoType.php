@@ -24,14 +24,14 @@ class Allegro_Web_Api_ReasonInfoType extends Allegro_Web_Api_Abstract
     protected $maxQuantity = null;
 
     /**
-     * @param int $reasonId
+     * @param int    $reasonId
      * @param string $reasonName
-     * @param int $maxQuantity
+     * @param int    $maxQuantity
      */
     public function __construct($reasonId, $reasonName, $maxQuantity)
     {
-        $this->reasonId = $reasonId;
-        $this->reasonName = $reasonName;
+        $this->reasonId    = $reasonId;
+        $this->reasonName  = $reasonName;
         $this->maxQuantity = $maxQuantity;
     }
 

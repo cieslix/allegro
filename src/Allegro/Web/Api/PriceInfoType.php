@@ -20,11 +20,11 @@ class Allegro_Web_Api_PriceInfoType extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $priceType
-     * @param float $priceValue
+     * @param float  $priceValue
      */
     public function __construct($priceType, $priceValue)
     {
-        $this->priceType = $priceType;
+        $this->priceType  = $priceType;
         $this->priceValue = $priceValue;
     }
 

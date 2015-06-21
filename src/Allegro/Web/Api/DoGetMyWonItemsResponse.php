@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetMyWonItemsResponse extends Allegro_Web_Api_Abstract
     protected $wonItemsList = null;
 
     /**
-     * @param int $wonItemsCounter
+     * @param int                                  $wonItemsCounter
      * @param Allegro_Web_Api_ArrayOfWonitemstruct $wonItemsList
      */
     public function __construct($wonItemsCounter, $wonItemsList)
     {
         $this->wonItemsCounter = $wonItemsCounter;
-        $this->wonItemsList = $wonItemsList;
+        $this->wonItemsList    = $wonItemsList;
     }
 
     /**

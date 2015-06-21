@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetMyBidItemsResponse extends Allegro_Web_Api_Abstract
     protected $bidItemsList = null;
 
     /**
-     * @param int $bidItemsCounter
+     * @param int                                  $bidItemsCounter
      * @param Allegro_Web_Api_ArrayOfBiditemstruct $bidItemsList
      */
     public function __construct($bidItemsCounter, $bidItemsList)
     {
         $this->bidItemsCounter = $bidItemsCounter;
-        $this->bidItemsList = $bidItemsList;
+        $this->bidItemsList    = $bidItemsList;
     }
 
     /**

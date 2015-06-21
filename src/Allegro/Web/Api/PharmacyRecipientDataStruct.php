@@ -43,10 +43,10 @@ class Allegro_Web_Api_PharmacyRecipientDataStruct extends Allegro_Web_Api_Abstra
     public function __construct($recipientFirstName, $recipientLastName, $recipientAddress, $recipientPostcode, $recipientCity)
     {
         $this->recipientFirstName = $recipientFirstName;
-        $this->recipientLastName = $recipientLastName;
-        $this->recipientAddress = $recipientAddress;
-        $this->recipientPostcode = $recipientPostcode;
-        $this->recipientCity = $recipientCity;
+        $this->recipientLastName  = $recipientLastName;
+        $this->recipientAddress   = $recipientAddress;
+        $this->recipientPostcode  = $recipientPostcode;
+        $this->recipientCity      = $recipientCity;
     }
 
     /**

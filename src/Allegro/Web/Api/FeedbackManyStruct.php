@@ -44,23 +44,23 @@ class Allegro_Web_Api_FeedbackManyStruct extends Allegro_Web_Api_Abstract
     protected $feRating = null;
 
     /**
-     * @param int $feItemId
-     * @param int $feUseCommentTemplate
-     * @param int $feToUserId
-     * @param string $feComment
-     * @param string $feCommentType
-     * @param int $feOp
+     * @param int                                               $feItemId
+     * @param int                                               $feUseCommentTemplate
+     * @param int                                               $feToUserId
+     * @param string                                            $feComment
+     * @param string                                            $feCommentType
+     * @param int                                               $feOp
      * @param Allegro_Web_Api_ArrayOfSellratingestimationstruct $feRating
      */
     public function __construct($feItemId, $feUseCommentTemplate, $feToUserId, $feComment, $feCommentType, $feOp, $feRating)
     {
-        $this->feItemId = $feItemId;
+        $this->feItemId             = $feItemId;
         $this->feUseCommentTemplate = $feUseCommentTemplate;
-        $this->feToUserId = $feToUserId;
-        $this->feComment = $feComment;
-        $this->feCommentType = $feCommentType;
-        $this->feOp = $feOp;
-        $this->feRating = $feRating;
+        $this->feToUserId           = $feToUserId;
+        $this->feComment            = $feComment;
+        $this->feCommentType        = $feCommentType;
+        $this->feOp                 = $feOp;
+        $this->feRating             = $feRating;
     }
 
     /**

@@ -29,16 +29,16 @@ class Allegro_Web_Api_TemplateInfoType extends Allegro_Web_Api_Abstract
     protected $templateDescImages = null;
 
     /**
-     * @param int $templateId
-     * @param string $templateName
+     * @param int          $templateId
+     * @param string       $templateName
      * @param base64Binary $templateThumb
      * @param base64Binary $templateDescImages
      */
     public function __construct($templateId, $templateName, $templateThumb, $templateDescImages)
     {
-        $this->templateId = $templateId;
-        $this->templateName = $templateName;
-        $this->templateThumb = $templateThumb;
+        $this->templateId         = $templateId;
+        $this->templateName       = $templateName;
+        $this->templateThumb      = $templateThumb;
         $this->templateDescImages = $templateDescImages;
     }
 

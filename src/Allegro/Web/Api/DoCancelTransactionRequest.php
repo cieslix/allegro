@@ -20,11 +20,11 @@ class Allegro_Web_Api_DoCancelTransactionRequest extends Allegro_Web_Api_Abstrac
 
     /**
      * @param string $sessionId
-     * @param int $transactionId
+     * @param int    $transactionId
      */
     public function __construct($sessionId, $transactionId)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId     = $sessionId;
         $this->transactionId = $transactionId;
     }
 

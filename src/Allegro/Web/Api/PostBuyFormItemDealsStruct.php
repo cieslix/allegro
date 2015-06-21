@@ -34,18 +34,18 @@ class Allegro_Web_Api_PostBuyFormItemDealsStruct extends Allegro_Web_Api_Abstrac
     protected $dealWasDiscounted = null;
 
     /**
-     * @param int $dealId
-     * @param float $dealFinalPrice
-     * @param int $dealQuantity
+     * @param int       $dealId
+     * @param float     $dealFinalPrice
+     * @param int       $dealQuantity
      * @param \DateTime $dealDate
-     * @param boolean $dealWasDiscounted
+     * @param boolean   $dealWasDiscounted
      */
     public function __construct($dealId, $dealFinalPrice, $dealQuantity, \DateTime $dealDate, $dealWasDiscounted)
     {
-        $this->dealId = $dealId;
-        $this->dealFinalPrice = $dealFinalPrice;
-        $this->dealQuantity = $dealQuantity;
-        $this->dealDate = $dealDate->format(\DateTime::ATOM);
+        $this->dealId            = $dealId;
+        $this->dealFinalPrice    = $dealFinalPrice;
+        $this->dealQuantity      = $dealQuantity;
+        $this->dealDate          = $dealDate->format(\DateTime::ATOM);
         $this->dealWasDiscounted = $dealWasDiscounted;
     }
 

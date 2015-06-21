@@ -30,8 +30,8 @@ class Allegro_Web_Api_PayoutAutoFrequencyStruct extends Allegro_Web_Api_Abstract
      */
     public function __construct($frequencyType, $frequencyWeekValue, $frequencyMonthValue)
     {
-        $this->frequencyType = $frequencyType;
-        $this->frequencyWeekValue = $frequencyWeekValue;
+        $this->frequencyType       = $frequencyType;
+        $this->frequencyWeekValue  = $frequencyWeekValue;
         $this->frequencyMonthValue = $frequencyMonthValue;
     }
 

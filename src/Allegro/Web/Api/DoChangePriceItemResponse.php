@@ -20,12 +20,12 @@ class Allegro_Web_Api_DoChangePriceItemResponse extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $itemInfo
-     * @param int $itemId
+     * @param int    $itemId
      */
     public function __construct($itemInfo, $itemId)
     {
         $this->itemInfo = $itemInfo;
-        $this->itemId = $itemId;
+        $this->itemId   = $itemId;
     }
 
     /**

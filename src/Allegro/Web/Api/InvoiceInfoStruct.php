@@ -24,15 +24,15 @@ class Allegro_Web_Api_InvoiceInfoStruct extends Allegro_Web_Api_Abstract
     protected $invoiceNip = null;
 
     /**
-     * @param int $invoiceAddressType
+     * @param int                   $invoiceAddressType
      * @param AddressUserDataStruct $invoiceAddressData
-     * @param string $invoiceNip
+     * @param string                $invoiceNip
      */
     public function __construct($invoiceAddressType, $invoiceAddressData, $invoiceNip)
     {
         $this->invoiceAddressType = $invoiceAddressType;
         $this->invoiceAddressData = $invoiceAddressData;
-        $this->invoiceNip = $invoiceNip;
+        $this->invoiceNip         = $invoiceNip;
     }
 
     /**

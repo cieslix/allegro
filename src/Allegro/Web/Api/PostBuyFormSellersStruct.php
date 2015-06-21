@@ -69,33 +69,33 @@ class Allegro_Web_Api_PostBuyFormSellersStruct extends Allegro_Web_Api_Abstract
     protected $postBuyFormSentBySeller = null;
 
     /**
-     * @param int $postBuyFormSellerId
-     * @param string $postBuyFormSellerName
-     * @param Allegro_Web_Api_ArrayOfPostbuyformitemstruct $postBuyFormItems
-     * @param int $postBuyFormShipmentId
-     * @param float $postBuyFormPostageAmount
-     * @param string $postBuyFormMsgToSeller
-     * @param float $postBuyFormAmount
-     * @param Allegro_Web_Api_ArrayOfLong $postBuyFormSurchargesList
+     * @param int                                                      $postBuyFormSellerId
+     * @param string                                                   $postBuyFormSellerName
+     * @param Allegro_Web_Api_ArrayOfPostbuyformitemstruct             $postBuyFormItems
+     * @param int                                                      $postBuyFormShipmentId
+     * @param float                                                    $postBuyFormPostageAmount
+     * @param string                                                   $postBuyFormMsgToSeller
+     * @param float                                                    $postBuyFormAmount
+     * @param Allegro_Web_Api_ArrayOfLong                              $postBuyFormSurchargesList
      * @param Allegro_Web_Api_ArrayOfPostbuyformshipmenttrackingstruct $postBuyFormShipmentTracking
-     * @param Allegro_Web_Api_PostBuyFormAddressStruct $postBuyFormGdAddress
-     * @param string $postBuyFormGdAdditionalInfo
-     * @param int $postBuyFormSentBySeller
+     * @param Allegro_Web_Api_PostBuyFormAddressStruct                 $postBuyFormGdAddress
+     * @param string                                                   $postBuyFormGdAdditionalInfo
+     * @param int                                                      $postBuyFormSentBySeller
      */
     public function __construct($postBuyFormSellerId, $postBuyFormSellerName, $postBuyFormItems, $postBuyFormShipmentId, $postBuyFormPostageAmount, $postBuyFormMsgToSeller, $postBuyFormAmount, $postBuyFormSurchargesList, $postBuyFormShipmentTracking, $postBuyFormGdAddress, $postBuyFormGdAdditionalInfo, $postBuyFormSentBySeller)
     {
-        $this->postBuyFormSellerId = $postBuyFormSellerId;
-        $this->postBuyFormSellerName = $postBuyFormSellerName;
-        $this->postBuyFormItems = $postBuyFormItems;
-        $this->postBuyFormShipmentId = $postBuyFormShipmentId;
-        $this->postBuyFormPostageAmount = $postBuyFormPostageAmount;
-        $this->postBuyFormMsgToSeller = $postBuyFormMsgToSeller;
-        $this->postBuyFormAmount = $postBuyFormAmount;
-        $this->postBuyFormSurchargesList = $postBuyFormSurchargesList;
+        $this->postBuyFormSellerId         = $postBuyFormSellerId;
+        $this->postBuyFormSellerName       = $postBuyFormSellerName;
+        $this->postBuyFormItems            = $postBuyFormItems;
+        $this->postBuyFormShipmentId       = $postBuyFormShipmentId;
+        $this->postBuyFormPostageAmount    = $postBuyFormPostageAmount;
+        $this->postBuyFormMsgToSeller      = $postBuyFormMsgToSeller;
+        $this->postBuyFormAmount           = $postBuyFormAmount;
+        $this->postBuyFormSurchargesList   = $postBuyFormSurchargesList;
         $this->postBuyFormShipmentTracking = $postBuyFormShipmentTracking;
-        $this->postBuyFormGdAddress = $postBuyFormGdAddress;
+        $this->postBuyFormGdAddress        = $postBuyFormGdAddress;
         $this->postBuyFormGdAdditionalInfo = $postBuyFormGdAdditionalInfo;
-        $this->postBuyFormSentBySeller = $postBuyFormSentBySeller;
+        $this->postBuyFormSentBySeller     = $postBuyFormSentBySeller;
     }
 
     /**

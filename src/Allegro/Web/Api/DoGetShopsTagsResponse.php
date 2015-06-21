@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetShopsTagsResponse extends Allegro_Web_Api_Abstract
     protected $shopsTags = null;
 
     /**
-     * @param int $shopsTagsCount
+     * @param int                                       $shopsTagsCount
      * @param Allegro_Web_Api_ArrayOfShopstagtypestruct $shopsTags
      */
     public function __construct($shopsTagsCount, $shopsTags)
     {
         $this->shopsTagsCount = $shopsTagsCount;
-        $this->shopsTags = $shopsTags;
+        $this->shopsTags      = $shopsTags;
     }
 
     /**

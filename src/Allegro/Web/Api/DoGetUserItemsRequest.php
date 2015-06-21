@@ -34,19 +34,19 @@ class Allegro_Web_Api_DoGetUserItemsRequest extends Allegro_Web_Api_Abstract
     protected $limit = null;
 
     /**
-     * @param int $userId
+     * @param int    $userId
      * @param string $webapiKey
-     * @param int $countryId
-     * @param int $offset
-     * @param int $limit
+     * @param int    $countryId
+     * @param int    $offset
+     * @param int    $limit
      */
     public function __construct($userId, $webapiKey, $countryId, $offset, $limit)
     {
-        $this->userId = $userId;
+        $this->userId    = $userId;
         $this->webapiKey = $webapiKey;
         $this->countryId = $countryId;
-        $this->offset = $offset;
-        $this->limit = $limit;
+        $this->offset    = $offset;
+        $this->limit     = $limit;
     }
 
     /**

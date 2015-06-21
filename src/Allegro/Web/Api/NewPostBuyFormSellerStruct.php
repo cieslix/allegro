@@ -39,21 +39,21 @@ class Allegro_Web_Api_NewPostBuyFormSellerStruct extends Allegro_Web_Api_Abstrac
     protected $sellerMessageTo = null;
 
     /**
-     * @param int $sellerId
+     * @param int                         $sellerId
      * @param Allegro_Web_Api_ArrayOfLong $sellerItemIds
-     * @param int $sellerShipmentId
-     * @param int $sellerGdId
-     * @param float $sellerShipmentAmount
-     * @param string $sellerMessageTo
+     * @param int                         $sellerShipmentId
+     * @param int                         $sellerGdId
+     * @param float                       $sellerShipmentAmount
+     * @param string                      $sellerMessageTo
      */
     public function __construct($sellerId, $sellerItemIds, $sellerShipmentId, $sellerGdId, $sellerShipmentAmount, $sellerMessageTo)
     {
-        $this->sellerId = $sellerId;
-        $this->sellerItemIds = $sellerItemIds;
-        $this->sellerShipmentId = $sellerShipmentId;
-        $this->sellerGdId = $sellerGdId;
+        $this->sellerId             = $sellerId;
+        $this->sellerItemIds        = $sellerItemIds;
+        $this->sellerShipmentId     = $sellerShipmentId;
+        $this->sellerGdId           = $sellerGdId;
         $this->sellerShipmentAmount = $sellerShipmentAmount;
-        $this->sellerMessageTo = $sellerMessageTo;
+        $this->sellerMessageTo      = $sellerMessageTo;
     }
 
     /**

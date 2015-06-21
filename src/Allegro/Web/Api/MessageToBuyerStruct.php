@@ -19,13 +19,13 @@ class Allegro_Web_Api_MessageToBuyerStruct extends Allegro_Web_Api_Abstract
     protected $messageContent = null;
 
     /**
-     * @param int $messageSellerId
+     * @param int    $messageSellerId
      * @param string $messageContent
      */
     public function __construct($messageSellerId, $messageContent)
     {
         $this->messageSellerId = $messageSellerId;
-        $this->messageContent = $messageContent;
+        $this->messageContent  = $messageContent;
     }
 
     /**

@@ -25,14 +25,14 @@ class Allegro_Web_Api_DoGetSitesInfoResponse extends Allegro_Web_Api_Abstract
 
     /**
      * @param Allegro_Web_Api_ArrayOfSiteinfotype $sitesInfoList
-     * @param int $verKey
-     * @param string $verStr
+     * @param int                                 $verKey
+     * @param string                              $verStr
      */
     public function __construct($sitesInfoList, $verKey, $verStr)
     {
         $this->sitesInfoList = $sitesInfoList;
-        $this->verKey = $verKey;
-        $this->verStr = $verStr;
+        $this->verKey        = $verKey;
+        $this->verStr        = $verStr;
     }
 
     /**

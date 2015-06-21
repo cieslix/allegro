@@ -99,45 +99,45 @@ class Allegro_Web_Api_SpecialAuctionStruct extends Allegro_Web_Api_Abstract
     protected $itAttribsList = null;
 
     /**
-     * @param int $itId
-     * @param string $itName
-     * @param float $itPrice
-     * @param float $itBuyNowPrice
-     * @param int $itBidCount
-     * @param int $itFotoCount
-     * @param int $itTimeLeft
-     * @param int $itEndingTime
-     * @param int $itCountry
-     * @param int $itIsListingThumb
-     * @param int $itIsEscrow
-     * @param int $itSellerId
-     * @param float $itSendCostPrice
-     * @param int $itIsBoldTitle
-     * @param int $itStartingTime
-     * @param int $itIsAllegroStandard
-     * @param int $itHasFreeShipping
+     * @param int                                 $itId
+     * @param string                              $itName
+     * @param float                               $itPrice
+     * @param float                               $itBuyNowPrice
+     * @param int                                 $itBidCount
+     * @param int                                 $itFotoCount
+     * @param int                                 $itTimeLeft
+     * @param int                                 $itEndingTime
+     * @param int                                 $itCountry
+     * @param int                                 $itIsListingThumb
+     * @param int                                 $itIsEscrow
+     * @param int                                 $itSellerId
+     * @param float                               $itSendCostPrice
+     * @param int                                 $itIsBoldTitle
+     * @param int                                 $itStartingTime
+     * @param int                                 $itIsAllegroStandard
+     * @param int                                 $itHasFreeShipping
      * @param Allegro_Web_Api_ArrayOfAttribstruct $itAttribsList
      */
     public function __construct($itId, $itName, $itPrice, $itBuyNowPrice, $itBidCount, $itFotoCount, $itTimeLeft, $itEndingTime, $itCountry, $itIsListingThumb, $itIsEscrow, $itSellerId, $itSendCostPrice, $itIsBoldTitle, $itStartingTime, $itIsAllegroStandard, $itHasFreeShipping, $itAttribsList)
     {
-        $this->itId = $itId;
-        $this->itName = $itName;
-        $this->itPrice = $itPrice;
-        $this->itBuyNowPrice = $itBuyNowPrice;
-        $this->itBidCount = $itBidCount;
-        $this->itFotoCount = $itFotoCount;
-        $this->itTimeLeft = $itTimeLeft;
-        $this->itEndingTime = $itEndingTime;
-        $this->itCountry = $itCountry;
-        $this->itIsListingThumb = $itIsListingThumb;
-        $this->itIsEscrow = $itIsEscrow;
-        $this->itSellerId = $itSellerId;
-        $this->itSendCostPrice = $itSendCostPrice;
-        $this->itIsBoldTitle = $itIsBoldTitle;
-        $this->itStartingTime = $itStartingTime;
+        $this->itId                = $itId;
+        $this->itName              = $itName;
+        $this->itPrice             = $itPrice;
+        $this->itBuyNowPrice       = $itBuyNowPrice;
+        $this->itBidCount          = $itBidCount;
+        $this->itFotoCount         = $itFotoCount;
+        $this->itTimeLeft          = $itTimeLeft;
+        $this->itEndingTime        = $itEndingTime;
+        $this->itCountry           = $itCountry;
+        $this->itIsListingThumb    = $itIsListingThumb;
+        $this->itIsEscrow          = $itIsEscrow;
+        $this->itSellerId          = $itSellerId;
+        $this->itSendCostPrice     = $itSendCostPrice;
+        $this->itIsBoldTitle       = $itIsBoldTitle;
+        $this->itStartingTime      = $itStartingTime;
         $this->itIsAllegroStandard = $itIsAllegroStandard;
-        $this->itHasFreeShipping = $itHasFreeShipping;
-        $this->itAttribsList = $itAttribsList;
+        $this->itHasFreeShipping   = $itHasFreeShipping;
+        $this->itAttribsList       = $itAttribsList;
     }
 
     /**

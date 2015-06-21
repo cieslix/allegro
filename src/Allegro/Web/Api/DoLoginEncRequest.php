@@ -36,17 +36,17 @@ class Allegro_Web_Api_DoLoginEncRequest extends Allegro_Web_Api_Abstract
     /**
      * @param string $userLogin
      * @param string $userHashPassword
-     * @param int $countryCode
+     * @param int    $countryCode
      * @param string $webapiKey
-     * @param int $localVersion
+     * @param int    $localVersion
      */
     public function __construct($userLogin, $userHashPassword, $countryCode, $webapiKey, $localVersion)
     {
-        $this->userLogin = $userLogin;
+        $this->userLogin        = $userLogin;
         $this->userHashPassword = $userHashPassword;
-        $this->countryCode = $countryCode;
-        $this->webapiKey = $webapiKey;
-        $this->localVersion = $localVersion;
+        $this->countryCode      = $countryCode;
+        $this->webapiKey        = $webapiKey;
+        $this->localVersion     = $localVersion;
     }
 
     /**

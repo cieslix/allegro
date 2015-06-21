@@ -43,17 +43,17 @@ class Allegro_Web_Api_PaymentsUserDataStruct extends Allegro_Web_Api_Abstract
      * @param string $userAddress
      * @param string $userPostcode
      * @param string $userCity
-     * @param int $userCountry
+     * @param int    $userCountry
      * @param string $userPhone
      */
     public function __construct($userFullName, $userAddress, $userPostcode, $userCity, $userCountry, $userPhone)
     {
         $this->userFullName = $userFullName;
-        $this->userAddress = $userAddress;
+        $this->userAddress  = $userAddress;
         $this->userPostcode = $userPostcode;
-        $this->userCity = $userCity;
-        $this->userCountry = $userCountry;
-        $this->userPhone = $userPhone;
+        $this->userCity     = $userCity;
+        $this->userCountry  = $userCountry;
+        $this->userPhone    = $userPhone;
     }
 
     /**

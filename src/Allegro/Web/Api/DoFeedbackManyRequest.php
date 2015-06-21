@@ -19,7 +19,7 @@ class Allegro_Web_Api_DoFeedbackManyRequest extends Allegro_Web_Api_Abstract
     protected $feedbacksList = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                                    $sessionHandle
      * @param Allegro_Web_Api_ArrayOfFeedbackmanystruct $feedbacksList
      */
     public function __construct($sessionHandle, $feedbacksList)

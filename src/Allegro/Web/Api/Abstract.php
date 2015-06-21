@@ -18,6 +18,17 @@ abstract class Allegro_Web_Api_Abstract extends stdClass implements Countable, A
     }
 
     /**
+     * @param string $string
+     * @return string
+     */
+    protected function _toCamelCase($string)
+    {
+        return preg_replace_callback('/\_+./', function ($match) use ($string) {
+            return str_replace('_', '', strtoupper($match[0]));
+        }, $string);
+    }
+
+    /**
      * @param string $offset
      * @return mixed
      */
@@ -28,7 +39,7 @@ abstract class Allegro_Web_Api_Abstract extends stdClass implements Countable, A
 
     /**
      * @param string $offset
-     * @param mixed $value
+     * @param mixed  $value
      * @return $this
      */
     public function offsetSet($offset, $value)
@@ -62,7 +73,7 @@ abstract class Allegro_Web_Api_Abstract extends stdClass implements Countable, A
     {
         $array = get_object_vars($this);
         foreach ($array as $key => $value) {
-            $newKey = $this->_toUnderscore($key);
+            $newKey         = $this->_toUnderscore($key);
             $array[$newKey] = $value;
             unset($array[$key]);
         }
@@ -77,17 +88,6 @@ abstract class Allegro_Web_Api_Abstract extends stdClass implements Countable, A
     {
         return preg_replace_callback('/[A-Z]/', function ($match) use ($string) {
             return sprintf("_%s", strtolower($match[0]));
-        }, $string);
-    }
-
-    /**
-     * @param string $string
-     * @return string
-     */
-    protected function _toCamelCase($string)
-    {
-        return preg_replace_callback('/\_+./', function ($match) use ($string) {
-            return str_replace('_', '', strtoupper($match[0]));
         }, $string);
     }
 }

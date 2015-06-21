@@ -79,7 +79,7 @@ class Allegro_Web_Api_MyContactList extends Allegro_Web_Api_Abstract
     protected $contactBlocked = null;
 
     /**
-     * @param int $contactUserId
+     * @param int    $contactUserId
      * @param string $contactNick
      * @param string $contactFirstName
      * @param string $contactLastName
@@ -96,20 +96,20 @@ class Allegro_Web_Api_MyContactList extends Allegro_Web_Api_Abstract
      */
     public function __construct($contactUserId, $contactNick, $contactFirstName, $contactLastName, $contactCompany, $contactEmail, $contactStreet, $contactPostcode, $contactCity, $contactCountry, $contactPhone, $contactPhone2, $contactRating, $contactBlocked)
     {
-        $this->contactUserId = $contactUserId;
-        $this->contactNick = $contactNick;
+        $this->contactUserId    = $contactUserId;
+        $this->contactNick      = $contactNick;
         $this->contactFirstName = $contactFirstName;
-        $this->contactLastName = $contactLastName;
-        $this->contactCompany = $contactCompany;
-        $this->contactEmail = $contactEmail;
-        $this->contactStreet = $contactStreet;
-        $this->contactPostcode = $contactPostcode;
-        $this->contactCity = $contactCity;
-        $this->contactCountry = $contactCountry;
-        $this->contactPhone = $contactPhone;
-        $this->contactPhone2 = $contactPhone2;
-        $this->contactRating = $contactRating;
-        $this->contactBlocked = $contactBlocked;
+        $this->contactLastName  = $contactLastName;
+        $this->contactCompany   = $contactCompany;
+        $this->contactEmail     = $contactEmail;
+        $this->contactStreet    = $contactStreet;
+        $this->contactPostcode  = $contactPostcode;
+        $this->contactCity      = $contactCity;
+        $this->contactCountry   = $contactCountry;
+        $this->contactPhone     = $contactPhone;
+        $this->contactPhone2    = $contactPhone2;
+        $this->contactRating    = $contactRating;
+        $this->contactBlocked   = $contactBlocked;
     }
 
     /**

@@ -40,20 +40,20 @@ class Allegro_Web_Api_DoSendEmailToUserRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $mailToUserItemId
-     * @param int $mailToUserReceiverId
-     * @param int $mailToUserSubjectId
-     * @param int $mailToUserOption
+     * @param int    $mailToUserItemId
+     * @param int    $mailToUserReceiverId
+     * @param int    $mailToUserSubjectId
+     * @param int    $mailToUserOption
      * @param string $mailToUserMessage
      */
     public function __construct($sessionHandle, $mailToUserItemId, $mailToUserReceiverId, $mailToUserSubjectId, $mailToUserOption, $mailToUserMessage)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->mailToUserItemId = $mailToUserItemId;
+        $this->sessionHandle        = $sessionHandle;
+        $this->mailToUserItemId     = $mailToUserItemId;
         $this->mailToUserReceiverId = $mailToUserReceiverId;
-        $this->mailToUserSubjectId = $mailToUserSubjectId;
-        $this->mailToUserOption = $mailToUserOption;
-        $this->mailToUserMessage = $mailToUserMessage;
+        $this->mailToUserSubjectId  = $mailToUserSubjectId;
+        $this->mailToUserOption     = $mailToUserOption;
+        $this->mailToUserMessage    = $mailToUserMessage;
     }
 
     /**

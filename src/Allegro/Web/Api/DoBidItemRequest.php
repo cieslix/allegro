@@ -9,7 +9,7 @@
 class Allegro_Web_Api_DoBidItemRequest extends Allegro_Web_Api_Abstract
 {
     const BID_BUY_NOW_YES = 1;
-    const BID_BUY_NOW_NO = 0;
+    const BID_BUY_NOW_NO  = 0;
 
     /**
      * @var string $sessionHandle
@@ -47,23 +47,23 @@ class Allegro_Web_Api_DoBidItemRequest extends Allegro_Web_Api_Abstract
     protected $variantId = null;
 
     /**
-     * @param string $sessionHandle
-     * @param int $bidItId
-     * @param float $bidUserPrice
-     * @param int $bidQuantity
-     * @param int $bidBuyNow
+     * @param string                                      $sessionHandle
+     * @param int                                         $bidItId
+     * @param float                                       $bidUserPrice
+     * @param int                                         $bidQuantity
+     * @param int                                         $bidBuyNow
      * @param Allegro_Web_Api_PharmacyRecipientDataStruct $pharmacyRecipientData
-     * @param string $variantId
+     * @param string                                      $variantId
      */
     public function __construct($sessionHandle, $bidItId, $bidUserPrice, $bidQuantity, $bidBuyNow, $pharmacyRecipientData, $variantId)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->bidItId = $bidItId;
-        $this->bidUserPrice = $bidUserPrice;
-        $this->bidQuantity = $bidQuantity;
-        $this->bidBuyNow = $bidBuyNow;
+        $this->sessionHandle         = $sessionHandle;
+        $this->bidItId               = $bidItId;
+        $this->bidUserPrice          = $bidUserPrice;
+        $this->bidQuantity           = $bidQuantity;
+        $this->bidBuyNow             = $bidBuyNow;
         $this->pharmacyRecipientData = $pharmacyRecipientData;
-        $this->variantId = $variantId;
+        $this->variantId             = $variantId;
     }
 
     /**

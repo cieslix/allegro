@@ -20,12 +20,12 @@ class Allegro_Web_Api_DoGetFreeDeliveryAmountResponse extends Allegro_Web_Api_Ab
 
     /**
      * @param float $freeDeliveryAmount
-     * @param int $activeFlag
+     * @param int   $activeFlag
      */
     public function __construct($freeDeliveryAmount, $activeFlag)
     {
         $this->freeDeliveryAmount = $freeDeliveryAmount;
-        $this->activeFlag = $activeFlag;
+        $this->activeFlag         = $activeFlag;
     }
 
     /**

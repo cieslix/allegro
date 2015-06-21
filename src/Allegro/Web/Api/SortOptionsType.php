@@ -24,7 +24,7 @@ class Allegro_Web_Api_SortOptionsType extends Allegro_Web_Api_Abstract
      */
     public function __construct($sortType, $sortOrder)
     {
-        $this->sortType = $sortType;
+        $this->sortType  = $sortType;
         $this->sortOrder = $sortOrder;
     }
 

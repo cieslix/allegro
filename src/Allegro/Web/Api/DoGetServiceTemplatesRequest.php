@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetServiceTemplatesRequest extends Allegro_Web_Api_Abstr
     protected $webapiKey = null;
 
     /**
-     * @param int $countryCode
+     * @param int    $countryCode
      * @param string $webapiKey
      */
     public function __construct($countryCode, $webapiKey)
     {
         $this->countryCode = $countryCode;
-        $this->webapiKey = $webapiKey;
+        $this->webapiKey   = $webapiKey;
     }
 
     /**

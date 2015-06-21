@@ -49,25 +49,25 @@ class Allegro_Web_Api_DoGetMySellItemsRequest extends Allegro_Web_Api_Abstract
     protected $pageNumber = null;
 
     /**
-     * @param string $sessionId
-     * @param Allegro_Web_Api_SortOptionsStruct $sortOptions
+     * @param string                                  $sessionId
+     * @param Allegro_Web_Api_SortOptionsStruct       $sortOptions
      * @param Allegro_Web_Api_SellFilterOptionsStruct $filterOptions
-     * @param string $searchValue
-     * @param int $categoryId
-     * @param Allegro_Web_Api_ArrayOfLong $itemIds
-     * @param int $pageSize
-     * @param int $pageNumber
+     * @param string                                  $searchValue
+     * @param int                                     $categoryId
+     * @param Allegro_Web_Api_ArrayOfLong             $itemIds
+     * @param int                                     $pageSize
+     * @param int                                     $pageNumber
      */
     public function __construct($sessionId, $sortOptions, $filterOptions, $searchValue, $categoryId, $itemIds, $pageSize, $pageNumber)
     {
-        $this->sessionId = $sessionId;
-        $this->sortOptions = $sortOptions;
+        $this->sessionId     = $sessionId;
+        $this->sortOptions   = $sortOptions;
         $this->filterOptions = $filterOptions;
-        $this->searchValue = $searchValue;
-        $this->categoryId = $categoryId;
-        $this->itemIds = $itemIds;
-        $this->pageSize = $pageSize;
-        $this->pageNumber = $pageNumber;
+        $this->searchValue   = $searchValue;
+        $this->categoryId    = $categoryId;
+        $this->itemIds       = $itemIds;
+        $this->pageSize      = $pageSize;
+        $this->pageNumber    = $pageNumber;
     }
 
     /**

@@ -30,9 +30,9 @@ class Allegro_Web_Api_SellRatingEstimationStruct extends Allegro_Web_Api_Abstrac
      */
     public function __construct($sellRatingGroupId, $sellRatingGroupEstimation, $sellRatingReasonId)
     {
-        $this->sellRatingGroupId = $sellRatingGroupId;
+        $this->sellRatingGroupId         = $sellRatingGroupId;
         $this->sellRatingGroupEstimation = $sellRatingGroupEstimation;
-        $this->sellRatingReasonId = $sellRatingReasonId;
+        $this->sellRatingReasonId        = $sellRatingReasonId;
     }
 
     /**

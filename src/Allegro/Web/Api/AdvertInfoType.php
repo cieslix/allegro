@@ -25,7 +25,7 @@ class Allegro_Web_Api_AdvertInfoType extends Allegro_Web_Api_Abstract
     public function __construct($serviceId, $advertId)
     {
         $this->serviceId = $serviceId;
-        $this->advertId = $advertId;
+        $this->advertId  = $advertId;
     }
 
     /**

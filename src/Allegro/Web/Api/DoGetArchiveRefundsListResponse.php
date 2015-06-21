@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetArchiveRefundsListResponse extends Allegro_Web_Api_Ab
     protected $refundsList = null;
 
     /**
-     * @param int $refundsCount
+     * @param int                                                 $refundsCount
      * @param Allegro_Web_Api_ArrayOfArchiverefundslisttypestruct $refundsList
      */
     public function __construct($refundsCount, $refundsList)
     {
         $this->refundsCount = $refundsCount;
-        $this->refundsList = $refundsList;
+        $this->refundsList  = $refundsList;
     }
 
     /**

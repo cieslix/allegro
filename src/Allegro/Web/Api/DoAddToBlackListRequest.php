@@ -19,12 +19,12 @@ class Allegro_Web_Api_DoAddToBlackListRequest extends Allegro_Web_Api_Abstract
     protected $usersBlackListArray = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                                     $sessionHandle
      * @param Allegro_Web_Api_ArrayOfUserblackliststruct $usersBlackListArray
      */
     public function __construct($sessionHandle, $usersBlackListArray)
     {
-        $this->sessionHandle = $sessionHandle;
+        $this->sessionHandle       = $sessionHandle;
         $this->usersBlackListArray = $usersBlackListArray;
     }
 

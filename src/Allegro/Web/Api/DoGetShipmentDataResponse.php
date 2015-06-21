@@ -20,12 +20,12 @@ class Allegro_Web_Api_DoGetShipmentDataResponse extends Allegro_Web_Api_Abstract
 
     /**
      * @param Allegro_Web_Api_ArrayOfShipmentdatastruct $shipmentDataList
-     * @param int $localVersion
+     * @param int                                       $localVersion
      */
     public function __construct($shipmentDataList, $localVersion)
     {
         $this->shipmentDataList = $shipmentDataList;
-        $this->localVersion = $localVersion;
+        $this->localVersion     = $localVersion;
     }
 
     /**

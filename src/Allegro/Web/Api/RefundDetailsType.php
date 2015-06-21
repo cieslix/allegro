@@ -34,19 +34,19 @@ class Allegro_Web_Api_RefundDetailsType extends Allegro_Web_Api_Abstract
     protected $considerDate = null;
 
     /**
-     * @param int $refundId
-     * @param string $refundStatus
-     * @param int $refundQuantity
+     * @param int       $refundId
+     * @param string    $refundStatus
+     * @param int       $refundQuantity
      * @param \DateTime $createdDate
      * @param \DateTime $considerDate
      */
     public function __construct($refundId, $refundStatus, $refundQuantity, \DateTime $createdDate, \DateTime $considerDate)
     {
-        $this->refundId = $refundId;
-        $this->refundStatus = $refundStatus;
+        $this->refundId       = $refundId;
+        $this->refundStatus   = $refundStatus;
         $this->refundQuantity = $refundQuantity;
-        $this->createdDate = $createdDate->format(\DateTime::ATOM);
-        $this->considerDate = $considerDate->format(\DateTime::ATOM);
+        $this->createdDate    = $createdDate->format(\DateTime::ATOM);
+        $this->considerDate   = $considerDate->format(\DateTime::ATOM);
     }
 
     /**

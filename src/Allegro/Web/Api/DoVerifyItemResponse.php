@@ -30,8 +30,8 @@ class Allegro_Web_Api_DoVerifyItemResponse extends Allegro_Web_Api_Abstract
      */
     public function __construct($itemId, $itemListed, $itemStartingTime)
     {
-        $this->itemId = $itemId;
-        $this->itemListed = $itemListed;
+        $this->itemId           = $itemId;
+        $this->itemListed       = $itemListed;
         $this->itemStartingTime = $itemStartingTime;
     }
 

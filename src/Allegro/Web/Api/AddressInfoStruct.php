@@ -19,12 +19,12 @@ class Allegro_Web_Api_AddressInfoStruct extends Allegro_Web_Api_Abstract
     protected $addressUserData = null;
 
     /**
-     * @param int $addressType
+     * @param int                                   $addressType
      * @param Allegro_Web_Api_AddressUserDataStruct $addressUserData
      */
     public function __construct($addressType, $addressUserData)
     {
-        $this->addressType = $addressType;
+        $this->addressType     = $addressType;
         $this->addressUserData = $addressUserData;
     }
 

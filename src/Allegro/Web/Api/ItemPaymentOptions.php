@@ -54,13 +54,13 @@ class Allegro_Web_Api_ItemPaymentOptions extends Allegro_Web_Api_Abstract
      */
     public function __construct($payOptionTransfer, $payOptionOnDelivery, $payOptionAllegroPay, $payOptionSeeDesc, $payOptionPayu, $payOptionEscrow, $payOptionQiwi)
     {
-        $this->payOptionTransfer = $payOptionTransfer;
+        $this->payOptionTransfer   = $payOptionTransfer;
         $this->payOptionOnDelivery = $payOptionOnDelivery;
         $this->payOptionAllegroPay = $payOptionAllegroPay;
-        $this->payOptionSeeDesc = $payOptionSeeDesc;
-        $this->payOptionPayu = $payOptionPayu;
-        $this->payOptionEscrow = $payOptionEscrow;
-        $this->payOptionQiwi = $payOptionQiwi;
+        $this->payOptionSeeDesc    = $payOptionSeeDesc;
+        $this->payOptionPayu       = $payOptionPayu;
+        $this->payOptionEscrow     = $payOptionEscrow;
+        $this->payOptionQiwi       = $payOptionQiwi;
     }
 
     /**

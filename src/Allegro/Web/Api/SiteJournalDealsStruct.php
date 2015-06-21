@@ -66,15 +66,15 @@ class Allegro_Web_Api_SiteJournalDealsStruct extends Allegro_Web_Api_Abstract
      */
     public function __construct($dealEventId, $dealEventType, $dealEventTime, $dealId, $dealTransactionId, $dealSellerId, $dealItemId, $dealBuyerId, $dealQuantity)
     {
-        $this->dealEventId = $dealEventId;
-        $this->dealEventType = $dealEventType;
-        $this->dealEventTime = $dealEventTime;
-        $this->dealId = $dealId;
+        $this->dealEventId       = $dealEventId;
+        $this->dealEventType     = $dealEventType;
+        $this->dealEventTime     = $dealEventTime;
+        $this->dealId            = $dealId;
         $this->dealTransactionId = $dealTransactionId;
-        $this->dealSellerId = $dealSellerId;
-        $this->dealItemId = $dealItemId;
-        $this->dealBuyerId = $dealBuyerId;
-        $this->dealQuantity = $dealQuantity;
+        $this->dealSellerId      = $dealSellerId;
+        $this->dealItemId        = $dealItemId;
+        $this->dealBuyerId       = $dealBuyerId;
+        $this->dealQuantity      = $dealQuantity;
     }
 
     /**

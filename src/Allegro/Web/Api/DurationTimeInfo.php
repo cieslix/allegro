@@ -25,7 +25,7 @@ class Allegro_Web_Api_DurationTimeInfo extends Allegro_Web_Api_Abstract
     public function __construct($durationOption, $durationValue)
     {
         $this->durationOption = $durationOption;
-        $this->durationValue = $durationValue;
+        $this->durationValue  = $durationValue;
     }
 
     /**

@@ -34,18 +34,18 @@ class Allegro_Web_Api_PaymentsInfoStruct extends Allegro_Web_Api_Abstract
     protected $paymentsNotifications = null;
 
     /**
-     * @param float $paymentsBalance
-     * @param string $paymentsBankAccount
+     * @param float                                  $paymentsBalance
+     * @param string                                 $paymentsBankAccount
      * @param Allegro_Web_Api_PaymentsUserDataStruct $paymentsUserData
-     * @param Allegro_Web_Api_PaymentsPayoutStruct $paymentsPayout
-     * @param int $paymentsNotifications
+     * @param Allegro_Web_Api_PaymentsPayoutStruct   $paymentsPayout
+     * @param int                                    $paymentsNotifications
      */
     public function __construct($paymentsBalance, $paymentsBankAccount, $paymentsUserData, $paymentsPayout, $paymentsNotifications)
     {
-        $this->paymentsBalance = $paymentsBalance;
-        $this->paymentsBankAccount = $paymentsBankAccount;
-        $this->paymentsUserData = $paymentsUserData;
-        $this->paymentsPayout = $paymentsPayout;
+        $this->paymentsBalance       = $paymentsBalance;
+        $this->paymentsBankAccount   = $paymentsBankAccount;
+        $this->paymentsUserData      = $paymentsUserData;
+        $this->paymentsPayout        = $paymentsPayout;
         $this->paymentsNotifications = $paymentsNotifications;
     }
 

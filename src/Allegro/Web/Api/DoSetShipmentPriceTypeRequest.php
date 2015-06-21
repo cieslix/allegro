@@ -9,8 +9,8 @@
 class Allegro_Web_Api_DoSetShipmentPriceTypeRequest extends Allegro_Web_Api_Abstract
 {
     const PRICE_TYPE_MOST_EXPENSIVE = 1;
-    const PRICE_TYPE_CHEAPEST = 2;
-    const PRICE_TYPE_SEPARATELY = 3;
+    const PRICE_TYPE_CHEAPEST       = 2;
+    const PRICE_TYPE_SEPARATELY     = 3;
 
     /**
      * @var string $sessionId
@@ -24,11 +24,11 @@ class Allegro_Web_Api_DoSetShipmentPriceTypeRequest extends Allegro_Web_Api_Abst
 
     /**
      * @param string $sessionId
-     * @param int $shipmentPriceTypeId
+     * @param int    $shipmentPriceTypeId
      */
     public function __construct($sessionId, $shipmentPriceTypeId)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId           = $sessionId;
         $this->shipmentPriceTypeId = $shipmentPriceTypeId;
     }
 

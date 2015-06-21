@@ -30,8 +30,8 @@ class Allegro_Web_Api_ItemGetImage extends Allegro_Web_Api_Abstract
      */
     public function __construct($itId, $itSellerId, $itFotoCount)
     {
-        $this->itId = $itId;
-        $this->itSellerId = $itSellerId;
+        $this->itId        = $itId;
+        $this->itSellerId  = $itSellerId;
         $this->itFotoCount = $itFotoCount;
     }
 

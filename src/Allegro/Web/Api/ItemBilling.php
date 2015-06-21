@@ -24,7 +24,7 @@ class Allegro_Web_Api_ItemBilling extends Allegro_Web_Api_Abstract
      */
     public function __construct($biName, $biValue)
     {
-        $this->biName = $biName;
+        $this->biName  = $biName;
         $this->biValue = $biValue;
     }
 

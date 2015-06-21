@@ -24,14 +24,14 @@ class Allegro_Web_Api_FilterOptionsType extends Allegro_Web_Api_Abstract
     protected $filterValueRange = null;
 
     /**
-     * @param string $filterId
-     * @param Allegro_Web_Api_ArrayOfString $filterValueId
+     * @param string                         $filterId
+     * @param Allegro_Web_Api_ArrayOfString  $filterValueId
      * @param Allegro_Web_Api_RangeValueType $filterValueRange
      */
     public function __construct($filterId, $filterValueId, $filterValueRange)
     {
-        $this->filterId = $filterId;
-        $this->filterValueId = $filterValueId;
+        $this->filterId         = $filterId;
+        $this->filterValueId    = $filterValueId;
         $this->filterValueRange = $filterValueRange;
     }
 

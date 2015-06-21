@@ -39,21 +39,21 @@ class Allegro_Web_Api_DoChangeItemFieldsRequest extends Allegro_Web_Api_Abstract
     protected $variants = null;
 
     /**
-     * @param string $sessionId
-     * @param int $itemId
-     * @param Allegro_Web_Api_ArrayOfFieldsvalue $fieldsToModify
-     * @param Allegro_Web_Api_ArrayOfInt $fieldsToRemove
-     * @param int $previewOnly
+     * @param string                               $sessionId
+     * @param int                                  $itemId
+     * @param Allegro_Web_Api_ArrayOfFieldsvalue   $fieldsToModify
+     * @param Allegro_Web_Api_ArrayOfInt           $fieldsToRemove
+     * @param int                                  $previewOnly
      * @param Allegro_Web_Api_ArrayOfVariantstruct $variants
      */
     public function __construct($sessionId, $itemId, $fieldsToModify, $fieldsToRemove, $previewOnly, $variants)
     {
-        $this->sessionId = $sessionId;
-        $this->itemId = $itemId;
+        $this->sessionId      = $sessionId;
+        $this->itemId         = $itemId;
         $this->fieldsToModify = $fieldsToModify;
         $this->fieldsToRemove = $fieldsToRemove;
-        $this->previewOnly = $previewOnly;
-        $this->variants = $variants;
+        $this->previewOnly    = $previewOnly;
+        $this->variants       = $variants;
     }
 
     /**

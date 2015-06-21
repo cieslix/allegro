@@ -25,14 +25,14 @@ class Allegro_Web_Api_DoShowUserPageRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $webapiKey
-     * @param int $countryId
-     * @param int $userId
+     * @param int    $countryId
+     * @param int    $userId
      */
     public function __construct($webapiKey, $countryId, $userId)
     {
         $this->webapiKey = $webapiKey;
         $this->countryId = $countryId;
-        $this->userId = $userId;
+        $this->userId    = $userId;
     }
 
     /**

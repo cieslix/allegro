@@ -20,12 +20,12 @@ class Allegro_Web_Api_DoVerifyItemRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $localId
+     * @param int    $localId
      */
     public function __construct($sessionHandle, $localId)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->localId = $localId;
+        $this->localId       = $localId;
     }
 
     /**

@@ -8,31 +8,31 @@
  */
 class Allegro_Web_Api_SearchOptType extends Allegro_Web_Api_Abstract
 {
-    const OPTION_ANY_WORD = 1;
-    const OPTION_IN_DESCRIPTION = 2;
-    const OPTION_IN_LAST_24H = 4;
-    const OPTION_IN_BUY_NOW = 8;
-    const OPTION_ENDED = 16;
-    const OPTION_AVAILABLE_IN_USER_CITY = 32;
+    const OPTION_ANY_WORD                   = 1;
+    const OPTION_IN_DESCRIPTION             = 2;
+    const OPTION_IN_LAST_24H                = 4;
+    const OPTION_IN_BUY_NOW                 = 8;
+    const OPTION_ENDED                      = 16;
+    const OPTION_AVAILABLE_IN_USER_CITY     = 32;
     const OPTION_AVAILABLE_IN_USER_PROVINCE = 64;
-    const OPTION_EXCLUDE_EROTICA = 128;
-    const OPTION_IN_GENERAL_AVAILABLE = 256;
-    const OPTION_AVAILABLE_FOR_GUESTS = 512;
-    const OPTION_FREE_DELIVERY = 1024;
-    const OPTION_STANDARD_ALLEGRO = 2048;
-    const OPTION_DELIVERY_NOVAYAPOCHTA = 4096;
-    const OPTION_ONLY_BIDDING_TYPE = 8192;
-    const OPTION_SIMILAR = 16384;
-    const OPTION_NEW_CONDITION = 32768;
-    const OPTION_USED_CONDITION = 65536;
+    const OPTION_EXCLUDE_EROTICA            = 128;
+    const OPTION_IN_GENERAL_AVAILABLE       = 256;
+    const OPTION_AVAILABLE_FOR_GUESTS       = 512;
+    const OPTION_FREE_DELIVERY              = 1024;
+    const OPTION_STANDARD_ALLEGRO           = 2048;
+    const OPTION_DELIVERY_NOVAYAPOCHTA      = 4096;
+    const OPTION_ONLY_BIDDING_TYPE          = 8192;
+    const OPTION_SIMILAR                    = 16384;
+    const OPTION_NEW_CONDITION              = 32768;
+    const OPTION_USED_CONDITION             = 65536;
 
-    const SORT_BY_ENDING_ASC = 1; //default
+    const SORT_BY_ENDING_ASC     = 1; //default
     const SORT_BY_OFFERS_NUM_ASC = 2;
-    const SORT_BY_PRICE_ASC = 4;
-    const SORT_BY_NAME_ASC = 8;
+    const SORT_BY_PRICE_ASC      = 4;
+    const SORT_BY_NAME_ASC       = 8;
     const SORT_BY_RELEVANCE_DESC = 16;
 
-    const ORDER_TYPE_ASC = 0;
+    const ORDER_TYPE_ASC  = 0;
     const ORDER_TYPE_DESC = 1;
     /**
      * @var string $searchString
@@ -106,36 +106,36 @@ class Allegro_Web_Api_SearchOptType extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $searchString
-     * @param int $searchOptions
-     * @param int $searchOrder
-     * @param int $searchOrderType
-     * @param int $searchCountry
-     * @param int $searchCategory
-     * @param int $searchOffset
+     * @param int    $searchOptions
+     * @param int    $searchOrder
+     * @param int    $searchOrderType
+     * @param int    $searchCountry
+     * @param int    $searchCategory
+     * @param int    $searchOffset
      * @param string $searchCity
-     * @param int $searchState
-     * @param float $searchPriceFrom
-     * @param float $searchPriceTo
-     * @param int $searchLimit
-     * @param int $searchOrderFulfillmentTime
-     * @param int $searchUser
+     * @param int    $searchState
+     * @param float  $searchPriceFrom
+     * @param float  $searchPriceTo
+     * @param int    $searchLimit
+     * @param int    $searchOrderFulfillmentTime
+     * @param int    $searchUser
      */
     public function __construct($searchString, $searchOptions = 0, $searchOrder = 0, $searchOrderType = 0, $searchCountry = 0, $searchCategory = 0, $searchOffset = 0, $searchCity = '', $searchState = 0, $searchPriceFrom = 0.0, $searchPriceTo = 0.0, $searchLimit = 0, $searchOrderFulfillmentTime = 0, $searchUser = 0)
     {
-        $this->searchString = $searchString;
-        $this->searchOptions = $searchOptions;
-        $this->searchOrder = $searchOrder;
-        $this->searchOrderType = $searchOrderType;
-        $this->searchCountry = $searchCountry;
-        $this->searchCategory = $searchCategory;
-        $this->searchOffset = $searchOffset;
-        $this->searchCity = $searchCity;
-        $this->searchState = $searchState;
-        $this->searchPriceFrom = $searchPriceFrom;
-        $this->searchPriceTo = $searchPriceTo;
-        $this->searchLimit = $searchLimit;
+        $this->searchString               = $searchString;
+        $this->searchOptions              = $searchOptions;
+        $this->searchOrder                = $searchOrder;
+        $this->searchOrderType            = $searchOrderType;
+        $this->searchCountry              = $searchCountry;
+        $this->searchCategory             = $searchCategory;
+        $this->searchOffset               = $searchOffset;
+        $this->searchCity                 = $searchCity;
+        $this->searchState                = $searchState;
+        $this->searchPriceFrom            = $searchPriceFrom;
+        $this->searchPriceTo              = $searchPriceTo;
+        $this->searchLimit                = $searchLimit;
         $this->searchOrderFulfillmentTime = $searchOrderFulfillmentTime;
-        $this->searchUser = $searchUser;
+        $this->searchUser                 = $searchUser;
     }
 
     /**

@@ -25,14 +25,14 @@ class Allegro_Web_Api_DoGetCatsDataResponse extends Allegro_Web_Api_Abstract
 
     /**
      * @param Allegro_Web_Api_ArrayOfCatinfotype $catsList
-     * @param int $verKey
-     * @param string $verStr
+     * @param int                                $verKey
+     * @param string                             $verStr
      */
     public function __construct($catsList, $verKey, $verStr)
     {
         $this->catsList = $catsList;
-        $this->verKey = $verKey;
-        $this->verStr = $verStr;
+        $this->verKey   = $verKey;
+        $this->verStr   = $verStr;
     }
 
     /**

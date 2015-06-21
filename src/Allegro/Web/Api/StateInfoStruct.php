@@ -19,12 +19,12 @@ class Allegro_Web_Api_StateInfoStruct extends Allegro_Web_Api_Abstract
     protected $stateName = null;
 
     /**
-     * @param int $stateId
+     * @param int    $stateId
      * @param string $stateName
      */
     public function __construct($stateId, $stateName)
     {
-        $this->stateId = $stateId;
+        $this->stateId   = $stateId;
         $this->stateName = $stateName;
     }
 

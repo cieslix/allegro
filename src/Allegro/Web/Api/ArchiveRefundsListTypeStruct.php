@@ -24,14 +24,14 @@ class Allegro_Web_Api_ArchiveRefundsListTypeStruct extends Allegro_Web_Api_Abstr
     protected $buyerLogin = null;
 
     /**
-     * @param int $refundId
-     * @param int $buyerId
+     * @param int    $refundId
+     * @param int    $buyerId
      * @param string $buyerLogin
      */
     public function __construct($refundId, $buyerId, $buyerLogin)
     {
-        $this->refundId = $refundId;
-        $this->buyerId = $buyerId;
+        $this->refundId   = $refundId;
+        $this->buyerId    = $buyerId;
         $this->buyerLogin = $buyerLogin;
     }
 

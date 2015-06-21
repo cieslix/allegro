@@ -25,14 +25,14 @@ class Allegro_Web_Api_DoLoginWithAccessTokenRequest extends Allegro_Web_Api_Abst
 
     /**
      * @param string $accessToken
-     * @param int $countryCode
+     * @param int    $countryCode
      * @param string $webapiKey
      */
     public function __construct($accessToken, $countryCode, $webapiKey)
     {
         $this->accessToken = $accessToken;
         $this->countryCode = $countryCode;
-        $this->webapiKey = $webapiKey;
+        $this->webapiKey   = $webapiKey;
     }
 
     /**

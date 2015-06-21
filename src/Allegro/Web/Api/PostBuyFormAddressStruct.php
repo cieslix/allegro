@@ -59,7 +59,7 @@ class Allegro_Web_Api_PostBuyFormAddressStruct extends Allegro_Web_Api_Abstract
     protected $postBuyFormAdrType = null;
 
     /**
-     * @param int $postBuyFormAdrCountry
+     * @param int    $postBuyFormAdrCountry
      * @param string $postBuyFormAdrStreet
      * @param string $postBuyFormAdrPostcode
      * @param string $postBuyFormAdrCity
@@ -68,20 +68,20 @@ class Allegro_Web_Api_PostBuyFormAddressStruct extends Allegro_Web_Api_Abstract
      * @param string $postBuyFormAdrPhone
      * @param string $postBuyFormAdrNip
      * @param string $postBuyFormCreatedDate
-     * @param int $postBuyFormAdrType
+     * @param int    $postBuyFormAdrType
      */
     public function __construct($postBuyFormAdrCountry, $postBuyFormAdrStreet, $postBuyFormAdrPostcode, $postBuyFormAdrCity, $postBuyFormAdrFullName, $postBuyFormAdrCompany, $postBuyFormAdrPhone, $postBuyFormAdrNip, $postBuyFormCreatedDate, $postBuyFormAdrType)
     {
-        $this->postBuyFormAdrCountry = $postBuyFormAdrCountry;
-        $this->postBuyFormAdrStreet = $postBuyFormAdrStreet;
+        $this->postBuyFormAdrCountry  = $postBuyFormAdrCountry;
+        $this->postBuyFormAdrStreet   = $postBuyFormAdrStreet;
         $this->postBuyFormAdrPostcode = $postBuyFormAdrPostcode;
-        $this->postBuyFormAdrCity = $postBuyFormAdrCity;
+        $this->postBuyFormAdrCity     = $postBuyFormAdrCity;
         $this->postBuyFormAdrFullName = $postBuyFormAdrFullName;
-        $this->postBuyFormAdrCompany = $postBuyFormAdrCompany;
-        $this->postBuyFormAdrPhone = $postBuyFormAdrPhone;
-        $this->postBuyFormAdrNip = $postBuyFormAdrNip;
+        $this->postBuyFormAdrCompany  = $postBuyFormAdrCompany;
+        $this->postBuyFormAdrPhone    = $postBuyFormAdrPhone;
+        $this->postBuyFormAdrNip      = $postBuyFormAdrNip;
         $this->postBuyFormCreatedDate = $postBuyFormCreatedDate;
-        $this->postBuyFormAdrType = $postBuyFormAdrType;
+        $this->postBuyFormAdrType     = $postBuyFormAdrType;
     }
 
     /**

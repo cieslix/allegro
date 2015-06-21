@@ -20,11 +20,11 @@ class Allegro_Web_Api_DoGetSessionHandleForWidgetRequest extends Allegro_Web_Api
 
     /**
      * @param string $webapiKey
-     * @param int $countryCode
+     * @param int    $countryCode
      */
     public function __construct($webapiKey, $countryCode)
     {
-        $this->webapiKey = $webapiKey;
+        $this->webapiKey   = $webapiKey;
         $this->countryCode = $countryCode;
     }
 

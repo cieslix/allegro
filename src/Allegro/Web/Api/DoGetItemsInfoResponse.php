@@ -25,13 +25,13 @@ class Allegro_Web_Api_DoGetItemsInfoResponse extends Allegro_Web_Api_Abstract
 
     /**
      * @param Allegro_Web_Api_ArrayOfIteminfostruct $arrayItemListInfo
-     * @param Allegro_Web_Api_ArrayOfLong $arrayItemsNotFound
-     * @param Allegro_Web_Api_ArrayOfLong $arrayItemsAdminKilled
+     * @param Allegro_Web_Api_ArrayOfLong           $arrayItemsNotFound
+     * @param Allegro_Web_Api_ArrayOfLong           $arrayItemsAdminKilled
      */
     public function __construct($arrayItemListInfo, $arrayItemsNotFound, $arrayItemsAdminKilled)
     {
-        $this->arrayItemListInfo = $arrayItemListInfo;
-        $this->arrayItemsNotFound = $arrayItemsNotFound;
+        $this->arrayItemListInfo     = $arrayItemListInfo;
+        $this->arrayItemsNotFound    = $arrayItemsNotFound;
         $this->arrayItemsAdminKilled = $arrayItemsAdminKilled;
     }
 

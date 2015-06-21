@@ -39,21 +39,21 @@ class Allegro_Web_Api_SiteFlagInfoType extends Allegro_Web_Api_Abstract
     protected $siteFlagGif = null;
 
     /**
-     * @param string $siteName
-     * @param string $siteUrl
-     * @param int $siteCountryCode
-     * @param string $siteCodePage
+     * @param string       $siteName
+     * @param string       $siteUrl
+     * @param int          $siteCountryCode
+     * @param string       $siteCodePage
      * @param base64Binary $siteLogoGif
      * @param base64Binary $siteFlagGif
      */
     public function __construct($siteName, $siteUrl, $siteCountryCode, $siteCodePage, $siteLogoGif, $siteFlagGif)
     {
-        $this->siteName = $siteName;
-        $this->siteUrl = $siteUrl;
+        $this->siteName        = $siteName;
+        $this->siteUrl         = $siteUrl;
         $this->siteCountryCode = $siteCountryCode;
-        $this->siteCodePage = $siteCodePage;
-        $this->siteLogoGif = $siteLogoGif;
-        $this->siteFlagGif = $siteFlagGif;
+        $this->siteCodePage    = $siteCodePage;
+        $this->siteLogoGif     = $siteLogoGif;
+        $this->siteFlagGif     = $siteFlagGif;
     }
 
     /**

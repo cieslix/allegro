@@ -24,15 +24,15 @@ class Allegro_Web_Api_DoGetSellFormFieldsRequest extends Allegro_Web_Api_Abstrac
     protected $webapiKey = null;
 
     /**
-     * @param int $countryCode
-     * @param int $localVersion
+     * @param int    $countryCode
+     * @param int    $localVersion
      * @param string $webapiKey
      */
     public function __construct($countryCode, $localVersion, $webapiKey)
     {
-        $this->countryCode = $countryCode;
+        $this->countryCode  = $countryCode;
         $this->localVersion = $localVersion;
-        $this->webapiKey = $webapiKey;
+        $this->webapiKey    = $webapiKey;
     }
 
     /**

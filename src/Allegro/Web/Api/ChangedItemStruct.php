@@ -24,14 +24,14 @@ class Allegro_Web_Api_ChangedItemStruct extends Allegro_Web_Api_Abstract
     protected $itemSurcharge = null;
 
     /**
-     * @param int $itemId
-     * @param Allegro_Web_Api_ArrayOfFieldsvalue $itemFields
+     * @param int                                        $itemId
+     * @param Allegro_Web_Api_ArrayOfFieldsvalue         $itemFields
      * @param Allegro_Web_Api_ArrayOfItemsurchargestruct $itemSurcharge
      */
     public function __construct($itemId, $itemFields, $itemSurcharge)
     {
-        $this->itemId = $itemId;
-        $this->itemFields = $itemFields;
+        $this->itemId        = $itemId;
+        $this->itemFields    = $itemFields;
         $this->itemSurcharge = $itemSurcharge;
     }
 

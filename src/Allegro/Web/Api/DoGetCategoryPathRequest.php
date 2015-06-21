@@ -20,11 +20,11 @@ class Allegro_Web_Api_DoGetCategoryPathRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionId
-     * @param int $categoryId
+     * @param int    $categoryId
      */
     public function __construct($sessionId, $categoryId)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId  = $sessionId;
         $this->categoryId = $categoryId;
     }
 

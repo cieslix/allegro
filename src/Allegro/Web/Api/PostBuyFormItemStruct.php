@@ -44,23 +44,23 @@ class Allegro_Web_Api_PostBuyFormItemStruct extends Allegro_Web_Api_Abstract
     protected $postBuyFormItDeals = null;
 
     /**
-     * @param int $postBuyFormItQuantity
-     * @param float $postBuyFormItAmount
-     * @param int $postBuyFormItId
-     * @param string $postBuyFormItTitle
-     * @param int $postBuyFormItCountry
-     * @param float $postBuyFormItPrice
+     * @param int                                               $postBuyFormItQuantity
+     * @param float                                             $postBuyFormItAmount
+     * @param int                                               $postBuyFormItId
+     * @param string                                            $postBuyFormItTitle
+     * @param int                                               $postBuyFormItCountry
+     * @param float                                             $postBuyFormItPrice
      * @param Allegro_Web_Api_ArrayOfPostbuyformitemdealsstruct $postBuyFormItDeals
      */
     public function __construct($postBuyFormItQuantity, $postBuyFormItAmount, $postBuyFormItId, $postBuyFormItTitle, $postBuyFormItCountry, $postBuyFormItPrice, $postBuyFormItDeals)
     {
         $this->postBuyFormItQuantity = $postBuyFormItQuantity;
-        $this->postBuyFormItAmount = $postBuyFormItAmount;
-        $this->postBuyFormItId = $postBuyFormItId;
-        $this->postBuyFormItTitle = $postBuyFormItTitle;
-        $this->postBuyFormItCountry = $postBuyFormItCountry;
-        $this->postBuyFormItPrice = $postBuyFormItPrice;
-        $this->postBuyFormItDeals = $postBuyFormItDeals;
+        $this->postBuyFormItAmount   = $postBuyFormItAmount;
+        $this->postBuyFormItId       = $postBuyFormItId;
+        $this->postBuyFormItTitle    = $postBuyFormItTitle;
+        $this->postBuyFormItCountry  = $postBuyFormItCountry;
+        $this->postBuyFormItPrice    = $postBuyFormItPrice;
+        $this->postBuyFormItDeals    = $postBuyFormItDeals;
     }
 
     /**

@@ -9,7 +9,7 @@
 class Allegro_Web_Api_DoMyFeedback2LimitRequest extends Allegro_Web_Api_Abstract
 {
     const FEEDBACK_TYPE_RECEIVED = 'fb_recvd';
-    const FEEDBACK_TYPE_GAVE = 'fb_gave';
+    const FEEDBACK_TYPE_GAVE     = 'fb_gave';
 
     /**
      * @var string $sessionHandle
@@ -42,20 +42,20 @@ class Allegro_Web_Api_DoMyFeedback2LimitRequest extends Allegro_Web_Api_Abstract
     protected $packageElement = null;
 
     /**
-     * @param string $sessionHandle
-     * @param string $feedbackType
-     * @param int $offset
-     * @param int $desc
+     * @param string                      $sessionHandle
+     * @param string                      $feedbackType
+     * @param int                         $offset
+     * @param int                         $desc
      * @param Allegro_Web_Api_ArrayOfLong $itemsArray
-     * @param int $packageElement
+     * @param int                         $packageElement
      */
     public function __construct($sessionHandle, $feedbackType, $offset, $desc, $itemsArray, $packageElement)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->feedbackType = $feedbackType;
-        $this->offset = $offset;
-        $this->desc = $desc;
-        $this->itemsArray = $itemsArray;
+        $this->sessionHandle  = $sessionHandle;
+        $this->feedbackType   = $feedbackType;
+        $this->offset         = $offset;
+        $this->desc           = $desc;
+        $this->itemsArray     = $itemsArray;
         $this->packageElement = $packageElement;
     }
 

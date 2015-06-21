@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoFinishItemsResponse extends Allegro_Web_Api_Abstract
     protected $finishItemsFailed = null;
 
     /**
-     * @param Allegro_Web_Api_ArrayOfLong $finishItemsSucceed
+     * @param Allegro_Web_Api_ArrayOfLong                $finishItemsSucceed
      * @param Allegro_Web_Api_ArrayOfFinishfailurestruct $finishItemsFailed
      */
     public function __construct($finishItemsSucceed, $finishItemsFailed)
     {
         $this->finishItemsSucceed = $finishItemsSucceed;
-        $this->finishItemsFailed = $finishItemsFailed;
+        $this->finishItemsFailed  = $finishItemsFailed;
     }
 
     /**

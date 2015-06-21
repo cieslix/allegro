@@ -20,12 +20,12 @@ class Allegro_Web_Api_DoCancelRefundWarningRequest extends Allegro_Web_Api_Abstr
 
     /**
      * @param string $sessionId
-     * @param int $refundId
+     * @param int    $refundId
      */
     public function __construct($sessionId, $refundId)
     {
         $this->sessionId = $sessionId;
-        $this->refundId = $refundId;
+        $this->refundId  = $refundId;
     }
 
     /**

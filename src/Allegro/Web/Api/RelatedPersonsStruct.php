@@ -25,7 +25,7 @@ class Allegro_Web_Api_RelatedPersonsStruct extends Allegro_Web_Api_Abstract
     public function __construct($spouseFirstName, $spouseLastName)
     {
         $this->spouseFirstName = $spouseFirstName;
-        $this->spouseLastName = $spouseLastName;
+        $this->spouseLastName  = $spouseLastName;
     }
 
     /**

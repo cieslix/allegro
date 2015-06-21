@@ -99,45 +99,45 @@ class Allegro_Web_Api_UserItemList extends Allegro_Web_Api_Abstract
     protected $itEndingTime = null;
 
     /**
-     * @param int $itId
+     * @param int    $itId
      * @param string $itName
-     * @param float $itPrice
-     * @param float $itBuyNowPrice
-     * @param int $itBidCount
-     * @param int $itTimeLeft
-     * @param int $itFotoCount
-     * @param int $itIsListingThumb
-     * @param int $itIsBoldTitle
-     * @param int $itIsBuyNow
-     * @param int $itCountry
-     * @param int $itIsEscrow
-     * @param int $itStartingTime
-     * @param int $itIsReservedPrice
+     * @param float  $itPrice
+     * @param float  $itBuyNowPrice
+     * @param int    $itBidCount
+     * @param int    $itTimeLeft
+     * @param int    $itFotoCount
+     * @param int    $itIsListingThumb
+     * @param int    $itIsBoldTitle
+     * @param int    $itIsBuyNow
+     * @param int    $itCountry
+     * @param int    $itIsEscrow
+     * @param int    $itStartingTime
+     * @param int    $itIsReservedPrice
      * @param string $itThumbUrl
-     * @param int $itIsAllegroStandard
-     * @param int $itHasFreeShipping
-     * @param int $itEndingTime
+     * @param int    $itIsAllegroStandard
+     * @param int    $itHasFreeShipping
+     * @param int    $itEndingTime
      */
     public function __construct($itId, $itName, $itPrice, $itBuyNowPrice, $itBidCount, $itTimeLeft, $itFotoCount, $itIsListingThumb, $itIsBoldTitle, $itIsBuyNow, $itCountry, $itIsEscrow, $itStartingTime, $itIsReservedPrice, $itThumbUrl, $itIsAllegroStandard, $itHasFreeShipping, $itEndingTime)
     {
-        $this->itId = $itId;
-        $this->itName = $itName;
-        $this->itPrice = $itPrice;
-        $this->itBuyNowPrice = $itBuyNowPrice;
-        $this->itBidCount = $itBidCount;
-        $this->itTimeLeft = $itTimeLeft;
-        $this->itFotoCount = $itFotoCount;
-        $this->itIsListingThumb = $itIsListingThumb;
-        $this->itIsBoldTitle = $itIsBoldTitle;
-        $this->itIsBuyNow = $itIsBuyNow;
-        $this->itCountry = $itCountry;
-        $this->itIsEscrow = $itIsEscrow;
-        $this->itStartingTime = $itStartingTime;
-        $this->itIsReservedPrice = $itIsReservedPrice;
-        $this->itThumbUrl = $itThumbUrl;
+        $this->itId                = $itId;
+        $this->itName              = $itName;
+        $this->itPrice             = $itPrice;
+        $this->itBuyNowPrice       = $itBuyNowPrice;
+        $this->itBidCount          = $itBidCount;
+        $this->itTimeLeft          = $itTimeLeft;
+        $this->itFotoCount         = $itFotoCount;
+        $this->itIsListingThumb    = $itIsListingThumb;
+        $this->itIsBoldTitle       = $itIsBoldTitle;
+        $this->itIsBuyNow          = $itIsBuyNow;
+        $this->itCountry           = $itCountry;
+        $this->itIsEscrow          = $itIsEscrow;
+        $this->itStartingTime      = $itStartingTime;
+        $this->itIsReservedPrice   = $itIsReservedPrice;
+        $this->itThumbUrl          = $itThumbUrl;
         $this->itIsAllegroStandard = $itIsAllegroStandard;
-        $this->itHasFreeShipping = $itHasFreeShipping;
-        $this->itEndingTime = $itEndingTime;
+        $this->itHasFreeShipping   = $itHasFreeShipping;
+        $this->itEndingTime        = $itEndingTime;
     }
 
     /**

@@ -30,9 +30,9 @@ class Allegro_Web_Api_PostBuyFormPackageInfoStruct extends Allegro_Web_Api_Abstr
      */
     public function __construct($packageIdsAdded, $packageIdsNotAddedIncorrectOperatorId, $packageIdsNotAddedIncorrectPackageId)
     {
-        $this->packageIdsAdded = $packageIdsAdded;
+        $this->packageIdsAdded                       = $packageIdsAdded;
         $this->packageIdsNotAddedIncorrectOperatorId = $packageIdsNotAddedIncorrectOperatorId;
-        $this->packageIdsNotAddedIncorrectPackageId = $packageIdsNotAddedIncorrectPackageId;
+        $this->packageIdsNotAddedIncorrectPackageId  = $packageIdsNotAddedIncorrectPackageId;
     }
 
     /**

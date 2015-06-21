@@ -34,18 +34,18 @@ class Allegro_Web_Api_DealsStruct extends Allegro_Web_Api_Abstract
     protected $dealAmountDiscounted = null;
 
     /**
-     * @param int $dealId
-     * @param int $dealDate
-     * @param int $dealQuantity
+     * @param int   $dealId
+     * @param int   $dealDate
+     * @param int   $dealQuantity
      * @param float $dealAmountOriginal
      * @param float $dealAmountDiscounted
      */
     public function __construct($dealId, $dealDate, $dealQuantity, $dealAmountOriginal, $dealAmountDiscounted)
     {
-        $this->dealId = $dealId;
-        $this->dealDate = $dealDate;
-        $this->dealQuantity = $dealQuantity;
-        $this->dealAmountOriginal = $dealAmountOriginal;
+        $this->dealId               = $dealId;
+        $this->dealDate             = $dealDate;
+        $this->dealQuantity         = $dealQuantity;
+        $this->dealAmountOriginal   = $dealAmountOriginal;
         $this->dealAmountDiscounted = $dealAmountDiscounted;
     }
 

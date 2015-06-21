@@ -44,23 +44,23 @@ class Allegro_Web_Api_DoNewAuctionExtRequest extends Allegro_Web_Api_Abstract
     protected $tags = null;
 
     /**
-     * @param string $sessionHandle
-     * @param Allegro_Web_Api_ArrayOfFieldsvalue $fields
-     * @param int $itemTemplateId
-     * @param int $localId
+     * @param string                                   $sessionHandle
+     * @param Allegro_Web_Api_ArrayOfFieldsvalue       $fields
+     * @param int                                      $itemTemplateId
+     * @param int                                      $localId
      * @param Allegro_Web_Api_ItemTemplateCreateStruct $itemTemplateCreate
-     * @param Allegro_Web_Api_ArrayOfVariantstruct $variants
-     * @param Allegro_Web_Api_ArrayOfTagnamestruct $tags
+     * @param Allegro_Web_Api_ArrayOfVariantstruct     $variants
+     * @param Allegro_Web_Api_ArrayOfTagnamestruct     $tags
      */
     public function __construct($sessionHandle, $fields, $itemTemplateId, $localId, $itemTemplateCreate, $variants, $tags)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->fields = $fields;
-        $this->itemTemplateId = $itemTemplateId;
-        $this->localId = $localId;
+        $this->sessionHandle      = $sessionHandle;
+        $this->fields             = $fields;
+        $this->itemTemplateId     = $itemTemplateId;
+        $this->localId            = $localId;
         $this->itemTemplateCreate = $itemTemplateCreate;
-        $this->variants = $variants;
-        $this->tags = $tags;
+        $this->variants           = $variants;
+        $this->tags               = $tags;
     }
 
     /**

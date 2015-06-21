@@ -29,17 +29,17 @@ class Allegro_Web_Api_SellerInfoStruct extends Allegro_Web_Api_Abstract
     protected $sellerInfo = null;
 
     /**
-     * @param int $sellerId
+     * @param int    $sellerId
      * @param string $sellerName
-     * @param int $sellerRating
-     * @param int $sellerInfo
+     * @param int    $sellerRating
+     * @param int    $sellerInfo
      */
     public function __construct($sellerId, $sellerName, $sellerRating, $sellerInfo)
     {
-        $this->sellerId = $sellerId;
-        $this->sellerName = $sellerName;
+        $this->sellerId     = $sellerId;
+        $this->sellerName   = $sellerName;
         $this->sellerRating = $sellerRating;
-        $this->sellerInfo = $sellerInfo;
+        $this->sellerInfo   = $sellerInfo;
     }
 
     /**

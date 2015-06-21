@@ -34,19 +34,19 @@ class Allegro_Web_Api_DoSearchResponse extends Allegro_Web_Api_Abstract
     protected $searchCategories = null;
 
     /**
-     * @param int $searchCount
-     * @param int $searchCountFeatured
+     * @param int                                       $searchCount
+     * @param int                                       $searchCountFeatured
      * @param Allegro_Web_Api_ArrayOfSearchresponsetype $searchArray
-     * @param Allegro_Web_Api_ArrayOfString $searchExcludedWords
-     * @param Allegro_Web_Api_ArrayOfCategoriesstruct $searchCategories
+     * @param Allegro_Web_Api_ArrayOfString             $searchExcludedWords
+     * @param Allegro_Web_Api_ArrayOfCategoriesstruct   $searchCategories
      */
     public function __construct($searchCount, $searchCountFeatured, $searchArray, $searchExcludedWords, $searchCategories)
     {
-        $this->searchCount = $searchCount;
+        $this->searchCount         = $searchCount;
         $this->searchCountFeatured = $searchCountFeatured;
-        $this->searchArray = $searchArray;
+        $this->searchArray         = $searchArray;
         $this->searchExcludedWords = $searchExcludedWords;
-        $this->searchCategories = $searchCategories;
+        $this->searchCategories    = $searchCategories;
     }
 
     /**

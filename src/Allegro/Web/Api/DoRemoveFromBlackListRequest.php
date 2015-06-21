@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoRemoveFromBlackListRequest extends Allegro_Web_Api_Abstr
     protected $usersIdArray = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                      $sessionHandle
      * @param Allegro_Web_Api_ArrayOfLong $usersIdArray
      */
     public function __construct($sessionHandle, $usersIdArray)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->usersIdArray = $usersIdArray;
+        $this->usersIdArray  = $usersIdArray;
     }
 
     /**

@@ -8,21 +8,21 @@
  */
 class Allegro_Web_Api_DoGetSpecialItemsRequest extends Allegro_Web_Api_Abstract
 {
-    const SPECIAL_TYPE_NEWEST_1000 = 0;
+    const SPECIAL_TYPE_NEWEST_1000   = 0;
     const SPECIAL_TYPE_COMING_TO_END = 1;
-    const SPECIAL_TYPE_MAIN_PAGE = 2;
+    const SPECIAL_TYPE_MAIN_PAGE     = 2;
     const SPECIAL_TYPE_CATEGORY_PAGE = 3;
 
-    const FULFILLMENT_TIME_NOW = 1;
-    const FULFILLMENT_TIME_24 = 24;
-    const FULFILLMENT_TIME_48 = 48;
-    const FULFILLMENT_TIME_72 = 72;
-    const FULFILLMENT_TIME_96 = 96;
-    const FULFILLMENT_TIME_120 = 120;
-    const FULFILLMENT_TIME_168 = 168;
-    const FULFILLMENT_TIME_240 = 240;
-    const FULFILLMENT_TIME_336 = 336;
-    const FULFILLMENT_TIME_504 = 504;
+    const FULFILLMENT_TIME_NOW  = 1;
+    const FULFILLMENT_TIME_24   = 24;
+    const FULFILLMENT_TIME_48   = 48;
+    const FULFILLMENT_TIME_72   = 72;
+    const FULFILLMENT_TIME_96   = 96;
+    const FULFILLMENT_TIME_120  = 120;
+    const FULFILLMENT_TIME_168  = 168;
+    const FULFILLMENT_TIME_240  = 240;
+    const FULFILLMENT_TIME_336  = 336;
+    const FULFILLMENT_TIME_504  = 504;
     const FULFILLMENT_TIME_MORE = 999;
     /**
      * @var string $sessionHandle
@@ -51,17 +51,17 @@ class Allegro_Web_Api_DoGetSpecialItemsRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $specialType
-     * @param int $specialGroup
-     * @param int $offset
-     * @param int $orderFulfillmentTime
+     * @param int    $specialType
+     * @param int    $specialGroup
+     * @param int    $offset
+     * @param int    $orderFulfillmentTime
      */
     public function __construct($sessionHandle, $specialType, $specialGroup, $offset, $orderFulfillmentTime)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->specialType = $specialType;
-        $this->specialGroup = $specialGroup;
-        $this->offset = $offset;
+        $this->sessionHandle        = $sessionHandle;
+        $this->specialType          = $specialType;
+        $this->specialGroup         = $specialGroup;
+        $this->offset               = $offset;
         $this->orderFulfillmentTime = $orderFulfillmentTime;
     }
 

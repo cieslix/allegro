@@ -19,13 +19,13 @@ class Allegro_Web_Api_DoGetRelatedItemsRequest extends Allegro_Web_Api_Abstract
     protected $itemIds = null;
 
     /**
-     * @param string $sessionId
+     * @param string                      $sessionId
      * @param Allegro_Web_Api_ArrayOfLong $itemIds
      */
     public function __construct($sessionId, $itemIds)
     {
         $this->sessionId = $sessionId;
-        $this->itemIds = $itemIds;
+        $this->itemIds   = $itemIds;
     }
 
     /**

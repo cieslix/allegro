@@ -35,18 +35,18 @@ class Allegro_Web_Api_DoGetMyIncomingPaymentsRefundsRequest extends Allegro_Web_
 
     /**
      * @param string $sessionHandle
-     * @param int $buyerId
-     * @param int $itemId
-     * @param int $limit
-     * @param int $offset
+     * @param int    $buyerId
+     * @param int    $itemId
+     * @param int    $limit
+     * @param int    $offset
      */
     public function __construct($sessionHandle, $buyerId, $itemId, $limit, $offset)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->buyerId = $buyerId;
-        $this->itemId = $itemId;
-        $this->limit = $limit;
-        $this->offset = $offset;
+        $this->buyerId       = $buyerId;
+        $this->itemId        = $itemId;
+        $this->limit         = $limit;
+        $this->offset        = $offset;
     }
 
     /**

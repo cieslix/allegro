@@ -24,14 +24,14 @@ class Allegro_Web_Api_DoCancelBidItemResponse extends Allegro_Web_Api_Abstract
     protected $notCancelledBids = null;
 
     /**
-     * @param int $cancelBidValue
+     * @param int                        $cancelBidValue
      * @param Allegro_Web_Api_ArrayOfInt $cancelledBids
      * @param Allegro_Web_Api_ArrayOfInt $notCancelledBids
      */
     public function __construct($cancelBidValue, $cancelledBids, $notCancelledBids)
     {
-        $this->cancelBidValue = $cancelBidValue;
-        $this->cancelledBids = $cancelledBids;
+        $this->cancelBidValue   = $cancelBidValue;
+        $this->cancelledBids    = $cancelledBids;
         $this->notCancelledBids = $notCancelledBids;
     }
 

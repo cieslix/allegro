@@ -24,15 +24,15 @@ class Allegro_Web_Api_ItemCatList extends Allegro_Web_Api_Abstract
     protected $catName = null;
 
     /**
-     * @param int $catLevel
-     * @param int $catId
+     * @param int    $catLevel
+     * @param int    $catId
      * @param string $catName
      */
     public function __construct($catLevel, $catId, $catName)
     {
         $this->catLevel = $catLevel;
-        $this->catId = $catId;
-        $this->catName = $catName;
+        $this->catId    = $catId;
+        $this->catName  = $catName;
     }
 
     /**

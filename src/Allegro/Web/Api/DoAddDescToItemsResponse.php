@@ -30,9 +30,9 @@ class Allegro_Web_Api_DoAddDescToItemsResponse extends Allegro_Web_Api_Abstract
      */
     public function __construct($arrayItemsAddId, $arrayItemsDescToLong, $arrayItemsNotFound)
     {
-        $this->arrayItemsAddId = $arrayItemsAddId;
+        $this->arrayItemsAddId      = $arrayItemsAddId;
         $this->arrayItemsDescToLong = $arrayItemsDescToLong;
-        $this->arrayItemsNotFound = $arrayItemsNotFound;
+        $this->arrayItemsNotFound   = $arrayItemsNotFound;
     }
 
     /**

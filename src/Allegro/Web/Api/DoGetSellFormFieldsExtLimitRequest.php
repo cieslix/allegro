@@ -34,18 +34,18 @@ class Allegro_Web_Api_DoGetSellFormFieldsExtLimitRequest extends Allegro_Web_Api
     protected $packageElement = null;
 
     /**
-     * @param int $countryCode
-     * @param int $localVersion
+     * @param int    $countryCode
+     * @param int    $localVersion
      * @param string $webapiKey
-     * @param int $offset
-     * @param int $packageElement
+     * @param int    $offset
+     * @param int    $packageElement
      */
     public function __construct($countryCode, $localVersion, $webapiKey, $offset, $packageElement)
     {
-        $this->countryCode = $countryCode;
-        $this->localVersion = $localVersion;
-        $this->webapiKey = $webapiKey;
-        $this->offset = $offset;
+        $this->countryCode    = $countryCode;
+        $this->localVersion   = $localVersion;
+        $this->webapiKey      = $webapiKey;
+        $this->offset         = $offset;
         $this->packageElement = $packageElement;
     }
 

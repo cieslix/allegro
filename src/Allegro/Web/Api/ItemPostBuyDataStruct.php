@@ -19,12 +19,12 @@ class Allegro_Web_Api_ItemPostBuyDataStruct extends Allegro_Web_Api_Abstract
     protected $usersPostBuyData = null;
 
     /**
-     * @param int $itemId
+     * @param int                                          $itemId
      * @param Allegro_Web_Api_ArrayOfUserpostbuydatastruct $usersPostBuyData
      */
     public function __construct($itemId, $usersPostBuyData)
     {
-        $this->itemId = $itemId;
+        $this->itemId           = $itemId;
         $this->usersPostBuyData = $usersPostBuyData;
     }
 

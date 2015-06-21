@@ -20,12 +20,12 @@ class Allegro_Web_Api_DoGetBidItem2Request extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $itemId
+     * @param int    $itemId
      */
     public function __construct($sessionHandle, $itemId)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->itemId = $itemId;
+        $this->itemId        = $itemId;
     }
 
     /**

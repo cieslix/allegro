@@ -24,15 +24,15 @@ class Allegro_Web_Api_DoGetItemsImagesRequest extends Allegro_Web_Api_Abstract
     protected $imageType = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                              $sessionHandle
      * @param Allegro_Web_Api_ArrayOfItemgetimage $itemsArray
-     * @param int $imageType
+     * @param int                                 $imageType
      */
     public function __construct($sessionHandle, $itemsArray, $imageType)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->itemsArray = $itemsArray;
-        $this->imageType = $imageType;
+        $this->itemsArray    = $itemsArray;
+        $this->imageType     = $imageType;
     }
 
     /**

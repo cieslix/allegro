@@ -20,7 +20,7 @@ class Allegro_Web_Api_SellRatingReasonSumStruct extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sellRatingReasonTitle
-     * @param int $sellRatingReasonCount
+     * @param int    $sellRatingReasonCount
      */
     public function __construct($sellRatingReasonTitle, $sellRatingReasonCount)
     {

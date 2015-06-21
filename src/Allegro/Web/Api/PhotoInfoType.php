@@ -24,14 +24,14 @@ class Allegro_Web_Api_PhotoInfoType extends Allegro_Web_Api_Abstract
     protected $photoIsMain = null;
 
     /**
-     * @param string $photoSize
-     * @param string $photoUrl
+     * @param string  $photoSize
+     * @param string  $photoUrl
      * @param boolean $photoIsMain
      */
     public function __construct($photoSize, $photoUrl, $photoIsMain)
     {
-        $this->photoSize = $photoSize;
-        $this->photoUrl = $photoUrl;
+        $this->photoSize   = $photoSize;
+        $this->photoUrl    = $photoUrl;
         $this->photoIsMain = $photoIsMain;
     }
 

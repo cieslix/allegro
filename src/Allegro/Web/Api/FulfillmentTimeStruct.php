@@ -25,7 +25,7 @@ class Allegro_Web_Api_FulfillmentTimeStruct extends Allegro_Web_Api_Abstract
     public function __construct($fulfillmentTimeFrom, $fulfillmentTimeTo)
     {
         $this->fulfillmentTimeFrom = $fulfillmentTimeFrom;
-        $this->fulfillmentTimeTo = $fulfillmentTimeTo;
+        $this->fulfillmentTimeTo   = $fulfillmentTimeTo;
     }
 
     /**

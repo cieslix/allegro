@@ -25,13 +25,13 @@ class Allegro_Web_Api_DoGetSellFormFieldsForCategoryRequest extends Allegro_Web_
 
     /**
      * @param string $webapiKey
-     * @param int $countryId
-     * @param int $categoryId
+     * @param int    $countryId
+     * @param int    $categoryId
      */
     public function __construct($webapiKey, $countryId, $categoryId)
     {
-        $this->webapiKey = $webapiKey;
-        $this->countryId = $countryId;
+        $this->webapiKey  = $webapiKey;
+        $this->countryId  = $countryId;
         $this->categoryId = $categoryId;
     }
 

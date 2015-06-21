@@ -19,12 +19,12 @@ class Allegro_Web_Api_ItemImagesStruct extends Allegro_Web_Api_Abstract
     protected $itemImages = null;
 
     /**
-     * @param int $itemId
+     * @param int                                  $itemId
      * @param Allegro_Web_Api_ArrayOfItemimagelist $itemImages
      */
     public function __construct($itemId, $itemImages)
     {
-        $this->itemId = $itemId;
+        $this->itemId     = $itemId;
         $this->itemImages = $itemImages;
     }
 

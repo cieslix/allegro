@@ -54,27 +54,27 @@ class Allegro_Web_Api_FiltersListType extends Allegro_Web_Api_Abstract
     protected $filterRelations = null;
 
     /**
-     * @param string $filterId
-     * @param string $filterName
-     * @param string $filterType
-     * @param string $filterControlType
-     * @param string $filterDataType
-     * @param boolean $filterIsRange
-     * @param int $filterArraySize
+     * @param string                                 $filterId
+     * @param string                                 $filterName
+     * @param string                                 $filterType
+     * @param string                                 $filterControlType
+     * @param string                                 $filterDataType
+     * @param boolean                                $filterIsRange
+     * @param int                                    $filterArraySize
      * @param Allegro_Web_Api_ArrayOfFiltervaluetype $filterValues
-     * @param Allegro_Web_Api_FilterRelationType $filterRelations
+     * @param Allegro_Web_Api_FilterRelationType     $filterRelations
      */
     public function __construct($filterId, $filterName, $filterType, $filterControlType, $filterDataType, $filterIsRange, $filterArraySize, $filterValues, $filterRelations)
     {
-        $this->filterId = $filterId;
-        $this->filterName = $filterName;
-        $this->filterType = $filterType;
+        $this->filterId          = $filterId;
+        $this->filterName        = $filterName;
+        $this->filterType        = $filterType;
         $this->filterControlType = $filterControlType;
-        $this->filterDataType = $filterDataType;
-        $this->filterIsRange = $filterIsRange;
-        $this->filterArraySize = $filterArraySize;
-        $this->filterValues = $filterValues;
-        $this->filterRelations = $filterRelations;
+        $this->filterDataType    = $filterDataType;
+        $this->filterIsRange     = $filterIsRange;
+        $this->filterArraySize   = $filterArraySize;
+        $this->filterValues      = $filterValues;
+        $this->filterRelations   = $filterRelations;
     }
 
     /**

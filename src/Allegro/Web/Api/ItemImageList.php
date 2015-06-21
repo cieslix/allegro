@@ -19,13 +19,13 @@ class Allegro_Web_Api_ItemImageList extends Allegro_Web_Api_Abstract
     protected $imageUrl = null;
 
     /**
-     * @param int $imageType
+     * @param int    $imageType
      * @param string $imageUrl
      */
     public function __construct($imageType, $imageUrl)
     {
         $this->imageType = $imageType;
-        $this->imageUrl = $imageUrl;
+        $this->imageUrl  = $imageUrl;
     }
 
     /**

@@ -45,22 +45,22 @@ class Allegro_Web_Api_DoGetMyPaymentsRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionId
-     * @param int $sellerId
-     * @param int $itemId
-     * @param int $paymentTimeFrom
-     * @param int $paymentTimeTo
-     * @param int $pageSize
-     * @param int $pageNumber
+     * @param int    $sellerId
+     * @param int    $itemId
+     * @param int    $paymentTimeFrom
+     * @param int    $paymentTimeTo
+     * @param int    $pageSize
+     * @param int    $pageNumber
      */
     public function __construct($sessionId, $sellerId, $itemId, $paymentTimeFrom, $paymentTimeTo, $pageSize, $pageNumber)
     {
-        $this->sessionId = $sessionId;
-        $this->sellerId = $sellerId;
-        $this->itemId = $itemId;
+        $this->sessionId       = $sessionId;
+        $this->sellerId        = $sellerId;
+        $this->itemId          = $itemId;
         $this->paymentTimeFrom = $paymentTimeFrom;
-        $this->paymentTimeTo = $paymentTimeTo;
-        $this->pageSize = $pageSize;
-        $this->pageNumber = $pageNumber;
+        $this->paymentTimeTo   = $paymentTimeTo;
+        $this->pageSize        = $pageSize;
+        $this->pageNumber      = $pageNumber;
     }
 
     /**

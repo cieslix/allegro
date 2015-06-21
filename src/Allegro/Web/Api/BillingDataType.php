@@ -54,7 +54,7 @@ class Allegro_Web_Api_BillingDataType extends Allegro_Web_Api_Abstract
     protected $billingAuctionType = null;
 
     /**
-     * @param int $billingId
+     * @param int    $billingId
      * @param string $billingType
      * @param string $billingFixperc
      * @param string $billingName
@@ -62,18 +62,18 @@ class Allegro_Web_Api_BillingDataType extends Allegro_Web_Api_Abstract
      * @param string $billingRangeTo
      * @param string $billingCat
      * @param string $billingRate
-     * @param int $billingAuctionType
+     * @param int    $billingAuctionType
      */
     public function __construct($billingId, $billingType, $billingFixperc, $billingName, $billingRangeFrom, $billingRangeTo, $billingCat, $billingRate, $billingAuctionType)
     {
-        $this->billingId = $billingId;
-        $this->billingType = $billingType;
-        $this->billingFixperc = $billingFixperc;
-        $this->billingName = $billingName;
-        $this->billingRangeFrom = $billingRangeFrom;
-        $this->billingRangeTo = $billingRangeTo;
-        $this->billingCat = $billingCat;
-        $this->billingRate = $billingRate;
+        $this->billingId          = $billingId;
+        $this->billingType        = $billingType;
+        $this->billingFixperc     = $billingFixperc;
+        $this->billingName        = $billingName;
+        $this->billingRangeFrom   = $billingRangeFrom;
+        $this->billingRangeTo     = $billingRangeTo;
+        $this->billingCat         = $billingCat;
+        $this->billingRate        = $billingRate;
         $this->billingAuctionType = $billingAuctionType;
     }
 

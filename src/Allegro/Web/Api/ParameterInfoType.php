@@ -29,16 +29,16 @@ class Allegro_Web_Api_ParameterInfoType extends Allegro_Web_Api_Abstract
     protected $parameterIsRange = null;
 
     /**
-     * @param string $parameterName
+     * @param string                        $parameterName
      * @param Allegro_Web_Api_ArrayOfString $parameterValue
-     * @param string $parameterUnit
-     * @param boolean $parameterIsRange
+     * @param string                        $parameterUnit
+     * @param boolean                       $parameterIsRange
      */
     public function __construct($parameterName, $parameterValue, $parameterUnit, $parameterIsRange)
     {
-        $this->parameterName = $parameterName;
-        $this->parameterValue = $parameterValue;
-        $this->parameterUnit = $parameterUnit;
+        $this->parameterName    = $parameterName;
+        $this->parameterValue   = $parameterValue;
+        $this->parameterUnit    = $parameterUnit;
         $this->parameterIsRange = $parameterIsRange;
     }
 

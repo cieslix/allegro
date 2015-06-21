@@ -20,12 +20,12 @@ class Allegro_Web_Api_DoGetMessageToBuyerRequest extends Allegro_Web_Api_Abstrac
 
     /**
      * @param string $sessionId
-     * @param int $itemId
+     * @param int    $itemId
      */
     public function __construct($sessionId, $itemId)
     {
         $this->sessionId = $sessionId;
-        $this->itemId = $itemId;
+        $this->itemId    = $itemId;
     }
 
     /**

@@ -19,12 +19,12 @@ class Allegro_Web_Api_DoRemoveItemTemplatesRequest extends Allegro_Web_Api_Abstr
     protected $itemTemplateIds = null;
 
     /**
-     * @param string $sessionId
+     * @param string                     $sessionId
      * @param Allegro_Web_Api_ArrayOfInt $itemTemplateIds
      */
     public function __construct($sessionId, $itemTemplateIds)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId       = $sessionId;
         $this->itemTemplateIds = $itemTemplateIds;
     }
 

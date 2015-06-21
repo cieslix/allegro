@@ -24,14 +24,14 @@ class Allegro_Web_Api_StructSellAgain extends Allegro_Web_Api_Abstract
     protected $sellItemLocalId = null;
 
     /**
-     * @param int $sellItemId
+     * @param int    $sellItemId
      * @param string $sellItemInfo
-     * @param int $sellItemLocalId
+     * @param int    $sellItemLocalId
      */
     public function __construct($sellItemId, $sellItemInfo, $sellItemLocalId)
     {
-        $this->sellItemId = $sellItemId;
-        $this->sellItemInfo = $sellItemInfo;
+        $this->sellItemId      = $sellItemId;
+        $this->sellItemInfo    = $sellItemInfo;
         $this->sellItemLocalId = $sellItemLocalId;
     }
 

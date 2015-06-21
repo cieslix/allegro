@@ -39,21 +39,21 @@ class Allegro_Web_Api_ServiceInfoStruct extends Allegro_Web_Api_Abstract
     protected $anItDate = null;
 
     /**
-     * @param int $anItId
-     * @param int $anCatId
-     * @param string $anItTitle
+     * @param int          $anItId
+     * @param int          $anCatId
+     * @param string       $anItTitle
      * @param base64Binary $anItBody
-     * @param int $countryId
-     * @param int $anItDate
+     * @param int          $countryId
+     * @param int          $anItDate
      */
     public function __construct($anItId, $anCatId, $anItTitle, $anItBody, $countryId, $anItDate)
     {
-        $this->anItId = $anItId;
-        $this->anCatId = $anCatId;
+        $this->anItId    = $anItId;
+        $this->anCatId   = $anCatId;
         $this->anItTitle = $anItTitle;
-        $this->anItBody = $anItBody;
+        $this->anItBody  = $anItBody;
         $this->countryId = $countryId;
-        $this->anItDate = $anItDate;
+        $this->anItDate  = $anItDate;
     }
 
     /**

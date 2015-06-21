@@ -20,12 +20,12 @@ class Allegro_Web_Api_DoGetRefundsReasonsRequest extends Allegro_Web_Api_Abstrac
 
     /**
      * @param string $sessionId
-     * @param int $dealId
+     * @param int    $dealId
      */
     public function __construct($sessionId, $dealId)
     {
         $this->sessionId = $sessionId;
-        $this->dealId = $dealId;
+        $this->dealId    = $dealId;
     }
 
     /**

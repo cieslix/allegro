@@ -39,21 +39,21 @@ class Allegro_Web_Api_UserIncomingPaymentRefundsStruct extends Allegro_Web_Api_A
     protected $payRefundDate = null;
 
     /**
-     * @param int $payRefundTransId
-     * @param int $payRefundItId
-     * @param int $payRefundBuyerId
-     * @param float $payRefundValue
+     * @param int    $payRefundTransId
+     * @param int    $payRefundItId
+     * @param int    $payRefundBuyerId
+     * @param float  $payRefundValue
      * @param string $payRefundReason
-     * @param int $payRefundDate
+     * @param int    $payRefundDate
      */
     public function __construct($payRefundTransId, $payRefundItId, $payRefundBuyerId, $payRefundValue, $payRefundReason, $payRefundDate)
     {
         $this->payRefundTransId = $payRefundTransId;
-        $this->payRefundItId = $payRefundItId;
+        $this->payRefundItId    = $payRefundItId;
         $this->payRefundBuyerId = $payRefundBuyerId;
-        $this->payRefundValue = $payRefundValue;
-        $this->payRefundReason = $payRefundReason;
-        $this->payRefundDate = $payRefundDate;
+        $this->payRefundValue   = $payRefundValue;
+        $this->payRefundReason  = $payRefundReason;
+        $this->payRefundDate    = $payRefundDate;
     }
 
     /**

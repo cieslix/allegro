@@ -79,37 +79,37 @@ class Allegro_Web_Api_UserIncomingPaymentStruct extends Allegro_Web_Api_Abstract
     protected $payTransMainId = null;
 
     /**
-     * @param int $payTransId
-     * @param int $payTransItId
-     * @param int $payTransBuyerId
-     * @param string $payTransType
-     * @param string $payTransStatus
-     * @param float $payTransAmount
-     * @param int $payTransCreateDate
-     * @param int $payTransRecvDate
-     * @param float $payTransPrice
-     * @param int $payTransCount
-     * @param float $payTransPostageAmount
+     * @param int                                         $payTransId
+     * @param int                                         $payTransItId
+     * @param int                                         $payTransBuyerId
+     * @param string                                      $payTransType
+     * @param string                                      $payTransStatus
+     * @param float                                       $payTransAmount
+     * @param int                                         $payTransCreateDate
+     * @param int                                         $payTransRecvDate
+     * @param float                                       $payTransPrice
+     * @param int                                         $payTransCount
+     * @param float                                       $payTransPostageAmount
      * @param Allegro_Web_Api_ArrayOfPaymentdetailsstruct $payTransDetails
-     * @param int $payTransIncomplete
-     * @param int $payTransMainId
+     * @param int                                         $payTransIncomplete
+     * @param int                                         $payTransMainId
      */
     public function __construct($payTransId, $payTransItId, $payTransBuyerId, $payTransType, $payTransStatus, $payTransAmount, $payTransCreateDate, $payTransRecvDate, $payTransPrice, $payTransCount, $payTransPostageAmount, $payTransDetails, $payTransIncomplete, $payTransMainId)
     {
-        $this->payTransId = $payTransId;
-        $this->payTransItId = $payTransItId;
-        $this->payTransBuyerId = $payTransBuyerId;
-        $this->payTransType = $payTransType;
-        $this->payTransStatus = $payTransStatus;
-        $this->payTransAmount = $payTransAmount;
-        $this->payTransCreateDate = $payTransCreateDate;
-        $this->payTransRecvDate = $payTransRecvDate;
-        $this->payTransPrice = $payTransPrice;
-        $this->payTransCount = $payTransCount;
+        $this->payTransId            = $payTransId;
+        $this->payTransItId          = $payTransItId;
+        $this->payTransBuyerId       = $payTransBuyerId;
+        $this->payTransType          = $payTransType;
+        $this->payTransStatus        = $payTransStatus;
+        $this->payTransAmount        = $payTransAmount;
+        $this->payTransCreateDate    = $payTransCreateDate;
+        $this->payTransRecvDate      = $payTransRecvDate;
+        $this->payTransPrice         = $payTransPrice;
+        $this->payTransCount         = $payTransCount;
         $this->payTransPostageAmount = $payTransPostageAmount;
-        $this->payTransDetails = $payTransDetails;
-        $this->payTransIncomplete = $payTransIncomplete;
-        $this->payTransMainId = $payTransMainId;
+        $this->payTransDetails       = $payTransDetails;
+        $this->payTransIncomplete    = $payTransIncomplete;
+        $this->payTransMainId        = $payTransMainId;
     }
 
     /**

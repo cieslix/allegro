@@ -39,19 +39,19 @@ class Allegro_Web_Api_SiteJournal extends Allegro_Web_Api_Abstract
     protected $itemSellerId = null;
 
     /**
-     * @param int $rowId
-     * @param int $itemId
+     * @param int    $rowId
+     * @param int    $itemId
      * @param string $changeType
-     * @param int $changeDate
-     * @param float $currentPrice
-     * @param int $itemSellerId
+     * @param int    $changeDate
+     * @param float  $currentPrice
+     * @param int    $itemSellerId
      */
     public function __construct($rowId, $itemId, $changeType, $changeDate, $currentPrice, $itemSellerId)
     {
-        $this->rowId = $rowId;
-        $this->itemId = $itemId;
-        $this->changeType = $changeType;
-        $this->changeDate = $changeDate;
+        $this->rowId        = $rowId;
+        $this->itemId       = $itemId;
+        $this->changeType   = $changeType;
+        $this->changeDate   = $changeDate;
         $this->currentPrice = $currentPrice;
         $this->itemSellerId = $itemSellerId;
     }

@@ -129,57 +129,57 @@ class Allegro_Web_Api_PostBuyFormDataStruct extends Allegro_Web_Api_Abstract
     protected $postBuyFormBuyerEmail = null;
 
     /**
-     * @param int $postBuyFormId
-     * @param Allegro_Web_Api_ArrayOfPostbuyformitemstruct $postBuyFormItems
-     * @param int $postBuyFormBuyerId
-     * @param float $postBuyFormAmount
-     * @param float $postBuyFormPostageAmount
-     * @param int $postBuyFormInvoiceOption
-     * @param string $postBuyFormMsgToSeller
-     * @param Allegro_Web_Api_PostBuyFormAddressStruct $postBuyFormInvoiceData
-     * @param Allegro_Web_Api_PostBuyFormAddressStruct $postBuyFormShipmentAddress
-     * @param string $postBuyFormPayType
-     * @param int $postBuyFormPayId
-     * @param string $postBuyFormPayStatus
-     * @param string $postBuyFormDateInit
-     * @param string $postBuyFormDateRecv
-     * @param string $postBuyFormDateCancel
-     * @param int $postBuyFormShipmentId
-     * @param Allegro_Web_Api_PostBuyFormAddressStruct $postBuyFormGdAddress
+     * @param int                                                      $postBuyFormId
+     * @param Allegro_Web_Api_ArrayOfPostbuyformitemstruct             $postBuyFormItems
+     * @param int                                                      $postBuyFormBuyerId
+     * @param float                                                    $postBuyFormAmount
+     * @param float                                                    $postBuyFormPostageAmount
+     * @param int                                                      $postBuyFormInvoiceOption
+     * @param string                                                   $postBuyFormMsgToSeller
+     * @param Allegro_Web_Api_PostBuyFormAddressStruct                 $postBuyFormInvoiceData
+     * @param Allegro_Web_Api_PostBuyFormAddressStruct                 $postBuyFormShipmentAddress
+     * @param string                                                   $postBuyFormPayType
+     * @param int                                                      $postBuyFormPayId
+     * @param string                                                   $postBuyFormPayStatus
+     * @param string                                                   $postBuyFormDateInit
+     * @param string                                                   $postBuyFormDateRecv
+     * @param string                                                   $postBuyFormDateCancel
+     * @param int                                                      $postBuyFormShipmentId
+     * @param Allegro_Web_Api_PostBuyFormAddressStruct                 $postBuyFormGdAddress
      * @param Allegro_Web_Api_ArrayOfPostbuyformshipmenttrackingstruct $postBuyFormShipmentTracking
-     * @param Allegro_Web_Api_ArrayOfLong $postBuyFormSurchargesList
-     * @param string $postBuyFormGdAdditionalInfo
-     * @param float $postBuyFormPaymentAmount
-     * @param int $postBuyFormSentBySeller
-     * @param string $postBuyFormBuyerLogin
-     * @param string $postBuyFormBuyerEmail
+     * @param Allegro_Web_Api_ArrayOfLong                              $postBuyFormSurchargesList
+     * @param string                                                   $postBuyFormGdAdditionalInfo
+     * @param float                                                    $postBuyFormPaymentAmount
+     * @param int                                                      $postBuyFormSentBySeller
+     * @param string                                                   $postBuyFormBuyerLogin
+     * @param string                                                   $postBuyFormBuyerEmail
      */
     public function __construct($postBuyFormId, $postBuyFormItems, $postBuyFormBuyerId, $postBuyFormAmount, $postBuyFormPostageAmount, $postBuyFormInvoiceOption, $postBuyFormMsgToSeller, $postBuyFormInvoiceData, $postBuyFormShipmentAddress, $postBuyFormPayType, $postBuyFormPayId, $postBuyFormPayStatus, $postBuyFormDateInit, $postBuyFormDateRecv, $postBuyFormDateCancel, $postBuyFormShipmentId, $postBuyFormGdAddress, $postBuyFormShipmentTracking, $postBuyFormSurchargesList, $postBuyFormGdAdditionalInfo, $postBuyFormPaymentAmount, $postBuyFormSentBySeller, $postBuyFormBuyerLogin, $postBuyFormBuyerEmail)
     {
-        $this->postBuyFormId = $postBuyFormId;
-        $this->postBuyFormItems = $postBuyFormItems;
-        $this->postBuyFormBuyerId = $postBuyFormBuyerId;
-        $this->postBuyFormAmount = $postBuyFormAmount;
-        $this->postBuyFormPostageAmount = $postBuyFormPostageAmount;
-        $this->postBuyFormInvoiceOption = $postBuyFormInvoiceOption;
-        $this->postBuyFormMsgToSeller = $postBuyFormMsgToSeller;
-        $this->postBuyFormInvoiceData = $postBuyFormInvoiceData;
-        $this->postBuyFormShipmentAddress = $postBuyFormShipmentAddress;
-        $this->postBuyFormPayType = $postBuyFormPayType;
-        $this->postBuyFormPayId = $postBuyFormPayId;
-        $this->postBuyFormPayStatus = $postBuyFormPayStatus;
-        $this->postBuyFormDateInit = $postBuyFormDateInit;
-        $this->postBuyFormDateRecv = $postBuyFormDateRecv;
-        $this->postBuyFormDateCancel = $postBuyFormDateCancel;
-        $this->postBuyFormShipmentId = $postBuyFormShipmentId;
-        $this->postBuyFormGdAddress = $postBuyFormGdAddress;
+        $this->postBuyFormId               = $postBuyFormId;
+        $this->postBuyFormItems            = $postBuyFormItems;
+        $this->postBuyFormBuyerId          = $postBuyFormBuyerId;
+        $this->postBuyFormAmount           = $postBuyFormAmount;
+        $this->postBuyFormPostageAmount    = $postBuyFormPostageAmount;
+        $this->postBuyFormInvoiceOption    = $postBuyFormInvoiceOption;
+        $this->postBuyFormMsgToSeller      = $postBuyFormMsgToSeller;
+        $this->postBuyFormInvoiceData      = $postBuyFormInvoiceData;
+        $this->postBuyFormShipmentAddress  = $postBuyFormShipmentAddress;
+        $this->postBuyFormPayType          = $postBuyFormPayType;
+        $this->postBuyFormPayId            = $postBuyFormPayId;
+        $this->postBuyFormPayStatus        = $postBuyFormPayStatus;
+        $this->postBuyFormDateInit         = $postBuyFormDateInit;
+        $this->postBuyFormDateRecv         = $postBuyFormDateRecv;
+        $this->postBuyFormDateCancel       = $postBuyFormDateCancel;
+        $this->postBuyFormShipmentId       = $postBuyFormShipmentId;
+        $this->postBuyFormGdAddress        = $postBuyFormGdAddress;
         $this->postBuyFormShipmentTracking = $postBuyFormShipmentTracking;
-        $this->postBuyFormSurchargesList = $postBuyFormSurchargesList;
+        $this->postBuyFormSurchargesList   = $postBuyFormSurchargesList;
         $this->postBuyFormGdAdditionalInfo = $postBuyFormGdAdditionalInfo;
-        $this->postBuyFormPaymentAmount = $postBuyFormPaymentAmount;
-        $this->postBuyFormSentBySeller = $postBuyFormSentBySeller;
-        $this->postBuyFormBuyerLogin = $postBuyFormBuyerLogin;
-        $this->postBuyFormBuyerEmail = $postBuyFormBuyerEmail;
+        $this->postBuyFormPaymentAmount    = $postBuyFormPaymentAmount;
+        $this->postBuyFormSentBySeller     = $postBuyFormSentBySeller;
+        $this->postBuyFormBuyerLogin       = $postBuyFormBuyerLogin;
+        $this->postBuyFormBuyerEmail       = $postBuyFormBuyerEmail;
     }
 
     /**

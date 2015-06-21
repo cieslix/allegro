@@ -19,12 +19,12 @@ class Allegro_Web_Api_VariantStruct extends Allegro_Web_Api_Abstract
     protected $quantities = null;
 
     /**
-     * @param int $fid
+     * @param int                                          $fid
      * @param Allegro_Web_Api_ArrayOfVariantquantitystruct $quantities
      */
     public function __construct($fid, $quantities)
     {
-        $this->fid = $fid;
+        $this->fid        = $fid;
         $this->quantities = $quantities;
     }
 

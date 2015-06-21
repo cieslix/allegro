@@ -24,13 +24,13 @@ class Allegro_Web_Api_ShopsTagTypeStruct extends Allegro_Web_Api_Abstract
     protected $name = null;
 
     /**
-     * @param int $id
+     * @param int    $id
      * @param string $code
      * @param string $name
      */
     public function __construct($id, $code, $name)
     {
-        $this->id = $id;
+        $this->id   = $id;
         $this->code = $code;
         $this->name = $name;
     }

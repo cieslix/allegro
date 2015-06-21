@@ -11,15 +11,15 @@ class Allegro_Web_Api_DoMyAccount2Request extends Allegro_Web_Api_Abstract
     /**
      * available types for $accountType
      */
-    const TYPE_BID = 'bid';
-    const TYPE_WON = 'won';
-    const TYPE_NOT_WON = 'not_won';
-    const TYPE_WATCH = 'watch';
+    const TYPE_BID         = 'bid';
+    const TYPE_WON         = 'won';
+    const TYPE_NOT_WON     = 'not_won';
+    const TYPE_WATCH       = 'watch';
     const TYPE_WATCH_ENDED = 'watch_cl';
-    const TYPE_SELL = 'sell';
-    const TYPE_SOLD = 'sold';
-    const TYPE_NOT_SOLD = 'not_sold';
-    const TYPE_SCHEDULED = 'future';
+    const TYPE_SELL        = 'sell';
+    const TYPE_SOLD        = 'sold';
+    const TYPE_NOT_SOLD    = 'not_sold';
+    const TYPE_SCHEDULED   = 'future';
 
     /**
      * @var string $sessionHandle
@@ -47,19 +47,19 @@ class Allegro_Web_Api_DoMyAccount2Request extends Allegro_Web_Api_Abstract
     protected $limit = null;
 
     /**
-     * @param string $sessionHandle
-     * @param string $accountType
-     * @param int $offset
+     * @param string                      $sessionHandle
+     * @param string                      $accountType
+     * @param int                         $offset
      * @param Allegro_Web_Api_ArrayOfLong $itemsArray
-     * @param int $limit
+     * @param int                         $limit
      */
     public function __construct($sessionHandle, $accountType, $offset, $itemsArray, $limit)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->accountType = $accountType;
-        $this->offset = $offset;
-        $this->itemsArray = $itemsArray;
-        $this->limit = $limit;
+        $this->accountType   = $accountType;
+        $this->offset        = $offset;
+        $this->itemsArray    = $itemsArray;
+        $this->limit         = $limit;
     }
 
     /**

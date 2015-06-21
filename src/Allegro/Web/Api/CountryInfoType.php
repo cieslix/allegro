@@ -19,12 +19,12 @@ class Allegro_Web_Api_CountryInfoType extends Allegro_Web_Api_Abstract
     protected $countryName = null;
 
     /**
-     * @param int $countryId
+     * @param int    $countryId
      * @param string $countryName
      */
     public function __construct($countryId, $countryName)
     {
-        $this->countryId = $countryId;
+        $this->countryId   = $countryId;
         $this->countryName = $countryName;
     }
 

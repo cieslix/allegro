@@ -29,15 +29,15 @@ class Allegro_Web_Api_FeedbackResultStruct extends Allegro_Web_Api_Abstract
     protected $feFaultDesc = null;
 
     /**
-     * @param int $feItemId
-     * @param int $feId
+     * @param int    $feItemId
+     * @param int    $feId
      * @param string $feFaultCode
      * @param string $feFaultDesc
      */
     public function __construct($feItemId, $feId, $feFaultCode, $feFaultDesc)
     {
-        $this->feItemId = $feItemId;
-        $this->feId = $feId;
+        $this->feItemId    = $feItemId;
+        $this->feId        = $feId;
         $this->feFaultCode = $feFaultCode;
         $this->feFaultDesc = $feFaultDesc;
     }

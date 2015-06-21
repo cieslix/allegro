@@ -44,23 +44,23 @@ class Allegro_Web_Api_UserPayoutStruct extends Allegro_Web_Api_Abstract
     protected $payTransReport = null;
 
     /**
-     * @param int $payTransId
+     * @param int    $payTransId
      * @param string $payTransStatus
-     * @param float $payTransAmount
-     * @param int $payTransCreateDate
-     * @param int $payTransRecvDate
-     * @param int $payTransCancelDate
+     * @param float  $payTransAmount
+     * @param int    $payTransCreateDate
+     * @param int    $payTransRecvDate
+     * @param int    $payTransCancelDate
      * @param string $payTransReport
      */
     public function __construct($payTransId, $payTransStatus, $payTransAmount, $payTransCreateDate, $payTransRecvDate, $payTransCancelDate, $payTransReport)
     {
-        $this->payTransId = $payTransId;
-        $this->payTransStatus = $payTransStatus;
-        $this->payTransAmount = $payTransAmount;
+        $this->payTransId         = $payTransId;
+        $this->payTransStatus     = $payTransStatus;
+        $this->payTransAmount     = $payTransAmount;
         $this->payTransCreateDate = $payTransCreateDate;
-        $this->payTransRecvDate = $payTransRecvDate;
+        $this->payTransRecvDate   = $payTransRecvDate;
         $this->payTransCancelDate = $payTransCancelDate;
-        $this->payTransReport = $payTransReport;
+        $this->payTransReport     = $payTransReport;
     }
 
     /**

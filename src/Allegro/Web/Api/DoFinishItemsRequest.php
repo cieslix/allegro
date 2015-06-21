@@ -19,12 +19,12 @@ class Allegro_Web_Api_DoFinishItemsRequest extends Allegro_Web_Api_Abstract
     protected $finishItemsList = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                                   $sessionHandle
      * @param Allegro_Web_Api_ArrayOfFinishitemsstruct $finishItemsList
      */
     public function __construct($sessionHandle, $finishItemsList)
     {
-        $this->sessionHandle = $sessionHandle;
+        $this->sessionHandle   = $sessionHandle;
         $this->finishItemsList = $finishItemsList;
     }
 

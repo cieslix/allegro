@@ -34,18 +34,18 @@ class Allegro_Web_Api_DoCancelBidItemRequest extends Allegro_Web_Api_Abstract
     protected $cancelAddToBlackList = null;
 
     /**
-     * @param string $sessionHandle
-     * @param int $cancelItemId
+     * @param string                     $sessionHandle
+     * @param int                        $cancelItemId
      * @param Allegro_Web_Api_ArrayOfInt $cancelBidsArray
-     * @param string $cancelBidsReason
-     * @param int $cancelAddToBlackList
+     * @param string                     $cancelBidsReason
+     * @param int                        $cancelAddToBlackList
      */
     public function __construct($sessionHandle, $cancelItemId, $cancelBidsArray, $cancelBidsReason, $cancelAddToBlackList)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->cancelItemId = $cancelItemId;
-        $this->cancelBidsArray = $cancelBidsArray;
-        $this->cancelBidsReason = $cancelBidsReason;
+        $this->sessionHandle        = $sessionHandle;
+        $this->cancelItemId         = $cancelItemId;
+        $this->cancelBidsArray      = $cancelBidsArray;
+        $this->cancelBidsReason     = $cancelBidsReason;
         $this->cancelAddToBlackList = $cancelAddToBlackList;
     }
 

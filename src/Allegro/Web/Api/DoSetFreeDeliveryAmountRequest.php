@@ -9,7 +9,7 @@
 class Allegro_Web_Api_DoSetFreeDeliveryAmountRequest extends Allegro_Web_Api_Abstract
 {
     const ACTIVE_FLAG_YES = 2;
-    const ACTIVE_FLAG_NO = 1;
+    const ACTIVE_FLAG_NO  = 1;
 
     /**
      * @var string $sessionId
@@ -28,13 +28,13 @@ class Allegro_Web_Api_DoSetFreeDeliveryAmountRequest extends Allegro_Web_Api_Abs
 
     /**
      * @param string $sessionId
-     * @param int $activeFlag
-     * @param float $freeDeliveryAmount
+     * @param int    $activeFlag
+     * @param float  $freeDeliveryAmount
      */
     public function __construct($sessionId, $activeFlag, $freeDeliveryAmount)
     {
-        $this->sessionId = $sessionId;
-        $this->activeFlag = $activeFlag;
+        $this->sessionId          = $sessionId;
+        $this->activeFlag         = $activeFlag;
         $this->freeDeliveryAmount = $freeDeliveryAmount;
     }
 

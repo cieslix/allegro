@@ -49,25 +49,25 @@ class Allegro_Web_Api_DoGetItemsInfoRequest extends Allegro_Web_Api_Abstract
     protected $getProductInfo = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                      $sessionHandle
      * @param Allegro_Web_Api_ArrayOfLong $itemsIdArray
-     * @param int $getDesc
-     * @param int $getImageUrl
-     * @param int $getAttribs
-     * @param int $getPostageOptions
-     * @param int $getCompanyInfo
-     * @param int $getProductInfo
+     * @param int                         $getDesc
+     * @param int                         $getImageUrl
+     * @param int                         $getAttribs
+     * @param int                         $getPostageOptions
+     * @param int                         $getCompanyInfo
+     * @param int                         $getProductInfo
      */
     public function __construct($sessionHandle, $itemsIdArray, $getDesc, $getImageUrl, $getAttribs, $getPostageOptions, $getCompanyInfo, $getProductInfo)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->itemsIdArray = $itemsIdArray;
-        $this->getDesc = $getDesc;
-        $this->getImageUrl = $getImageUrl;
-        $this->getAttribs = $getAttribs;
+        $this->sessionHandle     = $sessionHandle;
+        $this->itemsIdArray      = $itemsIdArray;
+        $this->getDesc           = $getDesc;
+        $this->getImageUrl       = $getImageUrl;
+        $this->getAttribs        = $getAttribs;
         $this->getPostageOptions = $getPostageOptions;
-        $this->getCompanyInfo = $getCompanyInfo;
-        $this->getProductInfo = $getProductInfo;
+        $this->getCompanyInfo    = $getCompanyInfo;
+        $this->getProductInfo    = $getProductInfo;
     }
 
     /**

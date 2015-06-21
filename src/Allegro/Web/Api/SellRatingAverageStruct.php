@@ -20,11 +20,11 @@ class Allegro_Web_Api_SellRatingAverageStruct extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sellRatingGroupTitle
-     * @param float $sellRatingGroupAverage
+     * @param float  $sellRatingGroupAverage
      */
     public function __construct($sellRatingGroupTitle, $sellRatingGroupAverage)
     {
-        $this->sellRatingGroupTitle = $sellRatingGroupTitle;
+        $this->sellRatingGroupTitle   = $sellRatingGroupTitle;
         $this->sellRatingGroupAverage = $sellRatingGroupAverage;
     }
 

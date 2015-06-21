@@ -8,10 +8,10 @@
  */
 class Allegro_Web_Api_DoGetItemsListRequest extends Allegro_Web_Api_Abstract
 {
-    const RETURN_MASK_DEFAULT = 0;
-    const RETURN_MASK_WITHOUT_FILTERS = 1;
+    const RETURN_MASK_DEFAULT            = 0;
+    const RETURN_MASK_WITHOUT_FILTERS    = 1;
     const RETURN_MASK_WITHOUT_CATEGORIES = 2;
-    const RETURN_MASK_WITHOUT_OFFERS = 4;
+    const RETURN_MASK_WITHOUT_OFFERS     = 4;
 
     /**
      * @var string $webapiKey
@@ -49,23 +49,23 @@ class Allegro_Web_Api_DoGetItemsListRequest extends Allegro_Web_Api_Abstract
     protected $resultScope = null;
 
     /**
-     * @param string $webapiKey
-     * @param int $countryId
+     * @param string                                   $webapiKey
+     * @param int                                      $countryId
      * @param Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions
-     * @param Allegro_Web_Api_SortOptionsType $sortOptions
-     * @param int $resultSize
-     * @param int $resultOffset
-     * @param int $resultScope
+     * @param Allegro_Web_Api_SortOptionsType          $sortOptions
+     * @param int                                      $resultSize
+     * @param int                                      $resultOffset
+     * @param int                                      $resultScope
      */
     public function __construct($webapiKey, $countryId, $filterOptions, $sortOptions, $resultSize, $resultOffset, $resultScope)
     {
-        $this->webapiKey = $webapiKey;
-        $this->countryId = $countryId;
+        $this->webapiKey     = $webapiKey;
+        $this->countryId     = $countryId;
         $this->filterOptions = $filterOptions;
-        $this->sortOptions = $sortOptions;
-        $this->resultSize = $resultSize;
-        $this->resultOffset = $resultOffset;
-        $this->resultScope = $resultScope;
+        $this->sortOptions   = $sortOptions;
+        $this->resultSize    = $resultSize;
+        $this->resultOffset  = $resultOffset;
+        $this->resultScope   = $resultScope;
     }
 
     /**

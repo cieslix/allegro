@@ -36,10 +36,10 @@ class Allegro_Web_Api_FavouritesSellersStruct extends Allegro_Web_Api_Abstract
      */
     public function __construct($sFavUserId, $sSubscriptionStatus, $sPosition, $sBuyNowOnly)
     {
-        $this->sFavUserId = $sFavUserId;
+        $this->sFavUserId          = $sFavUserId;
         $this->sSubscriptionStatus = $sSubscriptionStatus;
-        $this->sPosition = $sPosition;
-        $this->sBuyNowOnly = $sBuyNowOnly;
+        $this->sPosition           = $sPosition;
+        $this->sBuyNowOnly         = $sBuyNowOnly;
     }
 
     /**

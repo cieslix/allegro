@@ -77,25 +77,25 @@ class Allegro_Web_Api_PharmacyDataStruct extends Allegro_Web_Api_Abstract
      * @param string $pharmacyPostcode
      * @param string $pharmacyCity
      * @param string $pharmacyCommune
-     * @param int $pharmacyCountryId
-     * @param int $pharmacyStateId
+     * @param int    $pharmacyCountryId
+     * @param int    $pharmacyStateId
      * @param string $pharmacyPermitNumber
      * @param string $pharmacyPermitInfo
      */
     public function __construct($pharmacyOpeningDate, $pharmacyExpirationDate, $pharmacyName, $pharmacyPharmacistFullName, $pharmacyAddress, $pharmacyPostcode, $pharmacyCity, $pharmacyCommune, $pharmacyCountryId, $pharmacyStateId, $pharmacyPermitNumber, $pharmacyPermitInfo)
     {
-        $this->pharmacyOpeningDate = $pharmacyOpeningDate;
-        $this->pharmacyExpirationDate = $pharmacyExpirationDate;
-        $this->pharmacyName = $pharmacyName;
+        $this->pharmacyOpeningDate        = $pharmacyOpeningDate;
+        $this->pharmacyExpirationDate     = $pharmacyExpirationDate;
+        $this->pharmacyName               = $pharmacyName;
         $this->pharmacyPharmacistFullName = $pharmacyPharmacistFullName;
-        $this->pharmacyAddress = $pharmacyAddress;
-        $this->pharmacyPostcode = $pharmacyPostcode;
-        $this->pharmacyCity = $pharmacyCity;
-        $this->pharmacyCommune = $pharmacyCommune;
-        $this->pharmacyCountryId = $pharmacyCountryId;
-        $this->pharmacyStateId = $pharmacyStateId;
-        $this->pharmacyPermitNumber = $pharmacyPermitNumber;
-        $this->pharmacyPermitInfo = $pharmacyPermitInfo;
+        $this->pharmacyAddress            = $pharmacyAddress;
+        $this->pharmacyPostcode           = $pharmacyPostcode;
+        $this->pharmacyCity               = $pharmacyCity;
+        $this->pharmacyCommune            = $pharmacyCommune;
+        $this->pharmacyCountryId          = $pharmacyCountryId;
+        $this->pharmacyStateId            = $pharmacyStateId;
+        $this->pharmacyPermitNumber       = $pharmacyPermitNumber;
+        $this->pharmacyPermitInfo         = $pharmacyPermitInfo;
     }
 
     /**

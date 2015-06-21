@@ -19,13 +19,13 @@ class Allegro_Web_Api_ItemSurchargeStruct extends Allegro_Web_Api_Abstract
     protected $surchargeAmount = null;
 
     /**
-     * @param string $surchargeDescription
+     * @param string       $surchargeDescription
      * @param AmountStruct $surchargeAmount
      */
     public function __construct($surchargeDescription, $surchargeAmount)
     {
         $this->surchargeDescription = $surchargeDescription;
-        $this->surchargeAmount = $surchargeAmount;
+        $this->surchargeAmount      = $surchargeAmount;
     }
 
     /**

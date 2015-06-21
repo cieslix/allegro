@@ -39,20 +39,20 @@ class Allegro_Web_Api_WaitFeedbackStruct extends Allegro_Web_Api_Abstract
     protected $fePossibilityToAdd = null;
 
     /**
-     * @param int $feItemId
+     * @param int    $feItemId
      * @param string $feItemName
-     * @param int $feToUserId
-     * @param int $feOp
+     * @param int    $feToUserId
+     * @param int    $feOp
      * @param string $feAnsCommentType
-     * @param int $fePossibilityToAdd
+     * @param int    $fePossibilityToAdd
      */
     public function __construct($feItemId, $feItemName, $feToUserId, $feOp, $feAnsCommentType, $fePossibilityToAdd)
     {
-        $this->feItemId = $feItemId;
-        $this->feItemName = $feItemName;
-        $this->feToUserId = $feToUserId;
-        $this->feOp = $feOp;
-        $this->feAnsCommentType = $feAnsCommentType;
+        $this->feItemId           = $feItemId;
+        $this->feItemName         = $feItemName;
+        $this->feToUserId         = $feToUserId;
+        $this->feOp               = $feOp;
+        $this->feAnsCommentType   = $feAnsCommentType;
         $this->fePossibilityToAdd = $fePossibilityToAdd;
     }
 

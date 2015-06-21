@@ -24,14 +24,14 @@ class Allegro_Web_Api_DoAddDescToItemsRequest extends Allegro_Web_Api_Abstract
     protected $itDescription = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                      $sessionHandle
      * @param Allegro_Web_Api_ArrayOfLong $itemsIdArray
-     * @param string $itDescription
+     * @param string                      $itDescription
      */
     public function __construct($sessionHandle, $itemsIdArray, $itDescription)
     {
         $this->sessionHandle = $sessionHandle;
-        $this->itemsIdArray = $itemsIdArray;
+        $this->itemsIdArray  = $itemsIdArray;
         $this->itDescription = $itDescription;
     }
 

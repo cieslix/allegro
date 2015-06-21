@@ -30,15 +30,15 @@ class Allegro_Web_Api_DoSendRefundFormRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionId
-     * @param int $dealId
-     * @param int $reasonId
-     * @param int $refundQuantity
+     * @param int    $dealId
+     * @param int    $reasonId
+     * @param int    $refundQuantity
      */
     public function __construct($sessionId, $dealId, $reasonId, $refundQuantity)
     {
-        $this->sessionId = $sessionId;
-        $this->dealId = $dealId;
-        $this->reasonId = $reasonId;
+        $this->sessionId      = $sessionId;
+        $this->dealId         = $dealId;
+        $this->reasonId       = $reasonId;
         $this->refundQuantity = $refundQuantity;
     }
 

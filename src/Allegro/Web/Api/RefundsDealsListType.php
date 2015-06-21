@@ -59,28 +59,28 @@ class Allegro_Web_Api_RefundsDealsListType extends Allegro_Web_Api_Abstract
     protected $paymentStatus = null;
 
     /**
-     * @param int $dealId
+     * @param int       $dealId
      * @param \DateTime $dealDate
-     * @param int $timeLeft
-     * @param int $buyerId
-     * @param string $buyerLogin
-     * @param int $itemId
-     * @param string $itemTitle
-     * @param int $bidsCount
-     * @param string $quantityType
-     * @param string $paymentStatus
+     * @param int       $timeLeft
+     * @param int       $buyerId
+     * @param string    $buyerLogin
+     * @param int       $itemId
+     * @param string    $itemTitle
+     * @param int       $bidsCount
+     * @param string    $quantityType
+     * @param string    $paymentStatus
      */
     public function __construct($dealId, \DateTime $dealDate, $timeLeft, $buyerId, $buyerLogin, $itemId, $itemTitle, $bidsCount, $quantityType, $paymentStatus)
     {
-        $this->dealId = $dealId;
-        $this->dealDate = $dealDate->format(\DateTime::ATOM);
-        $this->timeLeft = $timeLeft;
-        $this->buyerId = $buyerId;
-        $this->buyerLogin = $buyerLogin;
-        $this->itemId = $itemId;
-        $this->itemTitle = $itemTitle;
-        $this->bidsCount = $bidsCount;
-        $this->quantityType = $quantityType;
+        $this->dealId        = $dealId;
+        $this->dealDate      = $dealDate->format(\DateTime::ATOM);
+        $this->timeLeft      = $timeLeft;
+        $this->buyerId       = $buyerId;
+        $this->buyerLogin    = $buyerLogin;
+        $this->itemId        = $itemId;
+        $this->itemTitle     = $itemTitle;
+        $this->bidsCount     = $bidsCount;
+        $this->quantityType  = $quantityType;
         $this->paymentStatus = $paymentStatus;
     }
 

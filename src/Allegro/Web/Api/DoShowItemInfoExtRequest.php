@@ -50,24 +50,24 @@ class Allegro_Web_Api_DoShowItemInfoExtRequest extends Allegro_Web_Api_Abstract
 
     /**
      * @param string $sessionHandle
-     * @param int $itemId
-     * @param int $getDesc
-     * @param int $getImageUrl
-     * @param int $getAttribs
-     * @param int $getPostageOptions
-     * @param int $getCompanyInfo
-     * @param int $getProductInfo
+     * @param int    $itemId
+     * @param int    $getDesc
+     * @param int    $getImageUrl
+     * @param int    $getAttribs
+     * @param int    $getPostageOptions
+     * @param int    $getCompanyInfo
+     * @param int    $getProductInfo
      */
     public function __construct($sessionHandle, $itemId, $getDesc, $getImageUrl, $getAttribs, $getPostageOptions, $getCompanyInfo, $getProductInfo)
     {
-        $this->sessionHandle = $sessionHandle;
-        $this->itemId = $itemId;
-        $this->getDesc = $getDesc;
-        $this->getImageUrl = $getImageUrl;
-        $this->getAttribs = $getAttribs;
+        $this->sessionHandle     = $sessionHandle;
+        $this->itemId            = $itemId;
+        $this->getDesc           = $getDesc;
+        $this->getImageUrl       = $getImageUrl;
+        $this->getAttribs        = $getAttribs;
         $this->getPostageOptions = $getPostageOptions;
-        $this->getCompanyInfo = $getCompanyInfo;
-        $this->getProductInfo = $getProductInfo;
+        $this->getCompanyInfo    = $getCompanyInfo;
+        $this->getProductInfo    = $getProductInfo;
     }
 
     /**

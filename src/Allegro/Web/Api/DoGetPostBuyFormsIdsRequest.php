@@ -29,17 +29,17 @@ class Allegro_Web_Api_DoGetPostBuyFormsIdsRequest extends Allegro_Web_Api_Abstra
     protected $resultOffset = null;
 
     /**
-     * @param string $sessionId
+     * @param string                                   $sessionId
      * @param Allegro_Web_Api_ArrayOfFilteroptionstype $filterOptions
-     * @param int $resultSize
-     * @param int $resultOffset
+     * @param int                                      $resultSize
+     * @param int                                      $resultOffset
      */
     public function __construct($sessionId, $filterOptions, $resultSize, $resultOffset)
     {
-        $this->sessionId = $sessionId;
+        $this->sessionId     = $sessionId;
         $this->filterOptions = $filterOptions;
-        $this->resultSize = $resultSize;
-        $this->resultOffset = $resultOffset;
+        $this->resultSize    = $resultSize;
+        $this->resultOffset  = $resultOffset;
     }
 
     /**

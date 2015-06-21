@@ -44,22 +44,22 @@ class Allegro_Web_Api_CategoryData extends Allegro_Web_Api_Abstract
     protected $catOptions = null;
 
     /**
-     * @param int $catId
-     * @param int $catParent
-     * @param int $catCountry
-     * @param int $catLevel
-     * @param int $catIsLeaf
+     * @param int    $catId
+     * @param int    $catParent
+     * @param int    $catCountry
+     * @param int    $catLevel
+     * @param int    $catIsLeaf
      * @param string $catName
-     * @param int $catOptions
+     * @param int    $catOptions
      */
     public function __construct($catId, $catParent, $catCountry, $catLevel, $catIsLeaf, $catName, $catOptions)
     {
-        $this->catId = $catId;
-        $this->catParent = $catParent;
+        $this->catId      = $catId;
+        $this->catParent  = $catParent;
         $this->catCountry = $catCountry;
-        $this->catLevel = $catLevel;
-        $this->catIsLeaf = $catIsLeaf;
-        $this->catName = $catName;
+        $this->catLevel   = $catLevel;
+        $this->catIsLeaf  = $catIsLeaf;
+        $this->catName    = $catName;
         $this->catOptions = $catOptions;
     }
 

@@ -19,12 +19,12 @@ class Allegro_Web_Api_UserBlackListStruct extends Allegro_Web_Api_Abstract
     protected $userBlackListNote = null;
 
     /**
-     * @param int $userId
+     * @param int    $userId
      * @param string $userBlackListNote
      */
     public function __construct($userId, $userBlackListNote)
     {
-        $this->userId = $userId;
+        $this->userId            = $userId;
         $this->userBlackListNote = $userBlackListNote;
     }
 

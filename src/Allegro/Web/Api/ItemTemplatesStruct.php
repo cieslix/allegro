@@ -20,11 +20,11 @@ class Allegro_Web_Api_ItemTemplatesStruct extends Allegro_Web_Api_Abstract
 
     /**
      * @param Allegro_Web_Api_ArrayOfItemtemplateliststruct $itemTemplateList
-     * @param Allegro_Web_Api_ArrayOfInt $itemTemplateIncorrectIds
+     * @param Allegro_Web_Api_ArrayOfInt                    $itemTemplateIncorrectIds
      */
     public function __construct($itemTemplateList, $itemTemplateIncorrectIds)
     {
-        $this->itemTemplateList = $itemTemplateList;
+        $this->itemTemplateList         = $itemTemplateList;
         $this->itemTemplateIncorrectIds = $itemTemplateIncorrectIds;
     }
 

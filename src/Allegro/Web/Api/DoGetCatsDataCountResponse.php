@@ -24,15 +24,15 @@ class Allegro_Web_Api_DoGetCatsDataCountResponse extends Allegro_Web_Api_Abstrac
     protected $verStr = null;
 
     /**
-     * @param int $catsCount
-     * @param int $verKey
+     * @param int    $catsCount
+     * @param int    $verKey
      * @param string $verStr
      */
     public function __construct($catsCount, $verKey, $verStr)
     {
         $this->catsCount = $catsCount;
-        $this->verKey = $verKey;
-        $this->verStr = $verStr;
+        $this->verKey    = $verKey;
+        $this->verStr    = $verStr;
     }
 
     /**

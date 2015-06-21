@@ -29,17 +29,17 @@ class Allegro_Web_Api_DoMyContactRequest extends Allegro_Web_Api_Abstract
     protected $desc = null;
 
     /**
-     * @param string $sessionHandle
+     * @param string                      $sessionHandle
      * @param Allegro_Web_Api_ArrayOfLong $auctionIdList
-     * @param int $offset
-     * @param int $desc
+     * @param int                         $offset
+     * @param int                         $desc
      */
     public function __construct($sessionHandle, $auctionIdList, $offset, $desc)
     {
         $this->sessionHandle = $sessionHandle;
         $this->auctionIdList = $auctionIdList;
-        $this->offset = $offset;
-        $this->desc = $desc;
+        $this->offset        = $offset;
+        $this->desc          = $desc;
     }
 
     /**

@@ -24,15 +24,15 @@ class Allegro_Web_Api_PostBuyFormStruct extends Allegro_Web_Api_Abstract
     protected $transactionPayByLink = null;
 
     /**
-     * @param int $transactionId
-     * @param Allegro_Web_Api_ArrayOfLong $transactionPackageIds
+     * @param int                                        $transactionId
+     * @param Allegro_Web_Api_ArrayOfLong                $transactionPackageIds
      * @param Allegro_Web_Api_TransactionPayByLinkStruct $transactionPayByLink
      */
     public function __construct($transactionId, $transactionPackageIds, $transactionPayByLink)
     {
-        $this->transactionId = $transactionId;
+        $this->transactionId         = $transactionId;
         $this->transactionPackageIds = $transactionPackageIds;
-        $this->transactionPayByLink = $transactionPayByLink;
+        $this->transactionPayByLink  = $transactionPayByLink;
     }
 
     /**

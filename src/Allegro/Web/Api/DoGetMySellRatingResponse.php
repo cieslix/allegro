@@ -29,16 +29,16 @@ class Allegro_Web_Api_DoGetMySellRatingResponse extends Allegro_Web_Api_Abstract
     protected $sellRatingStatsPerMonth = null;
 
     /**
-     * @param int $sellRatingTotalCount
-     * @param Allegro_Web_Api_ArrayOfSellratingaveragestruct $sellRatingAverage
-     * @param Allegro_Web_Api_ArrayOfSellratingdetailstruct $sellRatingDetails
+     * @param int                                                    $sellRatingTotalCount
+     * @param Allegro_Web_Api_ArrayOfSellratingaveragestruct         $sellRatingAverage
+     * @param Allegro_Web_Api_ArrayOfSellratingdetailstruct          $sellRatingDetails
      * @param Allegro_Web_Api_ArrayOfSellratingaveragepermonthstruct $sellRatingStatsPerMonth
      */
     public function __construct($sellRatingTotalCount, $sellRatingAverage, $sellRatingDetails, $sellRatingStatsPerMonth)
     {
-        $this->sellRatingTotalCount = $sellRatingTotalCount;
-        $this->sellRatingAverage = $sellRatingAverage;
-        $this->sellRatingDetails = $sellRatingDetails;
+        $this->sellRatingTotalCount    = $sellRatingTotalCount;
+        $this->sellRatingAverage       = $sellRatingAverage;
+        $this->sellRatingDetails       = $sellRatingDetails;
         $this->sellRatingStatsPerMonth = $sellRatingStatsPerMonth;
     }
 

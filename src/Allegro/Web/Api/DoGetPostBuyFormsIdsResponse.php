@@ -24,14 +24,14 @@ class Allegro_Web_Api_DoGetPostBuyFormsIdsResponse extends Allegro_Web_Api_Abstr
     protected $filtersList = null;
 
     /**
-     * @param int $formsCount
-     * @param Allegro_Web_Api_ArrayOfLong $formsIds
+     * @param int                                    $formsCount
+     * @param Allegro_Web_Api_ArrayOfLong            $formsIds
      * @param Allegro_Web_Api_ArrayOfFilterslisttype $filtersList
      */
     public function __construct($formsCount, $formsIds, $filtersList)
     {
-        $this->formsCount = $formsCount;
-        $this->formsIds = $formsIds;
+        $this->formsCount  = $formsCount;
+        $this->formsIds    = $formsIds;
         $this->filtersList = $filtersList;
     }
 

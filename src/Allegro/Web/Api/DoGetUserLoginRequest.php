@@ -24,14 +24,14 @@ class Allegro_Web_Api_DoGetUserLoginRequest extends Allegro_Web_Api_Abstract
     protected $webapiKey = null;
 
     /**
-     * @param int $countryId
-     * @param int $userId
+     * @param int    $countryId
+     * @param int    $userId
      * @param string $webapiKey
      */
     public function __construct($countryId, $userId, $webapiKey)
     {
         $this->countryId = $countryId;
-        $this->userId = $userId;
+        $this->userId    = $userId;
         $this->webapiKey = $webapiKey;
     }
 

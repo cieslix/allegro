@@ -44,23 +44,23 @@ class Allegro_Web_Api_DoGetMyDataResponse extends Allegro_Web_Api_Abstract
     protected $relatedPersons = null;
 
     /**
-     * @param Allegro_Web_Api_UserDataStruct $userData
-     * @param Allegro_Web_Api_InvoiceDataStruct $invoiceData
-     * @param Allegro_Web_Api_CompanyExtraDataStruct $companyExtraData
+     * @param Allegro_Web_Api_UserDataStruct             $userData
+     * @param Allegro_Web_Api_InvoiceDataStruct          $invoiceData
+     * @param Allegro_Web_Api_CompanyExtraDataStruct     $companyExtraData
      * @param Allegro_Web_Api_CompanySecondAddressStruct $companySecondAddress
-     * @param Allegro_Web_Api_PharmacyDataStruct $pharmacyData
-     * @param Allegro_Web_Api_AlcoholDataStruct $alcoholData
-     * @param Allegro_Web_Api_RelatedPersonsStruct $relatedPersons
+     * @param Allegro_Web_Api_PharmacyDataStruct         $pharmacyData
+     * @param Allegro_Web_Api_AlcoholDataStruct          $alcoholData
+     * @param Allegro_Web_Api_RelatedPersonsStruct       $relatedPersons
      */
     public function __construct($userData, $invoiceData, $companyExtraData, $companySecondAddress, $pharmacyData, $alcoholData, $relatedPersons)
     {
-        $this->userData = $userData;
-        $this->invoiceData = $invoiceData;
-        $this->companyExtraData = $companyExtraData;
+        $this->userData             = $userData;
+        $this->invoiceData          = $invoiceData;
+        $this->companyExtraData     = $companyExtraData;
         $this->companySecondAddress = $companySecondAddress;
-        $this->pharmacyData = $pharmacyData;
-        $this->alcoholData = $alcoholData;
-        $this->relatedPersons = $relatedPersons;
+        $this->pharmacyData         = $pharmacyData;
+        $this->alcoholData          = $alcoholData;
+        $this->relatedPersons       = $relatedPersons;
     }
 
     /**

@@ -64,31 +64,31 @@ class Allegro_Web_Api_RelatedItemStruct extends Allegro_Web_Api_Abstract
     protected $itemCategoryId = null;
 
     /**
-     * @param int $itemId
+     * @param int    $itemId
      * @param string $itemTitle
      * @param string $itemThumbnail
-     * @param float $itemPrice
-     * @param int $itemBoughtCount
-     * @param float $itemAmount
-     * @param int $itemPaymentType
-     * @param int $itemSellerId
+     * @param float  $itemPrice
+     * @param int    $itemBoughtCount
+     * @param float  $itemAmount
+     * @param int    $itemPaymentType
+     * @param int    $itemSellerId
      * @param string $itemSellerName
-     * @param int $itemInvoiceInfo
-     * @param int $itemCategoryId
+     * @param int    $itemInvoiceInfo
+     * @param int    $itemCategoryId
      */
     public function __construct($itemId, $itemTitle, $itemThumbnail, $itemPrice, $itemBoughtCount, $itemAmount, $itemPaymentType, $itemSellerId, $itemSellerName, $itemInvoiceInfo, $itemCategoryId)
     {
-        $this->itemId = $itemId;
-        $this->itemTitle = $itemTitle;
-        $this->itemThumbnail = $itemThumbnail;
-        $this->itemPrice = $itemPrice;
+        $this->itemId          = $itemId;
+        $this->itemTitle       = $itemTitle;
+        $this->itemThumbnail   = $itemThumbnail;
+        $this->itemPrice       = $itemPrice;
         $this->itemBoughtCount = $itemBoughtCount;
-        $this->itemAmount = $itemAmount;
+        $this->itemAmount      = $itemAmount;
         $this->itemPaymentType = $itemPaymentType;
-        $this->itemSellerId = $itemSellerId;
-        $this->itemSellerName = $itemSellerName;
+        $this->itemSellerId    = $itemSellerId;
+        $this->itemSellerName  = $itemSellerName;
         $this->itemInvoiceInfo = $itemInvoiceInfo;
-        $this->itemCategoryId = $itemCategoryId;
+        $this->itemCategoryId  = $itemCategoryId;
     }
 
     /**
