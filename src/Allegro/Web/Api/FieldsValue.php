@@ -70,7 +70,9 @@ class Allegro_Web_Api_FieldsValue extends Allegro_Web_Api_Abstract
      * @param Allegro_Web_Api_RangeFloatValueStruct $fvalueRangeFloat
      * @param Allegro_Web_Api_RangeDateValueStruct  $fvalueRangeDate
      */
-    public function __construct($fid, $fvalueString, $fvalueInt, $fvalueFloat, $fvalueImage, $fvalueDatetime, $fvalueDate, $fvalueRangeInt, $fvalueRangeFloat, $fvalueRangeDate)
+    public function __construct($fid, $fvalueString = null, $fvalueInt = null, $fvalueFloat = null,
+                                $fvalueImage = null, $fvalueDatetime = null, $fvalueDate = null,
+                                $fvalueRangeInt = null, $fvalueRangeFloat = null, $fvalueRangeDate = null)
     {
         $this->fid              = $fid;
         $this->fvalueString     = $fvalueString;
